@@ -724,13 +724,73 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 46.99) (xy 107.95 50.8)
+			(xy 119.38 59.69) (xy 119.38 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10115a23-1ba3-4345-bed9-13f7c6ba328e")
+	)
+	(wire
+		(pts
+			(xy 107.95 39.37) (xy 119.38 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dfbd8b7-6d27-4758-9c27-e34fbe2c72cb")
+	)
+	(wire
+		(pts
+			(xy 107.95 40.64) (xy 107.95 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc453fdd-2135-44d4-a5a0-f3700ee81f3f")
+	)
+	(wire
+		(pts
+			(xy 107.95 45.72) (xy 107.95 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c515f420-665b-4cef-93e0-8f600bea062e")
+	)
+	(wire
+		(pts
+			(xy 119.38 46.99) (xy 119.38 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2c27fd6-7804-48e9-8977-081f3f5378b1")
+	)
+	(wire
+		(pts
+			(xy 107.95 59.69) (xy 107.95 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e36c9407-4fdb-4f58-9264-04eced2a5087")
+	)
+	(wire
+		(pts
+			(xy 119.38 59.69) (xy 107.95 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4f44c25-8cd1-4f8c-96f8-297d446373c8")
 	)
 	(symbol
 		(lib_id "Device:R_Variable")
@@ -816,7 +876,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 107.95 44.45 0)
+		(at 107.95 43.18 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -827,7 +887,7 @@
 		(dnp no)
 		(uuid "88c2d9db-0acc-4490-8365-7cc67d3fce9c")
 		(property "Reference" "R1"
-			(at 105.41 43.1799 0)
+			(at 105.41 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -838,7 +898,7 @@
 			)
 		)
 		(property "Value" "R_Small"
-			(at 105.41 45.7199 0)
+			(at 105.41 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -849,7 +909,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 44.45 0)
+			(at 107.95 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -860,7 +920,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 44.45 0)
+			(at 107.95 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -871,7 +931,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 107.95 44.45 0)
+			(at 107.95 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1105,7 +1165,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 107.95 53.34 0)
+		(at 107.95 54.61 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -1116,7 +1176,7 @@
 		(dnp no)
 		(uuid "b37ebc22-27a6-4478-b852-ebd443165c71")
 		(property "Reference" "R2"
-			(at 105.41 52.0699 0)
+			(at 105.41 53.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1127,7 +1187,7 @@
 			)
 		)
 		(property "Value" "R_Small"
-			(at 105.41 54.6099 0)
+			(at 105.41 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1138,7 +1198,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 53.34 0)
+			(at 107.95 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1149,7 +1209,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 53.34 0)
+			(at 107.95 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1160,7 +1220,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 107.95 53.34 0)
+			(at 107.95 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
