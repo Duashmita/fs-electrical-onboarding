@@ -1281,7 +1281,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "32cde8bb-3cff-4003-9dc5-c0ac39a70ed8")
-		(property "Reference" "Rg"
+		(property "Reference" "Rg1"
 			(at 160.02 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1303,7 +1303,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 162.56 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -1345,7 +1345,7 @@
 		(instances
 			(project "bruno-white"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "Rg")
+					(reference "Rg1")
 					(unit 1)
 				)
 			)
@@ -1385,7 +1385,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 105.41 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -1444,7 +1444,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "97873cd5-2a82-45c9-92ed-15f11dde77be")
-		(property "Reference" "SG"
+		(property "Reference" "SG2"
 			(at 119.38 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1508,7 +1508,7 @@
 		(instances
 			(project "bruno-white"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "SG")
+					(reference "SG2")
 					(unit 1)
 				)
 			)
@@ -1782,7 +1782,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 105.41 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1919,7 +1919,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fab1e3c2-69d1-4cd5-a47f-53b37daae9b8")
-		(property "Reference" "SG"
+		(property "Reference" "SG1"
 			(at 119.38 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1941,7 +1941,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x01_D0.4mm_OD1mm"
 			(at 116.84 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -1983,7 +1983,7 @@
 		(instances
 			(project "bruno-white"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "SG")
+					(reference "SG1")
 					(unit 1)
 				)
 			)
