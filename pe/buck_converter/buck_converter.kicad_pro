@@ -889,7 +889,7 @@
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "J1-2,#FLG1-3,R1-6,#PWR1-6,D1,L1,U1,Q1,12V_IN1,C1-9,5V_OUT1",
+    "used_designators": "J1-2,#FLG1-3,R1-6,#PWR1-7,D1,L1,U1,Q1,12V_IN1-2,C1-9,5V_OUT1",
     "variants": []
   },
   "sheets": [
