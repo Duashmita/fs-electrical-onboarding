@@ -474,6 +474,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -495,7 +496,7 @@
     ]
   },
   "meta": {
-    "filename": "template.kicad_pro",
+    "filename": "nile-dunning.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -539,8 +540,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -813,8 +814,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "template.kicad_sch",
-        "name": "",
+        "filename": "nile-dunning.kicad_sch",
+        "name": "nile-dunning",
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
@@ -824,15 +825,15 @@
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
-      ""
+      "nile-dunning"
     ]
   ],
   "text_variables": {
-    "BOARD_TITLE": "[BOARD TITLE]",
+    "BOARD_TITLE": "buck",
     "COMMENT1": "[COMMENT]",
     "COMMENT2": "",
-    "NAMES": "[NAMES]",
-    "REVISION": "[REVISION]"
+    "NAMES": "Nile Dunning",
+    "REVISION": "V1"
   },
   "tuning_profiles": {
     "meta": {
