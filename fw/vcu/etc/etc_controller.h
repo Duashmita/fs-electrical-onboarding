@@ -6,6 +6,7 @@
 #define ETC_CONTROLLER_H
 
 #include "mbed.h"
+#include <chrono>
 
 class ETCController {
 public:
@@ -14,7 +15,9 @@ public:
         Start of public variables
     */
 
-
+    int16_t torque_demand = 0;
+    bool implaus_apps_out_of_range = false;
+    bool implaus_apps_deviation = false;
 
     /*
         End of public variables
@@ -32,7 +35,23 @@ private:
         Start of private variables
     */
 
-    
+    AnalogIn apps1_adc;
+    AnalogIn apps2_adc;
+
+    float apps1_voltage = 0.0f;
+    float apps2_voltage = 0.0f;
+
+    float apps1_raw_position = 0.0f;
+    float apps2_raw_position = 0.0f;
+
+    Timer out_of_range_timer;
+    Timer deviation_timer;
+    bool out_of_range_timing = false;
+    bool deviation_timing = false;
+
+    static constexpr std::chrono::milliseconds IMPLAUS_TIMEOUT{100};
+    static constexpr float APPS_DEVIATION_LIMIT = 0.10f;
+    static constexpr float APPS_RANGE_MARGIN = 0.10f;
 
     /*
         End of private variables
