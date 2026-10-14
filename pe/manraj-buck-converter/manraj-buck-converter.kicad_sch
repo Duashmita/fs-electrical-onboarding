@@ -1202,6 +1202,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 52.07 60.96)
+		(end 257.81 124.46)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "cba4ba8a-dddb-418f-9d3d-f148064d2ff5")
+	)
+	(text "DCDC BUCK\n\n"
+		(exclude_from_sim no)
+		(at 136.144 117.348 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+			)
+		)
+		(uuid "2d9fec19-4219-42b0-9a18-7814ee8c392c")
+	)
 	(junction
 		(at 198.12 77.47)
 		(diameter 0)
@@ -1316,6 +1338,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 77.47) (xy 172.72 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1446a3a3-a0f5-41bc-9ba1-4c45645f80fc")
+	)
+	(wire
+		(pts
 			(xy 92.71 101.6) (xy 99.06 101.6)
 		)
 		(stroke
@@ -1386,7 +1418,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 77.47) (xy 161.29 76.2)
+			(xy 162.56 73.66) (xy 162.56 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1466,7 +1498,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 76.2) (xy 161.29 76.2)
+			(xy 160.02 73.66) (xy 162.56 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1533,16 +1565,6 @@
 			(type default)
 		)
 		(uuid "75693bcd-1509-4653-9788-aa418d52d19b")
-	)
-	(wire
-		(pts
-			(xy 172.72 77.47) (xy 161.29 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "783b730f-8280-435e-ba91-8d02380503b4")
 	)
 	(wire
 		(pts
@@ -1636,7 +1658,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 77.47) (xy 148.59 76.2)
+			(xy 148.59 77.47) (xy 148.59 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1686,7 +1708,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 76.2) (xy 151.13 76.2)
+			(xy 148.59 73.66) (xy 152.4 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1774,18 +1796,8 @@
 		)
 		(uuid "fff0be7b-cf0c-4149-b77b-a46f3a544366")
 	)
-	(label "FB"
-		(at 161.29 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "16eefbf2-ede7-4123-8b73-cb48efc0b975")
-	)
 	(label "SW"
-		(at 161.29 76.2 0)
+		(at 162.56 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1884,7 +1896,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 154.94 76.2 90)
+		(at 156.21 73.66 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1895,7 +1907,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d85a8d0-3382-4cde-acb2-49f949d4505e")
 		(property "Reference" "C3"
-			(at 154.94 68.58 90)
+			(at 156.21 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1905,7 +1917,7 @@
 			)
 		)
 		(property "Value" "220nF"
-			(at 154.94 71.12 90)
+			(at 156.21 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1915,7 +1927,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 158.75 75.2348 0)
+			(at 160.02 72.6948 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1926,7 +1938,7 @@
 			)
 		)
 		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM188R71H224KA64-01A-EN_PDF_CERAMICCAPACITORSMD"
-			(at 154.94 76.2 0)
+			(at 156.21 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1937,7 +1949,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, 220nF, 50v, X7R, 10%, 0603, AEC-Q200"
-			(at 154.94 76.2 0)
+			(at 156.21 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1948,7 +1960,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-13307-1-ND"
-			(at 154.94 76.2 0)
+			(at 156.21 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1959,7 +1971,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/gcm188r71h224ka64j/4903960"
-			(at 154.94 76.2 0)
+			(at 156.21 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1970,7 +1982,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 154.94 76.2 0)
+			(at 156.21 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1981,7 +1993,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GCM188R71H224KA64J"
-			(at 154.94 76.2 0)
+			(at 156.21 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
