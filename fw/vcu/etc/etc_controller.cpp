@@ -97,7 +97,37 @@ void ETCController::update_implausibilities() {
         Start of implaus logic checking.
     */
 
+    // see if either voltages are in range
+    bool out_of_range_detected = !in_range(apps1_voltage, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) ||
+                                !in_range(apps2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE);
 
+    // update our boolean values
+    if (out_of_range_detected) {
+        out_of_range_timer.start();
+        if (out_of_range_timer.read_ms() >= 100) {
+        implaus_apps_out_of_range = true;
+        }
+    } else {
+        out_of_range_timer.stop();
+        out_of_range_timer.reset();
+        implaus_apps_out_of_range = false;
+    }
+
+    // see if there is deviation
+    bool deviation_detected = fabs(apps1_travel - apps2_travel) > 0.10f;
+
+    // update boolean values
+    if (deviation_detected) {
+        deviation_timer.start();
+        if (deviation_timer.read_ms() >= 100) {
+            implaus_apps_deviation = true;
+        }
+    } else {
+        deviation_timer.stop();
+
+        deviation_timer.reset();
+        implaus_apps_deviation = false;
+    }
 
     /*
         End of implaus logic checking.
