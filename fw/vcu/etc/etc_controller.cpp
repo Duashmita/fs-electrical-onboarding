@@ -7,18 +7,22 @@
 
 // Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {}
-
+    : apps1_adc(APPS1_pin), apps2_adc(APPS_pin) {}
 /* 
     Nice function to write which returns a wrapped version of the
     value given between 0 and 1 (-0.1 => 0, 10 => 1, 0.3 => 0.3).
 */
-float ETCController::clamp(float value) {}
-
+float ETCController::clamp(float value) {
+    if (value < 0.0f) return 0.0f;
+    if (value > 1.0f) return 1.0f;
+    return value;
+}
 /*
     Simple function to write which returns a bool of true or false
     depending on whether low <= value <= high is true.
 */
 bool ETCController::in_range(float value, float low, float high) {}
+    return (value >= low) && (value <= high);
 
 /*
     Complicated method with the goal of refreshing voltages,
