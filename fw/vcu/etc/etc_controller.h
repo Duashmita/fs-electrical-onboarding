@@ -41,6 +41,11 @@ private:
     AnalogIn apps1;
     AnalogIn apps2;
 
+// stopwatches: how long each problem has lasted (needs >100ms to trip) -y
+
+    Timer apps_deviation_timer;
+    Timer apps_range_timer;
+
    
 
 // latest voltage and pedal position for each sensor, kept here so every fn can see them -y
@@ -60,7 +65,7 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.39f;
+    static constexpr float APPS1_MIN_VOLTAGE = 0.396f;
     static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
 
     static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
