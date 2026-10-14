@@ -87,8 +87,11 @@ void ETCController::update_implausibilities() {
         Start of implaus logic checking.
     */
 
+// range check (t.4.2.9/10): broken or shorted sensor = voltage outside its window -y
+bool apps1_in_range = in_range(apps1_voltage, APPS1_MIN_VOLTAGE - APPS_VOLTAGE_TOLERANCE, APPS1_MAX_VOLTAGE + APPS_VOLTAGE_TOLERANCE);
+bool apps2_in_range = in_range(apps2_voltage, APPS2_MIN_VOLTAGE - APPS_VOLTAGE_TOLERANCE, APPS2_MAX_VOLTAGE + APPS_VOLTAGE_TOLERANCE);
 
-
+bool out_of_range = !apps1_in_range || !apps2_in_range;
     /*
         End of implaus logic checking.
     */
