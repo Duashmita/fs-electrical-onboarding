@@ -950,206 +950,549 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 91.44 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bf0f934-64f1-463d-9ede-18261023e228")
+	)
+	(junction
+		(at 45.72 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1bc43c7a-818c-4fad-aafa-bb5ded10eb2e")
+	)
+	(junction
+		(at 133.35 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "453559ec-f170-46f3-9253-2516fc448def")
+	)
+	(junction
+		(at 140.97 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "535458dc-5d5f-4137-93a0-41574e84d305")
+	)
+	(junction
+		(at 57.15 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d998b41-6765-4763-b13c-8a2329820ada")
+	)
+	(junction
+		(at 113.03 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "802ac5b9-aef5-4464-95f2-0c713f020765")
+	)
+	(junction
+		(at 80.01 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ae3959a-579e-4f31-8a31-badc5180d8c5")
+	)
+	(junction
+		(at 102.87 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a140c51b-9aa3-42d6-999e-8cd0d3f25792")
+	)
+	(junction
+		(at 123.19 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b192873e-84c4-40d0-a444-c36e91cde7c2")
+	)
+	(junction
+		(at 111.76 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c504a55a-c29f-4323-9d7d-8997c9da8fb4")
+	)
+	(junction
+		(at 138.43 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca501f92-2eb0-4c73-b1cb-3a9b2bc1fd66")
+	)
+	(junction
+		(at 34.29 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf36602e-c0a1-4228-9e32-a3426f820ad7")
+	)
+	(junction
+		(at 68.58 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d498a6d6-2f78-4fd9-97cf-0729ddc9d131")
+	)
+	(wire
+		(pts
+			(xy 133.35 109.22) (xy 140.97 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b9da209-828b-4fb4-8013-9d523a850e75")
+	)
+	(wire
+		(pts
+			(xy 80.01 93.98) (xy 91.44 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15089151-c523-4644-acac-8141479daa46")
+	)
+	(wire
+		(pts
+			(xy 135.89 107.95) (xy 146.05 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ec8cbd8-333b-42a1-8552-9dd239056365")
+	)
+	(wire
+		(pts
+			(xy 111.76 93.98) (xy 113.03 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2071cf75-ce68-4a78-bad6-46015e0c27ce")
+	)
+	(wire
+		(pts
+			(xy 113.03 99.06) (xy 113.03 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29dd251c-fa1d-4bc2-8642-a9e967670e00")
+	)
+	(wire
+		(pts
+			(xy 113.03 91.44) (xy 113.03 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e1f108-ff35-4afa-8214-71a5ba369737")
+	)
+	(wire
+		(pts
+			(xy 111.76 93.98) (xy 111.76 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ba0cde8-3ff0-4f58-a643-1e531f638de1")
+	)
+	(wire
+		(pts
+			(xy 146.05 69.85) (xy 146.05 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "375fbf8f-6eaf-44b1-ad77-7b14908111b3")
+	)
+	(wire
+		(pts
+			(xy 57.15 93.98) (xy 68.58 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b4b3e2c-a3dc-4b51-b3dd-601d4f2e369c")
+	)
+	(wire
+		(pts
+			(xy 91.44 93.98) (xy 102.87 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51b49210-038a-4655-9b17-9043dadc5c2e")
+	)
+	(wire
+		(pts
+			(xy 68.58 93.98) (xy 80.01 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "527fedf6-8979-4835-b015-cd609d292027")
+	)
+	(wire
+		(pts
+			(xy 135.89 107.95) (xy 135.89 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "558712e6-2e0e-47d3-87ce-308ad964e843")
+	)
+	(wire
+		(pts
+			(xy 133.35 82.55) (xy 133.35 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c91e072-f0af-46fd-afa9-c80c22023aab")
+	)
+	(wire
+		(pts
+			(xy 123.19 104.14) (xy 128.27 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "691b8aba-dae2-4c2a-a5af-e73bc45c7633")
+	)
+	(wire
+		(pts
+			(xy 133.35 109.22) (xy 133.35 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a3cabb6-3706-487d-bbb6-a1aa98b22c1b")
+	)
+	(wire
+		(pts
+			(xy 115.57 124.46) (xy 113.03 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e17403d-da73-410f-a142-1f4a6fbfb35b")
+	)
+	(wire
+		(pts
+			(xy 45.72 93.98) (xy 57.15 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b03b6ed1-2d91-45fc-bc84-74024e479040")
+	)
+	(wire
+		(pts
+			(xy 147.32 109.22) (xy 140.97 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b58032c0-6816-4d19-9bb4-137ad1909c11")
+	)
+	(wire
+		(pts
+			(xy 127 124.46) (xy 147.32 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8665ca7-2856-4891-95fd-e59cc5135feb")
+	)
+	(wire
+		(pts
+			(xy 133.35 93.98) (xy 138.43 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9627a15-724d-4e13-883f-a837b39e60c5")
+	)
+	(wire
+		(pts
+			(xy 138.43 86.36) (xy 142.24 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c81aaaeb-a671-4e86-a7d1-ac64b7506e60")
+	)
+	(wire
+		(pts
+			(xy 115.57 116.84) (xy 111.76 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca5361d4-35eb-4a54-ac96-45ed8cf78a5f")
+	)
+	(wire
+		(pts
+			(xy 135.89 96.52) (xy 133.35 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbf31fa6-e304-4ac8-8f68-d3f1ef9dff0d")
+	)
+	(wire
+		(pts
+			(xy 119.38 82.55) (xy 119.38 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6ca3db1-f967-4b9e-a0b7-4d31922dcd9f")
+	)
+	(wire
+		(pts
+			(xy 127 82.55) (xy 133.35 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9e3db63-a50f-47d4-ac77-4f3c4341dc1f")
+	)
+	(wire
+		(pts
+			(xy 147.32 124.46) (xy 147.32 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddc77f7e-b23d-49e8-8c4d-016ba2a7d10b")
+	)
+	(wire
+		(pts
+			(xy 34.29 93.98) (xy 45.72 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e02b651e-a4e9-462e-a224-425524a95054")
+	)
+	(wire
+		(pts
+			(xy 102.87 93.98) (xy 111.76 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0d40f76-ead5-4121-bd72-634c1746ce82")
+	)
+	(wire
+		(pts
+			(xy 22.86 93.98) (xy 34.29 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f90aeaf0-baeb-4363-ac39-a1e347351c30")
+	)
+	(wire
+		(pts
+			(xy 119.38 69.85) (xy 146.05 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffdffc50-1427-46f5-8d1f-2f477e64e7ba")
 	)
 	(label "EN"
-		(at 130.81 133.35 0)
+		(at 113.03 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "10ca5158-ff01-4168-9377-4d2fdb7cd645")
-	)
-	(label "VIN"
-		(at 83.82 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1d1c274b-4ab5-4e98-9de2-33b409aa3c77")
+		(uuid "0036123a-832b-4b38-98fb-92ac98674cbe")
 	)
 	(label "VBST"
-		(at 124.46 85.09 0)
+		(at 146.05 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "26ba0587-b6e3-445c-9bb9-cf283bf9b1f0")
-	)
-	(label "EN"
-		(at 113.03 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2f6e4082-9fd0-4372-98ed-5d6258e9448e")
+		(uuid "1349fea6-f693-4d5d-a924-70eaea9f6033")
 	)
 	(label "VIN"
-		(at 54.61 92.71 0)
+		(at 96.52 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "3ffeb2e1-99e0-487b-90c9-21e74d059772")
-	)
-	(label "FB"
-		(at 133.35 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fc23665-7459-49a8-810c-12a32fac3a73")
-	)
-	(label "VIN"
-		(at 43.18 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "513defc3-52bf-4d28-8ed4-23e25408d360")
+		(uuid "49335562-b688-4a8c-9811-47319beb0766")
 	)
 	(label "SW"
-		(at 124.46 77.47 0)
+		(at 133.35 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "60c3ecd7-9764-40db-b31d-3f0d872ab754")
-	)
-	(label "VIN"
-		(at 95.25 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "70629783-fa37-490d-b8ca-98c17d2d8e09")
-	)
-	(label "VIN"
-		(at 64.77 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "73632b8c-112c-48c5-9b7f-f51f4acc6262")
-	)
-	(label "VIN"
-		(at 30.48 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "786d6984-5288-4e01-8857-ecfd4131697c")
-	)
-	(label "VIN"
-		(at 74.93 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "816f99f4-9390-4302-a909-eca27ffd84fe")
-	)
-	(label "VBST"
-		(at 133.35 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ac4e1e91-fe34-4019-bf68-eb410ac54759")
-	)
-	(label "VIN"
-		(at 130.81 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b27623e4-e31e-4aef-8e89-bfd87ba3a2da")
+		(uuid "cedd2fe5-7bd2-40e7-9426-b21598b269db")
 	)
 	(label "FB"
-		(at 130.81 109.22 0)
+		(at 138.43 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "b33e93f0-855b-400e-b999-72edeebe1573")
-	)
-	(label "VIN"
-		(at 19.05 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cfca6957-8f6c-438f-aec7-071f40f35d9f")
-	)
-	(label "SW"
-		(at 133.35 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d828f5f6-35ce-49a9-bc5e-1cf8820f6e6c")
-	)
-	(label "VIN"
-		(at 113.03 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dd8848ed-86dd-401a-9a47-b02e9e7f089d")
-	)
-	(label "FB"
-		(at 123.19 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f5e7f3d2-5d83-45c4-9468-e83179db7737")
-	)
-	(label "SW"
-		(at 143.51 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8a5c5de-a3fe-4edc-ace3-0de4b4f00349")
+		(uuid "d8eedcf0-27f5-4ebe-93f3-48d13763e41a")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1231,7 +1574,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 123.19 113.03 0)
+		(at 127 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1242,7 +1585,7 @@
 		(fields_autoplaced yes)
 		(uuid "061b2fdc-586f-4aa1-8f85-2a8dd2cb95b2")
 		(property "Reference" "R1"
-			(at 125.73 111.7599 0)
+			(at 129.54 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1253,7 +1596,7 @@
 			)
 		)
 		(property "Value" "54.9k"
-			(at 125.73 114.2999 0)
+			(at 129.54 121.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1264,7 +1607,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 121.412 113.03 90)
+			(at 125.222 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1275,7 +1618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 113.03 0)
+			(at 127 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1286,7 +1629,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 123.19 113.03 0)
+			(at 127 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1297,7 +1640,7 @@
 			)
 		)
 		(property "Digikey Part Number" "311-33.0MCT-ND"
-			(at 123.19 113.03 0)
+			(at 127 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1308,7 +1651,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0201FR-0733RL/1948893?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlg_oVbHTrnU1xRoMAyTp5gv8&gclid=CjwKCAjw0LzWBhBOEiwAKQd0cGUdl2zx5aBliMaIt2LUYtY8nrOKZcEBwL0N1guMA1QMkDfkX61aOBoCLdsQAvD_BwE"
-			(at 123.19 113.03 0)
+			(at 127 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1319,7 +1662,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 123.19 113.03 0)
+			(at 127 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1330,7 +1673,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" " RC0603FR-0754K9L"
-			(at 123.19 113.03 0)
+			(at 127 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1356,8 +1699,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 95.25 100.33 0)
+		(lib_id "power:PWR_FLAG")
+		(at 113.03 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1366,9 +1709,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "10efbb39-1c61-4115-968f-4f79844f679d")
-		(property "Reference" "#PWR05"
-			(at 95.25 106.68 0)
+		(uuid "0e77b811-94b2-41cd-9a3d-962b1e18a093")
+		(property "Reference" "#FLG01"
+			(at 113.03 89.535 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1378,8 +1721,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 95.25 105.41 0)
+		(property "Value" "PWR_FLAG"
+			(at 113.03 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1389,7 +1732,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 100.33 0)
+			(at 113.03 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1400,7 +1743,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 100.33 0)
+			(at 113.03 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 113.03 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1f03f65-be76-4206-b040-ad32118a0792")
+		)
+		(instances
+			(project "Thomas-Yip"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10efbb39-1c61-4115-968f-4f79844f679d")
+		(property "Reference" "#PWR05"
+			(at 102.87 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1411,7 +1832,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 100.33 0)
+			(at 102.87 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1513,7 +1934,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 100.33 0)
+		(at 45.72 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1524,7 +1945,7 @@
 		(fields_autoplaced yes)
 		(uuid "27f36d79-787d-4db9-857e-7689ff373340")
 		(property "Reference" "#PWR012"
-			(at 43.18 106.68 0)
+			(at 45.72 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1535,7 +1956,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.18 105.41 0)
+			(at 45.72 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1545,7 +1966,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 100.33 0)
+			(at 45.72 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1556,7 +1977,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 100.33 0)
+			(at 45.72 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1567,7 +1988,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 100.33 0)
+			(at 45.72 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1591,7 +2012,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 100.33 0)
+		(at 68.58 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1602,7 +2023,7 @@
 		(fields_autoplaced yes)
 		(uuid "29258f76-4071-429d-b3f1-14ef088e78a8")
 		(property "Reference" "#PWR010"
-			(at 64.77 106.68 0)
+			(at 68.58 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1613,7 +2034,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 105.41 0)
+			(at 68.58 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1623,7 +2044,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 100.33 0)
+			(at 68.58 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1634,7 +2055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 100.33 0)
+			(at 68.58 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1645,7 +2066,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 100.33 0)
+			(at 68.58 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1669,7 +2090,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 116.84 0)
+		(at 140.97 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1677,10 +2098,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2ef5ce38-d033-44ad-9dfa-80185279b1ea")
 		(property "Reference" "#PWR07"
-			(at 130.81 123.19 0)
+			(at 140.97 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1691,7 +2111,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 121.92 0)
+			(at 140.97 120.904 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1701,7 +2121,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 116.84 0)
+			(at 140.97 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1712,7 +2132,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 116.84 0)
+			(at 140.97 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1723,7 +2143,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 116.84 0)
+			(at 140.97 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1747,7 +2167,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 64.77 96.52 0)
+		(at 68.58 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1758,7 +2178,7 @@
 		(fields_autoplaced yes)
 		(uuid "34cd84ba-ac6c-435c-ba09-b168d32d6efe")
 		(property "Reference" "C6"
-			(at 68.58 95.2499 0)
+			(at 72.39 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1769,7 +2189,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 68.58 97.7899 0)
+			(at 72.39 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1780,7 +2200,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 65.7352 100.33 0)
+			(at 69.5452 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1791,7 +2211,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 96.52 0)
+			(at 68.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1802,7 +2222,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 64.77 96.52 0)
+			(at 68.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1813,7 +2233,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-12737-1-ND"
-			(at 64.77 96.52 0)
+			(at 68.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1824,7 +2244,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
-			(at 64.77 96.52 0)
+			(at 68.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1835,7 +2255,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 64.77 96.52 0)
+			(at 68.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1846,7 +2266,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
-			(at 64.77 96.52 0)
+			(at 68.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1873,7 +2293,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 43.18 96.52 0)
+		(at 45.72 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1884,7 +2304,7 @@
 		(fields_autoplaced yes)
 		(uuid "46e0d7ac-cfc4-4b62-af0e-b947e1d5608e")
 		(property "Reference" "C8"
-			(at 46.99 95.2499 0)
+			(at 49.53 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1895,7 +2315,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 46.99 97.7899 0)
+			(at 49.53 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1906,7 +2326,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 44.1452 100.33 0)
+			(at 46.6852 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1917,7 +2337,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 96.52 0)
+			(at 45.72 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1928,7 +2348,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 43.18 96.52 0)
+			(at 45.72 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1939,7 +2359,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-12737-1-ND"
-			(at 43.18 96.52 0)
+			(at 45.72 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1950,7 +2370,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
-			(at 43.18 96.52 0)
+			(at 45.72 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1961,7 +2381,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 43.18 96.52 0)
+			(at 45.72 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1972,7 +2392,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
-			(at 43.18 96.52 0)
+			(at 45.72 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1999,7 +2419,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 186.69 96.52 0)
+		(at 16.51 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2010,7 +2430,7 @@
 		(fields_autoplaced yes)
 		(uuid "4895445e-ee52-4ea4-a026-ba6a5a026d74")
 		(property "Reference" "C12"
-			(at 190.5 95.2499 0)
+			(at 20.32 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2021,7 +2441,7 @@
 			)
 		)
 		(property "Value" "22µF"
-			(at 190.5 97.7899 0)
+			(at 20.32 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2032,7 +2452,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 187.6552 100.33 0)
+			(at 17.4752 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2043,7 +2463,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 96.52 0)
+			(at 16.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2054,7 +2474,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 186.69 96.52 0)
+			(at 16.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2065,7 +2485,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-9952-1-ND"
-			(at 186.69 96.52 0)
+			(at 16.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2076,7 +2496,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15L/4905420"
-			(at 186.69 96.52 0)
+			(at 16.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2087,7 +2507,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 186.69 96.52 0)
+			(at 16.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2098,7 +2518,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" " GRM219R61C226ME15L"
-			(at 186.69 96.52 0)
+			(at 16.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2125,7 +2545,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 83.82 100.33 0)
+		(at 91.44 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2136,7 +2556,7 @@
 		(fields_autoplaced yes)
 		(uuid "492a1b1d-7bcb-4a27-841d-903603648fd6")
 		(property "Reference" "#PWR08"
-			(at 83.82 106.68 0)
+			(at 91.44 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2147,7 +2567,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 83.82 105.41 0)
+			(at 91.44 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2157,7 +2577,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 100.33 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2168,7 +2588,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 100.33 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2179,7 +2599,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 100.33 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2203,7 +2623,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 100.33 0)
+		(at 57.15 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2214,7 +2634,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a08fd9e-fa06-43df-9b64-7479c33720f9")
 		(property "Reference" "#PWR011"
-			(at 54.61 106.68 0)
+			(at 57.15 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2225,7 +2645,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 105.41 0)
+			(at 57.15 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2235,7 +2655,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 100.33 0)
+			(at 57.15 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2246,7 +2666,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 100.33 0)
+			(at 57.15 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2257,7 +2677,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 100.33 0)
+			(at 57.15 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2281,7 +2701,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 124.46 81.28 0)
+		(at 123.19 82.55 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2292,29 +2712,27 @@
 		(fields_autoplaced yes)
 		(uuid "520ce221-7f4c-4d5e-88da-e9fa3c235193")
 		(property "Reference" "C3"
-			(at 128.27 80.0099 0)
+			(at 123.19 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "0.1µF"
-			(at 128.27 82.5499 0)
+			(at 123.19 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 125.4252 85.09 0)
+			(at 127 81.5848 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2325,7 +2743,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 81.28 0)
+			(at 123.19 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2336,7 +2754,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 124.46 81.28 0)
+			(at 123.19 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2347,7 +2765,7 @@
 			)
 		)
 		(property "Digikey Part Number" "720-VJ0603Y104MXQPW1BCCT-ND"
-			(at 124.46 81.28 0)
+			(at 123.19 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2358,7 +2776,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/vishay-vitramon/VJ0603Y104MXQPW1BC/8305324"
-			(at 124.46 81.28 0)
+			(at 123.19 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2369,7 +2787,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay"
-			(at 124.46 81.28 0)
+			(at 123.19 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2380,7 +2798,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "VJ0603Y104MXQPW1BC"
-			(at 124.46 81.28 0)
+			(at 123.19 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2407,7 +2825,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 30.48 95.25 0)
+		(at 34.29 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2418,7 +2836,7 @@
 		(fields_autoplaced yes)
 		(uuid "5280620b-b559-44a4-a5c8-57e39ce019ae")
 		(property "Reference" "C9"
-			(at 34.29 93.9799 0)
+			(at 38.1 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2429,7 +2847,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 34.29 96.5199 0)
+			(at 38.1 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2440,7 +2858,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 31.4452 99.06 0)
+			(at 35.2552 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2451,7 +2869,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 95.25 0)
+			(at 34.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2462,7 +2880,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 30.48 95.25 0)
+			(at 34.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2473,7 +2891,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-12737-1-ND"
-			(at 30.48 95.25 0)
+			(at 34.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2484,7 +2902,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
-			(at 30.48 95.25 0)
+			(at 34.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2495,7 +2913,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 30.48 95.25 0)
+			(at 34.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2506,7 +2924,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
-			(at 30.48 95.25 0)
+			(at 34.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2533,7 +2951,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 30.48 99.06 0)
+		(at 34.29 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2544,7 +2962,7 @@
 		(fields_autoplaced yes)
 		(uuid "52bb1cee-e4ef-43bd-9f22-bff87fe6ef96")
 		(property "Reference" "#PWR013"
-			(at 30.48 105.41 0)
+			(at 34.29 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2555,7 +2973,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 30.48 104.14 0)
+			(at 34.29 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2565,7 +2983,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 99.06 0)
+			(at 34.29 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2576,7 +2994,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 99.06 0)
+			(at 34.29 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2587,7 +3005,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 99.06 0)
+			(at 34.29 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2737,7 +3155,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 143.51 100.33 180)
+		(at 138.43 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2748,7 +3166,7 @@
 		(fields_autoplaced yes)
 		(uuid "5ce83df8-6c19-44c6-a740-8c3c135283c9")
 		(property "Reference" "#PWR02"
-			(at 143.51 96.52 0)
+			(at 138.43 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2759,7 +3177,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 143.51 105.41 0)
+			(at 138.43 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2769,7 +3187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 100.33 0)
+			(at 138.43 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2780,7 +3198,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 100.33 0)
+			(at 138.43 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2791,7 +3209,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 143.51 100.33 0)
+			(at 138.43 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2815,7 +3233,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 74.93 96.52 0)
+		(at 80.01 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2826,7 +3244,7 @@
 		(fields_autoplaced yes)
 		(uuid "60a405d4-47c1-4d6e-885a-ab3e8d46108e")
 		(property "Reference" "C5"
-			(at 78.74 95.2499 0)
+			(at 83.82 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2837,7 +3255,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 78.74 97.7899 0)
+			(at 83.82 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2848,7 +3266,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 75.8952 100.33 0)
+			(at 80.9752 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2859,7 +3277,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 96.52 0)
+			(at 80.01 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2870,7 +3288,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 74.93 96.52 0)
+			(at 80.01 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2881,7 +3299,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-12737-1-ND"
-			(at 74.93 96.52 0)
+			(at 80.01 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2892,7 +3310,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
-			(at 74.93 96.52 0)
+			(at 80.01 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2903,7 +3321,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 74.93 96.52 0)
+			(at 80.01 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2914,7 +3332,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
-			(at 74.93 96.52 0)
+			(at 80.01 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2941,7 +3359,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 130.81 113.03 0)
+		(at 140.97 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2952,7 +3370,7 @@
 		(fields_autoplaced yes)
 		(uuid "67978b31-e491-43b3-8b80-2ee9ac0dea3b")
 		(property "Reference" "R2"
-			(at 133.35 111.7599 0)
+			(at 143.51 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2963,7 +3381,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 133.35 114.2999 0)
+			(at 143.51 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2974,7 +3392,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 129.032 113.03 90)
+			(at 139.192 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2985,7 +3403,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 113.03 0)
+			(at 140.97 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2996,7 +3414,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 130.81 113.03 0)
+			(at 140.97 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3007,7 +3425,7 @@
 			)
 		)
 		(property "Digikey Part Number" "541-100KHCT-ND"
-			(at 130.81 113.03 0)
+			(at 140.97 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3018,7 +3436,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/vishay-dale/CRCW0603100KFKEA/1174896?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlg_oVbHTrnU1xRoMAyTp5gv8&gclid=CjwKCAjw0LzWBhBOEiwAKQd0cJyjPHDJr_6hUbFUT2dZTyZ3AZfBGEjM6cosR3Zc-1hclp2PsnGh4BoCSz0QAvD_BwE"
-			(at 130.81 113.03 0)
+			(at 140.97 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3029,7 +3447,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay"
-			(at 130.81 113.03 0)
+			(at 140.97 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3040,7 +3458,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW060310K0FKEA"
-			(at 130.81 113.03 0)
+			(at 140.97 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3067,7 +3485,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 95.25 96.52 0)
+		(at 102.87 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3078,7 +3496,7 @@
 		(fields_autoplaced yes)
 		(uuid "896fc428-4f13-4901-9f4d-21329d910a52")
 		(property "Reference" "C1"
-			(at 99.06 95.2499 0)
+			(at 106.68 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3089,7 +3507,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 99.06 97.7899 0)
+			(at 106.68 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3100,7 +3518,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 96.2152 100.33 0)
+			(at 103.8352 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3111,7 +3529,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 96.52 0)
+			(at 102.87 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3122,7 +3540,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 95.25 96.52 0)
+			(at 102.87 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3133,7 +3551,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-12737-1-ND"
-			(at 95.25 96.52 0)
+			(at 102.87 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3144,7 +3562,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
-			(at 95.25 96.52 0)
+			(at 102.87 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3155,7 +3573,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 95.25 96.52 0)
+			(at 102.87 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3166,7 +3584,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
-			(at 95.25 96.52 0)
+			(at 102.87 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3192,8 +3610,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 19.05 99.06 0)
+		(lib_id "power:PWR_FLAG")
+		(at 142.24 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3201,10 +3619,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96edff3d-d05d-4499-9681-303392d7bed2")
-		(property "Reference" "#PWR014"
-			(at 19.05 105.41 0)
+		(uuid "92754eed-a892-4882-8ec3-973a2bea1b78")
+		(property "Reference" "#FLG03"
+			(at 142.24 84.455 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3214,8 +3631,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 19.05 104.14 0)
+		(property "Value" "PWR_FLAG"
+			(at 142.24 83.058 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3225,7 +3642,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 99.06 0)
+			(at 142.24 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3236,7 +3653,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 99.06 0)
+			(at 142.24 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 142.24 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46c38473-1a1d-4f27-80d9-e24bc10cce3c")
+		)
+		(instances
+			(project "Thomas-Yip"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 22.86 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96edff3d-d05d-4499-9681-303392d7bed2")
+		(property "Reference" "#PWR014"
+			(at 22.86 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 22.86 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3247,7 +3742,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 19.05 99.06 0)
+			(at 22.86 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3271,7 +3766,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 54.61 96.52 0)
+		(at 57.15 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3282,7 +3777,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a0e6158-c7b7-48a2-90f6-b07f4af50915")
 		(property "Reference" "C7"
-			(at 58.42 95.2499 0)
+			(at 60.96 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3293,7 +3788,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 58.42 97.7899 0)
+			(at 60.96 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3304,7 +3799,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 55.5752 100.33 0)
+			(at 58.1152 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3315,7 +3810,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 96.52 0)
+			(at 57.15 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3326,7 +3821,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 54.61 96.52 0)
+			(at 57.15 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3337,7 +3832,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-12737-1-ND"
-			(at 54.61 96.52 0)
+			(at 57.15 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3348,7 +3843,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
-			(at 54.61 96.52 0)
+			(at 57.15 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3359,7 +3854,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 54.61 96.52 0)
+			(at 57.15 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3370,7 +3865,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
-			(at 54.61 96.52 0)
+			(at 57.15 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3397,7 +3892,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 186.69 92.71 0)
+		(at 16.51 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3408,7 +3903,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d4df609-b565-4b2e-866a-ffea8fbc2d9d")
 		(property "Reference" "#PWR017"
-			(at 186.69 96.52 0)
+			(at 16.51 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3419,7 +3914,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 186.69 87.63 0)
+			(at 16.51 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3429,7 +3924,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 92.71 0)
+			(at 16.51 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3440,7 +3935,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 92.71 0)
+			(at 16.51 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3451,7 +3946,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 186.69 92.71 0)
+			(at 16.51 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3475,7 +3970,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 123.19 109.22 0)
+		(at 127 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3483,10 +3978,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9dcff211-2928-437a-bea3-ed397bccbe52")
 		(property "Reference" "#PWR03"
-			(at 123.19 113.03 0)
+			(at 127 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3497,7 +3991,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 123.19 104.14 0)
+			(at 127 112.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3507,7 +4001,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 109.22 0)
+			(at 127 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3518,7 +4012,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 109.22 0)
+			(at 127 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3529,7 +4023,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 123.19 109.22 0)
+			(at 127 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3553,7 +4047,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 19.05 95.25 0)
+		(at 22.86 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3564,7 +4058,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f8d88ad-7d98-4ecd-a224-5a211ea0e93b")
 		(property "Reference" "C10"
-			(at 22.86 93.9799 0)
+			(at 26.67 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3575,7 +4069,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 22.86 96.5199 0)
+			(at 26.67 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3586,7 +4080,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 20.0152 99.06 0)
+			(at 23.8252 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3597,7 +4091,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3608,7 +4102,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 19.05 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3619,7 +4113,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-12737-1-ND"
-			(at 19.05 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3630,7 +4124,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
-			(at 19.05 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3641,7 +4135,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 19.05 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3652,7 +4146,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
-			(at 19.05 95.25 0)
+			(at 22.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3679,7 +4173,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 130.81 129.54 0)
+		(at 115.57 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3690,7 +4184,7 @@
 		(fields_autoplaced yes)
 		(uuid "a6c90f22-f8a7-4533-b97a-bc529aaad068")
 		(property "Reference" "R3"
-			(at 133.35 128.2699 0)
+			(at 118.11 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3701,7 +4195,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 133.35 130.8099 0)
+			(at 118.11 121.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3712,7 +4206,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 129.032 129.54 90)
+			(at 113.792 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3723,7 +4217,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 129.54 0)
+			(at 115.57 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3734,7 +4228,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 130.81 129.54 0)
+			(at 115.57 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3745,7 +4239,7 @@
 			)
 		)
 		(property "Digikey Part Number" "541-100KHCT-ND"
-			(at 130.81 129.54 0)
+			(at 115.57 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3756,7 +4250,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/vishay-dale/CRCW0603100KFKEA/1174896?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlg_oVbHTrnU1xRoMAyTp5gv8&gclid=CjwKCAjw0LzWBhBOEiwAKQd0cJyjPHDJr_6hUbFUT2dZTyZ3AZfBGEjM6cosR3Zc-1hclp2PsnGh4BoCSz0QAvD_BwE"
-			(at 130.81 129.54 0)
+			(at 115.57 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3767,7 +4261,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay"
-			(at 130.81 129.54 0)
+			(at 115.57 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3778,7 +4272,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW060310K0FKEA"
-			(at 130.81 129.54 0)
+			(at 115.57 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3931,7 +4425,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 83.82 96.52 0)
+		(at 91.44 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3942,7 +4436,7 @@
 		(fields_autoplaced yes)
 		(uuid "abae8c0f-cd55-477e-8ec4-a56e9acd0bb2")
 		(property "Reference" "C4"
-			(at 87.63 95.2499 0)
+			(at 95.25 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3953,7 +4447,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 87.63 97.7899 0)
+			(at 95.25 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3964,7 +4458,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 84.7852 100.33 0)
+			(at 92.4052 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3975,7 +4469,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 96.52 0)
+			(at 91.44 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3986,7 +4480,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 83.82 96.52 0)
+			(at 91.44 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3997,7 +4491,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-12737-1-ND"
-			(at 83.82 96.52 0)
+			(at 91.44 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4008,7 +4502,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
-			(at 83.82 96.52 0)
+			(at 91.44 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4019,7 +4513,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 83.82 96.52 0)
+			(at 91.44 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4030,7 +4524,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
-			(at 83.82 96.52 0)
+			(at 91.44 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4134,6 +4628,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 128.27 104.14 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cae143ff-2dea-402a-82b2-bfc0ba45474c")
+		(property "Reference" "#FLG02"
+			(at 128.27 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 128.27 107.442 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 128.27 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d80b350-c26b-4876-8829-18ad83e75c73")
+		)
+		(instances
+			(project "Thomas-Yip"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 123.19 104.14 0)
 		(unit 1)
@@ -4213,7 +4784,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 186.69 100.33 0)
+		(at 16.51 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4224,7 +4795,7 @@
 		(fields_autoplaced yes)
 		(uuid "d53fed0d-a393-442a-9c48-c0549e22a6c9")
 		(property "Reference" "#PWR018"
-			(at 186.69 106.68 0)
+			(at 16.51 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4235,7 +4806,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 186.69 105.41 0)
+			(at 16.51 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4245,7 +4816,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 100.33 0)
+			(at 16.51 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4256,7 +4827,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 100.33 0)
+			(at 16.51 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4267,7 +4838,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 100.33 0)
+			(at 16.51 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4291,7 +4862,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 100.33 0)
+		(at 80.01 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4302,7 +4873,7 @@
 		(fields_autoplaced yes)
 		(uuid "d59b77cc-7e45-4042-83ce-4a5aec4e6514")
 		(property "Reference" "#PWR09"
-			(at 74.93 106.68 0)
+			(at 80.01 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4313,7 +4884,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 105.41 0)
+			(at 80.01 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4323,7 +4894,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 100.33 0)
+			(at 80.01 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4334,7 +4905,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 100.33 0)
+			(at 80.01 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4345,7 +4916,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 100.33 0)
+			(at 80.01 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4506,7 +5077,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 143.51 96.52 0)
+		(at 138.43 90.17 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4517,7 +5088,7 @@
 		(fields_autoplaced yes)
 		(uuid "d91c0c80-c2f2-4eb9-9992-14729817d4c6")
 		(property "Reference" "L1"
-			(at 144.78 95.2499 0)
+			(at 137.16 91.4401 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4528,7 +5099,7 @@
 			)
 		)
 		(property "Value" "4.7µH"
-			(at 144.78 97.7899 0)
+			(at 137.16 88.9001 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4539,7 +5110,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-50xx_HandSoldering"
-			(at 143.51 96.52 0)
+			(at 138.43 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4550,7 +5121,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 96.52 0)
+			(at 138.43 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4561,7 +5132,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 143.51 96.52 0)
+			(at 138.43 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4572,7 +5143,7 @@
 			)
 		)
 		(property "Digikey Part Number" "587-LSDND5050PKT4R7MMCT-ND"
-			(at 143.51 96.52 0)
+			(at 138.43 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4583,7 +5154,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/taiyo-yuden/LSDND5050PKT4R7MM/16663847"
-			(at 143.51 96.52 0)
+			(at 138.43 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4594,7 +5165,7 @@
 			)
 		)
 		(property "Manufacturer" "Taiyo Yuden"
-			(at 143.51 96.52 0)
+			(at 138.43 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4605,7 +5176,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "LSDND5050PKT4R7M"
-			(at 143.51 96.52 0)
+			(at 138.43 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
