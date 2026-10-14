@@ -36,26 +36,33 @@ bool ETCController::in_range(float value, float low, float high) {
     pedal positions, implausibilities, and motor torque demand.
 */
 void ETCController::update_state() {
-    /*
-        Retrieve both APPS sensor voltages, determine pedal
-        positions from globally set variables in header file, 
-        then calculate a motor torque demand based off the 
-        average if the two positions. 
+    apps1_volts = apps1.read() * 3.3f;
+    apps2_volts = apps2.read() * 3.3f;
 
-        If you want an extra challenge, include the pedal
-        deadzone percentage when determining pedal positions. 
-        If you want to get really difficult, maybe even 
-        include your own pedal mapping to make it non linear!
-    */
+    float raw_pos1 = clamp((apps1_volts - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
+    float raw_pos2 = clamp((apps2_volts - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
 
+    if (raw_pos1 < PEDAL_DEADZONE_PERCENTAGE) {
+        apps1_pos = 0.0f;
+    } else {
+        apps1_pos = clamp((raw_pos1 - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - PEDAL_DEADZONE_PERCENTAGE));
+    }
 
+    if (raw_pos2 < PEDAL_DEADZONE_PERCENTAGE) {
+        apps2_pos = 0.0f;
+    } else {
+        apps2_pos = clamp((raw_pos2 - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - PEDAL_DEADZONE_PERCENTAGE));
+    }
 
-    /*
-        Finish the step listed above.
-    */
-
-    // Here to simplify this function and readability.
     update_implausibilities();
+
+    if (implause_apps_out_of_range || implaus_apps_deviation) {
+        torque_demand = 0;
+    } else {
+        float avg_pos = (apps1_pos + apps2_pos) / 2.0f;
+        float mapped_pos = avg_pos * avg_pos;
+        torque_demand = (int16_t)(mapped_pos * MAX_TORQUE);
+    }
 }
 
 /*
@@ -63,21 +70,30 @@ void ETCController::update_state() {
     include rules T.4.2.4, T.4.2.9 (out of range).
 */
 void ETCController::update_implausibilities() {
-    /*
-        Start of implaus logic checking.
-    */
+    bool out_of_range = !in_range(apps1_volts, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) ||
+                        !in_range(apps2_volts, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE);
 
+    if (out_of_range) {
+        timer_range.start();
+        if (timer_range.elapsed_time().count() >= 100000) {
+            implause_apps_out_of_range = true;
+        }
+    } else {
+        timer_range.stop();
+        timer_range.reset();
+        implause_apps_out_of_range = false;
+    }
 
+    bool deviating = (std::fabs(apps1_pos - apps2_pos) > 0.10f);
 
-    /*
-        End of implaus logic checking.
-    */
-
-    /*
-        Check how long each implaus has been active for and
-        update the actual implaus result if it's been active 
-        for too long.
-    */
-
-    
+    if (deviating) {
+        timer_dev.start();
+        if (timer_dev.elapsed_time().count() >= 100000) {
+            implaus_apps_deviation = true;
+        }
+    } else {
+        timer_dev.stop();
+        timer_dev.reset();
+        implaus_apps_deviation = false;
+    }
 }
