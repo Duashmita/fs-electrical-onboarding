@@ -1066,6 +1066,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Power Electronics Onboarding Google Doc"
+		(exclude_from_sim no)
+		(at 77.978 79.502 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://docs.google.com/document/d/1iW4MuP0Th3IQ3AF9iYU6Qq7mVLO3Fhc-mOpD14-F57k/edit?tab=t.0")
+		)
+		(uuid "9d0bf8f0-4609-4433-8571-27b4fbc9dd6f")
+	)
 	(junction
 		(at 91.44 93.98)
 		(diameter 0)
@@ -4960,7 +4971,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS563201"
+		(property "Value" "TPS563201DDCR"
 			(at 123.19 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5098,7 +5109,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7µH"
+		(property "Value" "LSDND5050PKT4R7M"
 			(at 137.16 88.9001 0)
 			(show_name no)
 			(do_not_autoplace no)
