@@ -47,16 +47,17 @@ int main() {
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
 void send_etc_CAN_messages() {
-    vcu_tpdo_status_data[0] = static_cast<uint8_t>(
+    vcu_tpdo_status_data[0] = (
         (1u << 0) | // ready to drive
         (1u << 1) | // etc motor enabled
-        (static_cast<uint8_t>(etc.getImplaus_1()) << 4) // implaus_apps_out_of_range
+        (static_cast<uint8_t>(etc.getImplaus_1()) << 4) | // implaus_apps_out_of_range
+        (static_cast<uint8_t>(etc.getImplaus2())<< 6)
     );
 
     CANMessage vcu_tpdo_status_msg(403, vcu_tpdo_status_data, 8);
-    // if (can.write(vcu_tpdo_status_msg)) {
-    //     printf("Sending ETC CAN messages\n");
-    // }
+    if (can.write(vcu_tpdo_status_msg)) {
+        printf("Sending ETC CAN messages\n");
+    }
 }
 
 /*

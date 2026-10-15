@@ -7,6 +7,9 @@ to do:
         naming conventions and other best practice things
             make some things const   
         probably a  more efficient way to write most code
+    find out what static_cast is
+
+
 
 things done today
     used clamp in pedal position calc
@@ -56,6 +59,7 @@ binary representation
         if both are true turns to this 00000110
         dbc file tells what position to check for each bool statement
         im still kinda confused on how to put mssg id into the can message
+
         
 
 unsigned vs signed int
