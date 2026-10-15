@@ -67,11 +67,11 @@ apps2_voltage = apps2.read() * 3.3f;
 apps1_pedal_position = clamp((apps1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
 apps2_pedal_position = clamp((apps2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
 
-// deadzone first 3% of pedal travel counts as 0 (resting foot means no torque)
-// then the rest is scaled linearly back to 0-1 so full pedal is still 100% -y
+// deadzone both 3% of pedal travel counts as 0 (resting foot means no torque)
+// then the rest is scaled linearly back to 0-1 so full pedal is still 100% -y -- UPDATED TO BOTH AS PER WHITEBOARD FORMULA
 
-apps1_pedal_position = clamp((apps1_pedal_position - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - PEDAL_DEADZONE_PERCENTAGE));
-apps2_pedal_position = clamp((apps2_pedal_position - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - PEDAL_DEADZONE_PERCENTAGE));
+apps1_pedal_position = clamp((apps1_pedal_position - PEDAL_DEADZONE_PERCENTAGE) / (1.0f -2.0f * PEDAL_DEADZONE_PERCENTAGE));
+apps2_pedal_position = clamp((apps2_pedal_position - PEDAL_DEADZONE_PERCENTAGE) / (1.0f -2.0f * PEDAL_DEADZONE_PERCENTAGE)); 
    
 torque_demand = static_cast<int16_t>(((apps1_pedal_position + apps2_pedal_position) / 2.0f) * MAX_TORQUE);
 
