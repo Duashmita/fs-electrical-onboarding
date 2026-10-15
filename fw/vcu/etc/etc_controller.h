@@ -17,8 +17,8 @@ public:
 //torque request and two safety flags that other code can read (public--main can read) -y
 
 int16_t torque_demand = 0; //final torque request, whole num, starts 0 -y
-bool apps_deviation_implaus = false; //true when the two sensors disagree. start false -y
-bool apps_range_implaus = false; // is true when sensor reads outside ranch -y
+bool apps_deviation_implaus = false; //true when the two sensors disagree. start false but stays true until restart -y
+bool apps_range_implaus = false; // is true when sensor reads outside range, lanches until restart like above -y
  
     /*
         End of public variables
@@ -71,7 +71,7 @@ private:
     static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
     static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
 
-    static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03;
+    static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03f;
 
     static constexpr int16_t MAX_TORQUE = 32767 * 0.1; // Multiplied by 0.1 for controlled 
                                                        // motor torque during onboarding.

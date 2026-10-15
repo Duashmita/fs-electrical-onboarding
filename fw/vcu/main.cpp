@@ -6,6 +6,16 @@ ETCController etc{PC_1, PC_2}; // APPS_1 = PC1 (pin 9), APPS_2 = PC2 (pin 10), f
 
 CAN can{PB_8, PB_9, 500000};
 
+// debug...ticker flags every 200ms, while loop prints -y
+// print f isnt save in ticker because it runs an interupt -y
+
+Ticker print_ticker;
+volatile bool time_to_print = false;
+
+void set_print_flag() {
+    time_to_print = true; // only raise flag here no printing -y
+}
+
 // Predefined for use in main()
 void send_etc_CAN_messages();
 void send_sme_CAN_messages();
@@ -19,20 +29,21 @@ int main() {
     */
 
 
-// debug timer. only print every 200ms
-    Timer print_timer;
-    print_timer.start();
+// debug... call set_print_flag every 200ms -y
+print_ticker.attach(&set_print_flag, 200ms);
+
+// added debiug print below for testing -y
 
     // No need to edit this while loop
     while (true) {
         // Must implement in etc/ subfolder
         etc.update_state();
 
-    // debug. only print every 200ms so screen isnt flooded
-    if (print_timer.elapsed_time() > 200ms) {
+    // debug.. if ticker flags, print once and lower it -y
+    if (time_to_print) {
+        time_to_print = false;
         printf("torque=%d range=%d dev=%d\n",
-            etc.torque_demand, etc.apps_range_implaus, etc.apps_deviation_implaus);
-        print_timer.reset();
+             etc.torque_demand, etc.apps_range_implaus, etc.apps_deviation_implaus);
     }
     }
 

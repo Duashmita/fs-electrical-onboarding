@@ -64,11 +64,15 @@ apps2_voltage = apps2.read() * 3.3f;
 
 // turns each voltage into a 0 to 1 pedal position using its min and max, then clamps it (no higher/lower) -y
  
-apps1_pedal_position = clamp((apps1_voltage - APPS1_MIN_VOLTAGE) /(APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
+apps1_pedal_position = clamp((apps1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
 apps2_pedal_position = clamp((apps2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
 
-// averages the two pedal positions and scales by max_torguw to get the torque request -y
+// deadzone first 3% of pedal travel counts as 0 (resting foot means no torque)
+// then the rest is scaled linearly back to 0-1 so full pedal is still 100% -y
 
+apps1_pedal_position = clamp((apps1_pedal_position - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - PEDAL_DEADZONE_PERCENTAGE));
+apps2_pedal_position = clamp((apps2_pedal_position - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - PEDAL_DEADZONE_PERCENTAGE));
+   
 torque_demand = static_cast<int16_t>(((apps1_pedal_position + apps2_pedal_position) / 2.0f) * MAX_TORQUE);
 
     /*
@@ -89,7 +93,7 @@ void ETCController::update_implausibilities() {
     */
 
 // range check (t.4.2.9/10): broken or shorted sensor = voltage outside its window -y
-bool apps1_in_range = in_range(apps1_voltage, APPS1_MIN_VOLTAGE - APPS_VOLTAGE_TOLERANCE, APPS1_MAX_VOLTAGE + APPS_VOLTAGE_TOLERANCE);
+bool apps1_in_range = in_range(apps1_voltage, APPS1_MIN_VOLTAGE - APPS_VOLTAGE_TOLERANCE, APPS1_MAX_VOLTAGE + APPS_VOLTAGE_TOLERANCE); 
 bool apps2_in_range = in_range(apps2_voltage, APPS2_MIN_VOLTAGE - APPS_VOLTAGE_TOLERANCE, APPS2_MAX_VOLTAGE + APPS_VOLTAGE_TOLERANCE);
 
 bool out_of_range = !apps1_in_range || !apps2_in_range;
@@ -124,9 +128,13 @@ bool deviating = fabsf(apps1_pedal_position - apps2_pedal_position) > APPS_DEVIA
         apps_range_timer.reset();
     }
 
-// flags only turn on after the problem has lasted more than 100 ms (T.4.2.5) -y
-    apps_deviation_implaus = apps_deviation_timer.elapsed_time() > APPS_TIME_LIMIT;
-    apps_range_implaus = apps_range_timer.elapsed_time() > APPS_TIME_LIMIT;
+// flags turn on after the problem has lasted more than 100 ms (T.4.2.5), then latch (stay true until restart) -y
+    if (chrono::duration_cast<chrono::milliseconds>(apps_deviation_timer.elapsed_time()) > APPS_TIME_LIMIT) {
+        apps_deviation_implaus = true;
+    }
+    if (chrono::duration_cast<chrono::milliseconds>(apps_range_timer.elapsed_time())> APPS_TIME_LIMIT) {
+        apps_range_implaus = true;
+    }
 
 // stop motor power while either implausibility is active -y
     if (apps_range_implaus || apps_deviation_implaus) {
