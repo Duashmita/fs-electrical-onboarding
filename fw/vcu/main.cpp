@@ -12,7 +12,7 @@ void send_sme_CAN_messages();
 
 int main() {
     etc.my_timer.start(); // start the controller's timer
-    
+
     /*
         Make send_CAN messages loop consistently
         at 20hz (20 messages / second)
@@ -34,6 +34,8 @@ int main() {
     VCU_ETC_READY_TO_DRIVE & VCU_ETC_MOTOR_ENABLED
     set to 1, and VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
+
+    RTD AND MOTOR SHOULD BE DEPENDENT ON IMPLAUS
 */
 void send_etc_CAN_messages() {}
 
