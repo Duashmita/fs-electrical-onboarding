@@ -1,5 +1,5 @@
-Schematic is in template.kicad_sh
+Schematic is in template/template.kicad_sh
 
-PCB is in template.kicad_pcb
+PCB is in template/template.kicad_pcb
 
-Parts selected, work, analysis, ect. in Rakendu-Ruta-PE-Onboarding.pdf
+Parts selected, work, analysis, ect. in template/Rakendu-Ruta-PE-Onboarding.pdf
