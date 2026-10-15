@@ -86,13 +86,21 @@ void ETCController::update_implausibilities() {
     float APPS1_reading = myread_1.read();
     float APPS2_reading = myread_2.read();
 
-    Timer duration_implaus_ms; // in milliseconds
-    bool active_implaus = false;
+    // T.4.2.9
+    if (!in_range(APPS1_reading, 0.0, 1.0) || !in_range(APPS2_reading, 0.0, 1.0)) {
+        motor_torque_demand = 0;
+        implaus_T429 = true;
+    } else {
+        implaus_T429 = false;
+    }
 
+    Timer duration_implaus_ms; // in milliseconds
+
+    // T.4.2.4
     if (std::abs(APPS1_reading - APPS2_reading) > 0.1) {
         
-        if (!active_implaus) { // implaus currently not active
-            active_implaus = true;
+        if (!implaus_T424) { // implaus currently not active
+            implaus_T424 = true;
             duration_implaus_ms.start();
         } else { // implaus currently active
             if ((duration_implaus_ms.elapsed_time().count() / 1000) > 100) {
@@ -101,7 +109,7 @@ void ETCController::update_implausibilities() {
         }
 
     } else {
-        active_implaus = false;
+        implaus_T424 = false;
         // ^^ no currently active implaus
     }
 

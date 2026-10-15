@@ -17,6 +17,8 @@ public:
     float motor_torque_demand; // will be modified continuously by
                                //    update_state()
     Timer my_timer; // timer for implausibility check
+    bool implaus_T429;
+    bool implaus_T424;
     
 
     /*
