@@ -12,16 +12,21 @@ ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin)
     
 }
 
+ETCController::State ETCController::get_state() {
+    ScopedLock<Mutex> lock(state_mutex);
+    return {torque_demand, range_fault_persistent, deviation_fault_persistent};
+}
+
 int16_t ETCController::get_torque_demand() {
-    return torque_demand;
+    return get_state().torque_demand;
 }
 
 bool ETCController::get_apps_out_of_range() {
-    return apps_out_of_range;
+    return get_state().apps_out_of_range;
 }
 
 bool ETCController::get_apps_deviation() {
-    return apps_deviation;
+    return get_state().apps_deviation;
 }
 
 /* 
@@ -53,6 +58,7 @@ bool ETCController::in_range(float value, float low, float high) {
     pedal positions, implausibilities, and motor torque demand.
 */
 void ETCController::update_state() {
+    ScopedLock<Mutex> lock(state_mutex);
     /*
         Retrieve both APPS sensor voltages, determine pedal
         positions from globally set variables in header file, 
@@ -167,8 +173,7 @@ void ETCController::update_implausibilities() {
         range_fault_persistent = false;
     }
 
-    if (apps_out_of_range || apps_deviation ||
-        range_fault_persistent || deviation_fault_persistent) {
+    if (range_fault_persistent || deviation_fault_persistent) {
         torque_demand = 0;
     }
     

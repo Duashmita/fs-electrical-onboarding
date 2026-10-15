@@ -16,6 +16,13 @@ public:
         Start of public variables
     */
 
+    struct State {
+        int16_t torque_demand;
+        bool apps_out_of_range;
+        bool apps_deviation;
+    };
+
+    State get_state();
     int16_t get_torque_demand();
     bool get_apps_out_of_range();
     bool get_apps_deviation();
@@ -35,6 +42,7 @@ private:
     /*
         Start of private variables
     */
+    Mutex state_mutex;
     AnalogIn apps1;
     AnalogIn apps2;
     
