@@ -135,6 +135,7 @@ void ETCController::update_implausibilities() {
 //     implaus3_timer.stop();
 //     implaus3_timer.reset();
 //    } //fault if apps2 is outside range
+//seperate implaus for each apps is better but fsae doesnt look for that
 
    //implaus 2
    if ((apps_1_pedal_position - apps_2_pedal_position) > 0.1) {

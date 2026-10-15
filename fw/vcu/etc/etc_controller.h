@@ -43,16 +43,16 @@ private:
             //should this ^^^ be 1 item or should  it be grouped with other items?
             //SG_ VCU_BRAKE_PRESSSURE_FRONT : 16|16@1+ (1,0) [0|65535] "psi" Vector__XXX
             //^^ how do i break this up into seperate items?
-    uint8_t VCU_TPDO_STATUS[8] = {
-        00000001, 
-        00000001, 
-        00000000, 
-        00000000, 
-        00000001, 
-        00000000, 
-        00000001, 
-        00000000
-    };
+    // uint8_t VCU_TPDO_STATUS[8] = {
+    //     00000001, //ready to drive
+    //     00000001, //    motor enabled
+    //     00000000, //make void -  i think this skips this message
+    //     00000000,//skip
+    //     00000001, //apps out of range
+    //     00000000, //skip
+    //     00000001, //apps deviation
+    //     00000000
+    // }; //kinda correct but not really
    //input variables
     float apps1_voltage = 0.0f;
     float apps2_voltage = 0.0f;

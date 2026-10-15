@@ -21,6 +21,54 @@ types of faults
     pedal positions should not be changing quickly in opposite directions  - if this happens 10% diff check catches it
     10% difference between post-offset pedal positions  - kinda done need to add pedal offset calc.
 
+binary representation
+    bit single binary digit
+    packaged in 8
+        8 bits is a byte
+    base 2
+    each place increases by 8
+    little endian
+        right to left
+    big endian
+        left to right
+    << n shifts right n times
+    >> shifts left n times
+        if flows past 8 either left or right, truncate
+    xor - exclusive or
+        only one can be true
+    or 
+        both or one can be true
+    useful for storing multiple flags in one byte
+    file permision
+        3 num - dictate who can do what
+            first num - owner capabilites
+            second num - group capabilities
+            third num - everyone else capabilites
+        kinda irrelevant notes
+            7 - 111
+                read, write, execute
+            6 - 110
+                read, write, can't execute
+            4 - 100 
+                read, cant write, cant execute
+        bool1 << 1 
+        |bool << 2
+        if both are true turns to this 00000110
+        dbc file tells what position to check for each bool statement
+        im still kinda confused on how to put mssg id into the can message
+        
+
+unsigned vs signed int
+    signed  
+        can be pos, neg, or 0
+        no defined overflow
+        uses most significant bit
+        all values are signed unless specified
+    unsigned
+        can only be pos
+        overflows to 0
+        to be unsigned, needs specification
+
 components info  
     vcu - functions like cpu
     hal - interface between high level and low level systems  - not really sure what this does
