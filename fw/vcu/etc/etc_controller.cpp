@@ -116,6 +116,14 @@ bool deviating = fabsf(apps1_pedal_position - apps2_pedal_position) > APPS_DEVIA
         apps_deviation_timer.reset();
     }
 
+    // range timer: keep counting while a sensor is out of range, reset when both are fine -y
+    if (out_of_range) {
+        apps_range_timer.start();
+    } else {
+        apps_range_timer.stop();
+        apps_range_timer.reset();
+    }
+
 
 
     
