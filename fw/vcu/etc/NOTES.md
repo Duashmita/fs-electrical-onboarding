@@ -39,6 +39,9 @@
 ## 10/14/26 and 10/15/26
     - working on update_implausibilities()
     - tried compiling main, found lots of #include errors >> struggled for a bit with including file paths, then jackson suggested i delete the build folder and reconfigure cmake
-    - ^^this took a solid hour, but it's successfully reconfigured now
-    - 
+    - ^^this took a solid hour, but now successfully reconfigured
+    
+    - wrote update_implausibilities()
+    - added member variables (booleans) for both types of implausibilities
+
         
