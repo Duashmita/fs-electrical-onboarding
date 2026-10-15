@@ -29,6 +29,10 @@ bool ETCController::getImplaus_1() {
     return(implaus_1);
 };
 
+bool ETCController::getImplaus2() {
+    return(implaus_2);
+};
+
 /*
     Simple function to write which returns a bool of true or false
     depending on whether low <= value <= high is true.
@@ -41,14 +45,26 @@ bool ETCController::in_range(float value, float low, float high) {
 void ETCController::apps_1_pedal_position_calc(int apps1_voltage , int apps_1_volt_increment) {
     apps1_voltage = ETCController::clamp(apps1_voltage , APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE);
     apps_1_pedal_position = (apps1_voltage - APPS1_MIN_VOLTAGE) / (apps_1_volt_increment);
+    if (apps_1_pedal_position >= 97) {
+        apps_1_pedal_position = 100;
+    };
+    if (apps_1_pedal_position <= 3) {
+        apps_1_pedal_position = 0;
+    };
 }
 
 void ETCController::apps_2_pedal_position_calc(int apps2_voltage , int apps_2_volt_increment) {
     apps2_voltage = ETCController::clamp(apps2_voltage , APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE);
     apps_2_pedal_position = (apps2_voltage - APPS2_MIN_VOLTAGE) / (apps_2_volt_increment);
+    if (apps_2_pedal_position >= 97) {
+        apps_2_pedal_position = 100;
+    };
+    if (apps_2_pedal_position <= 3) {
+        apps_2_pedal_position = 0;
+    };
 }
 
-void ETCController::calculate_torque(int apps_1_pedal_position, int apps_2_pedal_position) {
+void ETCController::calc_torque(int apps_1_pedal_position, int apps_2_pedal_position) {
     torque_apps_1 = (apps_1_pedal_position / 100) * MAX_TORQUE;
     torque_apps_2 = (apps_2_pedal_position / 100) * MAX_TORQUE;
     calculated_torque = (torque_apps_1 + torque_apps_2) / 2;
@@ -75,7 +91,7 @@ void ETCController::update_state() {
     if (!gen_faulting) {
         apps_1_pedal_position_calc(apps1_voltage, apps_1_volt_increment);
         apps_2_pedal_position_calc(apps2_voltage, apps_2_volt_increment);
-        calculate_torque(apps_1_pedal_position, apps_2_pedal_position);
+        calc_torque(apps_1_pedal_position, apps_2_pedal_position);
     } else {
         calculated_torque = 0;
     }
