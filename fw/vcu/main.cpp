@@ -62,4 +62,17 @@ void send_etc_CAN_messages() {
     message with SME_THROTL_TorqueDemand set to the
     torque demand determined by the ETC.
 */
-void send_sme_CAN_messages() {}
+void send_sme_CAN_messages() {
+    // 8-byte buffer
+    uint8_t payload[8] = {0};
+
+
+    // pack the bits...
+    // using little-endian here (lower bytes first)
+    payload[0] = static_cast<uint8_t>(etc.motor_torque_demand & 0xFF);
+    payload[1] = static_cast<uint8_t>((etc.motor_torque_demand >> 8) & 0xFF);
+
+    // transmit the CAN message
+    can.write(CANMessage(0x186, reinterpret_cast<const char*>(payload), 8));
+
+}
