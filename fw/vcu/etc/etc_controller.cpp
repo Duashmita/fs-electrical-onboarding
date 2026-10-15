@@ -4,6 +4,7 @@
 
 #include "etc_controller.h"
 #include <cmath>
+#include <chrono>
 
 // Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) 
@@ -69,6 +70,19 @@ void ETCController::update_state() {
 
     pedal_position = (apps1_position + apps2_position) / 2.0f;
 
+    if (pedal_position <= PEDAL_DEADZONE_PERCENTAGE) {
+        pedal_position = 0.0f;
+    } else {
+        pedal_position = clamp(
+            (pedal_position - PEDAL_DEADZONE_PERCENTAGE) /
+            (1.0f - PEDAL_DEADZONE_PERCENTAGE)
+        );
+    }
+
+    torque_demand = static_cast<int16_t>(
+        pedal_position * MAX_TORQUE
+    );
+
     /*
         Finish the step listed above.
     */
@@ -86,19 +100,17 @@ void ETCController::update_implausibilities() {
         Start of implaus logic checking.
     */
 
-    bool apps1_invalid = !in_range(
-        apps1_voltage,
-        APPS1_MIN_VOLTAGE,
-        APPS1_MAX_VOLTAGE
-    );
+    apps_out_of_range =
+        !in_range(apps1_voltage,
+                  APPS1_MIN_VOLTAGE,
+                  APPS1_MAX_VOLTAGE) ||
+        !in_range(apps2_voltage,
+                  APPS2_MIN_VOLTAGE,
+                  APPS2_MAX_VOLTAGE);
 
-    bool apps2_invalid = !in_range(
-        apps2_voltage,
-        APPS2_MIN_VOLTAGE,
-        APPS2_MAX_VOLTAGE
-    );
+    apps_deviation =
+        std::fabs(apps1_position - apps2_position) > 0.1f;
 
-    apps_out_of_range = apps1_invalid || apps2_invalid;
 
     /*
         End of implaus logic checking.
@@ -110,5 +122,25 @@ void ETCController::update_implausibilities() {
         for too long.
     */
 
+    if (apps_deviation) {
+        if (!deviation_timer_active) {
+            deviation_timer.reset();
+            deviation_timer.start();
+            deviation_timer_active = true;
+        }
+
+        deviation_fault_persistent =
+            deviation_timer.elapsed_time() > std::chrono::milliseconds(100);
+    } else {
+        deviation_timer.stop();
+        deviation_timer.reset();
+        deviation_timer_active = false;
+        deviation_fault_persistent = false;
+    }
+
+    if (apps_out_of_range || apps_deviation ||
+        range_fault_persistent || deviation_fault_persistent) {
+        torque_demand = 0;
+    }
     
 }

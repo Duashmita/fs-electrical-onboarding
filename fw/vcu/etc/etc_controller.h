@@ -6,6 +6,8 @@
 #define ETC_CONTROLLER_H
 
 #include "mbed.h"
+#include <cstdint>
+
 
 class ETCController {
 public:
@@ -44,6 +46,19 @@ private:
 
     bool apps_out_of_range = false;
     bool apps_deviation = false;    
+ 
+    bool range_timer_active = false;
+    bool deviation_timer_active = false;
+
+    Timer range_timer;
+    Timer deviation_timer;
+ 
+    bool range_fault_persistent = false;
+    bool deviation_fault_persistent = false;
+  
+    int16_t torque_demand = 0;
+
+
     /*
         End of private variables
     */
