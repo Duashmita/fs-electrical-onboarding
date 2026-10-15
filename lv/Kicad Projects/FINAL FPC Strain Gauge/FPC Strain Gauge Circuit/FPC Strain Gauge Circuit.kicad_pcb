@@ -18,8 +18,8 @@
 	)
 	(layers
 		(0 "F.Cu" signal "Signal_Top")
-		(4 "In1.Cu" power "GND")
-		(6 "In2.Cu" power "3V3")
+		(4 "In1.Cu" power "AGND")
+		(6 "In2.Cu" power "3V3_A")
 		(2 "B.Cu" signal "Signal_Bottom")
 		(9 "F.Adhes" user "F.Adhesive")
 		(11 "B.Adhes" user "B.Adhesive")
@@ -122,6 +122,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_57555555)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -6326,6 +6327,49 @@
 		(layer "F.Cu")
 		(net "Net-(R10-Pad1)")
 		(uuid "f80f8a67-5800-4f2d-8f86-daeda64578cf")
+	)
+	(zone
+		(net "AGND")
+		(layer "In1.Cu")
+		(uuid "39d72fc5-3af5-4098-bf12-aac3f9bbfb04")
+		(name "GND")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0.508)
+		)
+		(min_thickness 0.25)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 120.379 66.679) (xy 120.396 76.679) (xy 143.379 76.679) (xy 143.379 66.679)
+			)
+		)
+	)
+	(zone
+		(net "+3V3_A")
+		(layer "In2.Cu")
+		(uuid "812c1338-1106-4371-a705-2a367563816c")
+		(name "PWR")
+		(hatch edge 0.5)
+		(priority 1)
+		(connect_pads
+			(clearance 0.508)
+		)
+		(min_thickness 0.25)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 120.379 76.679) (xy 143.379 76.679) (xy 143.379 66.679) (xy 120.379 66.679)
+			)
+		)
 	)
 	(embedded_fonts no)
 	(embedded_files

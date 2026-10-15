@@ -14,6 +14,202 @@
 		(comment 3 "${COMMENT2}")
 	)
 	(lib_symbols
+		(symbol "Device:NetTie_3_Tee"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "NT"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_3_Tee"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Net tie, 3 pins, tee"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NetTie_3_Tee_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_3_Tee_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3VA"
 			(power global)
 			(pin_numbers
@@ -154,74 +350,58 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 54.61 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "27e100ae-43dd-4d79-86b6-e21e7695c356")
-	)
-	(wire
-		(pts
-			(xy 54.61 35.56) (xy 54.61 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "244b0f7e-7df0-45bb-b3a0-41637cf43911")
-	)
-	(wire
-		(pts
-			(xy 54.61 35.56) (xy 54.61 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2666a829-cd33-4788-8611-8a0500f6bb86")
-	)
-	(wire
-		(pts
-			(xy 48.26 35.56) (xy 54.61 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43b03b82-4576-4c41-932e-8fe5420cf62c")
-	)
-	(wire
-		(pts
-			(xy 41.91 31.75) (xy 54.61 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "665b26a0-9189-4bbf-8dd6-bfbd00fe6801")
-	)
-	(wire
-		(pts
-			(xy 54.61 39.37) (xy 41.91 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1082e65-6193-46ef-80f9-b2014ac70660")
-	)
-	(label "R1"
-		(at 41.91 39.37 0)
+	(text "Copper Trace of ~350 ohms"
+		(exclude_from_sim no)
+		(at 68.834 47.498 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
 		)
-		(uuid "3b13031c-43ae-41bb-955c-692266ea22a4")
+		(uuid "aab19883-54fa-4c4a-8943-d1ad617eebc3")
 	)
-	(label "Copper Trace of 350 ohms"
-		(at 54.61 39.37 0)
+	(text "Copper Trace of ~350 ohms"
+		(exclude_from_sim no)
+		(at 69.088 27.432 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d25d1226-7916-4bf3-8441-1ab2b26ea01a")
+	)
+	(wire
+		(pts
+			(xy 54.61 21.59) (xy 54.61 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39ec2b01-e4ca-49c7-958f-0909bd555c8a")
+	)
+	(wire
+		(pts
+			(xy 41.91 38.1) (xy 52.07 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c14a857-8002-4fe2-8e41-6b758d0d79a1")
+	)
+	(wire
+		(pts
+			(xy 54.61 40.64) (xy 54.61 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd647590-a459-474a-bf6e-68b8b058b378")
+	)
+	(label "R1"
+		(at 54.61 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -231,17 +411,7 @@
 		(uuid "483c9b9b-9aea-46ff-9c7a-7910683b7c14")
 	)
 	(label "R2"
-		(at 41.91 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7d8e519a-967d-4843-bc45-d1084d8797f2")
-	)
-	(label "Copper Trace of 350 ohms"
-		(at 54.61 31.75 0)
+		(at 54.61 21.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -252,7 +422,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3VA")
-		(at 48.26 35.56 0)
+		(at 41.91 38.1 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -263,7 +433,7 @@
 		(dnp no)
 		(uuid "554ef14e-67be-4dea-9338-e9b3e3a92945")
 		(property "Reference" "#PWR01"
-			(at 48.26 31.75 0)
+			(at 41.91 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -274,7 +444,7 @@
 			)
 		)
 		(property "Value" "+3V3_A"
-			(at 48.26 40.64 0)
+			(at 46.228 40.894 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -284,7 +454,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 35.56 0)
+			(at 41.91 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -295,7 +465,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 35.56 0)
+			(at 41.91 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -306,7 +476,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 48.26 35.56 0)
+			(at 41.91 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -323,6 +493,91 @@
 			(project "FPC Strain Gauge"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_3_Tee")
+		(at 54.61 38.1 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bea0bdb5-e634-4fc9-b634-2919e98bac76")
+		(property "Reference" "NT1"
+			(at 55.88 36.8299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NetTie_3_Tee"
+			(at 55.88 39.3699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-3_SMD_Pad0.5mm"
+			(at 54.61 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Net tie, 3 pins, tee"
+			(at 54.61 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9fec2bcf-c150-40c7-a8b2-b9cf030564bc")
+		)
+		(pin "1"
+			(uuid "05ec424a-ac23-4b8c-be75-1ca55ce8737c")
+		)
+		(pin "3"
+			(uuid "f60bafea-d66a-4dcc-aa33-b3b6b22bcd77")
+		)
+		(instances
+			(project "FPC Strain Gauge"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "NT1")
 					(unit 1)
 				)
 			)
