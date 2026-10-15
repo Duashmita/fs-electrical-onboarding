@@ -93,7 +93,6 @@ void ETCController::update_implausibilities() {
         }
     } else {
         printf("Devation Implaus not detected\n");
-        // deviation_implaus = false;
         deviation_timer.stop();
         deviation_timer.reset();
     }
@@ -110,7 +109,6 @@ void ETCController::update_implausibilities() {
         }
     } else {
         printf("Out of Range Implaus not detected\n");
-        // out_of_range_implaus = false;
         out_of_range_timer.stop();
         out_of_range_timer.reset();
     }
