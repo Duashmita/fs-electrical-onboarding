@@ -47,21 +47,18 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
+   // Read Voltage from the pins on both APPS sensors
    pin1_voltage = pin1.read() * 3.3f;
    pin2_voltage = pin2.read() * 3.3f;
 
-   pos1 = clamp((pin1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
-   pos2 = clamp((pin2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
-   
-    if (pos1 < PEDAL_DEADZONE_PERCENTAGE) {
-        pos1 = 0.0;
-    }
+   // Calculating Pedal Positions with Deadzones Percentages
+   pos1 = clamp((pin1_voltage - (APPS1_MIN_VOLTAGE + PEDAL_DEADZONE_PERCENTAGE)) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE - (2 * PEDAL_DEADZONE_PERCENTAGE)));
+   pos2 = clamp((pin2_voltage - (APPS2_MIN_VOLTAGE + PEDAL_DEADZONE_PERCENTAGE)) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE - (2 * PEDAL_DEADZONE_PERCENTAGE)));
 
-    if (pos2 < PEDAL_DEADZONE_PERCENTAGE) {
-        pos2 = 0.0;
-    }
-
+   // Calculating Average Voltages from both Pedal Positions
    float avg_volt = (pos1 + pos2) / 2.0;
+
+   // Calculating Torque on Motor based on Average Measured Voltage
    calculated_torque = avg_volt * MAX_TORQUE;
    
     /*
