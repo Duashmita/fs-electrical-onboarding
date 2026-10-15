@@ -25,18 +25,6 @@ int main() {
         at 20hz (20 messages / second)
     */
    
-    /*
-   Timer my_timer;
-   int64_t duration_ms = my_timer.elapsed_time().count() / 1000;
-   if (duration_ms > 50) {
-    send_etc_CAN_messages();
-    send_sme_CAN_messages();
-   }
-
-   my_timer.stop();
-   my_timer.reset();
-   */
-
    myTicker.attach(&send_messages, 50ms);
     // No need to edit this while loop
     while (true) {
@@ -93,11 +81,9 @@ void send_sme_CAN_messages() {
 
     // first byte of demand message is set to the Least Significant Byte of 16-bit calculation
     sme_rdpo_throttle_demand[0] = etc.calculated_torque & 0xFF;
-    // printf("Shifted Byte: %u\n", etc.calculated_torque >> 8);
 
     // second byte of demand message is set to Most Significant Byte of 16-bit calculation
     sme_rdpo_throttle_demand[1] = (etc.calculated_torque >> 8) & 0xFF;
-
 
     // create and write CAN message
     CANMessage status_msg{390, sme_rdpo_throttle_demand, 8};

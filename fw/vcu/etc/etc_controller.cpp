@@ -64,17 +64,6 @@ void ETCController::update_state() {
    float avg_volt = (pos1 + pos2) / 2.0;
    calculated_torque = avg_volt * MAX_TORQUE;
    
-   /*
-   if (in_range(pin1_voltage, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && in_range(pin2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE)) {
-        pos1 = clamp((pin1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
-        pos2 = clamp((pin2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
-
-        float avg_volt = (pos1 + pos2) / 2.0;
-
-        calculated_torque = avg_volt * MAX_TORQUE;
-   }
-    */
-
     /*
         Finish the step listed above.
     */
@@ -128,30 +117,6 @@ void ETCController::update_implausibilities() {
         out_of_range_timer.stop();
         out_of_range_timer.reset();
     }
-
-    /*
-    Timer my_Timer;
-
-    // If the difference between pedal sensor positions 1 and 2 is greater than 10 percent start the timer
-    if ((abs(pos1 - pos2) > 0.1)) {
-        my_Timer.start();
-        // compute duration in ms
-        int64_t duration_ms = my_Timer.elapsed_time().count() / 1000;
-
-        // If the condition has been true for more than 100 ms, detect implaus.
-        if (duration_ms > 100) {
-            printf("Implaus detected");
-            READY_TO_DRIVE = false;
-        }
-    }
-
-    // If no implaus detected, stop and reset timer, READY_TO_DRIVE is true
-    printf("No implaus detected.\n");
-    my_Timer.stop();
-    my_Timer.reset();
-    READY_TO_DRIVE = true;
-    */
-
 
     /*
         End of implaus logic checking.
