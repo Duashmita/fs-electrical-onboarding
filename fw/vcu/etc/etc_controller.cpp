@@ -150,6 +150,23 @@ void ETCController::update_implausibilities() {
         deviation_fault_persistent = false;
     }
 
+    if (apps_out_of_range) {
+        if (!range_timer_active) {
+            range_timer.reset();
+            range_timer.start();
+            range_timer_active = true;
+        }
+
+        range_fault_persistent =
+            range_timer.elapsed_time() > std::chrono::milliseconds(100);
+            
+    } else {
+        range_timer.stop();
+        range_timer.reset();
+        range_timer_active = false;
+        range_fault_persistent = false;
+    }
+
     if (apps_out_of_range || apps_deviation ||
         range_fault_persistent || deviation_fault_persistent) {
         torque_demand = 0;
