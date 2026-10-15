@@ -741,6 +741,349 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1668,6 +2011,18 @@
 		)
 	)
 	(rectangle
+		(start 163.83 83.185)
+		(end 213.36 130.175)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "3f01f7b8-3bd7-485c-b28e-9771d7d6b1ff")
+	)
+	(rectangle
 		(start 48.895 102.235)
 		(end 140.97 154.305)
 		(stroke
@@ -1711,7 +2066,17 @@
 		)
 		(uuid "546b2703-3748-42f5-b27f-74cbfce5a293")
 	)
-	(text_box "BSPD (EV.8.7)\nTo Do:\n- Math on Current Sensor -> calculate the voltage coming from the current sensor \nand then create a voltage divider to supply said voltage to the reference pin \nof an op-amp \n\n- 1 second capacitor -> op-amp comparator circuit\n\n- Logic on 0.5 second timing on \"loss of signal\" (EV.8.7.2)\n\n- Relay connection"
+	(text "~1 Second Delay Logic"
+		(exclude_from_sim no)
+		(at 174.752 82.042 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "99fe1b8a-fa2f-4076-8892-2b0fd977ac70")
+	)
+	(text_box "BSPD (EV.8.7)\nTo Do:\n✓ -  Math on Current Sensor -> calculate the voltage coming from the current sensor \nand then create a voltage divider to supply said voltage to the reference pin \nof an op-amp \n\n- 1 second capacitor -> op-amp comparator circuit\n\n- Logic on 0.5 second timing on \"loss of signal\" (EV.8.7.2)\n\n- Relay connection"
 		(exclude_from_sim no)
 		(at 199.39 19.9923 0)
 		(size 30.48 40.7516)
@@ -1731,7 +2096,7 @@
 		)
 		(uuid "62105153-0acd-4dfa-9d9a-6594fd6843fb")
 	)
-	(text_box "Questions:\n- How do we know to use +/- in our current->voltage calculations?\n\n- I calculated for 5mA in the voltage divider in the current sensor, is that good?"
+	(text_box "Questions:\n- How do we know to use +/- in our current->voltage calculations?\n\n- I calculated for 5mA in the voltage divider in the current sensor, is that good?\n\n- Crossing wires (depth) vs going around?"
 		(exclude_from_sim no)
 		(at 231.14 19.685 0)
 		(size 27.305 41.275)
@@ -1752,10 +2117,22 @@
 		(uuid "c442319d-6d80-4d7a-852d-62f749304fc2")
 	)
 	(junction
+		(at 173.99 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05a8a012-f0f1-4b10-b3dc-455de0f6ef54")
+	)
+	(junction
 		(at 83.82 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12f3e0c3-e553-465d-8d39-0de4be70a768")
+	)
+	(junction
+		(at 105.41 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24e84882-aec8-4650-8a02-4e988a1a7113")
 	)
 	(junction
 		(at 119.38 111.76)
@@ -1764,10 +2141,22 @@
 		(uuid "253b2356-c5f2-4d80-8715-de7c2d43e84e")
 	)
 	(junction
+		(at 181.61 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3007638d-b15c-45ae-b7e9-6ce9644fe3f6")
+	)
+	(junction
 		(at 105.41 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30105c5b-6005-4d69-b53d-bb738573a23a")
+	)
+	(junction
+		(at 181.61 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46fc2ad8-a96c-4244-8dcf-d6c5559f6677")
 	)
 	(junction
 		(at 77.47 128.27)
@@ -1776,10 +2165,22 @@
 		(uuid "65f924d3-dade-4ecf-9677-44037fc146e5")
 	)
 	(junction
+		(at 181.61 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b8b67bc-b290-42e4-99a6-726fd6569410")
+	)
+	(junction
 		(at 93.98 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7049fa9f-d4ef-4b04-9e81-8b6e9e55ac87")
+	)
+	(junction
+		(at 181.61 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71733351-468f-4563-802d-31a701146728")
 	)
 	(junction
 		(at 118.11 82.55)
@@ -1788,10 +2189,22 @@
 		(uuid "87fe7664-ab69-4187-b116-b55d7941549e")
 	)
 	(junction
+		(at 166.37 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8bcf578-e40a-446d-8c4d-1c03386f06f5")
+	)
+	(junction
 		(at 119.38 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca4eef50-324f-4961-b3f2-f989f4658e8f")
+	)
+	(junction
+		(at 193.04 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf32b300-edbb-4e0b-8171-2391cda37c5e")
 	)
 	(junction
 		(at 105.41 144.78)
@@ -1807,13 +2220,23 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 83.82) (xy 160.02 72.39)
+			(xy 181.61 116.84) (xy 181.61 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "09882f6a-5a27-41c5-a97e-61099ded71b1")
+		(uuid "0a348de2-0077-4630-8ff7-c683cc0c8df9")
+	)
+	(wire
+		(pts
+			(xy 166.37 95.25) (xy 166.37 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eff4777-5f5e-43c9-8c9b-871f1aeee4dc")
 	)
 	(wire
 		(pts
@@ -1824,6 +2247,16 @@
 			(type default)
 		)
 		(uuid "14ddcd04-1916-4f20-8ec4-07b6c9054a90")
+	)
+	(wire
+		(pts
+			(xy 105.41 133.35) (xy 105.41 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b263255-6150-41f5-90e2-f115717e4ee8")
 	)
 	(wire
 		(pts
@@ -1857,6 +2290,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 100.33) (xy 213.36 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab93467-743d-462e-bba9-b39b40bde21e")
+	)
+	(wire
+		(pts
 			(xy 105.41 53.34) (xy 118.11 53.34)
 		)
 		(stroke
@@ -1867,6 +2310,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 97.79) (xy 187.96 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30b9c510-14e3-437e-88fe-8908256e4c4d")
+	)
+	(wire
+		(pts
 			(xy 105.41 111.76) (xy 90.17 111.76)
 		)
 		(stroke
@@ -1874,6 +2327,16 @@
 			(type default)
 		)
 		(uuid "387845eb-523c-46f4-9023-d340caa2203a")
+	)
+	(wire
+		(pts
+			(xy 193.04 85.09) (xy 193.04 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f8a1bcf-069c-4506-9ca6-d125773f6554")
 	)
 	(wire
 		(pts
@@ -1897,6 +2360,26 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 85.09) (xy 193.04 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46f0417f-d72b-4793-856e-a721c9ce15a2")
+	)
+	(wire
+		(pts
+			(xy 181.61 105.41) (xy 181.61 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47ff7307-70e0-4f9e-aa14-9cd87cf38ba2")
+	)
+	(wire
+		(pts
 			(xy 129.54 130.81) (xy 148.59 130.81)
 		)
 		(stroke
@@ -1904,6 +2387,36 @@
 			(type default)
 		)
 		(uuid "4cdfc47d-7da9-4186-af40-82b0c166800d")
+	)
+	(wire
+		(pts
+			(xy 166.37 85.09) (xy 166.37 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50208f96-813f-4f06-b50d-35c784654b0d")
+	)
+	(wire
+		(pts
+			(xy 223.52 116.84) (xy 223.52 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58a9879d-53bb-4cf9-b446-55231ba1077f")
+	)
+	(wire
+		(pts
+			(xy 105.41 133.35) (xy 114.3 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58ea3493-34ce-4a7f-8800-f511af1916f8")
 	)
 	(wire
 		(pts
@@ -1927,6 +2440,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 69.85) (xy 176.53 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a095227-999e-40a5-be78-9234fe2355c5")
+	)
+	(wire
+		(pts
 			(xy 105.41 142.24) (xy 105.41 144.78)
 		)
 		(stroke
@@ -1947,6 +2470,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 102.87) (xy 166.37 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6009de62-de2a-4eae-bcfc-cdf376522682")
+	)
+	(wire
+		(pts
 			(xy 105.41 111.76) (xy 105.41 116.84)
 		)
 		(stroke
@@ -1957,13 +2490,33 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 67.31) (xy 160.02 67.31)
+			(xy 128.27 67.31) (xy 148.59 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "642a6780-1ac3-4c03-920c-76d352980d58")
+	)
+	(wire
+		(pts
+			(xy 173.99 105.41) (xy 181.61 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64730a4c-3829-48a0-92b6-4ac350e4829a")
+	)
+	(wire
+		(pts
+			(xy 166.37 102.87) (xy 187.96 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67eeecb3-8111-4720-ae6e-4c151ff33420")
 	)
 	(wire
 		(pts
@@ -1987,6 +2540,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 116.84) (xy 193.04 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "742c4c38-d6ae-482f-ad38-87e2bfb765d9")
+	)
+	(wire
+		(pts
 			(xy 77.47 67.31) (xy 83.82 67.31)
 		)
 		(stroke
@@ -1997,7 +2560,17 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 83.82) (xy 148.59 130.81)
+			(xy 193.04 107.95) (xy 193.04 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86447fe0-a947-4bd0-ac8c-95c3647d0d2e")
+	)
+	(wire
+		(pts
+			(xy 148.59 72.39) (xy 148.59 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2017,6 +2590,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 95.25) (xy 181.61 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91934634-f6cc-429c-9a73-412d0799f5b1")
+	)
+	(wire
+		(pts
 			(xy 83.82 67.31) (xy 83.82 74.93)
 		)
 		(stroke
@@ -2024,6 +2607,26 @@
 			(type default)
 		)
 		(uuid "92ce8a22-c2e7-4056-9b67-f2f6aebfb9dc")
+	)
+	(wire
+		(pts
+			(xy 181.61 97.79) (xy 181.61 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "943b57db-0c2a-4787-a3b9-4d0f2b407282")
+	)
+	(wire
+		(pts
+			(xy 166.37 85.09) (xy 193.04 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99cf07cd-01f4-4834-944a-34ae7c0bc749")
 	)
 	(wire
 		(pts
@@ -2047,6 +2650,26 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 85.09) (xy 173.99 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a555d4dd-1f7e-4c0b-ba3f-cd6c937e19f4")
+	)
+	(wire
+		(pts
+			(xy 222.25 100.33) (xy 223.52 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b25f19a2-12aa-4e32-8863-e424f8dcdeac")
+	)
+	(wire
+		(pts
 			(xy 73.66 128.27) (xy 77.47 128.27)
 		)
 		(stroke
@@ -2054,6 +2677,16 @@
 			(type default)
 		)
 		(uuid "b6b6f427-d457-4f10-9095-85f20d09f01b")
+	)
+	(wire
+		(pts
+			(xy 166.37 113.03) (xy 166.37 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b93b3cf4-ea63-404a-8a25-054747da926c")
 	)
 	(wire
 		(pts
@@ -2097,6 +2730,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 99.06) (xy 173.99 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd3a095b-d96d-4956-8174-ba76a7785230")
+	)
+	(wire
+		(pts
 			(xy 118.11 53.34) (xy 118.11 59.69)
 		)
 		(stroke
@@ -2124,6 +2767,36 @@
 			(type default)
 		)
 		(uuid "cfa1b1e4-4fbe-4903-972e-fc93d3d3f22d")
+	)
+	(wire
+		(pts
+			(xy 181.61 114.3) (xy 181.61 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d25c7584-6f6f-4530-9109-015390f47e8e")
+	)
+	(wire
+		(pts
+			(xy 181.61 85.09) (xy 181.61 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2700304-14d3-4a6a-b1bf-8a6e957eff4c")
+	)
+	(wire
+		(pts
+			(xy 220.98 100.33) (xy 222.25 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d50d4075-9e8f-4c2b-94f1-170896d4fbbe")
 	)
 	(wire
 		(pts
@@ -2187,7 +2860,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 124.46) (xy 105.41 134.62)
+			(xy 105.41 124.46) (xy 105.41 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2394,6 +3067,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 181.61 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "093d7742-d78a-4692-b352-6274bd720a23")
+		(property "Reference" "R6"
+			(at 184.15 90.1699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "144.3"
+			(at 184.15 92.7099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 179.832 91.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 181.61 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 181.61 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 181.61 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 181.61 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 181.61 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f54028ca-fae8-4f6b-b2cd-2b3f7c10638a")
+		)
+		(pin "2"
+			(uuid "a8e91bbc-29e9-4ab3-a74e-ed305a338409")
+		)
+		(instances
+			(project "Op-Amp Based Comparator"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:AD8001AN")
 		(at 120.65 67.31 0)
 		(unit 1)
@@ -2487,6 +3286,132 @@
 			(project "Op-Amp Based Comparator"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 166.37 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d2efdc6-948c-476e-b445-82b74225b17b")
+		(property "Reference" "R4"
+			(at 168.91 90.1699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 168.91 92.7099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 164.592 91.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 166.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 166.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 166.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 166.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 166.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "29d34d7a-9f53-4759-9bb0-c930024316ae")
+		)
+		(pin "1"
+			(uuid "3ec25550-c0c7-4793-98b2-ed6829f2a8c9")
+		)
+		(instances
+			(project "Op-Amp Based Comparator"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -2733,6 +3658,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 223.52 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "455c1b35-524c-4208-b83b-6870861b80e8")
+		(property "Reference" "#PWR07"
+			(at 223.52 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 223.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ace934ca-e8b1-40ae-9048-d39c28e525e3")
+		)
+		(instances
+			(project "Op-Amp Based Comparator"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 105.41 69.85 0)
 		(unit 1)
@@ -2845,6 +3848,110 @@
 			(project "Op-Amp Based Comparator"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 173.99 95.25 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d03a073-8733-412f-bb92-b2d15a6ccd44")
+		(property "Reference" "D1"
+			(at 176.53 93.9799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D"
+			(at 176.53 96.5199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 173.99 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 173.99 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 173.99 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10896ed9-fbed-4b3c-b10e-87d3fef2ba56")
+		)
+		(pin "2"
+			(uuid "ffeb97a4-ff7f-44c7-8e66-f29721fffe81")
+		)
+		(instances
+			(project "Op-Amp Based Comparator"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -3128,7 +4235,7 @@
 	)
 	(symbol
 		(lib_id "Relay:Relay_SPST-NO")
-		(at 213.36 83.82 0)
+		(at 228.6 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3139,7 +4246,7 @@
 		(fields_autoplaced yes)
 		(uuid "82617375-960a-46e9-8baa-3e15ba70a91c")
 		(property "Reference" "K1"
-			(at 224.79 82.5499 0)
+			(at 240.03 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3150,7 +4257,7 @@
 			)
 		)
 		(property "Value" "Relay_SPST-NO"
-			(at 224.79 85.0899 0)
+			(at 240.03 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3161,7 +4268,7 @@
 			)
 		)
 		(property "Footprint" "Relay_THT:Relay_SPST_Zettler-AZSR131"
-			(at 224.79 85.09 0)
+			(at 240.03 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3173,7 +4280,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 83.82 0)
+			(at 228.6 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3184,7 +4291,7 @@
 			)
 		)
 		(property "Description" "Relay SPST, normally open, EN50005"
-			(at 213.36 83.82 0)
+			(at 228.6 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3195,7 +4302,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 213.36 83.82 0)
+			(at 228.6 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3206,7 +4313,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 213.36 83.82 0)
+			(at 228.6 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3217,7 +4324,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 213.36 83.82 0)
+			(at 228.6 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3228,7 +4335,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 213.36 83.82 0)
+			(at 228.6 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3386,6 +4493,229 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 217.17 100.33 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9af6cbd3-596f-4ce8-9cf9-d0da0f58713d")
+		(property "Reference" "R7"
+			(at 217.17 93.98 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 217.17 96.52 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 217.17 102.108 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 217.17 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 217.17 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 217.17 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 217.17 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 217.17 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ee11043-dc85-488a-b849-c25e0fa72567")
+		)
+		(pin "2"
+			(uuid "8d33e070-729a-472b-8bf2-e6f86e54284b")
+		)
+		(instances
+			(project "Op-Amp Based Comparator"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:AD8001AN")
+		(at 195.58 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a024498c-3156-4297-bdda-7ee8de11384e")
+		(property "Reference" "U5"
+			(at 207.01 93.9098 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AD8001AN"
+			(at 207.01 96.4498 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 193.04 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8001.pdf"
+			(at 199.39 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Current Feedback Amplifier, 800 MHz, 50mW, DIP-8"
+			(at 195.58 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cfcddff6-f3b9-4aa9-b5cb-40d0c72b0063")
+		)
+		(pin "2"
+			(uuid "fae57ad9-2c72-4f9e-b14d-ef983d6a68b5")
+		)
+		(pin "5"
+			(uuid "7e84b368-eff9-4986-91fa-037b823e0952")
+		)
+		(pin "4"
+			(uuid "72ec1545-3473-4f29-a8db-460a374eb25b")
+		)
+		(pin "8"
+			(uuid "d8702dd7-5363-463d-a429-a203ed2e0b02")
+		)
+		(pin "7"
+			(uuid "53a91d76-f11c-44ee-b98f-d71b22d2af17")
+		)
+		(pin "6"
+			(uuid "96783668-e651-4d50-9b32-39439f0f2924")
+		)
+		(pin "3"
+			(uuid "cdfe6764-954a-4a21-bc0b-3953c718e921")
+		)
+		(instances
+			(project "Op-Amp Based Comparator"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 119.38 111.76 0)
 		(unit 1)
@@ -3458,6 +4788,132 @@
 			(project "Op-Amp Based Comparator"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 166.37 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af4ffb74-9560-4184-a041-cd45687d12cf")
+		(property "Reference" "R5"
+			(at 168.91 107.9499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 168.91 110.4899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 164.592 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 166.37 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 166.37 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 166.37 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 166.37 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 166.37 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ad3524c-1f95-40d7-8eb9-e7e89d35da17")
+		)
+		(pin "2"
+			(uuid "20e4e26c-0aef-4932-a85c-512e2838ac10")
+		)
+		(instances
+			(project "Op-Amp Based Comparator"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3543,7 +4999,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC2G08")
-		(at 175.26 69.85 0)
+		(at 163.83 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3554,7 +5010,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc1a47c3-44b6-42fd-a7ba-5b263cad491f")
 		(property "Reference" "U3"
-			(at 173.9789 59.69 0)
+			(at 162.5489 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3564,7 +5020,7 @@
 			)
 		)
 		(property "Value" "74LVC2G08"
-			(at 173.9789 62.23 0)
+			(at 162.5489 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3574,7 +5030,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-74A-5_1.55x2.9mm_P0.95mm"
-			(at 175.26 69.85 0)
+			(at 163.83 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3585,7 +5041,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 175.26 69.85 0)
+			(at 163.83 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3596,7 +5052,7 @@
 			)
 		)
 		(property "Description" "Dual AND Gate, Low-Voltage CMOS"
-			(at 175.26 69.85 0)
+			(at 163.83 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3634,6 +5090,210 @@
 			(project "Op-Amp Based Comparator"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 181.61 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e231ebf7-4f2c-40ab-9c48-9f21d1aac67c")
+		(property "Reference" "#PWR08"
+			(at 181.61 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 181.61 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 181.61 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a867b009-3e99-4b53-ae72-931f280273df")
+		)
+		(instances
+			(project "Op-Amp Based Comparator"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 181.61 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e86fcf90-82b0-4cef-b686-2547997d35b2")
+		(property "Reference" "C1"
+			(at 185.42 109.2199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10"
+			(at 185.42 111.7599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 182.5752 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 181.61 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 181.61 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 181.61 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 181.61 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 181.61 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc0f06ec-3571-4076-92be-9786f35a2424")
+		)
+		(pin "2"
+			(uuid "c0a824a8-108f-4b82-8958-198f8599340b")
+		)
+		(instances
+			(project "Op-Amp Based Comparator"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C1")
 					(unit 1)
 				)
 			)
