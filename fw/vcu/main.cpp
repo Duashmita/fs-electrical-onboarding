@@ -12,7 +12,9 @@ void send_etc_CAN_messages();
 void send_sme_CAN_messages();
 void send_BOTH_CAN_messages();
 
-Ticker my_ticker;
+Ticker my_ticker_1;
+Ticker my_ticker_2;
+
 
 
 int main() {
@@ -22,7 +24,8 @@ int main() {
         Make send_CAN messages loop consistently
         at 20hz (20 messages / second)
     */
-   my_ticker.attach(&send_BOTH_CAN_messages, 50ms); //Sends both CAN message at 20Hz
+   my_ticker_1.attach(&send_etc_CAN_messages, 50ms); //Sends 1st CAN message at 20Hz
+   my_ticker_2.attach(&send_sme_CAN_messages, 50ms); //Sends 2nd CAN message at 20Hz
 
 
 
@@ -88,8 +91,3 @@ void send_sme_CAN_messages() {
 }
 
 
-
-void send_BOTH_CAN_messages() {
-    send_etc_CAN_messages();
-    send_sme_CAN_messages();
-}
