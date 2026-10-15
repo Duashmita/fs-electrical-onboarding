@@ -3,6 +3,7 @@
 //
 
 #include "etc_controller.h"
+#include <cmath>
 
 // Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin)   
@@ -67,7 +68,8 @@ void ETCController::update_state() {
 
     float avg_pedal_pos = (pedal_pos_1 + pedal_pos_2) / 2.0;
 
-    float motor_torque_demand = avg_pedal_pos * MAX_TORQUE;
+    motor_torque_demand = avg_pedal_pos * MAX_TORQUE;
+    // ^^update member variable
 
     // Here to simplify this function and readability.
     update_implausibilities();
@@ -80,7 +82,28 @@ void ETCController::update_state() {
 void ETCController::update_implausibilities() {
     // implaus logic checking:
 
-    
+    // retrieve the APPS sensor voltages..
+    float APPS1_reading = myread_1.read();
+    float APPS2_reading = myread_2.read();
+
+    Timer duration_implaus_ms; // in milliseconds
+    bool active_implaus = false;
+
+    if (std::abs(APPS1_reading - APPS2_reading) > 0.1) {
+        
+        if (!active_implaus) { // implaus currently not active
+            active_implaus = true;
+            duration_implaus_ms.start();
+        } else { // implaus currently active
+            if ((duration_implaus_ms.elapsed_time().count() / 1000) > 100) {
+                motor_torque_demand = 0;
+            }
+        }
+
+    } else {
+        active_implaus = false;
+        // ^^ no currently active implaus
+    }
 
     /*
         Check how long each implaus has been active for and

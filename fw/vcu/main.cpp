@@ -11,8 +11,8 @@ void send_etc_CAN_messages();
 void send_sme_CAN_messages();
 
 int main() {
-    printf("Hello World!!\n");
-
+    etc.my_timer.start(); // start the controller's timer
+    
     /*
         Make send_CAN messages loop consistently
         at 20hz (20 messages / second)

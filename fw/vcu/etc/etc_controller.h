@@ -16,6 +16,7 @@ public:
 
     float motor_torque_demand; // will be modified continuously by
                                //    update_state()
+    Timer my_timer; // timer for implausibility check
     
 
     /*
@@ -36,6 +37,8 @@ private:
 
     AnalogIn myread_1; // APPS1 reading
     AnalogIn myread_2; // APPS2 reading
+
+    
 
     /*
         End of private variables
