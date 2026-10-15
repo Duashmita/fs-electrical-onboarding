@@ -19,11 +19,21 @@ int main() {
     */
 
 
+// debug timer. only print every 200ms
+    Timer print_timer;
+    print_timer.start();
 
     // No need to edit this while loop
     while (true) {
         // Must implement in etc/ subfolder
         etc.update_state();
+
+    // debug. only print every 200ms so screen isnt flooded
+    if (print_timer.elapsed_time() > 200ms) {
+        printf("torque=%d range=%d dev=%d\n",
+            etc.torque_demand, etc.apps_range_implaus, etc.apps_deviation_implaus);
+        print_timer.reset();
+    }
     }
 
     return 0;
