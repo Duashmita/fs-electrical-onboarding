@@ -1,12 +1,35 @@
 Pretty simple, just recording the parts that I'm considering.
+Change of plans because the previous buck ic was not very good. 
+
+Buck IC:
+  TPS542025DDCR
+  https://www.digikey.com/en/products/detail/texas-instruments/TPS542025DDCR/28738814
+  - $1.22
+  - primarily chose this for containing both high and low side mofset, relatively cheap, small, and having a fixed current output
+    - tradeoff for this is output voltage needs to be adjusted through a network of resistor dividers
+  - has overcurrent protection, particularly to continue low side mofset cycle if current exceeds limit
+  - ok price
+  - 2.9mm (L) x 2.8mm (W) x 1.1mm (H)
+
+Capacitors:
+C_bootstrap:
+  GRM155R71H104KE14D
+  - https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220
+C_out:
+  GRM32EC81C476ME15L
+  - https://www.digikey.com/en/products/detail/murata-electronics/GRM32EC81C476ME15L/4905631
+C_decoupling:
+  GRM188R61C106MA73D
+  - http://digikey.com/en/products/detail/murata-electronics/GRM188R61C106MA73D/3900480
+
+NOT USED ANYMORE/BAD ANALYSIS
+
 Buck IC:
 1 - ADP2302ARDZ-5.0-R7
   https://www.digikey.com/en/products/detail/analog-devices-inc/ADP2302ARDZ-5-0-R7/2606527
-  - 
   - 5V, 2A output
   - 700 kHz switching frequency 
-  - good price, has a list of suggested inductors and other parts(sweet)
-  - maybe on the big side? need to double check
+  - kind of expensive looking back, 
 2 - LM22676TJ-5.0/NOPB
   https://www.digikey.com/en/products/detail/texas-instruments/LM22676TJ-5-0-NOPB/1951968
   - 5V, 3A(more power baby)
