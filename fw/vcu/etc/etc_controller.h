@@ -15,7 +15,9 @@ public:
     */
 
     int16_t calculated_torque;
-    bool READY_TO_DRIVE;
+    bool READY_TO_DRIVE = true;
+    bool deviation_implaus = false;
+    bool out_of_range_implaus = false;
 
     /*
         End of public variables
@@ -36,6 +38,8 @@ private:
     AnalogIn pin1, pin2;
     float pin1_voltage, pin2_voltage;
     float pos1, pos2;
+    Timer deviation_timer;
+    Timer out_of_range_timer;
 
     /*
         End of private variables
