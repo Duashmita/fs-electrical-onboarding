@@ -3,6 +3,7 @@
 //
 
 #include "etc_controller.h"
+#include <cmath>
 
 // Assign appropriate GPIO objects depending on pin parameters
 
@@ -92,6 +93,10 @@ bool apps1_in_range = in_range(apps1_voltage, APPS1_MIN_VOLTAGE - APPS_VOLTAGE_T
 bool apps2_in_range = in_range(apps2_voltage, APPS2_MIN_VOLTAGE - APPS_VOLTAGE_TOLERANCE, APPS2_MAX_VOLTAGE + APPS_VOLTAGE_TOLERANCE);
 
 bool out_of_range = !apps1_in_range || !apps2_in_range;
+
+// deviation check (T.4.2.4): sensors diagree by more than 10% of pedal travel -y
+bool deviating = fabsf(apps1_pedal_position - apps2_pedal_position) > APPS_DEVIATION_LIMIT;
+
     /*
         End of implaus logic checking.
     */
@@ -101,6 +106,17 @@ bool out_of_range = !apps1_in_range || !apps2_in_range;
         update the actual implaus result if it's been active 
         for too long.
     */
+
+    // deviation timer: keep counting while sensors disagree, reset when they agree -y
+
+    if (deviating) {
+        apps_deviation_timer.start();
+    } else {
+        apps_deviation_timer.stop();
+        apps_deviation_timer.reset();
+    }
+
+
 
     
 }
