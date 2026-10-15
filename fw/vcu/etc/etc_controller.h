@@ -31,9 +31,19 @@ private:
     /*
         Start of private variables
     */
-
+    AnalogIn apps1;
+    AnalogIn apps2;
     
+    float apps1_voltage = 0.0f;
+    float apps2_voltage = 0.0f;
 
+    float apps1_position = 0.0f;
+    float apps2_position = 0.0f;
+
+    float pedal_position = 0.0f;
+
+    bool apps_out_of_range = false;
+    bool apps_deviation = false;    
     /*
         End of private variables
     */
