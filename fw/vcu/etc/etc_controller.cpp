@@ -94,7 +94,7 @@ bool apps2_in_range = in_range(apps2_voltage, APPS2_MIN_VOLTAGE - APPS_VOLTAGE_T
 
 bool out_of_range = !apps1_in_range || !apps2_in_range;
 
-// deviation check (T.4.2.4): sensors diagree by more than 10% of pedal travel -y
+// deviation check (T.4.2.4): sensors disagree by more than 10% of pedal travel -y
 bool deviating = fabsf(apps1_pedal_position - apps2_pedal_position) > APPS_DEVIATION_LIMIT;
 
     /*
@@ -125,11 +125,11 @@ bool deviating = fabsf(apps1_pedal_position - apps2_pedal_position) > APPS_DEVIA
     }
 
 // flags only turn on after the problem has lasted more than 100 ms (T.4.2.5) -y
-apps_deviation_implaus = apps_deviation_timer.elapsed_time() > APPS_TIME_LIMIT;
-apps_range_implaus = apps_range_timer.elapsed.time() > APPS_TIME_LIMIT;
+    apps_deviation_implaus = apps_deviation_timer.elapsed_time() > APPS_TIME_LIMIT;
+    apps_range_implaus = apps_range_timer.elapsed_time() > APPS_TIME_LIMIT;
 
-// stop moter power while either implausibility is active -y
-if (apps_range_implaus || apps_deviation_implaus) {
-    torque_demand = 0;
+// stop motor power while either implausibility is active -y
+    if (apps_range_implaus || apps_deviation_implaus) {
+        torque_demand = 0;
 }
 }
