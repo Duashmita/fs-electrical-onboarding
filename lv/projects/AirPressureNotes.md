@@ -64,3 +64,24 @@ HSPPAD143C
 - Building off of the theory that I2C is viable with the introduction of multiplexing, this sensor is a promising candidate for several reasons
 - Aside from the benefits and drawbacks of sticking to I2C, the pure specifications make it ideal including a 0.2% accuracy rating for an increased operating pressure range (4.35 - 29.01PSI range)
 - Similar connection design makes it ideal for implementation, given its surface board mount design
+
+# Considering Luca's Feedback
+- "With spi all devices share sck,pico,poci and you just need one extra cs per device"
+    - sck, pico, and poci are all SPI pins that are shared, with PICO and POCI being the bidirection communication method for devices
+        - PICO: Peripheral in / controller out
+        - POCI: Peripheral out / controller in
+        - sck is just clock
+    - CS, or chip select is what needs to be duplicated, as it's the pin that determines which peripheral device (each sensor) is receiving from PICO
+        - As Luca said, it's only one additional CS pin per device as each CS pin is held high until the peripheral needs to be addressed, in which case it's set to low
+    - https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/chip-select-cs - Source for SPI pinout information, alongside a few other articles for clarification
+    - "Which is feasible with a demultiplexer or without depending on the number of sensors"
+        - Makes sense as this would provide as a means to interact with more devices by controlling a larger set of CS pins (thanks CSE-12 for making this easy to understand)
+- "With i2c you can also use an i2c controlled switch in a tree or linear"
+    - As far I as understand, it's another approach to creating multiple I2C buses, like the aforementioned multiplexing approach I proposed. The MUX allows for using multiple I2C buses at the same time, but the switcher is preferable in terms of variable voltage delivery. That being said, variable voltage shouldn't be required if I'm using the same kind of sensor along all the buses as they would all have the same voltage draw.
+    - Tree versus linear is how the different switches or MUXs are connected, in this case I imagine tree would work well with MUX implementation for ease of implementation (less switch controlling design I think)
+- "There are also address shifters I think"
+    - This is something that I actually considered but omitted because as far as I understand, it would require a second board for each and every sensor before interfacing with the I2C bus in order to appropriately configure the bus. I consider 
+- "So combining a sensor with address pins and a switch or address shifters is viable as well"
+    - I couldn't find a viable sensor with address pins based on the specifications of the original, so out of all of these I think the multiplexer or switch would provide the most viable connection scheme for I2C implementation
+
+
