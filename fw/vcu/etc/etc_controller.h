@@ -19,6 +19,9 @@ public:
     Timer my_timer; // timer for implausibility check
     bool implaus_T429;
     bool implaus_T424;
+    Timer duration_implaus_T424_ms; // in milliseconds
+    Timer duration_implaus_T429_ms; // in milliseconds
+    bool implausibility_occurred = false;
     
 
     /*

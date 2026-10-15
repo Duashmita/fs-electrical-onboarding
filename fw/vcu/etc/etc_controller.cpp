@@ -60,7 +60,9 @@ void ETCController::update_state() {
     // retrieve the APPS sensor voltages..
     float voltage_1 = myread_1.read() * 3.3;
     float voltage_2 = myread_2.read() * 3.3;
-    // ^^ both multiplied by microcontroller reference voltage                                   
+    // ^^ both multiplied by microcontroller reference voltage  
+    
+    // 
 
     // convert to float \in [0.0, 1.0]
     float pedal_pos_1 = (voltage_1 - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE);
@@ -80,31 +82,46 @@ void ETCController::update_state() {
     include rules T.4.2.4, T.4.2.9 (out of range).
 */
 void ETCController::update_implausibilities() {
-    // implaus logic checking:
+
+    if (implausibility_occurred) { // if it's happened before
+        motor_torque_demand = 0;
+        return;
+    }
+
+    // ========== implaus logic checking: =======================
 
     // retrieve the APPS sensor voltages..
     float APPS1_reading = myread_1.read();
     float APPS2_reading = myread_2.read();
 
     // T.4.2.9
-    if (!in_range(APPS1_reading, 0.0, 1.0) || !in_range(APPS2_reading, 0.0, 1.0)) {
-        motor_torque_demand = 0;
-        implaus_T429 = true;
-    } else {
-        implaus_T429 = false;
-    }
+    // if out_of_range condition detected:
+    if (!in_range(APPS1_reading, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) || !in_range(APPS2_reading, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE)) {
+        
+        if (!implaus_T429) { // implaus currently not active
+            implaus_T429 = true;
+            duration_implaus_T429_ms.start();
+        } else {
+            if ((duration_implaus_T429_ms.elapsed_time().count() / 1000) > 100) {
+                motor_torque_demand = 0;
+                implausibility_occurred = true;
+            }
+        }
 
-    Timer duration_implaus_ms; // in milliseconds
+    } else {
+        implaus_T429 = false; // if suddenly at < 100 ms, the condition becomes false
+    }  
 
     // T.4.2.4
     if (std::abs(APPS1_reading - APPS2_reading) > 0.1) {
         
         if (!implaus_T424) { // implaus currently not active
             implaus_T424 = true;
-            duration_implaus_ms.start();
+            duration_implaus_T424_ms.start();
         } else { // implaus currently active
-            if ((duration_implaus_ms.elapsed_time().count() / 1000) > 100) {
+            if ((duration_implaus_T424_ms.elapsed_time().count() / 1000) > 100) {
                 motor_torque_demand = 0;
+                implausibility_occurred = true;
             }
         }
 
@@ -119,7 +136,7 @@ void ETCController::update_implausibilities() {
         for too long.
     */
 
-}
+} //end of update_implausibilities()
 
 int main() {
     printf("Hello world!");
