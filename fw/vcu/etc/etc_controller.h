@@ -14,7 +14,9 @@ public:
         Start of public variables
     */
 
-    float motor_torque_demand;
+    float motor_torque_demand; // will be modified continuously by
+                               //    update_state()
+    
 
     /*
         End of public variables
@@ -32,8 +34,8 @@ private:
         Start of private variables
     */
 
-    AnalogIn myread_1;
-    AnalogIn myread_2;
+    AnalogIn myread_1; // APPS1 reading
+    AnalogIn myread_2; // APPS2 reading
 
     /*
         End of private variables

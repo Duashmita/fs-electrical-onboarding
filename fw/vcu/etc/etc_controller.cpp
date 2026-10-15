@@ -57,8 +57,9 @@ void ETCController::update_state() {
     */
 
     // retrieve the APPS sensor voltages..
-    float voltage_1 = myread_1.read();
-    float voltage_2 = myread_2.read();
+    float voltage_1 = myread_1.read() * 3.3;
+    float voltage_2 = myread_2.read() * 3.3;
+    // ^^ both multiplied by microcontroller reference voltage                                   
 
     // convert to float \in [0.0, 1.0]
     float pedal_pos_1 = (voltage_1 - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE);
@@ -77,15 +78,9 @@ void ETCController::update_state() {
     include rules T.4.2.4, T.4.2.9 (out of range).
 */
 void ETCController::update_implausibilities() {
-    /*
-        Start of implaus logic checking.
-    */
+    // implaus logic checking:
 
-
-
-    /*
-        End of implaus logic checking.
-    */
+    
 
     /*
         Check how long each implaus has been active for and
@@ -93,7 +88,6 @@ void ETCController::update_implausibilities() {
         for too long.
     */
 
-    
 }
 
 int main() {
