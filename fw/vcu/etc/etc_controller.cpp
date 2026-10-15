@@ -59,8 +59,8 @@ void ETCController::update_state() {
     */
 
     // get both sensor voltages
-    apps1_voltage = apps1.read_voltage();
-    apps2_voltage = apps2.read_voltage();
+    apps1_voltage = apps1.read() * 3.3f;
+    apps2_voltage = apps2.read() * 3.3f;
 
     // calculate pedal position based off voltage
     apps1_travel = clamp((apps1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
@@ -73,6 +73,7 @@ void ETCController::update_state() {
     if (avg_travel < PEDAL_DEADZONE_PERCENTAGE) {
         avg_travel = 0.0f;
     }
+
 
     // calculate torque
     motor_torque_demand = static_cast<int16_t>(avg_travel * MAX_TORQUE);
@@ -124,7 +125,6 @@ void ETCController::update_implausibilities() {
     } else {
         out_of_range_timer.stop();
         out_of_range_timer.reset();
-        implaus_apps_out_of_range = false;
     }
 
     // deviation implaus check
@@ -135,8 +135,6 @@ void ETCController::update_implausibilities() {
         }
     } else {
         deviation_timer.stop();
-
         deviation_timer.reset();
-        implaus_apps_deviation = false;
     }
 }
