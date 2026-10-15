@@ -15,8 +15,13 @@ public:
     */
 
     
+    bool get_range_implaus(){
+        return APPS_Range_Implausibility_Confirmed;
+    }
 
-
+    bool get_percent_implaus(){
+        return APPS_Percent_Implausibility_Confirmed;
+    }
 
     /*
         End of public variables
