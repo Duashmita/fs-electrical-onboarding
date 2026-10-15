@@ -46,7 +46,16 @@ int main() {
     set to 1, and VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
-void send_etc_CAN_messages() {}
+void send_etc_CAN_messages() {
+    // create 8-byte buffer
+    uint8_t payload[8] = {0};
+
+    // packing the bits -> buffer
+    payload[0] = (1 << 0) | (1 << 1) | (etc.implaus_apps_out_of_range << 4) | (etc.implaus_apps_deviation << 6);
+
+    // construct & transmit the CAN message
+    can.write(CANMessage(0x193, reinterpret_cast<const char*>(payload), 8));
+}
 
 /*
     Must send the SME_RPDO_Throttle_Demand CAN
