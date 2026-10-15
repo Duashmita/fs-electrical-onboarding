@@ -12,6 +12,18 @@ ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin)
     
 }
 
+int16_t ETCController::get_torque_demand() {
+    return torque_demand;
+}
+
+bool ETCController::get_apps_out_of_range() {
+    return apps_out_of_range;
+}
+
+bool ETCController::get_apps_deviation() {
+    return apps_deviation;
+}
+
 /* 
     Nice function to write which returns a wrapped version of the
     value given between 0 and 1 (-0.1 => 0, 10 => 1, 0.3 => 0.3).

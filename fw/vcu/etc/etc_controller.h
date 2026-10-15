@@ -16,7 +16,9 @@ public:
         Start of public variables
     */
 
-
+    int16_t get_torque_demand();
+    bool get_apps_out_of_range();
+    bool get_apps_deviation();
 
     /*
         End of public variables
