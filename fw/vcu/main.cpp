@@ -1,5 +1,6 @@
 #include "iostream"
 #include "etc_controller.h"
+#include "etc_controller.cpp"
 #include "mbed.h"
 #include <cstdio>
 
@@ -16,6 +17,9 @@ void send_sme_CAN_messages(); //just makes them exist to compiler
 
 Ticker send_etc_CAN_messages_ticker;
 Ticker send_sme_CAN_messages_ticker;
+
+uint8_t vcu_tpdo_status_data[8] = {0};
+//need to check if this is good spot to place
 
 int main() {
     printf("Hello World!!\n");
@@ -43,14 +47,17 @@ int main() {
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
 void send_etc_CAN_messages() {
-    CANMessage vcu_tpdo_status_msg();
-    write.vcu_tpdo_status_msg;
+    vcu_tpdo_status_data[0] = static_cast<uint8_t>(
+        (1u << 0) | // ready to drive
+        (1u << 1) | // etc motor enabled
+        (static_cast<uint8_t>(etc.getImplaus_1()) << 4) // implaus_apps_out_of_range
+    );
 
-    
-    // if(can.write(CANMessage(403, VCU_TPDO_STATUS, 8, CANData, CANStandard))) {
+    CANMessage vcu_tpdo_status_msg(403, vcu_tpdo_status_data, 8);
+    // if (can.write(vcu_tpdo_status_msg)) {
     //     printf("Sending ETC CAN messages\n");
     // }
-} //add functionality
+}
 
 /*
     Must send the SME_RPDO_Throttle_Demand CAN

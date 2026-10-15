@@ -25,6 +25,10 @@ float ETCController::clamp(float value, float min, float max) {
 }
 //if not faulting, clamp values, feed into update state
 
+bool ETCController::getImplaus_1() {
+    return(implaus_1);
+};
+
 /*
     Simple function to write which returns a bool of true or false
     depending on whether low <= value <= high is true.

@@ -95,7 +95,7 @@ BO_ 402 VCU_TPDO_PEDAL_TRAVEL: 8 VCU
  SG_ VCU_BRAKE_PEDAL_TRAVEL : 56|8@1+ (1,0) [0|100] "%" Vector__XXX
 
 BO_ 403 VCU_TPDO_STATUS: 8 VCU
-CM_ "single bit messages";
+CM_ "single bit messages" each bit represents a bool;
  SG_ VCU_ETC_READY_TO_DRIVE : 0|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VCU_ETC_MOTOR_ENABLED : 1|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VCU_ETC_RTD_BUTTON_PRESSED : 2|1@1+ (1,0) [0|1] "" Vector__XXX

@@ -24,6 +24,8 @@ public:
         End of public variables
     */
 
+    bool getImplaus_1();
+
     /*
         Public method definitions, don't edit
     */
@@ -53,6 +55,10 @@ private:
     //     00000001, //apps deviation
     //     00000000
     // }; //kinda correct but not really
+    // also dont put in header file private bc it cant be accessed by send_can_mssgs
+
+
+
    //input variables
     float apps1_voltage = 0.0f;
     float apps2_voltage = 0.0f;
