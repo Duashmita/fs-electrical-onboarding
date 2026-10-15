@@ -139,5 +139,4 @@ void ETCController::update_implausibilities() {
         deviation_timer.reset();
         implaus_apps_deviation = false;
     }
-    
 }

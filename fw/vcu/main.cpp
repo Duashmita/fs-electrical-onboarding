@@ -74,5 +74,4 @@ void send_sme_CAN_messages() {
 
     // transmit the CAN message
     can.write(CANMessage(0x186, reinterpret_cast<const char*>(payload), 8));
-
 }
