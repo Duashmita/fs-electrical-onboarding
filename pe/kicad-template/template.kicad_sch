@@ -633,6 +633,186 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "KiCad:L_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0.762 1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "L_Small"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Inductor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_Small_0_1"
+				(arc
+					(start 0 2.032)
+					(mid 0.5058 1.524)
+					(end 0 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.016)
+					(mid 0.5058 0.508)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.5058 -0.508)
+					(end 0 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.016)
+					(mid 0.5058 -1.524)
+					(end 0 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.508)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.508)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "KiCad:MCP6004"
 			(pin_names
 				(offset 0.127)
@@ -1182,7 +1362,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "capacitor:C0603C104M3VACTU"
+		(symbol "outside_symbols:ASPIAIG-S6055-100M-T"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1191,8 +1371,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0 3.81 0)
+			(property "Reference" "L"
+				(at -10.16 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1202,18 +1382,18 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "C0603C104M3VACTU"
-				(at 0 -5.08 0)
+			(property "Value" "ASPIAIG-S6055-100M-T"
+				(at -10.16 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left top)
 				)
 			)
-			(property "Footprint" "C0603C104M3VACTU:CAPC1608X90N"
+			(property "Footprint" "ASPIAIG-S6055-100M-T:IND_ASPIAIG-S6055-100M-T"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1236,7 +1416,7 @@
 					)
 				)
 			)
-			(property "Description" "Capacitor; Ceramic; Cap; 0.100uF; Tol +/-20%; SMT; Vol-Rtg 25V; Y5V | KEMET C0603C104M3VACTU"
+			(property "Description" "Inductor Power Shielded Wirewound 10uH 20% 100KHz Ferrite 3.2A 54mOhm DCR 2424 Automotive T/R"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1248,7 +1428,7 @@
 					(justify bottom)
 				)
 			)
-			(property "DigiKey_Part_Number" "399-C0603C104M3VACTUCT-ND"
+			(property "DigiKey_Part_Number" "535-13620-1-ND"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1260,7 +1440,7 @@
 					(justify bottom)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/C0603C104M3VACTU/Kemet/view-part/?ref=snap"
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/ASPIAIG-S6055-100M-T/Abracon/view-part/?ref=snap"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1272,7 +1452,7 @@
 					(justify bottom)
 				)
 			)
-			(property "MF" "KEMET"
+			(property "MAXIMUM_PACKAGE_HEIGHT" "5.7 mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1284,7 +1464,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Package" "0603 KEMET"
+			(property "Package" "Nonstandard Abracon"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1296,7 +1476,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Check_prices" "https://www.snapeda.com/parts/C0603C104M3VACTU/Kemet/view-part/?ref=eda"
+			(property "Check_prices" "https://www.snapeda.com/parts/ASPIAIG-S6055-100M-T/Abracon/view-part/?ref=eda"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1308,7 +1488,7 @@
 					(justify bottom)
 				)
 			)
-			(property "MP" "C0603C104M3VACTU"
+			(property "STANDARD" "Manufacturer Recommendations"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1320,9 +1500,307 @@
 					(justify bottom)
 				)
 			)
-			(symbol "C0603C104M3VACTU_0_0"
+			(property "PARTREV" "1/16/2020"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MF" "Abracon"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "ASPIAIG-S6055-100M-T"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "Abracon"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "ASPIAIG-S6055-100M-T_0_0"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -5.08 0)
+					(mid -3.81 1.2645)
+					(end -2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 0)
+					(mid -1.27 1.2645)
+					(end 0 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 1.27 1.2645)
+					(end 2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 0)
+					(mid 3.81 1.2645)
+					(end 5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "outside_symbols:TMK107BBJ106MA-T"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 3.8109 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "TMK107BBJ106MA-T"
+				(at 0 -5.0885 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "TMK107BBJ106MA-T:CAPC1709X100N"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "10 µF ±20% 25V Ceramic Capacitor X5R 0603 (1608 Metric)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "DigiKey_Part_Number" "587-6023-1-ND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/TMK107BBJ106MA-T/Taiyo+Yuden/view-part/?ref=snap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MF" "Taiyo Yuden"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Package" "1608 Taiyo Yuden"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/TMK107BBJ106MA-T/Taiyo+Yuden/view-part/?ref=eda"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "TMK107BBJ106MA-T"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "TMK107BBJ106MA-T_0_0"
 				(rectangle
-					(start 0 -1.905)
+					(start 0 -1.9069)
 					(end 0.635 1.905)
 					(stroke
 						(width 0.1)
@@ -1333,7 +1811,7 @@
 					)
 				)
 				(rectangle
-					(start 1.905 -1.905)
+					(start 1.9069 -1.9069)
 					(end 2.54 1.905)
 					(stroke
 						(width 0.1)
@@ -1344,7 +1822,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -2.54 0 0)
 					(length 2.54)
 					(name ""
 						(effects
@@ -1362,7 +1840,7 @@
 					)
 				)
 				(pin passive line
-					(at -2.54 0 0)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name ""
 						(effects
@@ -1852,32 +2330,32 @@
 		)
 	)
 	(junction
-		(at 78.74 71.12)
+		(at 34.29 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69679029-6fa8-475d-8858-8449b7503fae")
 	)
 	(junction
-		(at 146.05 72.39)
+		(at 101.6 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e1e8c60-0c0d-46e0-b095-196204b8b5da")
 	)
 	(junction
-		(at 111.76 72.39)
+		(at 67.31 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4e3db72-782f-415d-8c64-66cae1da9194")
 	)
 	(junction
-		(at 116.84 72.39)
+		(at 72.39 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c39caa57-fd78-4634-8912-33dbedc9a5fe")
 	)
 	(wire
 		(pts
-			(xy 68.58 67.31) (xy 71.12 67.31)
+			(xy 24.13 22.86) (xy 26.67 22.86)
 		)
 		(stroke
 			(width 0)
@@ -1887,7 +2365,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 71.12) (xy 78.74 72.39)
+			(xy 34.29 26.67) (xy 34.29 27.94)
 		)
 		(stroke
 			(width 0)
@@ -1897,7 +2375,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 71.12) (xy 78.74 69.85)
+			(xy 34.29 26.67) (xy 34.29 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1907,7 +2385,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 67.31) (xy 71.12 69.85)
+			(xy 26.67 22.86) (xy 26.67 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1917,7 +2395,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 83.185) (xy 84.455 83.185)
+			(xy 67.31 38.735) (xy 40.005 38.735)
 		)
 		(stroke
 			(width 0)
@@ -1927,7 +2405,7 @@
 	)
 	(wire
 		(pts
-			(xy 84.455 83.185) (xy 84.455 74.93)
+			(xy 40.005 38.735) (xy 40.005 30.48)
 		)
 		(stroke
 			(width 0)
@@ -1937,7 +2415,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.095 74.93) (xy 127 74.93)
+			(xy 80.645 30.48) (xy 82.55 30.48)
 		)
 		(stroke
 			(width 0)
@@ -1947,7 +2425,27 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 72.39) (xy 167.64 69.85)
+			(xy 91.44 90.17) (xy 91.44 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c2c384f-eb7d-4fec-ba63-55ab68b726a6")
+	)
+	(wire
+		(pts
+			(xy 73.66 110.49) (xy 62.23 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cc2f51b-0035-4e7c-a129-690565a9de4b")
+	)
+	(wire
+		(pts
+			(xy 123.19 27.94) (xy 123.19 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1957,7 +2455,27 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 64.77) (xy 78.74 64.77)
+			(xy 65.405 107.95) (xy 65.405 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cdf2018-a51d-4c77-b495-14ac837c74df")
+	)
+	(wire
+		(pts
+			(xy 91.44 80.01) (xy 96.52 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ee72f07-87ae-406b-afe4-5207731b68c8")
+	)
+	(wire
+		(pts
+			(xy 24.13 20.32) (xy 34.29 20.32)
 		)
 		(stroke
 			(width 0)
@@ -1967,7 +2485,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 72.39) (xy 116.84 72.39)
+			(xy 67.31 27.94) (xy 72.39 27.94)
 		)
 		(stroke
 			(width 0)
@@ -1977,7 +2495,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 69.85) (xy 127 69.85)
+			(xy 72.39 25.4) (xy 82.55 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1987,7 +2505,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 67.31) (xy 170.18 67.31)
+			(xy 101.6 22.86) (xy 125.73 22.86)
 		)
 		(stroke
 			(width 0)
@@ -1997,7 +2515,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 72.39) (xy 146.05 72.39)
+			(xy 97.79 27.94) (xy 101.6 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2007,7 +2525,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 72.39) (xy 111.76 72.39)
+			(xy 64.77 27.94) (xy 67.31 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2017,7 +2535,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 81.915) (xy 125.095 81.915)
+			(xy 101.6 37.465) (xy 80.645 37.465)
 		)
 		(stroke
 			(width 0)
@@ -2027,7 +2545,17 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 72.39) (xy 146.05 67.31)
+			(xy 59.69 100.33) (xy 65.405 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81262200-fa9d-40cc-8bf7-a3752afd22c9")
+	)
+	(wire
+		(pts
+			(xy 101.6 27.94) (xy 101.6 22.86)
 		)
 		(stroke
 			(width 0)
@@ -2037,7 +2565,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.095 81.915) (xy 125.095 74.93)
+			(xy 80.645 37.465) (xy 80.645 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2047,7 +2575,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 69.85) (xy 88.9 71.12)
+			(xy 44.45 25.4) (xy 44.45 26.67)
 		)
 		(stroke
 			(width 0)
@@ -2057,7 +2585,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 72.39) (xy 146.05 81.915)
+			(xy 101.6 27.94) (xy 101.6 37.465)
 		)
 		(stroke
 			(width 0)
@@ -2067,7 +2595,17 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 69.85) (xy 170.18 69.85)
+			(xy 73.66 107.95) (xy 65.405 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9743e3f6-8a1e-46b0-8eed-09befe9d0697")
+	)
+	(wire
+		(pts
+			(xy 123.19 25.4) (xy 125.73 25.4)
 		)
 		(stroke
 			(width 0)
@@ -2077,7 +2615,7 @@
 	)
 	(wire
 		(pts
-			(xy 84.455 74.93) (xy 88.9 74.93)
+			(xy 40.005 30.48) (xy 44.45 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2087,7 +2625,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 72.39) (xy 111.76 83.185)
+			(xy 67.31 27.94) (xy 67.31 38.735)
 		)
 		(stroke
 			(width 0)
@@ -2097,7 +2635,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 72.39) (xy 116.84 69.85)
+			(xy 72.39 27.94) (xy 72.39 25.4)
 		)
 		(stroke
 			(width 0)
@@ -2107,7 +2645,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 72.39) (xy 116.84 74.93)
+			(xy 72.39 27.94) (xy 72.39 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2117,7 +2655,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 71.12) (xy 78.74 71.12)
+			(xy 44.45 26.67) (xy 34.29 26.67)
 		)
 		(stroke
 			(width 0)
@@ -2127,7 +2665,7 @@
 	)
 	(symbol
 		(lib_id "KiCad:R_Small")
-		(at 78.74 67.31 180)
+		(at 34.29 22.86 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2138,7 +2676,7 @@
 		(fields_autoplaced yes)
 		(uuid "1027c201-73d7-4edd-8ae1-6c4701ea438a")
 		(property "Reference" "R1"
-			(at 81.28 66.0399 0)
+			(at 36.83 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2149,7 +2687,7 @@
 			)
 		)
 		(property "Value" "24k"
-			(at 81.28 68.5799 0)
+			(at 36.83 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2160,7 +2698,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 78.74 67.31 0)
+			(at 34.29 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2171,7 +2709,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 67.31 0)
+			(at 34.29 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2182,7 +2720,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 78.74 67.31 0)
+			(at 34.29 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2193,7 +2731,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 78.74 67.31 0)
+			(at 34.29 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2204,7 +2742,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 78.74 67.31 0)
+			(at 34.29 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2215,7 +2753,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 78.74 67.31 0)
+			(at 34.29 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2226,7 +2764,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 78.74 67.31 0)
+			(at 34.29 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2253,7 +2791,7 @@
 	)
 	(symbol
 		(lib_id "KiCad:C_Small")
-		(at 116.84 77.47 0)
+		(at 72.39 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2264,7 +2802,7 @@
 		(fields_autoplaced yes)
 		(uuid "2a4cf73b-3331-404f-8fec-051715d87345")
 		(property "Reference" "C1"
-			(at 119.38 76.2062 0)
+			(at 74.93 31.7562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2275,7 +2813,7 @@
 			)
 		)
 		(property "Value" "10nF"
-			(at 119.38 78.7462 0)
+			(at 74.93 34.2962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2286,7 +2824,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3"
-			(at 116.84 77.47 0)
+			(at 72.39 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2297,7 +2835,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 77.47 0)
+			(at 72.39 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2308,7 +2846,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 116.84 77.47 0)
+			(at 72.39 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2319,7 +2857,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 116.84 77.47 0)
+			(at 72.39 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2330,7 +2868,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 116.84 77.47 0)
+			(at 72.39 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2341,7 +2879,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 116.84 77.47 0)
+			(at 72.39 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2352,7 +2890,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 116.84 77.47 0)
+			(at 72.39 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2378,8 +2916,254 @@
 		)
 	)
 	(symbol
+		(lib_id "outside_symbols:ASPIAIG-S6055-100M-T")
+		(at 49.53 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30fa7da8-88b3-4063-8c8d-eb6ca77993ee")
+		(property "Reference" "L1"
+			(at 49.53 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ASPIAIG-S6055-100M-T"
+			(at 49.53 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ASPIAIG-S6055-100M-T:IND_ASPIAIG-S6055-100M-T"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor Power Shielded Wirewound 10uH 20% 100KHz Ferrite 3.2A 54mOhm DCR 2424 Automotive T/R"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DigiKey_Part_Number" "535-13620-1-ND"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/ASPIAIG-S6055-100M-T/Abracon/view-part/?ref=snap"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "5.7 mm"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "Nonstandard Abracon"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/ASPIAIG-S6055-100M-T/Abracon/view-part/?ref=eda"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "1/16/2020"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Abracon"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "ASPIAIG-S6055-100M-T"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Abracon"
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 49.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "883dd9a6-3554-4785-8a55-3adbd928df82")
+		)
+		(pin "2"
+			(uuid "51baab85-8914-4fa2-a8a2-1db53aa681f0")
+		)
+		(instances
+			(project "template"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "KiCad:GND")
-		(at 116.84 80.01 0)
+		(at 72.39 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2390,7 +3174,7 @@
 		(fields_autoplaced yes)
 		(uuid "3f0fd4db-036d-4d10-91bd-ec14aceddf33")
 		(property "Reference" "#PWR02"
-			(at 116.84 86.36 0)
+			(at 72.39 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2401,7 +3185,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 116.84 85.09 0)
+			(at 72.39 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2411,7 +3195,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 80.01 0)
+			(at 72.39 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2422,7 +3206,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 80.01 0)
+			(at 72.39 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2433,7 +3217,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 80.01 0)
+			(at 72.39 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2456,206 +3240,8 @@
 		)
 	)
 	(symbol
-		(lib_id "capacitor:C0603C104M3VACTU")
-		(at 68.58 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "53597507-efd4-4788-ae49-b743dc3b58f4")
-		(property "Reference" "C2"
-			(at 69.85 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C0603C104M3VACTU"
-			(at 69.85 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "capacitor:CAPC1608X90N"
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Capacitor; Ceramic; Cap; 0.100uF; Tol +/-20%; SMT; Vol-Rtg 25V; Y5V | KEMET C0603C104M3VACTU"
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "DigiKey_Part_Number" "399-C0603C104M3VACTUCT-ND"
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/C0603C104M3VACTU/Kemet/view-part/?ref=snap"
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "KEMET"
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "0603 KEMET"
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/C0603C104M3VACTU/Kemet/view-part/?ref=eda"
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "C0603C104M3VACTU"
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Digikey Part Number" ""
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey URL" ""
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 68.58 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9dbad230-3803-4883-906b-4695fdf2b236")
-		)
-		(pin "2"
-			(uuid "2b14a11c-b110-4d2c-9952-3916d786c2aa")
-		)
-		(instances
-			(project "template"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "KiCad:GND")
-		(at 71.12 69.85 0)
+		(at 26.67 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2666,7 +3252,7 @@
 		(fields_autoplaced yes)
 		(uuid "541b527c-8615-4769-81a9-7bb8939d3282")
 		(property "Reference" "#PWR03"
-			(at 71.12 76.2 0)
+			(at 26.67 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2677,7 +3263,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 74.93 0)
+			(at 26.67 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2687,7 +3273,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 69.85 0)
+			(at 26.67 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2698,7 +3284,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 69.85 0)
+			(at 26.67 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2709,7 +3295,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 69.85 0)
+			(at 26.67 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2732,9 +3318,9 @@
 		)
 	)
 	(symbol
-		(lib_id "KiCad:MCP6004")
-		(at 134.62 72.39 0)
-		(unit 2)
+		(lib_id "KiCad:L_Small")
+		(at 57.15 100.33 90)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2742,9 +3328,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7e32b456-072b-4c05-8544-aa3c7d21b703")
-		(property "Reference" "U1"
-			(at 134.62 62.23 0)
+		(uuid "5f9a0ca2-45ae-4e4c-8c01-aa863dadaa16")
+		(property "Reference" "L2"
+			(at 57.15 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2753,8 +3339,8 @@
 				)
 			)
 		)
-		(property "Value" "MCP6004"
-			(at 134.62 64.77 0)
+		(property "Value" "L_Small"
+			(at 57.15 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2763,8 +3349,8 @@
 				)
 			)
 		)
-		(property "Footprint" "formula_slug_footprint_library:SOIC-8_ISO1044BD"
-			(at 133.35 69.85 0)
+		(property "Footprint" ""
+			(at 57.15 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2774,8 +3360,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 135.89 67.31 0)
+		(property "Datasheet" ""
+			(at 57.15 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2785,8 +3371,8 @@
 				)
 			)
 		)
-		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 134.62 72.39 0)
+		(property "Description" "Inductor, small symbol"
+			(at 57.15 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2794,10 +3380,164 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(pin "1"
+			(uuid "96c29dc2-6b76-47a2-b354-3f942b7ec56f")
+		)
+		(pin "2"
+			(uuid "8553efbc-fee1-4094-a9e5-1b5cc0a2bdbb")
+		)
+		(instances
+			(project "template"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "outside_symbols:TMK107BBJ106MA-T")
+		(at 55.88 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69026c88-8e2d-4438-ab45-78a7b2cf5993")
+		(property "Reference" "C2"
+			(at 57.15 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMK107BBJ106MA-T"
+			(at 57.15 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TMK107BBJ106MA-T:CAPC1709X100N"
+			(at 55.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 µF ±20% 25V Ceramic Capacitor X5R 0603 (1608 Metric)"
+			(at 55.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DigiKey_Part_Number" "587-6023-1-ND"
+			(at 55.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TMK107BBJ106MA-T/Taiyo+Yuden/view-part/?ref=snap"
+			(at 55.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Taiyo Yuden"
+			(at 55.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "1608 Taiyo Yuden"
+			(at 55.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/TMK107BBJ106MA-T/Taiyo+Yuden/view-part/?ref=eda"
+			(at 55.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "TMK107BBJ106MA-T"
+			(at 55.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 134.62 72.39 0)
+			(at 55.88 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2808,7 +3548,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 134.62 72.39 0)
+			(at 55.88 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2819,7 +3559,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 134.62 72.39 0)
+			(at 55.88 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2830,7 +3570,131 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 134.62 72.39 0)
+			(at 55.88 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6764f48b-3b2a-4512-b313-919d78542371")
+		)
+		(pin "2"
+			(uuid "39468e10-f170-4635-9f3f-2399046efdbb")
+		)
+		(instances
+			(project "template"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KiCad:MCP6004")
+		(at 90.17 27.94 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e32b456-072b-4c05-8544-aa3c7d21b703")
+		(property "Reference" "U1"
+			(at 90.17 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6004"
+			(at 90.17 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "formula_slug_footprint_library:SOIC-8_ISO1044BD"
+			(at 88.9 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 91.44 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 90.17 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 90.17 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 90.17 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 90.17 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 90.17 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2893,7 +3757,7 @@
 	)
 	(symbol
 		(lib_id "KiCad:GND")
-		(at 167.64 72.39 0)
+		(at 123.19 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2904,7 +3768,7 @@
 		(fields_autoplaced yes)
 		(uuid "95aedfdb-edce-4d22-aabd-05d177f9dae1")
 		(property "Reference" "#PWR04"
-			(at 167.64 78.74 0)
+			(at 123.19 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2915,7 +3779,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 77.47 0)
+			(at 123.19 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2925,7 +3789,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 72.39 0)
+			(at 123.19 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2936,7 +3800,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 72.39 0)
+			(at 123.19 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2947,7 +3811,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 72.39 0)
+			(at 123.19 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2970,8 +3834,87 @@
 		)
 	)
 	(symbol
+		(lib_id "KiCad:GND")
+		(at 96.52 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "978e7d01-460a-4e6c-902a-6615e8af8cc4")
+		(property "Reference" "#PWR05"
+			(at 102.87 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.33 80.0099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba9e6287-d26c-4117-bd81-ec8606847bfc")
+		)
+		(instances
+			(project "template"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "outside_symbols:TS30013-M050QFNR")
-		(at 83.82 113.03 0)
+		(at 73.66 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2982,7 +3925,7 @@
 		(fields_autoplaced yes)
 		(uuid "a58ecb0b-f241-40e0-bb67-f9fff657b185")
 		(property "Reference" "IC1"
-			(at 120.65 106.6098 0)
+			(at 110.49 101.5298 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2992,7 +3935,7 @@
 			)
 		)
 		(property "Value" "TS30013-M050QFNR"
-			(at 120.65 109.1498 0)
+			(at 110.49 104.0698 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3002,7 +3945,7 @@
 			)
 		)
 		(property "Footprint" "QFN50P300X300X100-17N-D"
-			(at 110.49 197.79 0)
+			(at 100.33 192.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3014,7 +3957,7 @@
 			)
 		)
 		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/TS30013-M050QFNR.pdf"
-			(at 110.49 297.79 0)
+			(at 100.33 292.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3026,7 +3969,7 @@
 			)
 		)
 		(property "Description" "Switching Voltage Regulators IC Hi-Eff 3Amp DC/DC Conv 1MHz 5V Outpt"
-			(at 83.82 113.03 0)
+			(at 73.66 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3037,7 +3980,7 @@
 			)
 		)
 		(property "Height" "1"
-			(at 110.49 497.79 0)
+			(at 100.33 492.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3049,7 +3992,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "SEMTECH"
-			(at 110.49 597.79 0)
+			(at 100.33 592.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3061,7 +4004,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "TS30013-M050QFNR"
-			(at 110.49 697.79 0)
+			(at 100.33 692.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3073,7 +4016,7 @@
 			)
 		)
 		(property "Mouser Part Number" "947-TS30013-M050QFNR"
-			(at 110.49 797.79 0)
+			(at 100.33 792.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3085,7 +4028,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Semtech/TS30013-M050QFNR?qs=EumP11lMQtNqZbQJq84sSQ%3D%3D"
-			(at 110.49 897.79 0)
+			(at 100.33 892.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3097,7 +4040,7 @@
 			)
 		)
 		(property "Arrow Part Number" "TS30013-M050QFNR"
-			(at 110.49 997.79 0)
+			(at 100.33 992.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3109,7 +4052,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/ts30013-m050qfnr/semtech"
-			(at 110.49 1097.79 0)
+			(at 100.33 1092.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3118,6 +4061,50 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 73.66 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 73.66 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 73.66 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 73.66 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "15"
@@ -3182,7 +4169,7 @@
 	)
 	(symbol
 		(lib_id "KiCad:R_Small")
-		(at 78.74 74.93 0)
+		(at 34.29 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3193,7 +4180,7 @@
 		(fields_autoplaced yes)
 		(uuid "bf5a4e2d-7b80-4cc7-909a-2172363d2e05")
 		(property "Reference" "R2"
-			(at 81.28 73.6599 0)
+			(at 36.83 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3204,7 +4191,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 81.28 76.1999 0)
+			(at 36.83 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3215,7 +4202,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 78.74 74.93 0)
+			(at 34.29 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3226,7 +4213,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 74.93 0)
+			(at 34.29 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3237,7 +4224,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 78.74 74.93 0)
+			(at 34.29 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3248,7 +4235,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 78.74 74.93 0)
+			(at 34.29 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3259,7 +4246,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 78.74 74.93 0)
+			(at 34.29 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3270,7 +4257,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 78.74 74.93 0)
+			(at 34.29 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3281,7 +4268,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 78.74 74.93 0)
+			(at 34.29 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3308,7 +4295,7 @@
 	)
 	(symbol
 		(lib_id "KiCad:Conn_01x02")
-		(at 63.5 67.31 180)
+		(at 19.05 22.86 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3319,7 +4306,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3851407-5cda-4848-ae12-d07a8fa36877")
 		(property "Reference" "J1"
-			(at 63.5 58.42 0)
+			(at 19.05 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3329,7 +4316,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 63.5 60.96 0)
+			(at 19.05 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3339,7 +4326,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
-			(at 63.5 67.31 0)
+			(at 19.05 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3350,7 +4337,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 67.31 0)
+			(at 19.05 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3361,7 +4348,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 63.5 67.31 0)
+			(at 19.05 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3388,7 +4375,7 @@
 	)
 	(symbol
 		(lib_id "KiCad:MCP6004")
-		(at 96.52 72.39 0)
+		(at 52.07 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3399,7 +4386,7 @@
 		(fields_autoplaced yes)
 		(uuid "d2b3da79-c122-4340-b6a9-f52b546d06db")
 		(property "Reference" "U1"
-			(at 96.52 62.23 0)
+			(at 52.07 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3409,7 +4396,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 96.52 64.77 0)
+			(at 52.07 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3419,7 +4406,7 @@
 			)
 		)
 		(property "Footprint" "formula_slug_footprint_library:SOIC-8_ISO1044BD"
-			(at 95.25 69.85 0)
+			(at 50.8 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3430,7 +4417,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 97.79 67.31 0)
+			(at 53.34 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3441,7 +4428,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 96.52 72.39 0)
+			(at 52.07 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3452,7 +4439,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 96.52 72.39 0)
+			(at 52.07 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3463,7 +4450,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 96.52 72.39 0)
+			(at 52.07 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3474,7 +4461,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 96.52 72.39 0)
+			(at 52.07 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3485,7 +4472,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 96.52 72.39 0)
+			(at 52.07 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3548,7 +4535,7 @@
 	)
 	(symbol
 		(lib_id "KiCad:GND")
-		(at 78.74 77.47 0)
+		(at 34.29 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3559,7 +4546,7 @@
 		(fields_autoplaced yes)
 		(uuid "d9795c01-82e5-4f3b-b92e-acf5fb4f54bb")
 		(property "Reference" "#PWR01"
-			(at 78.74 83.82 0)
+			(at 34.29 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3570,7 +4557,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.74 82.55 0)
+			(at 34.29 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3580,7 +4567,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 77.47 0)
+			(at 34.29 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3591,7 +4578,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 77.47 0)
+			(at 34.29 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3602,7 +4589,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 78.74 77.47 0)
+			(at 34.29 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3626,7 +4613,7 @@
 	)
 	(symbol
 		(lib_id "KiCad:D_Small")
-		(at 106.68 72.39 180)
+		(at 62.23 27.94 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3637,7 +4624,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4270b12-4021-4d48-8e0a-74d8b16e57c7")
 		(property "Reference" "D1"
-			(at 106.68 66.04 0)
+			(at 62.23 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3647,7 +4634,7 @@
 			)
 		)
 		(property "Value" "D_Small"
-			(at 106.68 68.58 0)
+			(at 62.23 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3657,7 +4644,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
-			(at 106.68 72.39 90)
+			(at 62.23 27.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3668,7 +4655,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 72.39 90)
+			(at 62.23 27.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3679,7 +4666,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 106.68 72.39 0)
+			(at 62.23 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3690,7 +4677,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 106.68 72.39 0)
+			(at 62.23 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3701,7 +4688,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 106.68 72.39 0)
+			(at 62.23 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3728,7 +4715,7 @@
 	)
 	(symbol
 		(lib_id "KiCad:Conn_01x02")
-		(at 175.26 67.31 0)
+		(at 130.81 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3739,7 +4726,7 @@
 		(fields_autoplaced yes)
 		(uuid "eb34b0b5-9c1d-43fc-9c4b-b13b145f9c9d")
 		(property "Reference" "J2"
-			(at 177.8 67.3099 0)
+			(at 133.35 22.8599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3750,7 +4737,7 @@
 			)
 		)
 		(property "Value" "PK_HOLD_OUT"
-			(at 177.8 69.8499 0)
+			(at 133.35 25.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3761,7 +4748,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
-			(at 175.26 67.31 0)
+			(at 130.81 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3772,7 +4759,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 67.31 0)
+			(at 130.81 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3783,7 +4770,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 175.26 67.31 0)
+			(at 130.81 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3794,7 +4781,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 175.26 67.31 0)
+			(at 130.81 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3805,7 +4792,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 175.26 67.31 0)
+			(at 130.81 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3816,7 +4803,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 175.26 67.31 0)
+			(at 130.81 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3827,7 +4814,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 175.26 67.31 0)
+			(at 130.81 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
