@@ -38,3 +38,5 @@ Op-Amp Comparator:
 op-amp vs opamp comaparator:
 - op-amp: closed loop w neg feedback
 - op-amp as comparator: open-loop w no feedback
+
+<img width="820" height="546" alt="ECE 171 L 6" src="https://github.com/user-attachments/assets/b9b4fac8-320f-45b7-a60f-f0e089b36c10" />
