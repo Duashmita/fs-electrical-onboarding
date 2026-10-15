@@ -43,13 +43,21 @@ int main() {
 void send_etc_CAN_messages() {
     uint8_t CAN_Message_1[8] = {0}; //8 byte Can Message Initialized to have 64 total bits, that are all 0's for now
 
-    bool range_status = etc.get_range_implaus();
-    bool percent_status = etc.get_percent_implaus();
+    bool Range_Implaus = etc.get_range_implaus();
+    bool Deviation_Implaus = etc.get_percent_implaus();
+    bool VCU_READY_TO_DRIVE = Range_Implaus && Deviation_Implaus; //Contains 1 or 0 indicating weather VCU is ready to drive
+    CAN_Message_1[0] |= VCU_READY_TO_DRIVE; // Packng VCU_ETC_READY_TO_DRIVE into bit 0
 
+    bool Motor_Enabled = true;
+    CAN_Message_1[0] |= (Motor_Enabled << 1); // Packing VCU_ETC_MOTOR_ENABLED into bit 1
 
-    bool VCU_READY_TO_DRIVE = range_status && percent_status; //Contains 1 or 0 indicating weather VCU is ready to drive
-    CAN_Message_1[0] = CAN_Message_1[0] | VCU_READY_TO_DRIVE; // Byte 1 = 0000 0001 or 0000 0000
+    CAN_Message_1[0] |= (Range_Implaus << 3); //Packing VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE into bit 3
 
+    CAN_Message_1[0] |= (Deviation_Implaus << 6); // Packing VCU_ETC_IMPLAUS_APPS_DEVIATION into bit 6
+
+    CANMessage msg(403, CAN_Message_1, 8); //Create can message
+
+    can.write(msg); //Write can message
 
 }
 
@@ -58,7 +66,9 @@ void send_etc_CAN_messages() {
     message with SME_THROTL_TorqueDemand set to the
     torque demand determined by the ETC.
 */
-void send_sme_CAN_messages() {}
+void send_sme_CAN_messages() {
+    
+}
 
 
 
