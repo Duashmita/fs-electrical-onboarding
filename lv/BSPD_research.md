@@ -60,6 +60,7 @@ one comparator for accelerator
 - take the DC signal use a differential amplifier to convert to a single ended signal
 <img width="424" height="297" alt="Screenshot 2026-10-15 at 2 49 04 PM" src="https://github.com/user-attachments/assets/de3e1bd6-eba8-410e-b1fb-77427542ec9b" />
 - Vo from differential amp has to be compared to Vref = 2.5 V in a comparator circuit pre AND gate
-Both comparators connected in an and gate 
+Both comparators connected in an and gate
+- InAmp 
 
 if output 1, then open shut down
