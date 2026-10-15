@@ -41,6 +41,10 @@ op-amp vs opamp comparator:
 
 <img width="820" height="546" alt="ECE 171 L 6" src="https://github.com/user-attachments/assets/b9b4fac8-320f-45b7-a60f-f0e089b36c10" />
 
+- choice of resistors:
+-   R_L > 2k
+-   R_o < 5
+-   input impedance of (-) branch should be abt R1
 
 Overall circuit:
 
