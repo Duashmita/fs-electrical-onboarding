@@ -23,7 +23,7 @@ public:
         return APPS_Percent_Implausibility_Confirmed;
     }
 
-    float get_Motor_Torque_Demand(){
+    int16_t get_Motor_Torque_Demand(){
         return Motor_Torque_Demand;
     }
     /*
@@ -54,7 +54,7 @@ private:
     float Clamped_APPS1_Pedal_Position = 0;
     float Clamped_APPS2_Pedal_Position = 0;
 
-    float Motor_Torque_Demand = 0;
+    int16_t Motor_Torque_Demand = 0;
 
 
 

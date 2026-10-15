@@ -47,15 +47,20 @@ int main() {
 void send_etc_CAN_messages() {
     uint8_t CAN_Message_1[8] = {0}; //8 byte Can Message Initialized to have 64 total bits, that are all 0's for now
 
+    
+    
+
+    
     bool Range_Implaus = etc.get_range_implaus();
     bool Deviation_Implaus = etc.get_percent_implaus();
     bool VCU_READY_TO_DRIVE = Range_Implaus && Deviation_Implaus; //Contains 1 or 0 indicating weather VCU is ready to drive
-    CAN_Message_1[0] |= VCU_READY_TO_DRIVE; // Packng VCU_ETC_READY_TO_DRIVE into bit 0
 
-    bool Motor_Enabled = true;
-    CAN_Message_1[0] |= (Motor_Enabled << 1); // Packing VCU_ETC_MOTOR_ENABLED into bit 1
+    CAN_Message_1[0] |= VCU_READY_TO_DRIVE; // Packng VCU_ETC_READY_TO_DRIVE into bit 0, which is set to 1
 
-    CAN_Message_1[0] |= (Range_Implaus << 3); //Packing VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE into bit 3
+    
+    CAN_Message_1[0] |= (VCU_READY_TO_DRIVE << 1); // Packing VCU_ETC_MOTOR_ENABLED into bit 1, 0 or 1 if there is Implaus
+
+    CAN_Message_1[0] |= (Range_Implaus << 4); //Packing VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE into bit 3
 
     CAN_Message_1[0] |= (Deviation_Implaus << 6); // Packing VCU_ETC_IMPLAUS_APPS_DEVIATION into bit 6
 
@@ -73,15 +78,10 @@ void send_etc_CAN_messages() {
 void send_sme_CAN_messages() {
     uint8_t CAN_Message_2[8] = {0}; //8 byte Can Message Initialized to have 64 total bits, that are all 0's for now
 
-    float Motor_Torque_Demand = etc.get_Motor_Torque_Demand();
+    int16_t Motor_Torque_Demand = etc.get_Motor_Torque_Demand();
 
-    uint16_t Motor_Torque_Rounded = std::round(Motor_Torque_Demand); // 16 bits
-
-    uint8_t Byte_1 = Motor_Torque_Rounded & 0x00FF; //Gives Least Significant Byte    1010 1010 1111 1111 ->  0000 0000 1111 1111
-    CAN_Message_2[0] |= Byte_1;
-
-    uint8_t Byte_2 = (Motor_Torque_Rounded >> 8) & 0xFF00; // 1010 1010 0000 0000 ->  0000 0000 (1010 1010) 
-    CAN_Message_2[1] |= Byte_2;
+    CAN_Message_2[0] = Motor_Torque_Demand & 0xFF;
+    CAN_Message_2[1] = (Motor_Torque_Demand >> 8) & 0xFF;
 
     CANMessage msg(390, CAN_Message_2, 8); //Create can message
 

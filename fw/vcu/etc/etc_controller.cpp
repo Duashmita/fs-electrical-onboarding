@@ -84,6 +84,7 @@ void ETCController::update_state() {
     //Calculate a motor torque demanad
     Motor_Torque_Demand = ((Clamped_APPS1_Pedal_Postion + Clamped_APPS2_Pedal_Postion) / 2.0f) * (MAX_TORQUE);
 
+
     
         
 
@@ -158,6 +159,7 @@ void ETCController::update_implausibilities() {
         
     }
 
+    
     
    
 
