@@ -48,11 +48,13 @@ MS561101BA03-50
 - It also utilized SMD tab termination and the same voltage supply range, allowing its integration to be similar to its predecessor 
 - While it does have I2C support, it does not have the capacity to change addresses due to a lack of the relevant pins (according to its datasheet, it can only be used with other sensors on the same bus if they have different addresses, which would not be the case for duplicate sensors)
 - It does have SPI communication, although despite its higher pin count, does not natively support address-based communication and would require more GPIO from the microcontroller to support each additional sensor
+- https://www.digikey.com/en/products/detail/te-connectivity-measurement-specialties/MS561101BA03-50/5277445
 
 BMP390
 - A successor to the BMP180, it shares the same implementation style and a moderately improved
 - While it is still actively produced, it was out of stock as of 10/12. May or may not be an issue
 - It has both I2C and SPI communication, the former of which has a total of... two possible addresses, depending on the SDO connection, making it not ideal for an array of pressure sensors
+- https://www.digikey.com/en/products/detail/bosch-sensortec/BMP390/16164575
 
 Following these failures, I went back to research I2C and found some interesting information. While I2C does have support for custom addresses in the form of address setting pins (A0-2 typically), most pressure sensors are in fact too small to have this be an option. Instead, they have what I observed with the BMP390, which is having the ability to change a single bit in the address, allowing for two of the same sensor in the same I2C bus. From this approach, comes a few intruiging options:
 
@@ -64,6 +66,7 @@ HSPPAD143C
 - Building off of the theory that I2C is viable with the introduction of multiplexing, this sensor is a promising candidate for several reasons
 - Aside from the benefits and drawbacks of sticking to I2C, the pure specifications make it ideal including a 0.2% accuracy rating for an increased operating pressure range (4.35 - 29.01PSI range)
 - Similar connection design makes it ideal for implementation, given its surface board mount design
+- https://www.digikey.com/en/products/detail/alps-alpine/HSPPAD143C/21721511
 
 # Considering Luca's Feedback
 - "With spi all devices share sck,pico,poci and you just need one extra cs per device"
@@ -84,4 +87,26 @@ HSPPAD143C
 - "So combining a sensor with address pins and a switch or address shifters is viable as well"
     - I couldn't find a viable sensor with address pins based on the specifications of the original, so out of all of these I think the multiplexer or switch would provide the most viable connection scheme for I2C implementation
 
+# Final Selection
+Given the additional information and previous considerations, the ideal implementation would include either I2C or SPI integration in order to have as many sensors as possible, as well as a high quality and range to the data being recorded.
 
+While the BMP390 is an excellent candidate and is still being produced, the fact that it continues to be out of stock at DigiKey hints at the fact that is still being produced may not be accurate or up to date. Instead, the following sensor provides the most flexibility in that it offers both SPI and I2C as integration options, allowing for flexibility with how it is implemented.
+
+PSD0603130
+- A high quality sensor with an accuracy of +-0.35% (as opposed to the original 2%), its pressure range on the low end is the same but is still functional in high pressure environment, something which may be useful for racing applications. What makes it stand out is the aforementioned dual support for I2C and SPI, meaning that it can be initially implemented with SPI, but can be switched over to I2C if more GPIO pins are needed for other applications or if the amount of sensors required exceeds the amount of GPIO pins required (also worth noting that demultiplexing can also expand SPI sensor count, but just like I2C multiplexing it requires an additional component).
+- https://www.digikey.com/en/products/detail/pui-audio-inc/PSD0603130/21778456
+
+# Conclusion
+With all of that being said, all of the aforementioned components can be appropriately utilized as they fall within spec and have a means for interconnectivity for arrays of pressure sensors without using too many GPIO pins. It is worth noting that I didn't seriously consider price as that was not a part of the original specifications, as well as the fact that almost all pressure sensors on DigiKey that fall within spec cost between $5-10.
+
+Final ranking:
+1. PSD0603130
+    - Most flexible with I2C and SPI support
+    - Still in stock
+2. MS561101BA03-50
+    - SPI support means it can be implemented using either one additional GPIO pin per sensor or the inclusion of a demultiplexer for having significantly more sensors
+3. HSPPAD143C
+    - Ranked below the SPI option because although a very high amount of I2C sensors can be implemented using multiplexers and switchers in either a tree or linear setup, the fact that a smaller use case (with no additional hardware) would require two pins per sensor across separate buses makes it less flexible
+4. BMP390
+    - While I imagine this is the most easily implemented as it follows very similar design considerations to the BMP180, just with better specs, the fact that it remains out of stock throughout the duration of this research project makes it a dubious choice
+    - Otherwise, its dual support of I2C and SPI make it a great choice comperable to the current first choice
