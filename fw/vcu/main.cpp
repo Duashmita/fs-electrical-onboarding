@@ -2,7 +2,7 @@
 #include "mbed.h"
 #include <cstdio>
 
-ETCController etc{/* INSERT PIN NAMES FOR APPS 1 & 2 */};
+ETCController etc{PC_1, PC_2}; // APPS_1 = PC1 (pin 9), APPS_2 = PC2 (pin 10), from vcu schematic -y
 
 CAN can{PB_8, PB_9, 500000};
 
