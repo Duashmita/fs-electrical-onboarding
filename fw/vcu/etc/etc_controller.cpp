@@ -124,7 +124,12 @@ bool deviating = fabsf(apps1_pedal_position - apps2_pedal_position) > APPS_DEVIA
         apps_range_timer.reset();
     }
 
+// flags only turn on after the problem has lasted more than 100 ms (T.4.2.5) -y
+apps_deviation_implaus = apps_deviation_timer.elapsed_time() > APPS_TIME_LIMIT;
+apps_range_implaus = apps_range_timer.elapsed.time() > APPS_TIME_LIMIT;
 
-
-    
+// stop moter power while either implausibility is active -y
+if (apps_range_implaus || apps_deviation_implaus) {
+    torque_demand = 0;
+}
 }
