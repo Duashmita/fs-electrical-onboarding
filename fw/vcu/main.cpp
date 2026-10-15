@@ -1,6 +1,7 @@
 #include "etc_controller.h"
 #include "mbed.h"
 #include <cstdio>
+#include <cmath>
 
 ETCController etc{PC_1, PC_2 };
 
@@ -67,7 +68,23 @@ void send_etc_CAN_messages() {
     torque demand determined by the ETC.
 */
 void send_sme_CAN_messages() {
-    
+    uint8_t CAN_Message_2[8] = {0}; //8 byte Can Message Initialized to have 64 total bits, that are all 0's for now
+
+    float Motor_Torque_Demand = etc.get_Motor_Torque_Demand();
+
+    uint16_t Motor_Torque_Rounded = std::round(Motor_Torque_Demand); // 16 bits
+
+    uint8_t Byte_1 = Motor_Torque_Rounded & 0x00FF; //Gives Least Significant Byte    1010 1010 1111 1111 ->  0000 0000 1111 1111
+    CAN_Message_2[0] |= Byte_1;
+
+    uint8_t Byte_2 = (Motor_Torque_Rounded >> 8) & 0xFF00; // 1010 1010 0000 0000 ->  0000 0000 (1010 1010) 
+    CAN_Message_2[1] |= Byte_2;
+
+    CANMessage msg(390, CAN_Message_2, 8); //Create can message
+
+    can.write(msg); //Write can message
+
+
 }
 
 

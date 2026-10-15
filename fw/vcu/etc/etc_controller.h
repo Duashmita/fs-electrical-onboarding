@@ -23,6 +23,9 @@ public:
         return APPS_Percent_Implausibility_Confirmed;
     }
 
+    float get_Motor_Torque_Demand(){
+        return Motor_Torque_Demand;
+    }
     /*
         End of public variables
     */
