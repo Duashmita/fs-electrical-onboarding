@@ -46,8 +46,8 @@
         "silk_line_width": 0.1524,
         "silk_text_italic": false,
         "silk_text_size_h": 1.016,
-        "silk_text_size_v": 1.016,
-        "silk_text_thickness": 0.1524,
+        "silk_text_size_v": 0.5,
+        "silk_text_thickness": 0.125,
         "silk_text_upright": false,
         "zones": {
           "border_display_style": 2,
@@ -873,7 +873,7 @@
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "J1_B6_POWER1,TP1,TP501-509,Q1-2,Q601,FL701-702,C1-41,C201-210,C601,C701-708,U1-3,SW1,J3_B12_POWER1,D1-3,D701-702,#PWR1-11,#PWR201-214,#PWR601,#PWR701-702,J1-9,J701-702,R1-125,R201,R601-602,R701-722,#VREG1-8,L1,#FLG1-13",
+    "used_designators": "#FLG1-13,L1,#VREG1-8,R1-125,R201,R601-602,R701-722,J1-9,J701-702,#PWR1-11,#PWR201-214,#PWR601,#PWR701-702,D1-3,D701-702,J3_B12_POWER1,U1-3,C1-41,C201-210,C601,C701-708,SW1,FL701-702,Q1-2,Q601,TP1,TP501-509,J1_B6_POWER1",
     "variants": []
   },
   "sheets": [
