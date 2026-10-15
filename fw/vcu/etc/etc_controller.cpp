@@ -62,7 +62,13 @@ void ETCController::update_state() {
     float voltage_2 = myread_2.read() * 3.3;
     // ^^ both multiplied by microcontroller reference voltage  
     
-    // 
+    // deadzone work
+    float range1 = APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE;
+    float range2 = APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE;
+
+    float d_1 = range1 * PEDAL_DEADZONE_PERCENTAGE;
+    float d_2 = range2 * PEDAL_DEADZONE_PERCENTAGE;
+
 
     // convert to float \in [0.0, 1.0]
     float pedal_pos_1 = (voltage_1 - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE);
@@ -109,6 +115,8 @@ void ETCController::update_implausibilities() {
         }
 
     } else {
+        duration_implaus_T429_ms.stop();
+        duration_implaus_T429_ms.reset();
         implaus_T429 = false; // if suddenly at < 100 ms, the condition becomes false
     }  
 
@@ -126,8 +134,10 @@ void ETCController::update_implausibilities() {
         }
 
     } else {
+        duration_implaus_T429_ms.stop();
+        duration_implaus_T429_ms.reset();
         implaus_T424 = false;
-        // ^^ no currently active implaus
+        // if suddenly at < 100 ms, the condition becomes false
     }
 
     /*
@@ -137,10 +147,3 @@ void ETCController::update_implausibilities() {
     */
 
 } //end of update_implausibilities()
-
-int main() {
-    printf("Hello world!");
-
-    return 0;
-
-}

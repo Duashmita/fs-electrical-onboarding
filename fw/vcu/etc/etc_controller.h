@@ -14,11 +14,11 @@ public:
         Start of public variables
     */
 
-    float motor_torque_demand; // will be modified continuously by
+    int16_t motor_torque_demand = 0.0; // will be modified continuously by
                                //    update_state()
     Timer my_timer; // timer for implausibility check
-    bool implaus_T429;
-    bool implaus_T424;
+    bool implaus_T429 = false;
+    bool implaus_T424 = false;
     Timer duration_implaus_T424_ms; // in milliseconds
     Timer duration_implaus_T429_ms; // in milliseconds
     bool implausibility_occurred = false;
