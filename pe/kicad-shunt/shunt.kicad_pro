@@ -834,13 +834,13 @@
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "R1",
+    "used_designators": "#PWR1-4,U1,R1-3",
     "variants": []
   },
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
-      ""
+      "shunt"
     ]
   ],
   "text_variables": {
