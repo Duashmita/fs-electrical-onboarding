@@ -2,15 +2,20 @@
 #include "mbed.h"
 #include <cstdio>
 
-PinName PC1, PC2;
-
-ETCController etc{PC1, PC2};
+ETCController etc{PC_1, PC_2};
 
 CAN can{PB_8, PB_9, 500000};
 
 // Predefined for use in main()
 void send_etc_CAN_messages();
 void send_sme_CAN_messages();
+
+void send_messages() {
+    send_etc_CAN_messages();
+    send_sme_CAN_messages();
+}
+
+Ticker myTicker;
 
 int main() {
     printf("Hello World!!\n");
@@ -19,9 +24,20 @@ int main() {
         Make send_CAN messages loop consistently
         at 20hz (20 messages / second)
     */
+   
+    /*
+   Timer my_timer;
+   int64_t duration_ms = my_timer.elapsed_time().count() / 1000;
+   if (duration_ms > 50) {
+    send_etc_CAN_messages();
+    send_sme_CAN_messages();
+   }
 
+   my_timer.stop();
+   my_timer.reset();
+   */
 
-
+   myTicker.attach(&send_messages, 50ms);
     // No need to edit this while loop
     while (true) {
         // Must implement in etc/ subfolder
@@ -38,21 +54,20 @@ int main() {
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
 void send_etc_CAN_messages() {   
-    uint8_t vcu_tpdo_status[8];
-    
-    // initialize byte array to 0;
-    for (int byte = 0; byte < 8; byte++) {
-        vcu_tpdo_status[byte] = {0x00};
-    }
+    uint8_t vcu_tpdo_status[8] = {0};
 
     // sets bit 0 and bit 1 to 1
-    vcu_tpdo_status[0] |= 1 << 0;
-    vcu_tpdo_status[0] |= 1 << 1;
+    vcu_tpdo_status[0] |= etc.READY_TO_DRIVE << 0;
+    vcu_tpdo_status[0] |= etc.READY_TO_DRIVE << 1;
 
-    // sets bit 4 and bit 6 based on implaus detection.
+
+    vcu_tpdo_status[0] |= etc.out_of_range_implaus << 4;
+    vcu_tpdo_status[0] |= etc.deviation_implaus << 6;
+
 
     // set bits 4 and 6 to 0 if no implaus detected.
-    if (etc.READY_TO_DRIVE) {
+    /*
+    if (etc.deviation_implaus || etc.out_of_range_implaus) {
         vcu_tpdo_status[0] &= ~(1 << 4);
         vcu_tpdo_status[0] &= ~(1 << 6);
 
@@ -61,6 +76,7 @@ void send_etc_CAN_messages() {
         vcu_tpdo_status[0] |= 1 << 4;
         vcu_tpdo_status[0] |= 1 << 6;
     }
+    */
 
     // create and write CAN message
     CANMessage status_msg{403, vcu_tpdo_status, 8};
@@ -73,18 +89,14 @@ void send_etc_CAN_messages() {
     torque demand determined by the ETC.
 */
 void send_sme_CAN_messages() {
-    uint8_t sme_rdpo_throttle_demand[8];
+    uint8_t sme_rdpo_throttle_demand[8] = {0};
 
-    // Initialize byte array to 0
-    for (int byte = 0; byte < 8; byte++) {
-        sme_rdpo_throttle_demand[byte] = {0x00};
-    }
+    // first byte of demand message is set to the Least Significant Byte of 16-bit calculation
+    sme_rdpo_throttle_demand[0] = etc.calculated_torque & 0xFF;
+    // printf("Shifted Byte: %u\n", etc.calculated_torque >> 8);
 
-    // first byte of demand message is set to Most Significant Byte of 16-bit calculation
-    sme_rdpo_throttle_demand[0] = (etc.calculated_torque >> 8) & 0xFF;
-
-    // second byte of demand message is set to the Least Significant Byte of 16-bit calculation
-    sme_rdpo_throttle_demand[1] = (etc.calculated_torque & 0xFF);
+    // second byte of demand message is set to Most Significant Byte of 16-bit calculation
+    sme_rdpo_throttle_demand[1] = (etc.calculated_torque >> 8) & 0xFF;
 
 
     // create and write CAN message
