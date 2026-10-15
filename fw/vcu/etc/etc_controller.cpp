@@ -88,14 +88,10 @@ void ETCController::update_state() {
 
     pedal_position = (apps1_position + apps2_position) / 2.0f;
 
-    if (pedal_position <= PEDAL_DEADZONE_PERCENTAGE) {
-        pedal_position = 0.0f;
-    } else {
-        pedal_position = clamp(
-            (pedal_position - PEDAL_DEADZONE_PERCENTAGE) /
-            (1.0f - PEDAL_DEADZONE_PERCENTAGE)
-        );
-    }
+    pedal_position = clamp(
+        (pedal_position - PEDAL_DEADZONE_PERCENTAGE) /
+        (1.0f - 2*PEDAL_DEADZONE_PERCENTAGE)
+    );
 
     torque_demand = static_cast<int16_t>(
         pedal_position * MAX_TORQUE
@@ -142,13 +138,13 @@ void ETCController::update_implausibilities() {
 
     if (apps_deviation) {
         if (!deviation_timer_active) {
-            deviation_timer.reset();
             deviation_timer.start();
             deviation_timer_active = true;
         }
 
-        deviation_fault_persistent =
-            deviation_timer.elapsed_time() > std::chrono::milliseconds(100);
+        const auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(
+            deviation_timer.elapsed_time());
+        deviation_fault_persistent = elapsed.count() > 100;
     } else {
         deviation_timer.stop();
         deviation_timer.reset();
@@ -158,13 +154,13 @@ void ETCController::update_implausibilities() {
 
     if (apps_out_of_range) {
         if (!range_timer_active) {
-            range_timer.reset();
             range_timer.start();
             range_timer_active = true;
         }
 
-        range_fault_persistent =
-            range_timer.elapsed_time() > std::chrono::milliseconds(100);
+        const auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(
+            range_timer.elapsed_time());
+        range_fault_persistent = elapsed.count() > 100;
             
     } else {
         range_timer.stop();

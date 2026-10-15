@@ -75,14 +75,14 @@ void send_etc_CAN_messages(const ETCController::State &state) {
     uint8_t deviation = state.apps_deviation;
 
     // Pack each signal into the correct bit
-    data[0] |= (ready_to_drive & 1) << 0;
-    data[0] |= (motor_enabled & 1) << 1;
-    data[0] |= (out_of_range & 1) << 4;
-    data[0] |= (deviation & 1) << 6;
+    data[0] = (ready_to_drive)
+            | (motor_enabled) << 1
+            | (out_of_range) << 4
+            | (deviation) << 6;
 
     CANMessage msg(
         STATUS_ID,
-        reinterpret_cast<const char*>(data),
+        data,
         STATUS_DLC
     );
 
@@ -100,15 +100,12 @@ void send_sme_CAN_messages(const ETCController::State &state) {
 
     int16_t torque = state.torque_demand;
 
-    // Signed 16-bit little-endian packing
-    uint16_t raw = static_cast<uint16_t>(torque);
-
-    data[0] = raw & 0xFF;
-    data[1] = (raw >> 8) & 0xFF;
+    data[0] = torque & 0xFF;
+    data[1] = (torque >> 8) & 0xFF;
 
     CANMessage msg(
         THROTTLE_ID,
-        reinterpret_cast<const char*>(data),
+        data,
         THROTTLE_DLC
     );
 
