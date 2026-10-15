@@ -36,7 +36,9 @@
             every so often as a rudimentary catch-all before flashing
             onto the car on Thursday (hopefully)
 
-## 10/14/26
+## 10/14/26 and 10/15/26
     - working on update_implausibilities()
+    - tried compiling main, found lots of #include errors >> struggled for a bit with including file paths, then jackson suggested i delete the build folder and reconfigure cmake
+    - ^^this took a solid hour, but it's successfully reconfigured now
     - 
         
