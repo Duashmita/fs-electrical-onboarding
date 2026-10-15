@@ -2,7 +2,8 @@
 #include "mbed.h"
 #include <cstdio>
 
-ETCController etc{/* INSERT PIN NAMES FOR APPS 1 & 2 */};
+// Not ADC1_IN because Mbed OS maps by physical GPIO and pin
+ETCController etc{PC_1, PC_2};
 
 CAN can{PB_8, PB_9, 500000};
 
@@ -18,6 +19,16 @@ int main() {
         at 20hz (20 messages / second)
     */
 
+    // init tickers
+    Ticker etc_can_ticker;
+    Ticker sme_can_ticker;
+
+    float frequency = 20.0f;
+    float period = 1.0f/frequency;
+
+    // attach CAN send functions using period
+    etc_can_ticker.attach(&send_etc_CAN_messages, period);
+    sme_can_ticker.attach(&send_sme_CAN_messages, period);
 
 
     // No need to edit this while loop
