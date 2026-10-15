@@ -30,4 +30,11 @@ Sensors:
 
 What is hall effect:
 - creation of a measurable voltage across an electrical conductor or semi conductor when an electric current flows through
-  it and a macnetic field is applies perpendicular to the current
+  it and a magnetic field is applies perpendicular to the current
+
+Op-Amp Comparator:
+- compares an analog inpput voltage with another analog input voltage and determines which is highest of the two voltages.
+
+op-amp vs opamp comaparator:
+- op-amp: closed loop w neg feedback
+- op-amp as comparator: open-loop w no feedback
