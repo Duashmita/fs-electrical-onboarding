@@ -5,10 +5,10 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin)  {
-    apps1_voltage = AnalogIn(APPS1_pin);
-    apps2_voltage = AnalogIn(APPS2_pin);
-}
+ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) :
+    apps1_voltage(APPS1_pin),
+    apps2_voltage(APPS2_pin)
+  {}
 
 /* 
     Nice function to write which returns a wrapped version of the
@@ -47,21 +47,16 @@ void ETCController::apps_1_pedal_position_calc(int apps1_voltage , int apps_1_vo
     apps_1_pedal_position = (apps1_voltage - APPS1_MIN_VOLTAGE) / (apps_1_volt_increment);
     if (apps_1_pedal_position >= 97) {
         apps_1_pedal_position = 100;
-    };
+    }
     if (apps_1_pedal_position <= 3) {
-        apps_1_pedal_position = 0;
-    };
+        apps_1_pedal_position = 0; //make smoothly start instead of jump after pressed deadzonePercent , start from zero after deadzone Percent is pressed
+    }
 }
-
+//should i use deadzone here or on the avg position that is multiplied by the torque
 void ETCController::apps_2_pedal_position_calc(int apps2_voltage , int apps_2_volt_increment) {
     apps2_voltage = ETCController::clamp(apps2_voltage , APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE);
     apps_2_pedal_position = (apps2_voltage - APPS2_MIN_VOLTAGE) / (apps_2_volt_increment);
-    if (apps_2_pedal_position >= 97) {
-        apps_2_pedal_position = 100;
-    };
-    if (apps_2_pedal_position <= 3) {
-        apps_2_pedal_position = 0;
-    };
+
 }
 
 void ETCController::calc_torque(int apps_1_pedal_position, int apps_2_pedal_position) {
@@ -131,7 +126,7 @@ void ETCController::update_implausibilities() {
 //    }  // fault if values are equal
 
   //implaus 1
-   if (in_range(apps1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) == false || in_range(apps2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE) == false) {
+   if (!in_range(apps1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) || !in_range(apps2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE)) {
     if (!implaus_1) {
             implaus2_timer.start();
     }
@@ -158,7 +153,7 @@ void ETCController::update_implausibilities() {
 //seperate implaus for each apps is better but fsae doesnt look for that
 
    //implaus 2
-   if ((apps_1_pedal_position - apps_2_pedal_position) > 0.1) {
+   if (fabs((apps_1_pedal_position - apps_2_pedal_position)) > 10) {
     if (!implaus_2) {
             implaus2_timer.start();
         }

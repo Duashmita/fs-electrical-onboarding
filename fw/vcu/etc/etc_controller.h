@@ -25,6 +25,7 @@ public:
     */
 
     bool getImplaus_1();
+    bool getImplaus2();
 
     /*
         Public method definitions, don't edit
@@ -87,10 +88,10 @@ private:
     //torque variables
     int16_t torque_apps_1 = 0;
     int16_t torque_apps_2 = 0;
-    int calculated_torque = 0;
+    int16_t calculated_torque = 0;
 
 
-    void calculate_torque(int apps_1_pedal_position, int apps_2_pedal_position);
+    void calc_torque(int apps_1_pedal_position, int apps_2_pedal_position);
 
     void apps_1_pedal_position_calc(int apps1_voltage , int apps_1_volt_increment);
 
