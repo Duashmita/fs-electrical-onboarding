@@ -1,4 +1,5 @@
-#include "PinNames.h"
+#include "InterfaceCAN.h"
+#include "can_helper.h"
 #include "cmsis_os2.h"
 #include "etc_controller.h"
 #include "mbed.h"
@@ -55,12 +56,16 @@ int main() {
 void send_etc_CAN_messages() {
     uint8_t data[8] = {0};
 
-    data[0] |= (1 << 0); 
-    data[0] |= (1 << 1);  
-    data[0] |= (etc.apps_out_of_range_implausible ? 1 : 0) << 4; 
-    data[0] |= (etc.apps_deviation_implausible ? 1 : 0) << 6;    
+    uint8_t bit_zero_value = !(etc.apps_deviation_implausible || etc.apps_out_of_range_implausible);
 
-    can.write(CANMessage(403, data, 8));
+    data[0] = (bit_zero_value << 0) //if either implausibility, make 0, else leave as 1
+            | (bit_zero_value << 1)
+            | etc.apps_out_of_range_implausible << 4
+            | etc.apps_deviation_implausible << 6;   
+            
+    CANMessage send_etc_object{403, data, 8};
+
+    can.write(send_etc_object); 
 }
 
 /*
@@ -69,13 +74,13 @@ void send_etc_CAN_messages() {
     torque demand determined by the ETC.
 */
 void send_sme_CAN_messages() {
-    uint16_t torque = static_cast<uint16_t>(etc.torque_demand);
-
     uint8_t data[8] = {0};
 
-    data[0] = torque & 0xFF;         
-    data[1] = (torque >> 8) & 0xFF;
+    data[0] = etc.torque_demand & 0xFF;         
+    data[1] = (etc.torque_demand >> 8) & 0xFF;
 
-    can.write(CANMessage(390, data, 8));
+    CANMessage send_sme_object{403, data, 8};
+
+    can.write(send_sme_object); 
 
 }

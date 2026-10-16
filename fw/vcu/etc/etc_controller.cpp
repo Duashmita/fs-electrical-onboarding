@@ -52,8 +52,8 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
-    apps1_voltage = apps1.read_voltage();
-    apps2_voltage = apps2.read_voltage();
+    apps1_voltage = apps1.read() * 3.3f; 
+    apps2_voltage = apps2.read() * 3.3f;
 
     // determining pedal position from 0 to 1 by normalizing.
 
@@ -68,7 +68,7 @@ void ETCController::update_state() {
     float average_of_both_positions = (0.5f * (apps1_position + apps2_position));
 
     float deadzone_applied_average = clamp(
-        (average_of_both_positions -  PEDAL_DEADZONE_PERCENTAGE) / (1.0f - PEDAL_DEADZONE_PERCENTAGE)
+        (average_of_both_positions -  PEDAL_DEADZONE_PERCENTAGE) / (1.0f -(2 * PEDAL_DEADZONE_PERCENTAGE))
     );
 
     torque_demand = static_cast<int16_t>(deadzone_applied_average *  MAX_TORQUE);
@@ -110,7 +110,7 @@ void ETCController::update_implausibilities() {
         out_of_range.reset();
     }
 
-    apps_out_of_range_implausible = out_of_range.elapsed_time() > IMPLAUS_TIME_LIMIT;
+    apps_out_of_range_implausible = chrono::duration_cast<chrono::milliseconds>(out_of_range.elapsed_time()) > IMPLAUS_TIME_LIMIT;
 
     if (deviation_now) {
         deviation_timer.start();
@@ -118,7 +118,7 @@ void ETCController::update_implausibilities() {
         deviation_timer.stop();
         deviation_timer.reset();
     }
-    apps_deviation_implausible = deviation_timer.elapsed_time() > IMPLAUS_TIME_LIMIT;
+    apps_deviation_implausible = chrono::duration_cast<chrono::milliseconds>(deviation_timer.elapsed_time()) > IMPLAUS_TIME_LIMIT; //latch these so it stays manually true and has to be reset manually, deadzone is 2 times goes to 2 places
 
     /*
         Check how long each implaus has been active for and
