@@ -1,0 +1,86 @@
+﻿* In headset speaker
+   * Speaker restraints
+      * Size
+      * Volume
+      * Audible
+      * Connection type?
+      * https://competitionmotorsport.com/collections/helmet-communications/products/trac-com-v4-instructor-intercom-system 
+   * Mic restraints
+      * Size
+      * Audibility
+         * Adding foam or other ways to suppress outside noise
+      * Connection type?
+* BSPD
+   * Old BSPD
+      * https://github.com/formulaslug/fs-3-schematics/blob/0bd8b23cb884661161dbb066a021b4138a5b4b60/BSPD/BSPD.kicad_pcb 
+   * Op Amp Comparator
+      * 2 inputs
+         * Volt in
+            * On pos input
+         * Volt ref
+            * On neg input
+      * 1 output
+         * If Vin> Vref
+            * Output is higher limits volts
+         * If Vin<Vref
+            * Output is lower limit  volts
+   * thresholds/rules
+      * Tractive system current must be below 5KW
+         * Given battery is at 108V then we need to be pulling less than 46.3A
+            * Which would have the voltage of the sensor output of 3.079
+      * And have to be hard breaking
+         * I am just guessing that hard braking constitutes as 200 PSI
+   * Stages of the BSPD
+      * BUFFER
+         * Make a copy of the sensor voltage 
+            * Makes it so it doesn't overload the sensor
+      * Opens
+         * Compares the buffered voltage to the threshold it is allowed
+            * Will signal to open circuit if not within threshold
+      * Hard breaking and high current
+         * Determines if the car is “hard” braking
+         * Determines if motor is still pulling high current
+         * Doesn't put them together
+      * Shorts
+         * Compares sensor outputs and short circuit threshold
+      * Amplifiers
+         * Make the sensors outputs more resistant to noise
+      *    * Questions
+      * How would the BSPD open the shut down circuit?
+         * Would that mean the shut down circuit is running through the BSPD?
+
+
+      * What are we using the current sensor for?
+      * Are the boxes on the right side of the schematic still all a a part of the pcb?
+         * What is the point of them.
+      * 300 psi
+      * 108V
+
+
+
+
+
+
+
+
+* Can Bus and micro controller notes
+   * Elec signal means
+      * Form that voltage means
+      * Voltage
+         * Is comparison b/w 2 points (gnd)
+   * Analog signals
+      * Means continuous
+      * The actual voltage at a point
+      * PROBLEM
+         * Disrupted easily from outside noise
+   * Digital signals
+      * Means binary
+         * Either 0 or 1, no inbetween
+            * Low value or high value of voltage
+      * Low voltage is normally ground and high is usually components max voltage
+   *  Microcontroller
+      * What is it
+         * Mini computer on pcbs
+         * Read and send elec signals
+         * Run math/gen operations
+         *
