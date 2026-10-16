@@ -6,7 +6,7 @@ Buck IC:
   https://www.digikey.com/en/products/detail/texas-instruments/TPS542025DDCR/28738814
   - $1.22
   - primarily chose this for containing both high and low side mofset, relatively cheap, small, and having a fixed current output
-    - tradeoff for this is output voltage needs to be adjusted through a network of resistor dividers
+    - this particular model doesn't need a resistor divider network to adjust voltage
   - has overcurrent protection, particularly to continue low side mofset cycle if current exceeds limit
   - ok price
   - 2.9mm (L) x 2.8mm (W) x 1.1mm (H)
@@ -15,9 +15,12 @@ Capacitors:
 C_bootstrap:
   GRM155R71H104KE14D
   - https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220
+  - required 0.1 micro F capacitor between the BOOT and SW pins
+  - $0.10, only need one, MAYBE another to reduce high frequency input
 C_out:
   GRM32EC81C476ME15L
   - https://www.digikey.com/en/products/detail/murata-electronics/GRM32EC81C476ME15L/4905631
+  - $0.58, 
 C_decoupling:
   GRM188R61C106MA73D
   - http://digikey.com/en/products/detail/murata-electronics/GRM188R61C106MA73D/3900480
