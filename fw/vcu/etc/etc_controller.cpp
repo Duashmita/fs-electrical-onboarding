@@ -73,7 +73,7 @@ void ETCController::update_state() {
     if (avg_travel <= PEDAL_DEADZONE_PERCENTAGE) {
         avg_travel = 0.0f;
     } else {
-        avg_travel = (avg_travel - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - PEDAL_DEADZONE_PERCENTAGE);
+        avg_travel = (avg_travel - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - 2*PEDAL_DEADZONE_PERCENTAGE);
         avg_travel = clamp(avg_travel);
     }
 
