@@ -2939,7 +2939,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d965403-46ae-486b-8039-31f9f97e0427")
-		(property "Reference" "5V_OUT"
+		(property "Reference" "5V_OUT1"
 			(at 236.22 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3014,7 +3014,7 @@
 		(instances
 			(project "buck_converter"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "5V_OUT")
+					(reference "5V_OUT1")
 					(unit 1)
 				)
 			)
