@@ -22,7 +22,7 @@ The speaker is rated at 3W and 8Ω impedance. I'd need to find an amplifier that
 
 ## Speaker options
 ### Speaker: SP-1511S-1
-DigiKey part number: 2223-CMR-4015-44-SP-ND
+DigiKey part number: 433-1125-ND
 
 ### Why it might work
 It is much smaller than the sample speaker at 15 x 11 x 3.3 mm, so it may fit near the helmet's ear area without taking up as much space. It's also thin, so it won't press into the driver's ear as much. Its 400Hz-5kHz frequency range includes most of the range used for speech. The datasheet measures it at 83 ±3 dB SPL, using a 1V signal at 10 cm in a small test box. 
@@ -57,7 +57,7 @@ It's a small noise-canceling electret condenser microphone. It is 4mm across and
 The microphone outputs an analog signal, so the system needs electronics to convert it to digital telemetry. The datasheet's example circuit uses a 2V supply and a 2.2kΩ resistor, although the mic is rated for supplies from 1-5V. The mic is labeled "noise canceling," which could help in a loud setting, but you would still need to test it inside a helmet while driving. 
 
 ### What to check next
-Check how the microphone's analog signal would connect ot he team's telemetry electronics. Look for a comfortable way to position it near the driver's mouth, protect it from wind, and test how well it picks up speech with loud background noise.
+Check how the microphone's analog signal would connect to the team's radio. Look for a comfortable way to position it near the driver's mouth, protect it from wind, and test how well it picks up speech with loud background noise.
 
 ## Packaging
 I would place the speaker near the driver's ear, using an existing helmet mount or a removable mount if one is available. It should sit flat and close enough to hear clearly without pressing against the ear or blocking the speaker opening. You could mount the microphone near the driver's mouth on a small, flexible support, with a light foam cover to reduce wind noise.
@@ -69,5 +69,13 @@ The microphone also needs a support circuit because it uses an analog signal. I 
 <img src="helmet-audio-block-diagram (1200 x 500 px).png" alt="In-helmet audio block diagram" width="900">
 
 ## Questions for Luca
-
+What radio unit will the helmet connect to, and does it accept an analog microphone signal? Also, can the radio drive an 8Ω speaker, or would it need a separate amplifier?
 ## Sources
+SP-1511S-1
+https://www.digikey.com/en/products/detail/soberton-inc/SP-1511S-1/6099099?s=N4IgTCBcDaIMoAUC0BGArCldUgLoF8g
+
+AS01508AO-WP-R
+https://www.digikey.com/en/products/detail/pui-audio-inc/AS01508AO-WP-R/5958413?s=N4IgTCBcDaIIIGUAMBGArEgHHA8gWgHUAFPAJRAF0BfIA
+
+CMR-4015-44-SP
+https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMR-4015-44-SP/16716043?s=N4IgTCBcDaIMIFkBKBaALABgIwFZ1pQGUAFEAXQF8g
