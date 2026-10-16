@@ -57,7 +57,9 @@ void send_etc_CAN_messages() {
     if (etc.apps_implausibility) {
         data[0] |= (1 << 6);
     }
-    can.write(CANMessage(403, data, 8));
+    
+    CANMessage msg(403, data, 8);
+    can.write(msg);
 }
 
 /*
