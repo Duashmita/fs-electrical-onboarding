@@ -1090,28 +1090,22 @@
 		(uuid "084d1e86-6ec6-4e3b-b54f-1997941ec8de")
 	)
 	(junction
-		(at 109.22 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38af219f-8471-4b0a-a013-f7114948183c")
-	)
-	(junction
 		(at 144.78 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4fdde1e5-f4fb-48c1-bbc5-b53558604daa")
 	)
 	(junction
-		(at 109.22 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5de57007-709e-408a-a3e8-0a83636c51e4")
-	)
-	(junction
 		(at 127 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "624509b5-de56-40b9-8368-663f66fbfb16")
+	)
+	(junction
+		(at 109.22 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0c98807-a9af-4376-b311-47cda08a9964")
 	)
 	(junction
 		(at 127 99.06)
@@ -1141,7 +1135,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 93.98) (xy 109.22 99.06)
+			(xy 109.22 93.98) (xy 109.22 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1201,23 +1195,13 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 81.28) (xy 92.71 85.09)
+			(xy 109.22 81.28) (xy 109.22 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "79a22001-4a77-424d-925d-be877e61926d")
-	)
-	(wire
-		(pts
-			(xy 92.71 99.06) (xy 109.22 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b0fff92-8dc0-4ffb-ae6b-fc0ef6773dc7")
 	)
 	(wire
 		(pts
@@ -1241,16 +1225,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 95.25) (xy 92.71 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a79b22f5-0c32-4c28-bbda-4ea85481427f")
-	)
-	(wire
-		(pts
 			(xy 132.08 81.28) (xy 127 81.28)
 		)
 		(stroke
@@ -1268,6 +1242,16 @@
 			(type default)
 		)
 		(uuid "b6c2d89f-8761-4f8c-8ea8-85690fbbfb56")
+	)
+	(wire
+		(pts
+			(xy 109.22 96.52) (xy 109.22 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e197a7-0ff1-488d-9b19-8d41c437394f")
 	)
 	(wire
 		(pts
@@ -1291,26 +1275,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 81.28) (xy 109.22 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f28da053-a933-4ee4-b57e-1b6cb2b3d8f5")
-	)
-	(wire
-		(pts
-			(xy 109.22 81.28) (xy 109.22 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f69268ba-f7a1-4070-aeb0-ac3eb277db61")
-	)
-	(wire
-		(pts
 			(xy 109.22 99.06) (xy 127 99.06)
 		)
 		(stroke
@@ -1318,88 +1282,6 @@
 			(type default)
 		)
 		(uuid "fc2be83e-0b6e-4a06-8f92-ba03d5f78761")
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 109.22 90.17 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b75cb35-d9c4-49a4-b9e9-e705f0f2821a")
-		(property "Reference" "C1"
-			(at 113.03 88.8999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3uF"
-			(at 113.03 91.4399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.1852 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 109.22 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4f828c73-d3b2-4f96-b79c-61c2d00ecec9")
-		)
-		(pin "1"
-			(uuid "9952dd64-b57f-40b1-beec-3280493cca43")
-		)
-		(instances
-			(project "je-buck-converter"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1413,7 +1295,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86314f64-b208-4b69-bda7-adb5f8db1fb6")
-		(property "Reference" "C2"
+		(property "Reference" "C1"
 			(at 148.59 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1477,7 +1359,7 @@
 		(instances
 			(project "je-buck-converter"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "C2")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -1763,7 +1645,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:VDC")
-		(at 92.71 90.17 0)
+		(at 109.22 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1774,7 +1656,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea7f9f19-8571-447c-8c9c-e6f7685a64e5")
 		(property "Reference" "V1"
-			(at 96.52 88.7701 0)
+			(at 113.03 90.0401 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1785,7 +1667,7 @@
 			)
 		)
 		(property "Value" "12V"
-			(at 96.52 91.3101 0)
+			(at 113.03 92.5801 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1796,7 +1678,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 90.17 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1807,7 +1689,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 92.71 90.17 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1818,7 +1700,7 @@
 			)
 		)
 		(property "Description" "Voltage source, DC"
-			(at 92.71 90.17 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1829,7 +1711,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 92.71 90.17 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1840,7 +1722,7 @@
 			)
 		)
 		(property "Sim.Type" "DC"
-			(at 92.71 90.17 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1851,7 +1733,7 @@
 			)
 		)
 		(property "Sim.Device" "V"
-			(at 92.71 90.17 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1863,7 +1745,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 92.71 90.17 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1874,7 +1756,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 92.71 90.17 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1885,7 +1767,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 92.71 90.17 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1896,7 +1778,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 92.71 90.17 0)
+			(at 109.22 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
