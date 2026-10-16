@@ -6,6 +6,7 @@
 #define ETC_CONTROLLER_H
 
 #include "mbed.h"
+#include <cstdint>
 
 class ETCController {
 public:
@@ -26,6 +27,10 @@ public:
     int16_t get_Motor_Torque_Demand(){
         return Motor_Torque_Demand;
     }
+
+
+
+    
     /*
         End of public variables
     */
@@ -45,11 +50,11 @@ private:
     AnalogIn APPS_sensor_1; // Initialize AnalogIn Pin so we can read their voltages later when we need them
     AnalogIn APPS_sensor_2; // Initialize AnalogIn Pin so we can read their voltages later when we need them
     
-    float APPS1_Volatge = 0; // Voltage from APPS1
-    float APPS2_Volatge = 0;// Volatage from APPS2
+    float APPS1_Voltage = 0; // Voltage from APPS1
+    float APPS2_Voltage = 0;// Volatage from APPS2
 
-    float APPS1_Pedal_Postion = 0;
-    float APPS2_Pedal_Postion = 0;
+    float APPS1_Pedal_Position = 0;
+    float APPS2_Pedal_Position = 0;
 
     float Clamped_APPS1_Pedal_Position = 0;
     float Clamped_APPS2_Pedal_Position = 0;

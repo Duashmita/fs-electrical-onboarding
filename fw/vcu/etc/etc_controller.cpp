@@ -6,6 +6,8 @@
 
 
 #include "etc_controller.h"
+#include <cmath>
+
 
 // Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin)
@@ -64,8 +66,8 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
     
-    APPS1_Volatge = APPS_sensor_1.read() * 3.3; //Read the percentage from 0.0 to 1.0 -> convert it to a voltage
-    APPS2_Volatge = APPS_sensor_2.read() * 3.3;
+    APPS1_Voltage = APPS_sensor_1.read() * 3.3; //Read the percentage from 0.0 to 1.0 -> convert it to a voltage
+    APPS2_Voltage = APPS_sensor_2.read() * 3.3;
 
     //Now determine the pedal postions
 
@@ -73,16 +75,16 @@ void ETCController::update_state() {
 
 
     //Now determine the pedal postions
-    APPS1_Pedal_Postion = ( APPS1_Voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE  ); //Determine Pedal Position Percentage
-    APPS2_Pedal_Postion = ( APPS2_Voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE  ); //Determine Pedal Position Percentage
+    APPS1_Pedal_Position = ( APPS1_Voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE  ); //Determine Pedal Position Percentage
+    APPS2_Pedal_Position = ( APPS2_Voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE  ); //Determine Pedal Position Percentage
 
     //Clamp Pedal position percentages to be from 0% to 100%, i.e. 0.0 to 1.0
-    Clamped_APPS1_Pedal_Position = clamp( APPS1_Pedal_Postion - PEDAL_DEADZONE_PERCENTAGE/(1.0 - 2.0 * PEDAL_DEADZONE_PERCENTAGE));// Subtract by DeadZone percentage to adjust to our "new" 0% 
-    Clamped_APPS2_Pedal_Position = clamp( APPS2_Pedal_Postion - PEDAL_DEADZONE_PERCENTAGE/(1.0 - 2.0 * PEDAL_DEADZONE_PERCENTAGE)); // Then divide by 1-PEDAL_DEADZONE_PERCENTAGE to get our "new" 100% pedal position
+    Clamped_APPS1_Pedal_Position = clamp( APPS1_Pedal_Position - PEDAL_DEADZONE_PERCENTAGE/(1.0 - 2.0 * PEDAL_DEADZONE_PERCENTAGE));// Subtract by DeadZone percentage to adjust to our "new" 0% 
+    Clamped_APPS2_Pedal_Position = clamp( APPS2_Pedal_Position - PEDAL_DEADZONE_PERCENTAGE/(1.0 - 2.0 * PEDAL_DEADZONE_PERCENTAGE)); // Then divide by 1-PEDAL_DEADZONE_PERCENTAGE to get our "new" 100% pedal position
 
 
     //Calculate a motor torque demanad
-    Motor_Torque_Demand = ((Clamped_APPS1_Pedal_Postion + Clamped_APPS2_Pedal_Postion) / 2.0f) * (MAX_TORQUE);
+    Motor_Torque_Demand = ((Clamped_APPS1_Pedal_Position + Clamped_APPS2_Pedal_Position) / 2.0f) * (MAX_TORQUE);
 
 
     
@@ -114,13 +116,13 @@ void ETCController::update_implausibilities() {
     int64_t duration_Range_Implaus = 0; //Timer For Range Implaus
     int64_t duration_Percent_Implaus = 0; //Timer for Percent Implaus
 
-    bool APPS_Sensors_Range_Implaus = !(in_range(APPS1_Volatge, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && in_range(APPS2_Volatge, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE));
+    bool APPS_Sensors_Range_Implaus = !(in_range(APPS1_Voltage, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && in_range(APPS2_Voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE));
     //Determines weather the APPS Sensors are in Valid Voltage Range, if in range sets it to false, 
     
     if (APPS_Sensors_Range_Implaus) { //If there is a Range Implaus,start the timer to see how long it is occuring
         Timer_Range_Implaus.start(); //Start Timer
         
-        duration_Range_Implaus = my_timer_Range.elapsed_time().count() / 1000;  
+        duration_Range_Implaus = Timer_Range_Implaus.elapsed_time().count() / 1000;  
         //Record Time that has passed since timer was initially started 
 
         
@@ -149,9 +151,9 @@ void ETCController::update_implausibilities() {
         Timer_Percent_Implaus.reset();
     }else{
         
-        timer_Percent_Implaus.start(); //There is an implaus so start timer
+        Timer_Percent_Implaus.start(); //There is an implaus so start timer
 
-        duration_ms_Percent_Implaus = my_timer_Percent_Implaus.elapsed_time().count() / 1000;
+        duration_Percent_Implaus = Timer_Percent_Implaus.elapsed_time().count() / 1000;
         
         if( duration_Percent_Implaus > 100){
             APPS_Percent_Implausibility_Confirmed = true;
@@ -159,7 +161,7 @@ void ETCController::update_implausibilities() {
         
     }
 
-    
+
     
    
 
