@@ -33,6 +33,19 @@ The 83 dB rating comes from the specific test setup, so it doesn't show exactly 
 ### What to check next
 Check that the amplifier supports an 8Ω speaker and that its output stays within the speaker's 0.7 W rated power. Then check that the speaker fits comfortably near the driver's ear without pressing on the ear or interfering with the padding. Also test whether speech is clear in the helmet.
 
+
+### Speaker: AS01508AO-WP-R
+DigiKey part number: 668-1515-ND
+
+### Why it might work
+It's a similar size to the SP-1511S-1 (15 x 11 x 3mm), so it may fit near the driver's ear without taking up much space. It's rated for 8Ω and 0.7W, matching the SP-1511S-1's impedance and rated power. Its listed frequency range is 500Hz-14kHz, and its face meets IP65 requirements when properly mounted. 
+
+### Issues
+The datasheet's 94±3 dBa rating was measured at 0.7W and 10cm under specific conditions. The SP1511S-1 was tested differently, so you can't directly compare the dB ratings to prove the speaker is louder. The IP65 rating applies to the speaker's face when properly mounted, not the whole helmet setup. 
+
+### What to check next
+Check that the amplifier supports an 8Ω speaker and can supply the speaker's rated power. Also test its fit and speech clarity in the helmet. 
+
 ## Microphone options
 ### Microphone: CMR-4015-44-SP
 DigiKey part number: 2223-CMR-4015-44-SP-ND
@@ -41,12 +54,18 @@ DigiKey part number: 2223-CMR-4015-44-SP-ND
 It's a small noise-canceling electret condenser microphone. It is 4mm across and about 1.5-1.8 mm thick, so you can place it near the driver's mouth without taking up much room. Its 100 Hz-10kHz frequency range includes the range needed to pick up speech. 
 
 ### Issues
-The microphone outputs an analog signal, so the system needs electronics to convert it to digital telemetry. The datasheet's example circuit uses a 2V supply and a 2.2kΩ resistor, although the mic is rated for supplies from 1-5V. The mic is labeled "noise canceling," which could help in a loud setting, but it would still need to be tested inside a helmet while driving. 
+The microphone outputs an analog signal, so the system needs electronics to convert it to digital telemetry. The datasheet's example circuit uses a 2V supply and a 2.2kΩ resistor, although the mic is rated for supplies from 1-5V. The mic is labeled "noise canceling," which could help in a loud setting, but you would still need to test it inside a helmet while driving. 
 
 ### What to check next
 Check how the microphone's analog signal would connect ot he team's telemetry electronics. Look for a comfortable way to position it near the driver's mouth, protect it from wind, and test how well it picks up speech with loud background noise.
 
-## Connector options
+## Packaging
+I would place the speaker near the driver's ear, using an existing helmet mount or a removable mount if one is available. It should sit flat and close enough to hear clearly without pressing against the ear or blocking the speaker opening. You could mount the microphone near the driver's mouth on a small, flexible support, with a light foam cover to reduce wind noise.
+
+The wires should follow the helmet's lining and be secured so they don't rub against the driver or get caught during entry and exit. The wires should connect to the car with a plug that stays connected while driving but disconnects quickly if the driver needs to exit. I would avoid cutting, drilling, or removing helmet padding in the protective material. The final placement would need to be checked for comfort, clear speech, and quick exit from the car. 
+
+The microphone also needs a support circuit because it uses an analog signal. I would place the circuit in the car with the radio. The helmet would contain the microphone, speaker, and connecting wires. The microphone's analog signal would travel through the cable to the circuit, which would power the microphone and connect its audio to the radio. 
+
 
 ## Questions for Luca
 
