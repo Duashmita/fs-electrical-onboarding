@@ -24712,196 +24712,138 @@
 		)
 	)
 	(junction
-		(at 63.5 93.98)
+		(at 69.85 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "08b0f15e-ffad-4cee-aa89-a15cc0db27d2")
+		(uuid "11844d77-a4d8-41ce-aa2e-64b633834302")
 	)
 	(junction
-		(at 52.07 93.98)
+		(at 181.61 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0e716c89-7ffb-4b56-b7a1-4f85362b09d5")
+		(uuid "19a4907e-f866-4b1a-ae93-d215b62410f9")
 	)
 	(junction
-		(at 231.14 102.87)
+		(at 81.28 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1f40123e-318e-46d3-9a98-17587eb89e11")
+		(uuid "1ec8e1dd-2c56-48a3-9eee-ad11c1eef7c5")
 	)
 	(junction
-		(at 97.79 101.6)
+		(at 58.42 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1fe3f1d6-83a6-401c-adde-09f7791b4b25")
+		(uuid "231b505b-fc1f-4f15-af03-76a281902c3e")
 	)
 	(junction
-		(at 176.53 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2bad7dc0-e671-4190-8a83-14d3899242f1")
-	)
-	(junction
-		(at 142.24 115.57)
+		(at 133.35 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2f9d06c5-f06b-4530-ad4b-f66189b7c21f")
 	)
 	(junction
-		(at 86.36 93.98)
+		(at 181.61 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3c4abe2e-6a5b-42cf-9fe4-5c3b9944fe99")
+		(uuid "4347cdf2-95b5-4cbf-a2d9-826a95bf164c")
 	)
 	(junction
-		(at 74.93 101.6)
+		(at 196.85 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "45dc65e0-b4cb-42af-8644-a7eca4fecdb1")
+		(uuid "45f21abf-03bf-42f5-802a-82d8c187136c")
 	)
 	(junction
-		(at 189.23 106.68)
+		(at 189.23 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "57cceda3-14bc-453d-8870-ce564f2cfaf2")
 	)
 	(junction
-		(at 227.33 106.68)
+		(at 72.39 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "58549681-74ba-45bb-b867-6fb68b25b2d8")
+		(uuid "5b47e71a-f60f-46d0-845e-1926a7ea7005")
 	)
 	(junction
-		(at 176.53 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65069a27-eb80-46a6-8075-2cc6754b2035")
-	)
-	(junction
-		(at 227.33 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6545cebd-ee56-4d6e-97d3-7ac1a90daf64")
-	)
-	(junction
-		(at 146.05 102.87)
+		(at 137.16 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66c4abe2-3083-48f5-8497-688c34e30c14")
 	)
 	(junction
-		(at 86.36 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "69226801-0fce-43c8-a789-f9acf7dda9ad")
-	)
-	(junction
-		(at 201.93 106.68)
+		(at 201.93 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c14afdf-af75-46f8-942b-2e1bb021341a")
 	)
 	(junction
-		(at 74.93 93.98)
+		(at 58.42 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6fa9129c-3bd6-484c-b509-20f5df4d6f23")
+		(uuid "8a4d2b03-d081-46b9-a01d-cf5764042a09")
 	)
 	(junction
-		(at 52.07 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7d3b9672-8160-49f1-ab44-53dfcfceb1a3")
-	)
-	(junction
-		(at 111.76 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9078c2b5-d9b5-477b-b9c9-9b0c2fc9c39e")
-	)
-	(junction
-		(at 165.1 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "99355640-cd42-4a02-bf8a-a891f5d52fc1")
-	)
-	(junction
-		(at 105.41 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "99f47886-35dc-45ae-8d01-04a9e9aef521")
-	)
-	(junction
-		(at 201.93 99.06)
+		(at 201.93 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a48aa609-f97c-4c83-9c1d-b3d8c8241447")
 	)
 	(junction
-		(at 160.02 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a78182ef-39df-48b2-9644-f5315cf5164c")
-	)
-	(junction
-		(at 214.63 106.68)
+		(at 214.63 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a79de067-9d06-489d-813c-0e671a1f4135")
 	)
 	(junction
-		(at 97.79 93.98)
+		(at 81.28 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b6f4dc9d-f748-45a7-b17c-83d528248cbd")
+		(uuid "b1d5d46c-85e4-488e-9c3f-69bc9867f1cd")
 	)
 	(junction
-		(at 48.26 97.79)
+		(at 88.9 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c839c432-6814-4702-8a97-a23e625e053e")
+		(uuid "bcf5e6d7-f535-4b1a-b2bd-548ff2fbc5e3")
 	)
 	(junction
-		(at 63.5 101.6)
+		(at 88.9 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d0c38c77-3479-4896-a984-43d6d50a73be")
+		(uuid "ce6fd3bc-a6d5-4c32-8156-ea9ed5501d25")
 	)
 	(junction
-		(at 189.23 99.06)
+		(at 189.23 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5576dac-cf44-41a6-9a00-6d4f9cb61ee7")
 	)
 	(junction
-		(at 214.63 99.06)
+		(at 69.85 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0258e1e-bb85-4d77-bf13-3f01c4eaa6ba")
+	)
+	(junction
+		(at 214.63 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fdaa45fb-4607-4d98-8d87-73182b4a0783")
 	)
 	(wire
 		(pts
-			(xy 86.36 101.6) (xy 105.41 101.6)
+			(xy 99.06 86.36) (xy 102.87 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0404db7f-672e-4a78-92b7-b12935c9a8d3")
+		(uuid "01150e1b-85a6-48a6-a0d4-a3be61897e05")
 	)
 	(wire
 		(pts
-			(xy 86.36 93.98) (xy 111.76 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0463af4e-083f-4aa6-a191-ad72be6c7b7d")
-	)
-	(wire
-		(pts
-			(xy 214.63 99.06) (xy 201.93 99.06)
+			(xy 214.63 92.71) (xy 201.93 92.71)
 		)
 		(stroke
 			(width 0)
@@ -24911,37 +24853,17 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 101.6) (xy 86.36 101.6)
+			(xy 92.71 95.25) (xy 81.28 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1eb41cce-b27d-40ed-b77d-298cc71f113a")
+		(uuid "1c219f4f-fb28-4c3b-8044-0e25e71dcbdc")
 	)
 	(wire
 		(pts
-			(xy 231.14 99.06) (xy 227.33 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2133927d-83d8-49fd-b90f-b8e9ad2400d4")
-	)
-	(wire
-		(pts
-			(xy 44.45 97.79) (xy 48.26 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b05299f-fadb-45f9-8dfa-cfa6539f1be9")
-	)
-	(wire
-		(pts
-			(xy 214.63 106.68) (xy 201.93 106.68)
+			(xy 214.63 100.33) (xy 201.93 100.33)
 		)
 		(stroke
 			(width 0)
@@ -24951,17 +24873,37 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 107.95) (xy 233.68 102.87)
+			(xy 72.39 95.25) (xy 69.85 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3f9ee953-8e01-4732-b1e5-d416636278f8")
+		(uuid "3b5e91e9-c656-4edf-8d35-e1148c66a53f")
 	)
 	(wire
 		(pts
-			(xy 146.05 102.87) (xy 149.86 102.87)
+			(xy 181.61 92.71) (xy 189.23 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bc843fd-e04e-402e-931f-4a78ce1c90af")
+	)
+	(wire
+		(pts
+			(xy 72.39 95.25) (xy 72.39 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4282e17b-a310-4f52-9fb2-9e605e9bb398")
+	)
+	(wire
+		(pts
+			(xy 137.16 81.28) (xy 140.97 81.28)
 		)
 		(stroke
 			(width 0)
@@ -24971,37 +24913,17 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 107.95) (xy 227.33 107.95)
+			(xy 181.61 81.28) (xy 181.61 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4a7a2429-a119-4b5a-a26e-e49ed7e64c70")
+		(uuid "50cde6ce-be77-46de-8dd1-9d5e736c5c48")
 	)
 	(wire
 		(pts
-			(xy 176.53 99.06) (xy 165.1 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e3fd4a4-d628-4e37-ab2a-2acb88a051f9")
-	)
-	(wire
-		(pts
-			(xy 227.33 106.68) (xy 231.14 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50261528-c0b1-4078-b645-7d7494b81a3f")
-	)
-	(wire
-		(pts
-			(xy 153.67 115.57) (xy 161.29 115.57)
+			(xy 144.78 93.98) (xy 152.4 93.98)
 		)
 		(stroke
 			(width 0)
@@ -25011,17 +24933,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 102.87) (xy 165.1 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54593dba-a466-4bed-a7a9-c44b1ed6d969")
-	)
-	(wire
-		(pts
-			(xy 146.05 102.87) (xy 146.05 107.95)
+			(xy 137.16 81.28) (xy 137.16 86.36)
 		)
 		(stroke
 			(width 0)
@@ -25031,27 +24943,17 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 93.98) (xy 48.26 97.79)
+			(xy 88.9 87.63) (xy 92.71 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5dd3e308-2be0-4438-8303-509ccdd06174")
+		(uuid "630a2661-c353-4542-a21f-fcbcc6468182")
 	)
 	(wire
 		(pts
-			(xy 111.76 93.98) (xy 111.76 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63e573ba-fb03-40d8-b403-dbd47dea1fc1")
-	)
-	(wire
-		(pts
-			(xy 132.08 115.57) (xy 142.24 115.57)
+			(xy 123.19 93.98) (xy 133.35 93.98)
 		)
 		(stroke
 			(width 0)
@@ -25061,17 +24963,27 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 106.68) (xy 165.1 106.68)
+			(xy 196.85 100.33) (xy 189.23 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7008ea7d-e3b1-4739-91c5-530cd4ccff6f")
+		(uuid "6a8a6ae1-4450-4df4-aea4-31a11f2da317")
 	)
 	(wire
 		(pts
-			(xy 189.23 99.06) (xy 176.53 99.06)
+			(xy 81.28 87.63) (xy 88.9 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7020f9be-00d2-48ef-bf17-7da267ce7b48")
+	)
+	(wire
+		(pts
+			(xy 176.53 92.71) (xy 181.61 92.71)
 		)
 		(stroke
 			(width 0)
@@ -25081,17 +24993,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 97.79) (xy 48.26 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "797fda8b-e752-4938-8c81-f5e746c3cb70")
-	)
-	(wire
-		(pts
-			(xy 157.48 102.87) (xy 160.02 102.87)
+			(xy 148.59 81.28) (xy 181.61 81.28)
 		)
 		(stroke
 			(width 0)
@@ -25101,27 +25003,57 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 93.98) (xy 105.41 101.6)
+			(xy 81.28 95.25) (xy 72.39 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8972fd8d-798a-499e-9a97-0dbfe480bbba")
+		(uuid "8179c72e-752e-43e3-ac1f-82c87358eb48")
 	)
 	(wire
 		(pts
-			(xy 233.68 102.87) (xy 231.14 102.87)
+			(xy 69.85 95.25) (xy 58.42 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "975c1e37-88ca-4f6f-b282-d458eba6c239")
+		(uuid "83dbdb16-318c-4eba-9707-75aa749880e6")
 	)
 	(wire
 		(pts
-			(xy 214.63 106.68) (xy 227.33 106.68)
+			(xy 88.9 81.28) (xy 88.9 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96232b6f-461b-4082-af85-8c14837b66cf")
+	)
+	(wire
+		(pts
+			(xy 46.99 87.63) (xy 58.42 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9688ffd5-0024-4c71-805d-0eeac879c19e")
+	)
+	(wire
+		(pts
+			(xy 88.9 81.28) (xy 102.87 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "977f8ef5-9f95-4498-90a8-87c87baf947a")
+	)
+	(wire
+		(pts
+			(xy 214.63 100.33) (xy 223.52 100.33)
 		)
 		(stroke
 			(width 0)
@@ -25131,7 +25063,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 99.06) (xy 189.23 99.06)
+			(xy 201.93 92.71) (xy 189.23 92.71)
 		)
 		(stroke
 			(width 0)
@@ -25141,7 +25073,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 115.57) (xy 146.05 115.57)
+			(xy 133.35 93.98) (xy 137.16 93.98)
 		)
 		(stroke
 			(width 0)
@@ -25151,17 +25083,17 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 99.06) (xy 165.1 102.87)
+			(xy 78.74 81.28) (xy 88.9 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a43e35b1-d3b7-4470-9216-8bc6d4fbc7cd")
+		(uuid "9f65500e-a0e2-461c-9f51-6ae59f6e6c4e")
 	)
 	(wire
 		(pts
-			(xy 142.24 129.54) (xy 142.24 133.35)
+			(xy 133.35 107.95) (xy 133.35 111.76)
 		)
 		(stroke
 			(width 0)
@@ -25171,17 +25103,17 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 107.95) (xy 107.95 107.95)
+			(xy 69.85 87.63) (xy 81.28 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b58873e1-a742-4273-8d89-e92cbbec9b1a")
+		(uuid "b6218c7e-03d7-4058-a8bc-61bf45178441")
 	)
 	(wire
 		(pts
-			(xy 132.08 107.95) (xy 134.62 107.95)
+			(xy 123.19 86.36) (xy 125.73 86.36)
 		)
 		(stroke
 			(width 0)
@@ -25191,37 +25123,17 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 101.6) (xy 52.07 101.6)
+			(xy 181.61 81.28) (xy 189.23 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb0881b2-70c9-4757-9eba-86eb500d64ad")
+		(uuid "bfef9459-9375-44ae-984a-be9635d55c6e")
 	)
 	(wire
 		(pts
-			(xy 231.14 102.87) (xy 231.14 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bef5ed16-11b4-4c3b-9a89-693016cd85b4")
-	)
-	(wire
-		(pts
-			(xy 160.02 102.87) (xy 160.02 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf5e2b9a-2870-4e53-8c4d-6a14e70433a8")
-	)
-	(wire
-		(pts
-			(xy 201.93 106.68) (xy 189.23 106.68)
+			(xy 201.93 100.33) (xy 196.85 100.33)
 		)
 		(stroke
 			(width 0)
@@ -25231,37 +25143,17 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 93.98) (xy 74.93 93.98)
+			(xy 58.42 95.25) (xy 46.99 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d08a33c7-641a-4391-9f14-a4db5bb35dc4")
+		(uuid "dff79820-4d8a-4f8a-b620-807407b41862")
 	)
 	(wire
 		(pts
-			(xy 231.14 106.68) (xy 231.14 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db9931fd-89f9-409d-95c3-8782e855ba6a")
-	)
-	(wire
-		(pts
-			(xy 111.76 93.98) (xy 114.3 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e19aab4f-0ebf-4de0-a673-ec41cb3ee08d")
-	)
-	(wire
-		(pts
-			(xy 132.08 102.87) (xy 146.05 102.87)
+			(xy 123.19 81.28) (xy 137.16 81.28)
 		)
 		(stroke
 			(width 0)
@@ -25271,27 +25163,27 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 102.87) (xy 165.1 102.87)
+			(xy 58.42 87.63) (xy 69.85 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e4214294-e888-4c8c-9ce5-765758a7fff5")
+		(uuid "e7de6a96-e18e-41e8-a27b-9c5037be5c81")
 	)
 	(wire
 		(pts
-			(xy 74.93 93.98) (xy 86.36 93.98)
+			(xy 196.85 100.33) (xy 196.85 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e692df71-fdb4-4775-9069-f57d1614c547")
+		(uuid "e91c0b12-bc04-4885-be5f-ab1d930dda13")
 	)
 	(wire
 		(pts
-			(xy 227.33 99.06) (xy 214.63 99.06)
+			(xy 214.63 92.71) (xy 223.52 92.71)
 		)
 		(stroke
 			(width 0)
@@ -25301,17 +25193,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 101.6) (xy 74.93 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecd84232-a763-4ed8-81ce-98c50e009cf0")
-	)
-	(wire
-		(pts
-			(xy 142.24 115.57) (xy 142.24 121.92)
+			(xy 133.35 93.98) (xy 133.35 100.33)
 		)
 		(stroke
 			(width 0)
@@ -25321,17 +25203,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 93.98) (xy 52.07 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f82e8dc5-8d57-4692-ab0e-fb2b62793df0")
-	)
-	(wire
-		(pts
-			(xy 142.24 107.95) (xy 146.05 107.95)
+			(xy 133.35 86.36) (xy 137.16 86.36)
 		)
 		(stroke
 			(width 0)
@@ -25341,7 +25213,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 106.68) (xy 176.53 106.68)
+			(xy 189.23 100.33) (xy 176.53 100.33)
 		)
 		(stroke
 			(width 0)
@@ -25350,7 +25222,7 @@
 		(uuid "fa577c0b-c736-4600-8ff7-e3440fe1ec4b")
 	)
 	(label "EN"
-		(at 107.95 107.95 180)
+		(at 99.06 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25360,7 +25232,7 @@
 		(uuid "07eea000-7b12-49c4-a930-3d496d5e1e52")
 	)
 	(label "Input Capacitors C1-5, all 22μF"
-		(at 59.69 92.71 0)
+		(at 54.61 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25370,7 +25242,7 @@
 		(uuid "135f0feb-05de-412a-8541-ab0adc0af25d")
 	)
 	(label "Output Capacitors CO1-4, all 22μF"
-		(at 181.61 97.79 0)
+		(at 170.18 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25380,7 +25252,7 @@
 		(uuid "56e0556e-0a93-4ba3-8768-51d485da076c")
 	)
 	(label "VIN"
-		(at 44.45 97.79 180)
+		(at 78.74 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25390,7 +25262,7 @@
 		(uuid "7d30265f-ad66-4f90-a8a3-30a987a5fa34")
 	)
 	(label "VOUT"
-		(at 160.02 97.79 90)
+		(at 189.23 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25400,7 +25272,7 @@
 		(uuid "9007e7e5-88d5-4d38-8878-cfa9a0de376e")
 	)
 	(label "VOUT"
-		(at 161.29 115.57 0)
+		(at 152.4 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25410,7 +25282,7 @@
 		(uuid "913a2b4a-13a2-4062-91b6-8c407a0f25b5")
 	)
 	(label "LV Standards Appropriate BUCKIC"
-		(at 129.54 83.82 0)
+		(at 120.65 62.23 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -25420,7 +25292,7 @@
 		(uuid "ae70ab2e-fd32-4052-a444-7b02890f6ffd")
 	)
 	(label "Input Capacitor CO5, 0.1μF"
-		(at 181.61 110.49 0)
+		(at 213.36 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25430,87 +25302,8 @@
 		(uuid "ff6cc1a5-05e7-456d-af8d-f96b81885c37")
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 114.3 93.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0055f9b2-6c05-4554-ad81-27f9762b5ded")
-		(property "Reference" "#PWR02"
-			(at 114.3 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 116.84 95.2499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4b317666-e771-4b85-9fa5-6c54d555f6e0")
-		)
-		(instances
-			(project "template"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
-		(at 153.67 102.87 270)
+		(at 144.78 81.28 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25521,7 +25314,7 @@
 		(fields_autoplaced yes)
 		(uuid "06fdd7cf-981e-435e-968e-324ad3f131a5")
 		(property "Reference" "L1"
-			(at 153.67 107.95 90)
+			(at 144.78 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25531,7 +25324,7 @@
 			)
 		)
 		(property "Value" "4.7uH"
-			(at 153.67 105.41 90)
+			(at 144.78 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25540,8 +25333,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS562208DDCR:SOT95P280X110-6N"
-			(at 153.67 102.87 0)
+		(property "Footprint" "FSCustom:IND_BOURNS_SRN6045"
+			(at 144.78 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25552,7 +25345,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://srn6045ha.pdf"
-			(at 153.67 102.87 0)
+			(at 144.78 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25563,7 +25356,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 153.67 102.87 0)
+			(at 144.78 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25574,7 +25367,7 @@
 			)
 		)
 		(property "Digikey Part Number" "118-SRN6045HA-4R7YCT-ND"
-			(at 153.67 102.87 0)
+			(at 144.78 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25585,7 +25378,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/bourns-inc/SRN6045HA-4R7Y/15219572"
-			(at 153.67 102.87 0)
+			(at 144.78 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25596,7 +25389,7 @@
 			)
 		)
 		(property "Manufacturer" "  Bourns Inc."
-			(at 153.67 102.87 0)
+			(at 144.78 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25607,7 +25400,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "SRN6045HA-4R7Y"
-			(at 153.67 102.87 0)
+			(at 144.78 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25634,7 +25427,7 @@
 	)
 	(symbol
 		(lib_id "TPS562208DDCR:BuckIC")
-		(at 114.3 100.33 0)
+		(at 105.41 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25644,7 +25437,7 @@
 		(dnp no)
 		(uuid "0899e122-738e-431f-8ff5-f7c16700b115")
 		(property "Reference" "U2"
-			(at 114.554 116.332 0)
+			(at 105.664 94.742 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25655,7 +25448,7 @@
 			)
 		)
 		(property "Value" "TPS562208DDCR"
-			(at 122.428 99.06 0)
+			(at 113.538 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25664,8 +25457,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS562208DDCR:SOT95P280X110-6N"
-			(at 115.062 137.922 0)
+		(property "Footprint" "FSCustom:DDC0006A_N"
+			(at 106.172 116.332 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25676,7 +25469,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://tps562208.pdf"
-			(at 118.872 138.43 0)
+			(at 109.982 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25687,7 +25480,7 @@
 			)
 		)
 		(property "Description" "4.5 V to 17 V input, 2 A output, synchronous step-down converter in FCCM mode"
-			(at 115.062 137.922 0)
+			(at 106.172 116.332 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25698,7 +25491,7 @@
 			)
 		)
 		(property "Digikey Part Number" "296-47236-1-ND"
-			(at 119.126 138.176 0)
+			(at 110.236 116.586 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25709,7 +25502,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/texas-instruments/TPS562208DDCR/7688246"
-			(at 116.078 138.938 0)
+			(at 107.188 117.348 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25720,7 +25513,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 117.856 139.446 0)
+			(at 108.966 117.856 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25731,7 +25524,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "TPS562208DDCR"
-			(at 121.412 137.16 0)
+			(at 112.522 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25770,7 +25563,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 74.93 97.79 0)
+		(at 69.85 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25781,7 +25574,7 @@
 		(fields_autoplaced yes)
 		(uuid "128aeae0-f02d-4fb0-979e-197e810afcb7")
 		(property "Reference" "C3"
-			(at 78.74 96.5199 0)
+			(at 73.66 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25792,7 +25585,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 78.74 99.0599 0)
+			(at 73.66 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25802,8 +25595,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_1608Metric"
-			(at 75.8952 101.6 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 70.8152 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25814,7 +25607,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://490_Chip_Multilayer_CAT2021_MLCC.pdf"
-			(at 74.93 97.79 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25825,7 +25618,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 74.93 97.79 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25836,7 +25629,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-GRM219R61C226ME15KCT-ND"
-			(at 74.93 97.79 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25847,7 +25640,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740"
-			(at 74.93 97.79 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25858,7 +25651,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 74.93 97.79 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25869,7 +25662,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM219R61C226ME15K"
-			(at 74.93 97.79 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25896,7 +25689,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 133.35 0)
+		(at 133.35 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25907,7 +25700,7 @@
 		(fields_autoplaced yes)
 		(uuid "15c111de-07eb-4759-96e4-19336e6d26c0")
 		(property "Reference" "#PWR04"
-			(at 142.24 139.7 0)
+			(at 133.35 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25918,7 +25711,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 138.43 0)
+			(at 133.35 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25928,7 +25721,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 133.35 0)
+			(at 133.35 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25939,7 +25732,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 133.35 0)
+			(at 133.35 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25950,7 +25743,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 133.35 0)
+			(at 133.35 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25974,7 +25767,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 52.07 97.79 0)
+		(at 46.99 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25984,8 +25777,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "200dadb6-da0b-4c96-846b-e3eed8a7b5fe")
-		(property "Reference" "C6"
-			(at 55.88 96.5199 0)
+		(property "Reference" "C5"
+			(at 50.8 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25996,7 +25789,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 55.88 99.0599 0)
+			(at 50.8 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26006,8 +25799,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_1608Metric"
-			(at 53.0352 101.6 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 47.9552 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26018,7 +25811,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://490_Chip_Multilayer_CAT2021_MLCC.pdf"
-			(at 52.07 97.79 0)
+			(at 46.99 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26029,7 +25822,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 52.07 97.79 0)
+			(at 46.99 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26040,7 +25833,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-GRM219R61C226ME15KCT-ND"
-			(at 52.07 97.79 0)
+			(at 46.99 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26051,7 +25844,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740"
-			(at 52.07 97.79 0)
+			(at 46.99 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26062,7 +25855,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 52.07 97.79 0)
+			(at 46.99 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26073,7 +25866,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM219R61C226ME15K"
-			(at 52.07 97.79 0)
+			(at 46.99 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26092,133 +25885,7 @@
 		(instances
 			(project "template"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 227.33 102.87 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41d53fa9-9ad8-4253-81fb-e4bc00b991bf")
-		(property "Reference" "C05"
-			(at 223.52 104.1401 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1 µF"
-			(at 223.52 101.6001 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TPS562208DDCR:SOT95P280X110-6N"
-			(at 226.3648 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "kicad-embed://KEM_C1002_X7R_SMD.pdf"
-			(at 227.33 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 227.33 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey Part Number" "399-C0603C104K3RACTUCT-ND"
-			(at 227.33 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kemet/C0603C104K3RACTU/416044?s=N4IgTCBcDaIMwE4EFoCMYAcq3IHIBEQBdAXyA"
-			(at 227.33 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "KEMET"
-			(at 227.33 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part Number" "C0603C104K3RACTU"
-			(at 227.33 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "517b16e0-b934-4ef6-91a5-21a04ba202b7")
-		)
-		(pin "1"
-			(uuid "034aa76b-c9c9-4cd4-9ec9-8b748f5fe8de")
-		)
-		(instances
-			(project "template"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "C05")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -26226,7 +25893,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 132.08 118.11 0)
+		(at 123.19 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26237,7 +25904,7 @@
 		(fields_autoplaced yes)
 		(uuid "4b9231c3-2aec-4472-a2fe-6125f07808de")
 		(property "Reference" "#PWR01"
-			(at 132.08 124.46 0)
+			(at 123.19 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26248,7 +25915,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 134.62 119.3799 0)
+			(at 125.73 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26259,7 +25926,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 118.11 0)
+			(at 123.19 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26270,7 +25937,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 118.11 0)
+			(at 123.19 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26281,7 +25948,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 118.11 0)
+			(at 123.19 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26305,7 +25972,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 97.79 97.79 0)
+		(at 92.71 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26316,7 +25983,7 @@
 		(fields_autoplaced yes)
 		(uuid "4baac575-77cf-4b00-953c-9a0ee6dfd8b3")
 		(property "Reference" "C1"
-			(at 101.6 96.5199 0)
+			(at 96.52 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26327,7 +25994,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 101.6 99.0599 0)
+			(at 96.52 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26337,8 +26004,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_1608Metric"
-			(at 98.7552 101.6 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 93.6752 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26349,7 +26016,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://490_Chip_Multilayer_CAT2021_MLCC.pdf"
-			(at 97.79 97.79 0)
+			(at 92.71 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26360,7 +26027,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 97.79 97.79 0)
+			(at 92.71 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26371,7 +26038,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-GRM219R61C226ME15KCT-ND"
-			(at 97.79 97.79 0)
+			(at 92.71 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26382,7 +26049,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740"
-			(at 97.79 97.79 0)
+			(at 92.71 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26393,7 +26060,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 97.79 97.79 0)
+			(at 92.71 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26404,7 +26071,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM219R61C226ME15K"
-			(at 97.79 97.79 0)
+			(at 92.71 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26430,8 +26097,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 86.36 97.79 0)
+		(lib_id "power:GND")
+		(at 72.39 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26440,31 +26107,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8dd7af4a-77cf-4093-917b-8067668d3965")
-		(property "Reference" "C2"
-			(at 90.17 96.5199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 90.17 99.0599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_1608Metric"
-			(at 87.3252 101.6 0)
+		(uuid "665a1ce0-b69c-48e4-940c-38b839f22727")
+		(property "Reference" "#PWR02"
+			(at 72.39 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26474,8 +26119,108 @@
 				)
 			)
 		)
-		(property "Datasheet" "kicad-embed://490_Chip_Multilayer_CAT2021_MLCC.pdf"
-			(at 86.36 97.79 0)
+		(property "Value" "GND"
+			(at 72.39 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 72.39 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91d36364-9592-48e0-a70c-dc049a07d8e3")
+		)
+		(instances
+			(project "template"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 223.52 96.52 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ad7ef0c-eecf-4652-abea-22198d0a656e")
+		(property "Reference" "CO5"
+			(at 227.33 95.2499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1 µF"
+			(at 227.33 97.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 222.5548 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "kicad-embed://KEM_C1002_X7R_SMD.pdf"
+			(at 223.52 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26486,7 +26231,133 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 86.36 97.79 0)
+			(at 223.52 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "399-C0603C104K3RACTUCT-ND"
+			(at 223.52 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kemet/C0603C104K3RACTU/416044?s=N4IgTCBcDaIMwE4EFoCMYAcq3IHIBEQBdAXyA"
+			(at 223.52 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 223.52 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "C0603C104K3RACTU"
+			(at 223.52 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b55c56bd-697d-4168-9a08-3684c88b862f")
+		)
+		(pin "1"
+			(uuid "31eee609-99b2-4557-b226-d5edbbae7ac0")
+		)
+		(instances
+			(project "template"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "CO5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 81.28 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8dd7af4a-77cf-4093-917b-8067668d3965")
+		(property "Reference" "C2"
+			(at 85.09 90.1699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 85.09 92.7099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 82.2452 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "kicad-embed://490_Chip_Multilayer_CAT2021_MLCC.pdf"
+			(at 81.28 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 81.28 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26497,7 +26368,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-GRM219R61C226ME15KCT-ND"
-			(at 86.36 97.79 0)
+			(at 81.28 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26508,7 +26379,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740"
-			(at 86.36 97.79 0)
+			(at 81.28 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26519,7 +26390,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 86.36 97.79 0)
+			(at 81.28 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26530,7 +26401,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM219R61C226ME15K"
-			(at 86.36 97.79 0)
+			(at 81.28 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26557,7 +26428,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 149.86 115.57 90)
+		(at 140.97 93.98 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26568,7 +26439,7 @@
 		(fields_autoplaced yes)
 		(uuid "94787ab0-13d1-4cf5-a276-a1bc63dcb5f2")
 		(property "Reference" "R1"
-			(at 149.86 109.22 90)
+			(at 140.97 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26578,7 +26449,7 @@
 			)
 		)
 		(property "Value" "54.9 kΩ"
-			(at 149.86 111.76 90)
+			(at 140.97 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26587,8 +26458,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
-			(at 149.86 117.348 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 140.97 95.758 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26599,7 +26470,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://cr1.pdf"
-			(at 149.86 115.57 0)
+			(at 140.97 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26610,7 +26481,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 149.86 115.57 0)
+			(at 140.97 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26621,7 +26492,7 @@
 			)
 		)
 		(property "Digikey Part Number" "118-CR0603-FX-5492ELFCT-ND"
-			(at 149.86 115.57 0)
+			(at 140.97 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26632,7 +26503,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/bourns-inc/CR0603-FX-5492ELF/15194819"
-			(at 149.86 115.57 0)
+			(at 140.97 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26643,7 +26514,7 @@
 			)
 		)
 		(property "Manufacturer" "Bourns Inc."
-			(at 149.86 115.57 0)
+			(at 140.97 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26654,7 +26525,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CR0603-FX-5492ELF"
-			(at 149.86 115.57 0)
+			(at 140.97 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26681,7 +26552,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 189.23 102.87 180)
+		(at 189.23 96.52 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26692,7 +26563,7 @@
 		(fields_autoplaced yes)
 		(uuid "a1e3d097-43cc-47c0-952d-b94b729c0489")
 		(property "Reference" "CO2"
-			(at 185.42 104.1401 0)
+			(at 185.42 97.7901 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26703,7 +26574,7 @@
 			)
 		)
 		(property "Value" "22 µF"
-			(at 185.42 101.6001 0)
+			(at 185.42 95.2501 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26713,8 +26584,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TPS562208DDCR:SOT95P280X110-6N"
-			(at 188.2648 99.06 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 188.2648 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26725,7 +26596,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://ZRB18AR61A226ME01-03A-EN.pdf"
-			(at 189.23 102.87 0)
+			(at 189.23 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26736,7 +26607,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 189.23 102.87 0)
+			(at 189.23 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26747,7 +26618,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-ZRB18AR61A226ME01LCT-ND"
-			(at 189.23 102.87 0)
+			(at 189.23 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26758,7 +26629,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/ZRB18AR61A226ME01L/7243452"
-			(at 189.23 102.87 0)
+			(at 189.23 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26769,7 +26640,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 189.23 102.87 0)
+			(at 189.23 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26780,7 +26651,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "ZRB18AR61A226ME01L"
-			(at 189.23 102.87 0)
+			(at 189.23 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26807,7 +26678,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 63.5 97.79 0)
+		(at 58.42 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26818,7 +26689,7 @@
 		(fields_autoplaced yes)
 		(uuid "a3e356a1-a9b9-40b6-ac39-3936a35cecd5")
 		(property "Reference" "C4"
-			(at 67.31 96.5199 0)
+			(at 62.23 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26829,7 +26700,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 67.31 99.0599 0)
+			(at 62.23 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26839,8 +26710,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_1608Metric"
-			(at 64.4652 101.6 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 59.3852 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26851,7 +26722,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://490_Chip_Multilayer_CAT2021_MLCC.pdf"
-			(at 63.5 97.79 0)
+			(at 58.42 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26862,7 +26733,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 63.5 97.79 0)
+			(at 58.42 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26873,7 +26744,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-GRM219R61C226ME15KCT-ND"
-			(at 63.5 97.79 0)
+			(at 58.42 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26884,7 +26755,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15K/11618740"
-			(at 63.5 97.79 0)
+			(at 58.42 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26895,7 +26766,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 63.5 97.79 0)
+			(at 58.42 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26906,7 +26777,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRM219R61C226ME15K"
-			(at 63.5 97.79 0)
+			(at 58.42 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26933,7 +26804,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 227.33 107.95 0)
+		(at 196.85 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26944,7 +26815,7 @@
 		(fields_autoplaced yes)
 		(uuid "a67c134f-6e0e-406b-b2eb-ff9088eb788e")
 		(property "Reference" "#PWR03"
-			(at 227.33 114.3 0)
+			(at 196.85 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26955,7 +26826,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 227.33 113.03 0)
+			(at 196.85 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26965,7 +26836,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 107.95 0)
+			(at 196.85 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26976,7 +26847,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 107.95 0)
+			(at 196.85 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26987,7 +26858,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 227.33 107.95 0)
+			(at 196.85 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27011,7 +26882,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 214.63 102.87 180)
+		(at 214.63 96.52 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27022,7 +26893,7 @@
 		(fields_autoplaced yes)
 		(uuid "bb7e9a3c-854c-4f8d-85a9-27d59c32c976")
 		(property "Reference" "CO4"
-			(at 210.82 104.1401 0)
+			(at 210.82 97.7901 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27033,7 +26904,7 @@
 			)
 		)
 		(property "Value" "22 µF"
-			(at 210.82 101.6001 0)
+			(at 210.82 95.2501 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27043,8 +26914,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TPS562208DDCR:SOT95P280X110-6N"
-			(at 213.6648 99.06 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 213.6648 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27055,7 +26926,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://ZRB18AR61A226ME01-03A-EN.pdf"
-			(at 214.63 102.87 0)
+			(at 214.63 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27066,7 +26937,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 214.63 102.87 0)
+			(at 214.63 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27077,7 +26948,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-ZRB18AR61A226ME01LCT-ND"
-			(at 214.63 102.87 0)
+			(at 214.63 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27088,7 +26959,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/ZRB18AR61A226ME01L/7243452"
-			(at 214.63 102.87 0)
+			(at 214.63 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27099,7 +26970,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 214.63 102.87 0)
+			(at 214.63 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27110,7 +26981,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "ZRB18AR61A226ME01L"
-			(at 214.63 102.87 0)
+			(at 214.63 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27137,7 +27008,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 201.93 102.87 180)
+		(at 201.93 96.52 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27148,7 +27019,7 @@
 		(fields_autoplaced yes)
 		(uuid "df9982dd-7da5-4689-bafd-dff849c22c67")
 		(property "Reference" "CO3"
-			(at 198.12 104.1401 0)
+			(at 198.12 97.7901 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27159,7 +27030,7 @@
 			)
 		)
 		(property "Value" "22 µF"
-			(at 198.12 101.6001 0)
+			(at 198.12 95.2501 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27169,8 +27040,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TPS562208DDCR:SOT95P280X110-6N"
-			(at 200.9648 99.06 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 200.9648 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27181,7 +27052,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://ZRB18AR61A226ME01-03A-EN.pdf"
-			(at 201.93 102.87 0)
+			(at 201.93 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27192,7 +27063,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 201.93 102.87 0)
+			(at 201.93 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27203,7 +27074,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-ZRB18AR61A226ME01LCT-ND"
-			(at 201.93 102.87 0)
+			(at 201.93 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27214,7 +27085,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/ZRB18AR61A226ME01L/7243452"
-			(at 201.93 102.87 0)
+			(at 201.93 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27225,7 +27096,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 201.93 102.87 0)
+			(at 201.93 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27236,7 +27107,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "ZRB18AR61A226ME01L"
-			(at 201.93 102.87 0)
+			(at 201.93 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27263,7 +27134,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 176.53 102.87 180)
+		(at 176.53 96.52 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27274,7 +27145,7 @@
 		(fields_autoplaced yes)
 		(uuid "dfcaef7a-7116-4ee5-8659-44246062a510")
 		(property "Reference" "CO1"
-			(at 172.72 104.1401 0)
+			(at 172.72 97.7901 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27285,7 +27156,7 @@
 			)
 		)
 		(property "Value" "22 µF"
-			(at 172.72 101.6001 0)
+			(at 172.72 95.2501 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27295,8 +27166,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TPS562208DDCR:SOT95P280X110-6N"
-			(at 175.5648 99.06 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 175.5648 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27307,7 +27178,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://ZRB18AR61A226ME01-03A-EN.pdf"
-			(at 176.53 102.87 0)
+			(at 176.53 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27318,7 +27189,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 176.53 102.87 0)
+			(at 176.53 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27329,7 +27200,7 @@
 			)
 		)
 		(property "Digikey Part Number" "490-ZRB18AR61A226ME01LCT-ND"
-			(at 176.53 102.87 0)
+			(at 176.53 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27340,7 +27211,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/ZRB18AR61A226ME01L/7243452"
-			(at 176.53 102.87 0)
+			(at 176.53 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27351,7 +27222,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 176.53 102.87 0)
+			(at 176.53 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27362,7 +27233,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "ZRB18AR61A226ME01L"
-			(at 176.53 102.87 0)
+			(at 176.53 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27389,7 +27260,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 138.43 107.95 270)
+		(at 129.54 86.36 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27400,7 +27271,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6755f2d-c582-4370-a827-9010025318af")
 		(property "Reference" "CBoot1"
-			(at 138.43 100.33 90)
+			(at 129.54 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27410,7 +27281,7 @@
 			)
 		)
 		(property "Value" "0.1 µF"
-			(at 138.43 102.87 90)
+			(at 129.54 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27419,8 +27290,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS562208DDCR:SOT95P280X110-6N"
-			(at 134.62 108.9152 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 125.73 87.3252 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27431,7 +27302,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://KEM_C1002_X7R_SMD.pdf"
-			(at 138.43 107.95 0)
+			(at 129.54 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27442,7 +27313,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 138.43 107.95 0)
+			(at 129.54 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27453,7 +27324,7 @@
 			)
 		)
 		(property "Digikey Part Number" "399-C0603C104K3RACTUCT-ND"
-			(at 138.43 107.95 0)
+			(at 129.54 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27464,7 +27335,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kemet/C0603C104K3RACTU/416044?s=N4IgTCBcDaIMwE4EFoCMYAcq3IHIBEQBdAXyA"
-			(at 138.43 107.95 0)
+			(at 129.54 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27475,7 +27346,7 @@
 			)
 		)
 		(property "Manufacturer" "KEMET"
-			(at 138.43 107.95 0)
+			(at 129.54 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27486,7 +27357,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "C0603C104K3RACTU"
-			(at 138.43 107.95 0)
+			(at 129.54 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27513,7 +27384,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 142.24 125.73 0)
+		(at 133.35 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27524,7 +27395,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe626635-60fc-435d-8281-919366e22132")
 		(property "Reference" "R2"
-			(at 144.78 124.4599 0)
+			(at 135.89 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27535,7 +27406,7 @@
 			)
 		)
 		(property "Value" "10 kΩ"
-			(at 144.78 126.9999 0)
+			(at 135.89 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27545,8 +27416,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 140.462 125.73 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 131.572 104.14 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27557,7 +27428,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://SEI-RMCF_RMCP.pdf"
-			(at 142.24 125.73 0)
+			(at 133.35 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27568,7 +27439,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 142.24 125.73 0)
+			(at 133.35 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27579,7 +27450,7 @@
 			)
 		)
 		(property "Digikey Part Number" "738-RMCF0603FG10K0CT-ND"
-			(at 142.24 125.73 0)
+			(at 133.35 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27590,7 +27461,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FG10K0/7790377"
-			(at 142.24 125.73 0)
+			(at 133.35 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27601,7 +27472,7 @@
 			)
 		)
 		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 142.24 125.73 0)
+			(at 133.35 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27612,7 +27483,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RMCF0603FG10K0"
-			(at 142.24 125.73 0)
+			(at 133.35 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

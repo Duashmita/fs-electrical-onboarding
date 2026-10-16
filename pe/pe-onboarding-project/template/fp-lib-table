@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "formula_slug_footprint_library") (type "KiCad") (uri "${KIPRJMOD}/../fs-components/formula_slug_footprint_library.pretty/") (options "") (descr ""))
 	(lib (name "BUCKIC") (type "KiCad") (uri "C:/Users/raken/Downloads/TPS562208DDCR.pretty") (options "") (descr ""))
+	(lib (name "FSCustom") (type "KiCad") (uri "${KICAD_USER_TEMPLATE_DIR}/kicad-template/template/FS_CustomI.pretty") (options "") (descr ""))
 )
