@@ -5,10 +5,10 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {
-    APPS1_percent(APPS1_pin);
-    APPS2_percent(APPS2_pin);
-}
+ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) : 
+    APPS1_percent(APPS1_pin),
+    APPS2_percent(APPS2_pin) 
+    {};
 
 /* 
     Nice function to write which returns a wrapped version of the
@@ -80,7 +80,7 @@ void ETCController::update_implausibilities() {
     // Check out of range logic
     implaus_range_duration_ms = implaus_range_timer.elapsed_time().count() / 1000;
     if (!(in_range(APPS1_percent * 3.3, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && 
-            in_range(APPS2_percent * 3.3, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE));) {
+            in_range(APPS2_percent * 3.3, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE))) {
         if (implaus_range_duration_ms == 0) {
             implaus_range_timer.start();
         } else if (implaus_range_duration_ms > 100) {

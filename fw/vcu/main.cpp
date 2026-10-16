@@ -51,7 +51,7 @@ void send_etc_CAN_messages() {
                 | etc.implaus_out_of_range << 6;
 
     // 0x193 ID is VCU_TPDO_STATUS
-    can.send(CANMessage(0x193, message, 8));
+    can.write(CANMessage(0x193, message, 8));
 }
 
 /*
@@ -67,5 +67,5 @@ void send_sme_CAN_messages() {
     message[1] |= (etc.motor_torque_demand >> 8) && 0xFF;
 
     // 0x186 ID is SME_RPDO_Throttle_Demand
-    can.send(CANMessage(0x186, message, 8));
+    can.write(CANMessage(0x186, message, 8));
 }

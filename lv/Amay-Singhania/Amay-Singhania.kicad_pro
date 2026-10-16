@@ -860,16 +860,16 @@
       },
       {
         "filename": "strain_gauges.kicad_sch",
-        "name": "Amplifiers",
+        "name": "In-Amp with ADC",
         "uuid": "7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
       },
       {
-        "filename": "adc.kicad_sch",
-        "name": "ADC",
-        "uuid": "2703b853-1807-4830-9fd4-a1d2c7f88a1f"
+        "filename": "adc_with_pga.kicad_sch",
+        "name": "ADC with PGA",
+        "uuid": "94d2054e-a50f-482d-afff-dfa6248d499c"
       }
     ],
-    "used_designators": "J1,U1-7,S3-7,#PWR1-30,C1-12,R1-24",
+    "used_designators": "SW1-4,J1-2,U1-7,S3-7,#PWR1-51,C1-14,R1-24",
     "variants": []
   },
   "sheets": [
@@ -879,11 +879,11 @@
     ],
     [
       "7454f931-1bd2-4f2e-90f3-3bbf92ce07ed",
-      "Amplifiers"
+      "In-Amp with ADC"
     ],
     [
-      "2703b853-1807-4830-9fd4-a1d2c7f88a1f",
-      "ADC"
+      "94d2054e-a50f-482d-afff-dfa6248d499c",
+      "ADC with PGA"
     ]
   ],
   "text_variables": {
