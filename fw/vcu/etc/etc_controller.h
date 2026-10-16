@@ -37,8 +37,11 @@ private:
         Start of private variables
     */
 
-    Timer implaus_timer;
-    int64_t implaus_duration_ms = 0;
+    Timer implaus_deviation_timer;
+    Timer implaus_range_timer;
+    
+    int64_t implaus_deviation_duration_ms = 0;
+    int64_t implaus_range_duration_ms = 0;
 
     float APPS1_pos = 0;
     float APPS2_pos = 0;

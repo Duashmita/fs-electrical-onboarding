@@ -45,8 +45,8 @@ void send_etc_CAN_messages() {
     // 6 = VCU_ETC_IMPLAUS_APPS_DEVIATION
     uint8_t message[8] = {0};
 
-    message[0] = 1
-                | 1 << 1
+    message[0] = !(etc.implaus_deviation || etc.implaus_out_of_range)
+                | !(etc.implaus_deviation || etc.implaus_out_of_range) << 1
                 | etc.implaus_deviation << 4
                 | etc.implaus_out_of_range << 6;
 
@@ -63,8 +63,8 @@ void send_sme_CAN_messages() {
     // 0-15 = SME_THROTL_TorqueDemand
     uint8_t message[8] = {0};
 
-    message[0] |= etc.motor_torque_demand;
-    message[1] |= (etc.motor_torque_demand >> 8);
+    message[0] |= etc.motor_torque_demand && 0xFF;
+    message[1] |= (etc.motor_torque_demand >> 8) && 0xFF;
 
     // 0x186 ID is SME_RPDO_Throttle_Demand
     can.send(CANMessage(0x186, message, 8));

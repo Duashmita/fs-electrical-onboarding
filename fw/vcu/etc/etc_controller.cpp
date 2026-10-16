@@ -29,7 +29,7 @@ float ETCController::clamp(float value) {
     depending on whether low <= value <= high is true.
 */
 bool ETCController::in_range(float value, float low, float high) {
-    return (value >= low && value <= high);
+    return (value >= low) && (value <= high);
 }
 
 /*
@@ -49,16 +49,16 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
-    APPS1_pos = (APPS1_percent * 3.3 - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE);
-    APPS2_pos = (APPS2_percent * 3.3 - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE);
+    APPS1_pos = (APPS1_percent * 3.3 - APPS1_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE) / 
+                (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE);
+    APPS2_pos = (APPS2_percent * 3.3 - APPS2_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE) / 
+                (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE);
 
     apps_avg_position = (APPS1_pos + APPS2_pos) / 2;
 
-    if (apps_avg_position < PEDAL_DEADZONE_PERCENTAGE) {
-        apps_avg_position = 0;
+    if (!(implaus_deviation || implaus_out_of_range)){
+        motor_torque_demand = apps_avg_position * MAX_TORQUE;
     }
-
-    motor_torque_demand = apps_avg_position * MAX_TORQUE;
 
     /*
         Finish the step listed above.
@@ -77,37 +77,33 @@ void ETCController::update_implausibilities() {
         Start of implaus logic checking.
     */
 
-    implaus_out_of_range = !(in_range(APPS1_percent * 3.3, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && 
-                             in_range(APPS2_percent * 3.3, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE));
+    // Check out of range logic
+    implaus_range_duration_ms = implaus_range_timer.elapsed_time().count() / 1000;
+    if (!(in_range(APPS1_percent * 3.3, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && 
+            in_range(APPS2_percent * 3.3, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE));) {
+        if (implaus_range_duration_ms == 0) {
+            implaus_range_timer.start();
+        } else if (implaus_range_duration_ms > 100) {
+            motor_torque_demand = 0;
+            implaus_out_of_range = true;
+        }
+    } else {
+        implaus_range_timer.stop();
+        implaus_range_timer.reset();
+    }
 
-    if (APPS1_pos > 0.1 || APPS2_pos > 0.1){
-        if (std::abs(APPS1_pos - APPS2_pos) < 0.1) {
-            implaus_deviation = false;
-        } else {
+    // Check deviation logic
+    implaus_deviation_duration_ms = implaus_deviation_timer.elapsed_time().count() / 1000;
+    if ((APPS1_pos > 0.1f || APPS2_pos > 0.1f) && 
+            (std::abs(APPS1_pos - APPS2_pos) >= 0.1f)) {
+        if (implaus_deviation_duration_ms == 0) {
+            implaus_deviation_timer.start();
+        } else if (implaus_deviation_duration_ms > 100) {
+            motor_torque_demand = 0;
             implaus_deviation = true;
         }
     } else {
-        implaus_deviation = false;
-    }
-
-    /*
-        End of implaus logic checking.
-    */
-
-    /*
-        Check how long each implaus has been active for and
-        update the actual implaus result if it's been active 
-        for too long.
-    */
-    implaus_duration_ms = implaus_timer.elapsed_time().count() / 1000;
-    if (implaus_deviation | implaus_out_of_range) {
-        if (implaus_duration_ms == 0) {
-            implaus_timer.start();
-        } else if (implaus_duration_ms > 100) {
-            motor_torque_demand = 0;
-        }
-    } else {
-        implaus_timer.stop();
-        implaus_timer.reset();
+        implaus_deviation_timer.stop();
+        implaus_deviation_timer.reset();
     }
 }

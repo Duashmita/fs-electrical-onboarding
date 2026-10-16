@@ -42,33 +42,58 @@ int main(void) {
             a way to get CAN communication going aswell.
         */
         float APPS1_voltage = ADCtoVoltage(readADC(APPS1_hadc), 3.3f);
-        HAL_Delay(100)
+        HAL_Delay(100);
 
         float APPS2_voltage = ADCtoVoltage(readADC(APPS2_hadc), 3.3f);
 
-        float APPS1_pos = (APPS1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE);
-        float APPS2_pos = (APPS2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE);
+        float APPS1_pos = (APPS1_voltage * 3.3 - APPS1_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE) / 
+                        (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE);
+        float APPS2_pos = (APPS2_voltage * 3.3 - APPS2_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE) / 
+                        (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE);
 
         float apps_avg_position = (APPS1_pos + APPS2_pos) / 2;
 
-        if (apps_avg_position < PEDAL_DEADZONE_PERCENTAGE) {
-            apps_avg_position = 0;
-        }
-
         float motor_torque_demand = apps_avg_position * MAX_TORQUE;
 
-        bool implaus_out_of_range = !(in_range(APPS1_voltage, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && 
-                                in_range(APPS2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE));
-        
-        bool implaus_deviation = false;
+        implaus_out_of_range_initial = !(in_range(APPS1_percent * 3.3, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && 
+                             in_range(APPS2_percent * 3.3, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE));
+
+        implaus_range_duration_ms = implaus_range_timer.elapsed_time().count() / 1000;
+        if (implaus_out_of_range_initial) {
+            if (implaus_range_duration_ms == 0) {
+                implaus_range_timer.start();
+            } else if (implaus_range_duration_ms > 100) {
+                motor_torque_demand = 0;
+                implaus_out_of_range = true;
+            }
+        } else {
+            implaus_range_timer.stop();
+            implaus_range_timer.reset();
+        }
+
+        // Check deviation logic
+
         if (APPS1_pos > 0.1 || APPS2_pos > 0.1){
             if (std::abs(APPS1_pos - APPS2_pos) < 0.1) {
-                implaus_deviation = false;
+                implaus_deviation_initial = false;
             } else {
+                implaus_deviation_initial = true;
+            }
+        } else {
+            implaus_deviation_initial = false;
+        }
+        
+        implaus_deviation_duration_ms = implaus_deviation_timer.elapsed_time().count() / 1000;
+        if (implaus_deviation_initial) {
+            if (implaus_deviation_duration_ms == 0) {
+                implaus_deviation_timer.start();
+            } else if (implaus_deviation_duration_ms > 100) {
+                motor_torque_demand = 0;
                 implaus_deviation = true;
             }
         } else {
-            implaus_deviation = false;
+            implaus_deviation_timer.stop();
+            implaus_deviation_timer.reset();
         }
 
         
