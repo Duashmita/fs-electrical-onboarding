@@ -15,6 +15,15 @@ These will be the associated notes for the strain gauge project. I meant to star
 - https://dewesoft.com/blog/measuring-wishbone-deformations-on-formula
     - This team measured wishbone deformation using strain gauges
     - Used resistive strain gauges
+    - Article includes equations to relate different factors of deformation, may be useful later
+
+# FPC Advantages and Drawbacks
+- Can be bent without causing significant damage
+- Typically weigh less (although for this case the difference would be minimal)
+- Good heat dissipation (kind of irrelevant)
+- High initial costs
+- Not repairable
+
 
 
 # Computation Notes
@@ -26,3 +35,6 @@ L - length (goal, since resistance is in spec)
 W - trace width (specified by JLC, going with 3 mil)
 T - trace height (12μm for 3 mil width from JLC)
 α - temperature coefficient (3.9 * 10^-3 ohm/ohm/C for copper)
+- Since for this consideration I'm going to assume STP (there's no consistent operating temperature in this environment regardless, so the resistance variability cannot be accounted for in this approximation)
+- Temperature portion then cancels out (25C -25 = 0)
+- Did the math on a notepad the way Dhar intended
