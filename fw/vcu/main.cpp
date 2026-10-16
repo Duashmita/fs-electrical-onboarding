@@ -72,7 +72,8 @@ void send_etc_CAN_messages(const ETCController::State &state) {
     uint8_t motor_enabled = 1;
 
     uint8_t out_of_range = state.apps_out_of_range;
-    uint8_t deviation = state.apps_deviation;
+    uint8_t deviation = state.apps_deviation; 
+    //already uses persistent values as get_state() returns those
 
     // Pack each signal into the correct bit
     data[0] = (ready_to_drive)

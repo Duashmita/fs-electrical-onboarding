@@ -57,9 +57,6 @@ private:
     bool apps_out_of_range = false;
     bool apps_deviation = false;    
  
-    bool range_timer_active = false;
-    bool deviation_timer_active = false;
-
     Timer range_timer;
     Timer deviation_timer;
  

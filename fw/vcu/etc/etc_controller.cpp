@@ -9,7 +9,8 @@
 // Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) 
     : apps1(APPS1_pin), apps2(APPS2_pin) {
-    
+    deviation_timer.start();
+    range_timer.start();
 }
 
 ETCController::State ETCController::get_state() {
@@ -136,36 +137,23 @@ void ETCController::update_implausibilities() {
         for too long.
     */
 
+    // timers nonstop, valid readings reset the elapsed fault time
     if (apps_deviation) {
-        if (!deviation_timer_active) {
-            deviation_timer.start();
-            deviation_timer_active = true;
-        }
-
         const auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(
             deviation_timer.elapsed_time());
         deviation_fault_persistent = elapsed.count() > 100;
     } else {
-        deviation_timer.stop();
         deviation_timer.reset();
-        deviation_timer_active = false;
         deviation_fault_persistent = false;
     }
 
     if (apps_out_of_range) {
-        if (!range_timer_active) {
-            range_timer.start();
-            range_timer_active = true;
-        }
-
         const auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(
             range_timer.elapsed_time());
         range_fault_persistent = elapsed.count() > 100;
             
     } else {
-        range_timer.stop();
         range_timer.reset();
-        range_timer_active = false;
         range_fault_persistent = false;
     }
 
