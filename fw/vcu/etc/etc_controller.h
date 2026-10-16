@@ -23,9 +23,13 @@ public:
     /*
         End of public variables
     */
-
+   //getters
     bool getImplaus_1();
     bool getImplaus2();
+
+    bool getGenFaulting();
+
+    int16_t getCalculatedTorque();
 
     /*
         Public method definitions, don't edit

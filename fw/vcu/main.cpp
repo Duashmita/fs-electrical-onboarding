@@ -47,8 +47,8 @@ void send_etc_CAN_messages() {
     uint8_t vcu_tpdo_status_data[8] = {0};
 
     vcu_tpdo_status_data[0] = (
-        (1u << 0) | // ready to drive //should change to be based on implausabilities occuring
-        (1u << 1) | // etc motor enabled
+        (etc.getGenFaulting() << 0) | // ready to drive //should change to be based on implausabilities occuring
+        (etc.getGenFaulting() << 1) | // etc motor enabled
         (etc.getImplaus_1() << 4) | // implaus_apps_out_of_range
         (etc.getImplaus2() << 6)
     );
@@ -57,7 +57,6 @@ void send_etc_CAN_messages() {
     can.write(vcu_tpdo_status_msg);
     printf("Sending ETC CAN messages\n");
 }
-
 /*
     Must send the SME_RPDO_Throttle_Demand CAN
     message with SME_THROTL_TorqueDemand set to the
@@ -66,13 +65,9 @@ void send_etc_CAN_messages() {
 void send_sme_CAN_messages() {
     uint8_t sme_rpdo_throttle_demand_data[8] = {0};
     
-    sme_rpdo_throttle_demand_data[0] = (
-        etc.getCalculatedTorque() & 0xFF
-    );
+    sme_rpdo_throttle_demand_data[0] = etc.getCalculatedTorque() & 0xFF; //first 8 bits of SME_THROTL_TorqueDemand
 
-    sme_rpdo_throttle_demand_data[1] = (
-        (etc.getCalculatedTorque() >> 8) & 0xFF
-    );
+    sme_rpdo_throttle_demand_data[1] = (etc.getCalculatedTorque() >> 8) & 0xFF; //second 8 bits of SME_THROTL_TorqueDemand
 // shift and get first 8 bits of 16 bit mssg as first element
 //2nd element is the last 8 bits of mssg
     // add data
