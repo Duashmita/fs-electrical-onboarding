@@ -1,4 +1,5 @@
 #include <cstdio>
+#include <cmath>
 #include <string.h>
 #include "analogin_api.h"
 #include "stm32f4xx_hal.h"
@@ -25,6 +26,8 @@ constexpr float APPS2_MIN_VOLTAGE = 0.439f;
 constexpr float APPS2_MAX_VOLTAGE = 1.133f;
 
 constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03;
+constexpr uint32_t TIMER_FREQUENCY_HZ = 10000;
+constexpr uint32_t IMPLAUSIBILITY_TIMEOUT_MS = 100;
 
 constexpr int16_t MAX_TORQUE = 32767 * 0.1; // Multiplied by 0.1 for controlled 
                                                     // motor torque during onboarding.
@@ -32,8 +35,8 @@ constexpr int16_t MAX_TORQUE = 32767 * 0.1; // Multiplied by 0.1 for controlled
 TIM_HandleTypeDef range_timer{};
 TIM_HandleTypeDef deviation_timer{};
 
-bool range_timer_active = false;
-bool deviation_timer_active = false;
+bool apps_out_of_range = false;
+bool apps_deviation = false;
 
 bool range_fault_persistent = false;
 bool deviation_fault_persistent = false;
@@ -49,7 +52,7 @@ bool timer_start(TIM_HandleTypeDef &timer, TIM_TypeDef *instance) {
     }
 
     timer.Instance = instance;
-    timer.Init.Prescaler = timer_clock / 10000 - 1; 
+    timer.Init.Prescaler = timer_clock / TIMER_FREQUENCY_HZ - 1;
     timer.Init.Period = 0xFFFF;
 
     if (HAL_TIM_Base_Init(&timer) != HAL_OK) {
@@ -91,17 +94,7 @@ bool read_voltage(ADC_HandleTypeDef *hadc, float &voltage) {
     return true;
 }
 
-int16_t calculate_torque(float apps1_voltage, float apps2_voltage) {
-    float apps1_position = clamp(
-        (apps1_voltage - APPS1_MIN_VOLTAGE) /
-        (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE)
-    );
-
-    float apps2_position = clamp(
-        (apps2_voltage - APPS2_MIN_VOLTAGE) /
-        (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE)
-    );
-
+int16_t calculate_torque(float apps1_position, float apps2_position) {
     float pedal_position = (apps1_position + apps2_position) / 2.0f;
 
     pedal_position = clamp(
@@ -112,7 +105,39 @@ int16_t calculate_torque(float apps1_voltage, float apps2_voltage) {
     return static_cast<int16_t>(pedal_position * MAX_TORQUE);
 }
 
+bool in_range(float value, float low, float high) {
+    return value >= low && value <= high;
+}
 
+void update_implausibilities(float apps1_voltage, float apps2_voltage,
+                            float apps1_position, float apps2_position,
+                            int16_t &torque_demand) {
+    apps_out_of_range =
+        !in_range(apps1_voltage, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) ||
+        !in_range(apps2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE);
+
+    apps_deviation = std::fabs(apps1_position - apps2_position) > 0.1f;
+
+    if (apps_deviation) {
+        uint32_t elapsed_ms = __HAL_TIM_GET_COUNTER(&deviation_timer) / (TIMER_FREQUENCY_HZ / 1000);
+        deviation_fault_persistent = elapsed_ms > IMPLAUSIBILITY_TIMEOUT_MS;
+    } else {
+        __HAL_TIM_SET_COUNTER(&deviation_timer, 0);
+        deviation_fault_persistent = false;
+    }
+
+    if (apps_out_of_range) {
+        uint32_t elapsed_ms = __HAL_TIM_GET_COUNTER(&range_timer) / (TIMER_FREQUENCY_HZ / 1000);
+        range_fault_persistent = elapsed_ms > IMPLAUSIBILITY_TIMEOUT_MS;
+    } else {
+        __HAL_TIM_SET_COUNTER(&range_timer, 0);
+        range_fault_persistent = false;
+    }
+
+    if (range_fault_persistent || deviation_fault_persistent) {
+        torque_demand = 0;
+    }
+}
 
 int main(void) {
 
@@ -147,17 +172,27 @@ int main(void) {
 
         int16_t torque_demand = 0;
 
-        uint32_t range_ticks = __HAL_TIM_GET_COUNTER(&range_timer);
-        uint32_t deviation_ticks = __HAL_TIM_GET_COUNTER(&deviation_timer);
-        
         // make sure to check if the ADC read was successful before printing the voltages
         bool apps1_ok = read_voltage(APPS1_hadc, apps1_voltage);
         bool apps2_ok = read_voltage(APPS2_hadc, apps2_voltage);
 
         if (apps1_ok && apps2_ok) {
-            torque_demand = calculate_torque(apps1_voltage, apps2_voltage);
-            printf("APPS1: %.3f V, APPS2: %.3f V\n, Torque Demand: %d\n",
-                apps1_voltage, apps2_voltage, torque_demand);
+            float apps1_position = clamp(
+                (apps1_voltage - APPS1_MIN_VOLTAGE) /
+                (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE)
+            );
+            float apps2_position = clamp(
+                (apps2_voltage - APPS2_MIN_VOLTAGE) /
+                (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE)
+            );
+
+            torque_demand = calculate_torque(apps1_position, apps2_position);
+            update_implausibilities(apps1_voltage, apps2_voltage,
+                                   apps1_position, apps2_position, torque_demand);
+            printf("APPS1: %.3f V, APPS2: %.3f V, Torque Demand: %d, "
+                   "Out of Range: %d, Deviation: %d\n",
+                apps1_voltage, apps2_voltage, torque_demand,
+                range_fault_persistent, deviation_fault_persistent);
         } else {
             torque_demand = 0;
             printf("ADC read failed\n");
