@@ -1,6 +1,5 @@
 # Notes -- Firmware Onboarding Project
 (so that I have a place within VSCode to write things down as I work)
-(because what is going on)
 
 ## 10/08/26
     - created this file :D
@@ -8,8 +7,8 @@
     - now trying to figure out how to write the constructor for ETC_Controller class
         - want to understand the class and the use of the objects made from that class so i can write informedly (assuming that's a word)
     - i already found the PIN names from the kicad schematic
-        - APPS_1 -- PC_1 | vv
-        - APPS_2 -- PC_2 (<-- confirm this again)
+        - APPS_1 -- PC_1
+        - APPS_2 -- PC_2
     - APPS = "Accelerator Pedal Position Sensor"
     - Glossary says APPS *RETURNS* a voltage... inferring that it's how we receive info on how far the accelerator pedal's been pressed
         - Have to convert this to . . . what?
