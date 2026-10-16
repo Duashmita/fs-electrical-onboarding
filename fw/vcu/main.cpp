@@ -10,8 +10,12 @@ CAN can{PB_8, PB_9, 500000};
 
 constexpr auto CAN_SENDING_PERIOD = 50ms;
 
-EventQueue can_queue;
-Thread can_thread(osPriorityAboveNormal);
+Ticker can_ticker;
+volatile bool can_send_due = false;
+
+void mark_can_send_due() {
+    can_send_due = true;
+}
 
 // Predefined for use in main()
 void send_etc_CAN_messages();
@@ -25,14 +29,18 @@ int main() {
         at 20hz (20 messages / second)
     */
 
-    can_thread.start(callback(&can_queue, &EventQueue::dispatch_forever));
-    can_queue.call_every(CAN_SENDING_PERIOD, send_etc_CAN_messages);
-    can_queue.call_every(CAN_SENDING_PERIOD, send_sme_CAN_messages);
+    can_ticker.attach(&mark_can_send_due, CAN_SENDING_PERIOD);
 
     // No need to edit this while loop
     while (true) {
         // Must implement in etc/ subfolder
         etc.update_state();
+
+        if (can_send_due) {
+            can_send_due = false;
+            send_etc_CAN_messages();
+            send_sme_CAN_messages();
+        }
     }
 
     return 0;
