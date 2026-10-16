@@ -36,7 +36,7 @@ private:
    Timer timer_range;
    Timer timer_dev;
 
-   foat apps1_pos=0.0;
+   float apps1_pos=0.0;
    float apps2_pos=0.0;
    float apps1_volts=0.0;
    float apps2_volts=0.0;
