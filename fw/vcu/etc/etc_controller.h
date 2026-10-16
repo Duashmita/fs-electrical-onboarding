@@ -88,6 +88,7 @@ private:
     int apps_1_pedal_position = 0;
     float apps_2_volt_increment = 0.00694;
     int apps_2_pedal_position = 0;
+    float avg_pedal_position = 0;
 
     //torque variables
     int16_t torque_apps_1 = 0;
