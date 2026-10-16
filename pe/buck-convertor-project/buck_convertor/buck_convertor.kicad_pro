@@ -495,7 +495,7 @@
     ]
   },
   "meta": {
-    "filename": "template.kicad_pro",
+    "filename": "buck_convertor.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -813,26 +813,26 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "template.kicad_sch",
-        "name": "",
+        "filename": "buck_convertor.kicad_sch",
+        "name": "buck_convertor",
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "R1",
+    "used_designators": "J1-2,R1-4,U1,L1,C1-6",
     "variants": []
   },
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
-      ""
+      "buck_convertor"
     ]
   ],
   "text_variables": {
-    "BOARD_TITLE": "[BOARD TITLE]",
+    "BOARD_TITLE": "Buck Converter",
     "COMMENT1": "[COMMENT]",
     "COMMENT2": "",
-    "NAMES": "[NAMES]",
-    "REVISION": "[REVISION]"
+    "NAMES": "Nithyanth Kenthapadi",
+    "REVISION": "V1.00"
   },
   "tuning_profiles": {
     "meta": {
