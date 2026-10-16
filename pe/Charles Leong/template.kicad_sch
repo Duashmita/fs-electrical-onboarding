@@ -2784,7 +2784,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS54202DDC"
+		(property "Value" "TPS542025DDCR"
 			(at 125.73 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2794,7 +2794,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" ""
 			(at 127 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -2806,7 +2806,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54202.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps542025.pdf"
 			(at 118.11 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2817,7 +2817,51 @@
 				)
 			)
 		)
-		(property "Description" "2A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
+		(property "Description" "Buck Switching Regulator IC Positive Fixed 5V 1 Output 2A SOT-23-6 Thin, TSOT-23-6"
+			(at 125.73 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "296-TPS542025DDCRDKR-ND"
+			(at 125.73 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/texas-instruments/TPS542025DDCR/28738814"
+			(at 125.73 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 125.73 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "TPS542025DDCR"
 			(at 125.73 107.95 0)
 			(hide yes)
 			(show_name no)
