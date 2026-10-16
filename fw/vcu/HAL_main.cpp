@@ -4,6 +4,7 @@
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_def.h"
 #include "stm32f4xx_hal_uart.h"
+#include "stm32f4xx_hal_tim.h"
 #include "mbed.h"
 #include "objects.h"
 
@@ -36,6 +37,26 @@ bool deviation_timer_active = false;
 
 bool range_fault_persistent = false;
 bool deviation_fault_persistent = false;
+
+bool timer_start(TIM_HandleTypeDef &timer, TIM_TypeDef *instance) {
+    // used pwmout as reference
+    RCC_ClkInitTypeDef clock_config{};
+    uint32_t flash_latency;
+    HAL_RCC_GetClockConfig(&clock_config, &flash_latency);
+    uint32_t timer_clock = HAL_RCC_GetPCLK1Freq();
+    if (clock_config.APB1CLKDivider != RCC_HCLK_DIV1) {
+        timer_clock *= 2;
+    }
+
+    timer.Instance = instance;
+    timer.Init.Prescaler = timer_clock / 10000 - 1; 
+    timer.Init.Period = 0xFFFF;
+
+    if (HAL_TIM_Base_Init(&timer) != HAL_OK) {
+        return false;
+    }
+    return HAL_TIM_Base_Start(&timer) == HAL_OK;
+}
 
 float clamp(float value) {
     if (value < 0.0f) {
@@ -92,7 +113,19 @@ int16_t calculate_torque(float apps1_voltage, float apps2_voltage) {
 }
 
 
+
 int main(void) {
+
+    __HAL_RCC_TIM2_CLK_ENABLE();
+    __HAL_RCC_TIM3_CLK_ENABLE();
+
+    // error handling (does printf work?)
+    if (!timer_start(range_timer, TIM2) || !timer_start(deviation_timer, TIM3)) {
+        printf("Timer initialization failed\n");
+        return 1;
+    }
+
+    sleep_manager_lock_deep_sleep();
 
     // char msg[] = "Hello world!\n";
     // HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY); // Sending "Hello world!\n" over Serial
@@ -114,6 +147,9 @@ int main(void) {
 
         int16_t torque_demand = 0;
 
+        uint32_t range_ticks = __HAL_TIM_GET_COUNTER(&range_timer);
+        uint32_t deviation_ticks = __HAL_TIM_GET_COUNTER(&deviation_timer);
+        
         // make sure to check if the ADC read was successful before printing the voltages
         bool apps1_ok = read_voltage(APPS1_hadc, apps1_voltage);
         bool apps2_ok = read_voltage(APPS2_hadc, apps2_voltage);
