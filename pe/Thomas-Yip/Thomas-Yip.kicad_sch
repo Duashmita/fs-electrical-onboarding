@@ -5,13 +5,13 @@
 	(uuid "e994741c-7c7d-4124-9d00-43b883baa61d")
 	(paper "A")
 	(title_block
-		(title "${BOARD_TITLE}")
-		(date "${CURRENT_DATE}")
-		(rev "${REVISION}")
+		(title "Finalized Buck Converter")
+		(date "2026-10-16")
+		(rev "1.0")
 		(company "Formula Slug")
-		(comment 1 "${NAMES}")
-		(comment 2 "${COMMENT1}")
-		(comment 3 "${COMMENT2}")
+		(comment 1 "Thomas Yip")
+		(comment 2 "I accidently did all my commits on a fork, so commit dates are the same")
+		(comment 3 "Input capacitors drop from 10µF to ~1.8, so I needed 8 of them")
 	)
 	(lib_symbols
 		(symbol "Device:C"
