@@ -9,7 +9,7 @@
 		(date "${CURRENT_DATE}")
 		(rev "${REVISION}")
 		(company "Formula Slug")
-		(comment 1 "${NAMES}")
+		(comment 1 "Charles Leong")
 		(comment 2 "${COMMENT1}")
 		(comment 3 "${COMMENT2}")
 	)
@@ -1210,108 +1210,108 @@
 		)
 	)
 	(junction
-		(at 148.59 59.69)
+		(at 173.99 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0db076fd-5e96-42a8-8dc8-c82d9386e5a6")
 	)
 	(junction
-		(at 110.49 59.69)
+		(at 135.89 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "138ab4dd-4322-452c-9b5d-f39342d63de9")
 	)
 	(junction
-		(at 92.71 59.69)
+		(at 118.11 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1909d27e-94bf-4802-8b34-1670d6eaf7c8")
 	)
 	(junction
-		(at 148.59 52.07)
+		(at 173.99 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3274b9a6-19ac-44ef-ad68-9fa665ef0783")
 	)
 	(junction
-		(at 78.74 49.53)
+		(at 104.14 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35062afa-f047-41c0-b72f-699a2cd2d25b")
 	)
 	(junction
-		(at 163.83 52.07)
+		(at 189.23 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "401a60a3-8936-48d9-874d-ece070e17742")
 	)
 	(junction
-		(at 78.74 57.15)
+		(at 104.14 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "594802ea-e601-47d7-a7cb-eb3e7a1c5d61")
 	)
 	(junction
-		(at 67.31 57.15)
+		(at 92.71 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c9fc8b5-6410-4597-a8fa-c238c23dda1b")
 	)
 	(junction
-		(at 100.33 59.69)
+		(at 125.73 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "90ef1758-f275-4380-8ba1-12ba3cbb7e56")
 	)
 	(junction
-		(at 114.3 52.07)
+		(at 139.7 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c8d468f-200f-467d-9823-bd78536190e3")
 	)
 	(junction
-		(at 135.89 59.69)
+		(at 161.29 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aca838c0-a5c4-441e-8331-0a38b2269338")
 	)
 	(junction
-		(at 161.29 52.07)
+		(at 186.69 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6ef5ae4-b94c-465e-8866-b0b5022c9ee7")
 	)
 	(junction
-		(at 60.96 49.53)
+		(at 86.36 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9235c23-a55c-41c9-8a7b-3ddff3c29fbf")
 	)
 	(junction
-		(at 135.89 52.07)
+		(at 161.29 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce1000a8-63cb-46f5-817c-0d74b904223c")
 	)
 	(junction
-		(at 55.88 49.53)
+		(at 81.28 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ddc51f40-b5b4-4f24-9716-8fb797754fe5")
 	)
 	(junction
-		(at 67.31 49.53)
+		(at 92.71 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec158671-afe8-4041-acbf-7fb6deaed3fb")
 	)
 	(no_connect
-		(at 90.17 54.61)
+		(at 115.57 110.49)
 		(uuid "375abaeb-cedf-4e16-8ea2-bb5d87f1037c")
 	)
 	(wire
 		(pts
-			(xy 168.91 44.45) (xy 168.91 52.07)
+			(xy 194.31 100.33) (xy 194.31 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1321,7 +1321,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 57.15) (xy 78.74 57.15)
+			(xy 92.71 113.03) (xy 104.14 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1331,7 +1331,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 59.69) (xy 148.59 59.69)
+			(xy 161.29 115.57) (xy 173.99 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1341,7 +1341,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 57.15) (xy 67.31 57.15)
+			(xy 81.28 113.03) (xy 92.71 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1351,7 +1351,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 52.07) (xy 163.83 52.07)
+			(xy 186.69 107.95) (xy 189.23 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1361,7 +1361,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 52.07) (xy 148.59 52.07)
+			(xy 161.29 107.95) (xy 173.99 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1371,7 +1371,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 59.69) (xy 92.71 59.69)
+			(xy 104.14 115.57) (xy 118.11 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1381,7 +1381,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 59.69) (xy 161.29 59.69)
+			(xy 173.99 115.57) (xy 186.69 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1391,7 +1391,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 49.53) (xy 60.96 49.53)
+			(xy 80.01 105.41) (xy 86.36 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1401,7 +1401,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 44.45) (xy 54.61 49.53)
+			(xy 80.01 100.33) (xy 80.01 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1411,7 +1411,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 59.69) (xy 100.33 60.96)
+			(xy 125.73 115.57) (xy 125.73 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1421,7 +1421,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 52.07) (xy 125.73 52.07)
+			(xy 135.89 107.95) (xy 151.13 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1431,7 +1431,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 44.45) (xy 114.3 44.45)
+			(xy 135.89 100.33) (xy 139.7 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1441,7 +1441,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 59.69) (xy 110.49 59.69)
+			(xy 125.73 115.57) (xy 135.89 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1451,7 +1451,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 54.61) (xy 110.49 59.69)
+			(xy 135.89 110.49) (xy 135.89 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1461,7 +1461,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 52.07) (xy 161.29 52.07)
+			(xy 173.99 107.95) (xy 186.69 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1471,7 +1471,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 49.53) (xy 110.49 44.45)
+			(xy 135.89 105.41) (xy 135.89 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1481,7 +1481,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 57.15) (xy 78.74 59.69)
+			(xy 104.14 113.03) (xy 104.14 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1491,7 +1491,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 52.07) (xy 163.83 52.07)
+			(xy 194.31 107.95) (xy 189.23 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1501,7 +1501,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 59.69) (xy 100.33 59.69)
+			(xy 118.11 115.57) (xy 125.73 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1511,7 +1511,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 59.69) (xy 135.89 59.69)
+			(xy 135.89 115.57) (xy 161.29 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1521,7 +1521,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 52.07) (xy 135.89 52.07)
+			(xy 158.75 107.95) (xy 161.29 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1531,7 +1531,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 49.53) (xy 90.17 49.53)
+			(xy 86.36 105.41) (xy 115.57 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1541,7 +1541,7 @@
 	)
 	(symbol
 		(lib_id "power:+15V")
-		(at 54.61 44.45 0)
+		(at 80.01 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1552,7 +1552,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a7074d6-c13f-4a08-a03d-25d829ffa325")
 		(property "Reference" "#PWR04"
-			(at 54.61 48.26 0)
+			(at 80.01 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1563,7 +1563,7 @@
 			)
 		)
 		(property "Value" "+15V"
-			(at 54.61 39.37 0)
+			(at 80.01 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1573,7 +1573,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 44.45 0)
+			(at 80.01 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1584,7 +1584,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 44.45 0)
+			(at 80.01 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1595,7 +1595,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 54.61 44.45 0)
+			(at 80.01 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1619,7 +1619,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 135.89 55.88 0)
+		(at 161.29 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1630,7 +1630,7 @@
 		(fields_autoplaced yes)
 		(uuid "2bdf8093-bc4f-4644-b031-f053c86b2cb5")
 		(property "Reference" "C6"
-			(at 139.7 54.6099 0)
+			(at 165.1 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1641,7 +1641,7 @@
 			)
 		)
 		(property "Value" "10μf"
-			(at 139.7 57.1499 0)
+			(at 165.1 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1652,7 +1652,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 136.8552 59.69 0)
+			(at 162.2552 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1662,8 +1662,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
-			(at 135.89 55.88 0)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/X7RDielectric.pdf"
+			(at 161.29 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1673,8 +1673,52 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 135.89 55.88 0)
+		(property "Description" "10 µF ±20% 100V Ceramic Capacitor X7R 2220 (5750 Metric)"
+			(at 161.29 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "478-KGM55DR72A106MVDKR-ND"
+			(at 161.29 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
+			(at 161.29 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 161.29 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "22201C106MAT2A"
+			(at 161.29 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1701,7 +1745,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 114.3 48.26 0)
+		(at 139.7 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1712,7 +1756,7 @@
 		(fields_autoplaced yes)
 		(uuid "3a5477ff-5753-454b-bbce-7860f5d1c69a")
 		(property "Reference" "C5"
-			(at 118.11 46.9899 0)
+			(at 143.51 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1723,7 +1767,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 118.11 49.5299 0)
+			(at 143.51 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1734,7 +1778,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.2652 52.07 0)
+			(at 140.6652 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1744,8 +1788,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 114.3 48.26 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1003_C0G_SMD"
+			(at 139.7 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1755,8 +1799,52 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 114.3 48.26 0)
+		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor C0G, NP0 1210 (3225 Metric)"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "399-C1210C104K5GACTUDKR-ND"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kemet/C1210C104K5GACTU/12700257"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "C1210C104K5GACTU"
+			(at 139.7 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1783,7 +1871,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 78.74 53.34 0)
+		(at 104.14 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1794,7 +1882,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c4197de-0c14-426a-8bb9-e414edd64d3b")
 		(property "Reference" "C4"
-			(at 82.55 52.0699 0)
+			(at 107.95 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1805,7 +1893,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 82.55 54.6099 0)
+			(at 107.95 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1816,7 +1904,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 79.7052 57.15 0)
+			(at 105.1052 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1826,8 +1914,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 78.74 53.34 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1003_C0G_SMD"
+			(at 104.14 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1837,8 +1925,52 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 78.74 53.34 0)
+		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor C0G, NP0 1210 (3225 Metric)"
+			(at 104.14 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "399-C1210C104K5GACTUDKR-ND"
+			(at 104.14 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kemet/C1210C104K5GACTU/12700257"
+			(at 104.14 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 104.14 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "C1210C104K5GACTU"
+			(at 104.14 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1865,7 +1997,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 67.31 53.34 0)
+		(at 92.71 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1876,7 +2008,7 @@
 		(fields_autoplaced yes)
 		(uuid "444eda30-5791-4221-a6b6-c1ea7592b62c")
 		(property "Reference" "C3"
-			(at 71.12 52.0699 0)
+			(at 96.52 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1887,7 +2019,7 @@
 			)
 		)
 		(property "Value" "10μf"
-			(at 71.12 54.6099 0)
+			(at 96.52 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1898,7 +2030,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.2752 57.15 0)
+			(at 93.6752 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1908,8 +2040,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
-			(at 67.31 53.34 0)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/X7RDielectric.pdf"
+			(at 92.71 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1919,8 +2051,52 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 67.31 53.34 0)
+		(property "Description" "10 µF ±20% 100V Ceramic Capacitor X7R 2220 (5750 Metric)"
+			(at 92.71 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "478-KGM55DR72A106MVDKR-ND"
+			(at 92.71 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
+			(at 92.71 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 92.71 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "22201C106MAT2A"
+			(at 92.71 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1947,7 +2123,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 168.91 44.45 0)
+		(at 194.31 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1958,7 +2134,7 @@
 		(fields_autoplaced yes)
 		(uuid "4eebb58a-d490-49b6-82bc-8c111e33c182")
 		(property "Reference" "#PWR05"
-			(at 168.91 48.26 0)
+			(at 194.31 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1969,7 +2145,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 168.91 39.37 0)
+			(at 194.31 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1979,7 +2155,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 44.45 0)
+			(at 194.31 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1990,7 +2166,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 44.45 0)
+			(at 194.31 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2001,7 +2177,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 168.91 44.45 0)
+			(at 194.31 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2025,7 +2201,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 60.96 49.53 0)
+		(at 86.36 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2036,7 +2212,7 @@
 		(fields_autoplaced yes)
 		(uuid "67af25ce-ebf8-4777-afa9-ecf6321ca55c")
 		(property "Reference" "#FLG01"
-			(at 60.96 47.625 0)
+			(at 86.36 103.505 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2047,7 +2223,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 60.96 44.45 0)
+			(at 86.36 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2057,7 +2233,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 49.53 0)
+			(at 86.36 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2068,7 +2244,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 49.53 0)
+			(at 86.36 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2079,7 +2255,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 60.96 49.53 0)
+			(at 86.36 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2103,7 +2279,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 60.96 0)
+		(at 125.73 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2114,7 +2290,7 @@
 		(fields_autoplaced yes)
 		(uuid "874d2f5f-3be3-4df7-8daa-63d04ac80bde")
 		(property "Reference" "#PWR01"
-			(at 100.33 67.31 0)
+			(at 125.73 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2125,7 +2301,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 66.04 0)
+			(at 125.73 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2135,7 +2311,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 60.96 0)
+			(at 125.73 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2146,7 +2322,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 60.96 0)
+			(at 125.73 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2157,7 +2333,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 60.96 0)
+			(at 125.73 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2181,7 +2357,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 55.88 53.34 0)
+		(at 81.28 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2192,7 +2368,7 @@
 		(fields_autoplaced yes)
 		(uuid "94251902-257c-4863-905f-fa9ab7732b60")
 		(property "Reference" "C2"
-			(at 59.69 52.0699 0)
+			(at 85.09 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2203,7 +2379,7 @@
 			)
 		)
 		(property "Value" "10μf"
-			(at 59.69 54.6099 0)
+			(at 85.09 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2214,7 +2390,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 56.8452 57.15 0)
+			(at 82.2452 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2224,8 +2400,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
-			(at 55.88 53.34 0)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/X7RDielectric.pdf"
+			(at 81.28 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2235,8 +2411,52 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 55.88 53.34 0)
+		(property "Description" "10 µF ±20% 100V Ceramic Capacitor X7R 2220 (5750 Metric)"
+			(at 81.28 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "478-KGM55DR72A106MVDKR-ND"
+			(at 81.28 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
+			(at 81.28 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 81.28 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "22201C106MAT2A"
+			(at 81.28 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2263,7 +2483,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 163.83 52.07 0)
+		(at 189.23 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2274,7 +2494,7 @@
 		(fields_autoplaced yes)
 		(uuid "9fe021ae-bee8-419d-a047-cc237c411a8c")
 		(property "Reference" "#FLG02"
-			(at 163.83 50.165 0)
+			(at 189.23 106.045 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2285,7 +2505,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 163.83 46.99 0)
+			(at 189.23 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2295,7 +2515,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 52.07 0)
+			(at 189.23 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2306,7 +2526,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 52.07 0)
+			(at 189.23 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2317,7 +2537,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 163.83 52.07 0)
+			(at 189.23 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2341,7 +2561,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 92.71 59.69 180)
+		(at 118.11 115.57 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2351,7 +2571,7 @@
 		(dnp no)
 		(uuid "ad058908-73be-452f-bcfc-439c140ecd19")
 		(property "Reference" "#FLG03"
-			(at 92.71 61.595 0)
+			(at 118.11 117.475 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2362,7 +2582,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 92.71 64.77 0)
+			(at 118.11 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2372,7 +2592,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 59.69 0)
+			(at 118.11 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2383,7 +2603,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 59.69 0)
+			(at 118.11 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2394,7 +2614,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 92.71 59.69 0)
+			(at 118.11 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2418,7 +2638,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 161.29 55.88 0)
+		(at 186.69 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2429,7 +2649,7 @@
 		(fields_autoplaced yes)
 		(uuid "b511261f-c076-4943-922f-976e98fda819")
 		(property "Reference" "C8"
-			(at 165.1 54.6099 0)
+			(at 190.5 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2440,7 +2660,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 165.1 57.1499 0)
+			(at 190.5 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2451,7 +2671,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.2552 59.69 0)
+			(at 187.6552 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2461,8 +2681,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 161.29 55.88 0)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/KEM_C1003_C0G_SMD"
+			(at 186.69 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2472,8 +2692,52 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 161.29 55.88 0)
+		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor C0G, NP0 1210 (3225 Metric)"
+			(at 186.69 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "399-C1210C104K5GACTUDKR-ND"
+			(at 186.69 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kemet/C1210C104K5GACTU/12700257"
+			(at 186.69 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 186.69 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "C1210C104K5GACTU"
+			(at 186.69 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2500,7 +2764,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Switching:TPS54202DDC")
-		(at 100.33 52.07 0)
+		(at 125.73 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2511,7 +2775,7 @@
 		(fields_autoplaced yes)
 		(uuid "b6ba4335-e1ef-45a0-afe3-3775747dc295")
 		(property "Reference" "U1"
-			(at 100.33 41.91 0)
+			(at 125.73 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2521,7 +2785,7 @@
 			)
 		)
 		(property "Value" "TPS54202DDC"
-			(at 100.33 44.45 0)
+			(at 125.73 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2531,7 +2795,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 101.6 60.96 0)
+			(at 127 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2543,7 +2807,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54202.pdf"
-			(at 92.71 43.18 0)
+			(at 118.11 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2554,7 +2818,7 @@
 			)
 		)
 		(property "Description" "2A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
-			(at 100.33 52.07 0)
+			(at 125.73 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2593,7 +2857,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Ferrite")
-		(at 129.54 52.07 90)
+		(at 154.94 107.95 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2604,7 +2868,7 @@
 		(fields_autoplaced yes)
 		(uuid "dd747f40-94e6-4f36-bdc4-4d971acfd927")
 		(property "Reference" "L1"
-			(at 129.54 45.72 90)
+			(at 154.94 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2613,8 +2877,8 @@
 				)
 			)
 		)
-		(property "Value" "L_Ferrite"
-			(at 129.54 48.26 90)
+		(property "Value" "12 µH"
+			(at 154.94 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2624,7 +2888,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 52.07 0)
+			(at 154.94 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2634,8 +2898,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 129.54 52.07 0)
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/744787120.pdf"
+			(at 154.94 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2645,8 +2909,52 @@
 				)
 			)
 		)
-		(property "Description" "Inductor with ferrite core"
-			(at 129.54 52.07 0)
+		(property "Description" "12 µH Shielded Drum Core, Wirewound Inductor 2.45 A 52mOhm Max 2-SMD"
+			(at 154.94 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "732-4529-6-ND"
+			(at 154.94 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/744787120/4155880"
+			(at 154.94 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 154.94 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "744787120"
+			(at 154.94 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2673,7 +2981,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 148.59 55.88 0)
+		(at 173.99 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2684,7 +2992,7 @@
 		(fields_autoplaced yes)
 		(uuid "ed92b0b9-b8e5-46f0-b57a-eed545097ada")
 		(property "Reference" "C7"
-			(at 152.4 54.6099 0)
+			(at 177.8 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2695,7 +3003,7 @@
 			)
 		)
 		(property "Value" "10μf"
-			(at 152.4 57.1499 0)
+			(at 177.8 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2706,7 +3014,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.5552 59.69 0)
+			(at 174.9552 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2716,8 +3024,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
-			(at 148.59 55.88 0)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/X7RDielectric.pdf"
+			(at 173.99 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2727,8 +3035,52 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 148.59 55.88 0)
+		(property "Description" "10 µF ±20% 100V Ceramic Capacitor X7R 2220 (5750 Metric)"
+			(at 173.99 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "478-KGM55DR72A106MVDKR-ND"
+			(at 173.99 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
+			(at 173.99 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 173.99 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "22201C106MAT2A"
+			(at 173.99 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
