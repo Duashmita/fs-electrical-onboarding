@@ -49,15 +49,20 @@ int main() {
 */
 void send_etc_CAN_messages() {
     uint8_t data[8] = {0};
-    data[0] |= (1 << 0);
-    data[0] |= (1 << 1);
+    bool any_implausibility = etc.apps_implausibility || etc.out_of_range_implausibility;
+
+    if (!any_implausibility) {
+        data[0] |= (1 << 0);
+        data[0] |= (1 << 1);
+    }
+
     if (etc.out_of_range_implausibility) {
         data[0] |= (1 << 4);
     }
     if (etc.apps_implausibility) {
         data[0] |= (1 << 6);
     }
-    
+
     CANMessage msg(403, data, 8);
     can.write(msg);
 }
