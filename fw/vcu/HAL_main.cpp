@@ -54,7 +54,21 @@ int main(void) {
             a way to get CAN communication going aswell.
         */
 
+        float apps1_voltage = 0.0f;
+        float apps2_voltage = 0.0f;
 
+        // make sure to check if the ADC read was successful before printing the voltages
+        bool apps1_ok = read_voltage(APPS1_hadc, apps1_voltage);
+        bool apps2_ok = read_voltage(APPS2_hadc, apps2_voltage);
+
+        if (apps1_ok && apps2_ok) {
+            printf("APPS1: %.3f V, APPS2: %.3f V\n",
+                apps1_voltage, apps2_voltage);
+        } else {
+            printf("ADC read failed\n");
+        }
+
+        ThisThread::sleep_for(std::chrono::milliseconds(100));
 
     }
 
