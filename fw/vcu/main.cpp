@@ -10,7 +10,6 @@ CAN can{PB_8, PB_9, 500000};
 // Predefined for use in main()
 void send_etc_CAN_messages();
 void send_sme_CAN_messages();
-void send_BOTH_CAN_messages();
 
 Ticker my_ticker_1;
 Ticker my_ticker_2;
@@ -51,16 +50,17 @@ void send_etc_CAN_messages() {
     
 
     
-    bool Range_Implaus = etc.get_range_implaus();
-    bool Deviation_Implaus = etc.get_percent_implaus();
-    bool VCU_READY_TO_DRIVE = Range_Implaus && Deviation_Implaus; //Contains 1 or 0 indicating weather VCU is ready to drive
+    bool Range_Implaus = etc.get_range_implaus(); //True if there is an implaus
+    bool Deviation_Implaus = etc.get_percent_implaus(); //True if there is an implaus
+
+    bool VCU_READY_TO_DRIVE = !Range_Implaus && !Deviation_Implaus; //Contains 1 or 0 indicating weather VCU is ready to drive, 1 if no implaus
 
     CAN_Message_1[0] |= VCU_READY_TO_DRIVE; // Packng VCU_ETC_READY_TO_DRIVE into bit 0, which is set to 1
 
     
     CAN_Message_1[0] |= (VCU_READY_TO_DRIVE << 1); // Packing VCU_ETC_MOTOR_ENABLED into bit 1, 0 or 1 if there is Implaus
 
-    CAN_Message_1[0] |= (Range_Implaus << 4); //Packing VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE into bit 3
+    CAN_Message_1[0] |= (Range_Implaus << 4); //Packing VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE into bit 4
 
     CAN_Message_1[0] |= (Deviation_Implaus << 6); // Packing VCU_ETC_IMPLAUS_APPS_DEVIATION into bit 6
 

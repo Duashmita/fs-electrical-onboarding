@@ -51,7 +51,7 @@ private:
     AnalogIn APPS_sensor_2; // Initialize AnalogIn Pin so we can read their voltages later when we need them
     
     float APPS1_Voltage = 0; // Voltage from APPS1
-    float APPS2_Voltage = 0;// Volatage from APPS2
+    float APPS2_Voltage = 0;// Voltage from APPS2
 
     float APPS1_Pedal_Position = 0;
     float APPS2_Pedal_Position = 0;
@@ -65,10 +65,10 @@ private:
 
     // bool APPS1_Sensor_Range_Valid;
     // bool APPS2_Sensors_Range_Valid;
-    // bool APPS_Sensors_Range_Validl;
+    // bool APPS_Sensors_Range_Valid;
 
-    bool APPS_Range_Implausibility_Confirmed; //Real value for Implausibilties
-    bool APPS_Percent_Implausibility_Confirmed; //Real Value for Implausibilties
+    bool APPS_Range_Implausibility_Confirmed; //Real value for Implausibilities, True if there is an Implausibility
+    bool APPS_Percent_Implausibility_Confirmed; //Real Value for Implausibilities
 
     
 
@@ -86,7 +86,7 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.396; //Min percentage volatage kind of
+    static constexpr float APPS1_MIN_VOLTAGE = 0.396; //Min percentage Voltage kind of
     static constexpr float APPS1_MAX_VOLTAGE = 1.086f; //Max percentage voltage kind of
 
     static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
