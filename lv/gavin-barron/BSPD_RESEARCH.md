@@ -132,7 +132,7 @@ The AiM 0–2000 psi sensor (Summit AAG-S0050, AiM X05PSA02000P18) outputs 0.5�
 
 ## Current sensor (LEM HASS 300-S)
 
-The car uses a HASS 300-S (found in the FS-4 BMS firmware), giving about 2.08 mV per amp around a 2.5 V zero: U\_out = U\_ref + 0.625 × I ÷ 300.
+The car uses a HASS 300-S (found in the FS-4 BMS firmware), giving about 2.08 mV per amp around a 2.5 V zero: U_out = U_ref + 0.625 × I ÷ 300.
 
 | Parameter | Symbol | Value |
 | --- | --- | --- |
@@ -203,9 +203,13 @@ Each decision below is a working choice that can change once the open questions 
 Two answers are in (350 psi hard braking, 30s/108 V pack); these remain.
 
 - [ ] Is there a shared latch for BMS/IMD/BSPD faults? Should the BSPD output a signal (0 V = fault) or drive a relay in the shutdown loop?
+**seperate**
 - [ ] Can the BSPD tap the raw HASS 300-S signal (Output + U_ref) with its own diff amp, powered entirely from the BMS side? Does that count as "standalone" or do we need another current sensor?
+**Doesn't Matter**
 - [ ] Which way is the HASS installed (discharge positive)?
+**positive**
 - [ ] What LV supply is available for the BSPD board (12 V)?
+**12V**
 
 
 ## Sources
