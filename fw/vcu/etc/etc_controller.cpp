@@ -30,7 +30,7 @@ int16_t ETCController::getCalculatedTorque() {
 };
 
 bool ETCController::getGenFaulting() {
-    return(gen_faulting);
+    return(!gen_faulting);
 };
 
 bool ETCController::getImplaus_1() {
@@ -52,30 +52,30 @@ bool ETCController::in_range(float value, float low, float high) {
 
 void ETCController::apps_1_pedal_position_calc(int apps1_voltage , int apps_1_volt_increment) {
     apps1_voltage = ETCController::clamp(apps1_voltage , APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE);
-    apps_1_pedal_position = (apps1_voltage - APPS1_MIN_VOLTAGE) / (apps_1_volt_increment);
-    if (apps_1_pedal_position >= 97) {
-        apps_1_pedal_position = 100;
-    }
-    if (apps_1_pedal_position <= 3) {
-        apps_1_pedal_position = 0; //make smoothly start instead of jump after pressed deadzonePercent , start from zero after deadzone Percent is pressed
-    } //decrease range by 2 * deadzone
-    if (apps_1_pedal_position > 3) {
-        apps_1_pedal_position -= 3;
-    }
+    apps_1_pedal_position = ((apps1_voltage - APPS1_MIN_VOLTAGE)  * (100 / (100 - 2 * PEDAL_DEADZONE_PERCENTAGE)) )/ (apps_1_volt_increment);
+    // if (apps_1_pedal_position >= 97) {
+    //     apps_1_pedal_position = 100;
+    // }
+    // if (apps_1_pedal_position <= 3) {
+    //     apps_1_pedal_position = 0; //make smoothly start instead of jump after pressed deadzonePercent , start from zero after deadzone Percent is pressed
+    // } //decrease range by 2 * deadzone
+    // if (apps_1_pedal_position > 3) {
+    //     apps_1_pedal_position -= 3;
+    // }
 }
 //should i use deadzone here or on the avg position that is multiplied by the torque
 void ETCController::apps_2_pedal_position_calc(int apps2_voltage , int apps_2_volt_increment) {
     apps2_voltage = ETCController::clamp(apps2_voltage , APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE);
-    apps_2_pedal_position = (apps2_voltage - APPS2_MIN_VOLTAGE) / (apps_2_volt_increment);
-    if (apps_2_pedal_position >= 97) {
-        apps_2_pedal_position = 100;
-    }
-    if (apps_2_pedal_position <= 3) {
-        apps_2_pedal_position = 0; //make smoothly start instead of jump after pressed deadzonePercent , start from zero after deadzone Percent is pressed
-    } //decrease range by 2 * deadzone
-    if (apps_2_pedal_position > 3) {
-        apps_2_pedal_position -= 3;
-    }//comment these ifs out if its better to implement after avg pos is found
+    apps_2_pedal_position = ((apps2_voltage - APPS2_MIN_VOLTAGE) * (100 / (100 - 2 * PEDAL_DEADZONE_PERCENTAGE)))/ (apps_2_volt_increment);
+    // if (apps_2_pedal_position >= 97) {
+    //     apps_2_pedal_position = 100;
+    // }
+    // if (apps_2_pedal_position <= 3) {
+    //     apps_2_pedal_position = 0; //make smoothly start instead of jump after pressed deadzonePercent , start from zero after deadzone Percent is pressed
+    // } //decrease range by 2 * deadzone
+    // if (apps_2_pedal_position > 3) {
+    //     apps_2_pedal_position -= 3;
+    // }//comment these ifs out if its better to implement after avg pos is found
 //should i implement after positions are averaged?
 }
 
