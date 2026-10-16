@@ -67,3 +67,12 @@ void send_etc_CAN_messages() {
     message with SME_THROTL_TorqueDemand set to the
     torque demand determined by the ETC.
 */
+
+void send_sme_CAN_messages() {
+    uint8_t data[8] = {0};
+    int16_t torque = etc.torque_demand;
+    data[0] = torque & 0xFF;
+    data[1] = (torque >> 8) & 0xFF;
+    CANMessage msg(390, data, 8);
+    can.write(msg);
+}
