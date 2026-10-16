@@ -1061,7 +1061,7 @@
 	)
 	(text "Smooth voltage \n"
 		(exclude_from_sim no)
-		(at 149.86 104.902 0)
+		(at 148.59 104.902 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1081,7 +1081,7 @@
 	)
 	(text "fast switch to create\n peak and valleys of \ninputV to 0V\n"
 		(exclude_from_sim no)
-		(at 124.968 84.582 0)
+		(at 125.476 84.836 0)
 		(effects
 			(font
 				(size 1.27 1.27)
