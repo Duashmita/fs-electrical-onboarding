@@ -69,11 +69,13 @@ void ETCController::update_state() {
     // average travel
     float avg_travel = (apps1_travel + apps2_travel) / 2.0f;
 
-    // deadzone (cut-off method)
-    if (avg_travel < PEDAL_DEADZONE_PERCENTAGE) {
+    // deadzone (linear progression method)
+    if (avg_travel <= PEDAL_DEADZONE_PERCENTAGE) {
         avg_travel = 0.0f;
+    } else {
+        avg_travel = (avg_travel - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - PEDAL_DEADZONE_PERCENTAGE);
+        avg_travel = clamp(avg_travel);
     }
-
 
     // calculate torque
     motor_torque_demand = static_cast<int16_t>(avg_travel * MAX_TORQUE);

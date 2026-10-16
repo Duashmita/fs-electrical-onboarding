@@ -26,9 +26,13 @@ int main() {
     float frequency = 20.0f;
     float period = 1.0f/frequency;
 
+    auto period_duration = std::chrono::duration_cast<std::chrono::milliseconds>(
+    std::chrono::duration<float>(period)
+    );
+
     // attach CAN send functions using period
-    etc_can_ticker.attach(&send_etc_CAN_messages, period);
-    sme_can_ticker.attach(&send_sme_CAN_messages, period);
+    etc_can_ticker.attach(&send_etc_CAN_messages, period_duration);
+    sme_can_ticker.attach(&send_sme_CAN_messages, period_duration);
 
 
     // No need to edit this while loop
@@ -51,7 +55,14 @@ void send_etc_CAN_messages() {
     uint8_t payload[8] = {0};
 
     // packing the bits -> buffer
-    payload[0] = (1 << 0) | (1 << 1) | (etc.implaus_apps_out_of_range << 4) | (etc.implaus_apps_deviation << 6);
+    payload[0] = (1 << 0) | (1 << 1);
+
+    if (etc.implaus_apps_out_of_range) {
+        payload[0] |= (1 << 4);
+    }
+    if (etc.implaus_apps_deviation) {
+        payload[0] |= (1 << 6);
+    }
 
     // construct & transmit the CAN message
     can.write(CANMessage(0x193, reinterpret_cast<const char*>(payload), 8));
