@@ -66,6 +66,7 @@ The wires should follow the helmet's lining and be secured so they don't rub aga
 
 The microphone also needs a support circuit because it uses an analog signal. I would place the circuit in the car with the radio. The helmet would contain the microphone, speaker, and connecting wires. The microphone's analog signal would travel through the cable to the circuit, which would power the microphone and connect its audio to the radio. 
 
+<img src="helmet-audio-block-diagram (1200 x 500 px).png" alt="In-helmet audio block diagram" width="900">
 
 ## Questions for Luca
 
