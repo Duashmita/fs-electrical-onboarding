@@ -10,12 +10,10 @@
 class ETCController {
 public:
 
-    /*
-        Start of public variables
-    */
+    // start of public vars
 
     int16_t motor_torque_demand = 0.0; // will be modified continuously by
-                               //    update_state()
+                                       // update_state()
     Timer my_timer; // timer for implausibility check
     bool implaus_T429 = false;
     bool implaus_T424 = false;
@@ -23,31 +21,19 @@ public:
     Timer duration_implaus_T429_ms; // in milliseconds
     bool implausibility_occurred = false;
     
+    // end of public vars
 
-    /*
-        End of public variables
-    */
-
-    /*
-        Public method definitions, don't edit
-    */
+    // Public method definitions, don't edit
     ETCController(PinName APPS1_pin, PinName APPS2_pin);
 
     void update_state();
 
-private:
-    /*
-        Start of private variables
-    */
+private: // start of private vars
 
     AnalogIn myread_1; // APPS1 reading
     AnalogIn myread_2; // APPS2 reading
 
-    
-
-    /*
-        End of private variables
-    */
+    // end of private vars
 
     /*  
         !! IMPORTANT: All global voltages are based off     !!
