@@ -821,11 +821,6 @@
         "filename": "untitled.kicad_sch",
         "name": "AfterTrigger",
         "uuid": "9ed344af-984d-4749-b2fa-15659dd3799e"
-      },
-      {
-        "filename": "sensorfault.kicad_sch",
-        "name": "SensorFault",
-        "uuid": "e326b758-f23c-40c1-bbdd-48f44d2b9d3d"
       }
     ],
     "used_designators": "R1-2,R4-17,J1-3,U2-16,TP1-2,K1,C1-4,D1,#PWR1-60,U1a1,Q1",
@@ -839,10 +834,6 @@
     [
       "9ed344af-984d-4749-b2fa-15659dd3799e",
       "AfterTrigger"
-    ],
-    [
-      "e326b758-f23c-40c1-bbdd-48f44d2b9d3d",
-      "SensorFault"
     ]
   ],
   "text_variables": {

@@ -1599,16 +1599,6 @@
 		)
 		(uuid "06b3b72f-1078-4823-9e93-856fab5bce48")
 	)
-	(text "where does the power for the sensors come from"
-		(exclude_from_sim no)
-		(at 224.282 112.268 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "24c81900-086c-470f-8dd2-48e97e404879")
-	)
 	(text "0.333v"
 		(exclude_from_sim no)
 		(at 216.662 160.528 0)
@@ -1618,16 +1608,6 @@
 			)
 		)
 		(uuid "29f62566-172d-43d9-88f4-d4ea266e693c")
-	)
-	(text "non inverting op amp"
-		(exclude_from_sim no)
-		(at 72.136 14.732 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "850e314f-b8fb-494b-b58b-d702e4537798")
 	)
 	(text "0.333v"
 		(exclude_from_sim no)
@@ -1681,8 +1661,8 @@
 	)
 	(text_box "creates 3.08V which is 46.3A from the battery\n(5kW trip)"
 		(exclude_from_sim no)
-		(at 23.5965 35.2414 0)
-		(size 21.3615 8.4466)
+		(at 23.3425 41.2258 0)
+		(size 21.3615 10.0822)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width -0.0001)
@@ -1693,7 +1673,7 @@
 		)
 		(effects
 			(font
-				(size 0.508 0.508)
+				(size 1.27 1.27)
 			)
 		)
 		(uuid "078da29c-ff3e-4be3-960c-31437e766181")
@@ -2575,7 +2555,7 @@
 		)
 	)
 	(global_label "SENSORS_TRIPPED"
-		(shape input)
+		(shape output)
 		(at 180.34 93.98 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5529,7 +5509,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FIND VALUE NEEDED"
+		(property "Value" "10k"
 			(at 27.94 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5858,7 +5838,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FIND VALUE NEEEDED FOR THIS"
+		(property "Value" "26.5k"
 			(at 27.94 124.4599 0)
 			(show_name no)
 			(do_not_autoplace no)
