@@ -17,7 +17,7 @@ void can_loop() {
     while (true) {
         send_etc_CAN_messages();
         send_sme_CAN_messages();
-        next += 50ms;                    // 50 ms = 20 Hz
+        next += 50ms;
         ThisThread::sleep_until(next);
     }
 }
@@ -51,8 +51,12 @@ void send_etc_CAN_messages() {
     uint8_t data[8] = {0};
     data[0] |= (1 << 0);
     data[0] |= (1 << 1);
-    data[0] |= (etc.out_of_range_implausibility ? 1 : 0) << 4;
-    data[0] |= (etc.apps_implausibility ? 1 : 0) << 6;
+    if (etc.out_of_range_implausibility) {
+        data[0] |= (1 << 4);
+    }
+    if (etc.apps_implausibility) {
+        data[0] |= (1 << 6);
+    }
     can.write(CANMessage(403, data, 8));
 }
 
@@ -61,10 +65,3 @@ void send_etc_CAN_messages() {
     message with SME_THROTL_TorqueDemand set to the
     torque demand determined by the ETC.
 */
-void send_sme_CAN_messages() {
-    uint8_t data[8] = {0};
-    int16_t torque = etc.torque_demand;
-    data[0] = torque & 0xFF;
-    data[1] = (torque >> 8) & 0xFF;
-    can.write(CANMessage(390, data, 8));
-}
