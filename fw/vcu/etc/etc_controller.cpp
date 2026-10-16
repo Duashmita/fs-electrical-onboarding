@@ -75,10 +75,10 @@ void ETCController::update_implausibilities() {
 
     bool mismatch = fabsf(apps1_pos - apps2_pos) > 0.10f;
 
-    constexpr float MARGIN = 0.1f;
+    //constexpr float MARGIN = 0.1f;
     bool out_of_range =
-        !in_range(v1, APPS1_MIN_VOLTAGE - MARGIN, APPS1_MAX_VOLTAGE + MARGIN) ||
-        !in_range(v2, APPS2_MIN_VOLTAGE - MARGIN, APPS2_MAX_VOLTAGE + MARGIN);
+        !in_range(v1, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) ||
+        !in_range(v2, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE);
 
     if (mismatch) {
         if (!apps_mismatch_running) {
