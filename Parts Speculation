@@ -15,15 +15,19 @@ Capacitors:
 C_bootstrap:
   GRM155R71H104KE14D
   - https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220
-  - required 0.1 micro F capacitor between the BOOT and SW pins
+  - recommended for its X7R grade dialectric(higher temp peak?)
   - $0.10, only need one, MAYBE another to reduce high frequency input
 C_out:
   GRM32EC81C476ME15L
   - https://www.digikey.com/en/products/detail/murata-electronics/GRM32EC81C476ME15L/4905631
-  - $0.58, 
+  - $0.58, only need one unless a parallel capacitor network is desired, but that requires diff parts
+  - might look for a different one, 20% tolerance
 C_decoupling:
   GRM188R61C106MA73D
   - http://digikey.com/en/products/detail/murata-electronics/GRM188R61C106MA73D/3900480
+  - $0.27
+  - maybe find another for same reason as C_out
+
 
 NOT USED ANYMORE/BAD ANALYSIS
 
