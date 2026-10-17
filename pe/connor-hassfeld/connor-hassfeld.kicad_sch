@@ -1099,6 +1099,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "output version of c2"
+		(exclude_from_sim no)
+		(at 214.63 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "01270935-5aa5-41a0-893b-ee13b5996d7d")
+	)
+	(text "all the samsung CL21A226MOQNNNE"
+		(exclude_from_sim no)
+		(at 191.77 82.296 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "03d5ca73-8f36-45c1-97f5-856e5dd03e1c")
+	)
 	(text ""
 		(exclude_from_sim no)
 		(at 22.86 81.026 0)
@@ -1130,6 +1150,17 @@
 		)
 		(uuid "4c2c9a0c-5603-56dd-a6f5-f3d2d5a31bd5")
 	)
+	(text "+5V w 2A"
+		(exclude_from_sim no)
+		(at 133.35 95.25 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "70b05a4d-6be0-58ba-a880-e31892b15f72")
+	)
 	(text "c2 = high f capacitor (next to chip)"
 		(exclude_from_sim no)
 		(at 31.242 82.55 0)
@@ -1147,10 +1178,40 @@
 		(uuid "112caa5f-6f98-55e5-8b45-a01d51e35a27")
 	)
 	(junction
+		(at 185.42 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1899dbb6-6b37-5015-a4f6-f5738a77f551")
+	)
+	(junction
+		(at 210.82 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b18f245-de10-5eae-a168-e125947755e4")
+	)
+	(junction
+		(at 137.16 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e496353-b796-5f7d-a0ad-d1adf63a23e7")
+	)
+	(junction
+		(at 198.12 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90c67eb2-340f-54b6-904e-a956375af31f")
+	)
+	(junction
 		(at 35.56 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0b9e5c4-d2a2-5508-95b8-384d8da4f79e")
+	)
+	(junction
+		(at 172.72 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a95c62d1-f004-59a7-9308-f7f9487b228b")
 	)
 	(junction
 		(at 50.8 99.06)
@@ -1198,6 +1259,26 @@
 		)
 		(uuid "33ef3b9e-eab6-5ff4-8085-b2d22e19a3d3")
 	)
+	(polyline
+		(pts
+			(xy 198.12 85.09) (xy 198.12 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34c333cf-3c52-4f78-a472-1686b7ed646d")
+	)
+	(wire
+		(pts
+			(xy 185.42 101.6) (xy 198.12 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3580f857-a1ed-5ebf-b8c9-bb825688fed6")
+	)
 	(wire
 		(pts
 			(xy 63.5 99.06) (xy 81.28 99.06)
@@ -1207,6 +1288,16 @@
 			(type default)
 		)
 		(uuid "36ee70b7-235f-5384-9e75-7f19f2e07b3f")
+	)
+	(polyline
+		(pts
+			(xy 168.91 96.52) (xy 168.91 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38407fef-1eb0-40b0-8e86-c93514f6a74e")
 	)
 	(wire
 		(pts
@@ -1250,6 +1341,26 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 104.14) (xy 226.06 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60b85dd4-5758-5cd7-b3a9-6b31620762c2")
+	)
+	(polyline
+		(pts
+			(xy 198.12 97.79) (xy 198.12 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74f97360-ace5-405b-8f98-bb5bf80dda80")
+	)
+	(wire
+		(pts
 			(xy 30.48 101.6) (xy 30.48 104.14)
 		)
 		(stroke
@@ -1260,6 +1371,76 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 101.6) (xy 185.42 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "842a3ce6-6904-581d-b88a-099b967261e1")
+	)
+	(polyline
+		(pts
+			(xy 168.91 85.09) (xy 172.72 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88c056b0-dc9f-4338-ac38-bd4129558d7c")
+	)
+	(polyline
+		(pts
+			(xy 214.63 91.44) (xy 214.63 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91b5c3de-ec71-4195-b62e-024fa52dc640")
+	)
+	(wire
+		(pts
+			(xy 231.14 104.14) (xy 226.06 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a25756e2-343c-5d32-8c81-1a52d153148f")
+	)
+	(polyline
+		(pts
+			(xy 168.91 85.09) (xy 168.91 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a55b4d83-1b5d-438d-a17a-ff4073819203")
+	)
+	(polyline
+		(pts
+			(xy 210.82 95.25) (xy 214.63 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab80adf0-6096-4c2e-9a06-e80e963ec395")
+	)
+	(wire
+		(pts
+			(xy 137.16 101.6) (xy 172.72 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af7371fb-4c51-52ce-a8aa-f05095042bf7")
+	)
+	(wire
+		(pts
 			(xy 25.4 99.06) (xy 35.56 99.06)
 		)
 		(stroke
@@ -1267,6 +1448,36 @@
 			(type default)
 		)
 		(uuid "b0c6c91e-3456-5a33-85a1-33a948250cdf")
+	)
+	(wire
+		(pts
+			(xy 210.82 101.6) (xy 231.14 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3a54291-e67b-5417-ba73-d5903405a555")
+	)
+	(wire
+		(pts
+			(xy 198.12 101.6) (xy 210.82 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf160f1b-d781-5a21-9859-ff75dec82381")
+	)
+	(polyline
+		(pts
+			(xy 210.82 95.25) (xy 210.82 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6ff5534-cfdd-4c35-9629-4a079d5cb22e")
 	)
 	(wire
 		(pts
@@ -1327,6 +1538,84 @@
 			(justify left bottom)
 		)
 		(uuid "e5374279-af51-5957-aab3-2841c2cef62c")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 210.82 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0e4428a9-534a-5ba1-b06e-789aa8f96654")
+		(property "Reference" "#PWR10"
+			(at 210.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 210.82 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50286c59-99a9-5dd7-b853-f357a6c35a84")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR10")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1485,6 +1774,149 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 236.22 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1b5af3cc-28c9-55dc-9fd0-15abd5581683")
+		(property "Reference" "J2"
+			(at 236.22 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Connor_01x02"
+			(at 236.22 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 236.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "5V output. Pin1 = +5V, Pin2 = GND. PLACEHOLDER: use team-standard connector"
+			(at 236.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi PN" ""
+			(at 236.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi URL" ""
+			(at 236.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG PN" ""
+			(at 236.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG" ""
+			(at 236.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Label" "5V OUT"
+			(at 236.22 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "8b47045e-1ce8-562f-bf68-75257b68ba4b")
+		)
+		(pin "2"
+			(uuid "da068f5d-367d-5f38-a298-a2972d3bb133")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 91.44 109.22 0)
 		(unit 1)
@@ -1595,7 +2027,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Coilcraft_XAL6060-XXX"
+		(property "Footprint" "connor-hassfeld:L_Bourns_SRP6540"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1607,7 +2039,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/getmedia/329fe97c-7311-4726-9bf3-37718f42b168/xgl6060.pdf"
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/srp6540.pdf"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1619,7 +2051,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "FIXED IND 15uH SHIELDED, Isat 4.4A (20% drop), DCR 31.1mOhm max"
+		(property "Description" "FIXED IND 10uH 20% SHIELDED, Isat 4A (20% drop), Irms 4A (40C rise), DCR 78.5mOhm max, 7.2x6.5x4.0mm"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1631,7 +2063,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi PN" "2457-XGL6060-153MEC-ND"
+		(property "Digi PN" "SRP6540-100MCT-ND"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1643,7 +2075,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi URL" "https://www.digikey.com/en/products/detail/coilcraft/XGL6060-153MEC/15794082"
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/bourns-inc/SRP6540-100M/3986041"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1655,7 +2087,7 @@
 				(justify left)
 			)
 		)
-		(property "MFG PN" "XGL6060-153MEC"
+		(property "MFG PN" "SRP6540-100M"
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1667,7 +2099,7 @@
 				(justify left)
 			)
 		)
-		(property "MFG" "Coilcraft"
+		(property "MFG" "Bourns Inc."
 			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1992,6 +2424,370 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 185.42 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "446e3ce5-91d7-5c39-a22f-e2607dea01ff")
+		(property "Reference" "#PWR08"
+			(at 185.42 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.42 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 185.42 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "430fc46f-6dc7-58c1-9e7a-10c535272af6")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 185.42 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4da2711d-9de3-53e8-93fe-78fc020ad627")
+		(property "Reference" "C5"
+			(at 187.96 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 187.96 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 185.42 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "CAP CER 22uF 16V X5R 0805 (output)"
+			(at 185.42 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi PN" ""
+			(at 185.42 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/result?keywords=CL21A226MOQNNNE"
+			(at 185.42 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG PN" "CL21A226MOQNNNE"
+			(at 185.42 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 185.42 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "16V X5R"
+			(at 187.96 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "6c6010cf-880c-5999-ad7f-92da6de2179b")
+		)
+		(pin "2"
+			(uuid "31322b6e-7219-5b06-bcfd-413b1353327d")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 210.82 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4e8d74f2-b2a0-5f9a-9394-b157beac3913")
+		(property "Reference" "C7"
+			(at 213.36 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 213.36 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "CAP CER 0.1uF 50V X7R 0603"
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi PN" ""
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNNC/3886658"
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG PN" "CL10B104KB8NNNC"
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 210.82 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "50V X7R"
+			(at 213.36 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "a9b0facf-12b6-5ace-ac3b-f3ca51e53c5e")
+		)
+		(pin "2"
+			(uuid "b2da1e6e-8d0e-56a7-9830-fc16cfc29a2c")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 111.76 97.79 0)
 		(unit 1)
@@ -2129,6 +2925,149 @@
 			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 198.12 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78723e7a-ff84-5655-a2ca-b6b43ae9117d")
+		(property "Reference" "C6"
+			(at 200.66 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 200.66 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "CAP CER 22uF 16V X5R 0805 (output)"
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi PN" ""
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/result?keywords=CL21A226MOQNNNE"
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG PN" "CL21A226MOQNNNE"
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "16V X5R"
+			(at 200.66 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "7936e253-d5ee-5522-9bdc-73d089a62f4a")
+		)
+		(pin "2"
+			(uuid "6180db55-23e2-5bbb-a3fd-4919ea5ff781")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -2435,6 +3374,240 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 172.72 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0bc616e-3c54-53bc-9f94-e71f55b0bb3b")
+		(property "Reference" "#PWR07"
+			(at 172.72 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 172.72 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99a5124e-4313-5e9d-8fd5-79534d784b7c")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 226.06 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c24bcd3c-7fc1-5dd0-8edc-6c9f486bf7aa")
+		(property "Reference" "#PWR12"
+			(at 226.06 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 226.06 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 226.06 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e3282405-aefc-540f-a595-ba3db916a47b")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 198.12 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c689c8ee-dfa0-5c23-a243-a39d8610b036")
+		(property "Reference" "#PWR09"
+			(at 198.12 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.12 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "072b3477-9a6d-5269-b71d-55d1453629d1")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 50.8 102.87 0)
 		(unit 1)
@@ -2572,6 +3745,149 @@
 			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 172.72 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f40a7edd-2608-50dc-888d-fbb322ef4c5e")
+		(property "Reference" "C4"
+			(at 175.26 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 175.26 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 172.72 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "CAP CER 22uF 16V X5R 0805 (output)"
+			(at 172.72 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi PN" ""
+			(at 172.72 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/result?keywords=CL21A226MOQNNNE"
+			(at 172.72 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG PN" "CL21A226MOQNNNE"
+			(at 172.72 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 172.72 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "16V X5R"
+			(at 175.26 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "ad9baa39-9628-506a-bbbf-337242013fb0")
+		)
+		(pin "2"
+			(uuid "e02ab17d-2109-5997-a549-9d4e9148be6e")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C4")
 					(unit 1)
 				)
 			)
