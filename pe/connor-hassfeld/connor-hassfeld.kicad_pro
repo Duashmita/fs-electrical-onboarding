@@ -828,11 +828,11 @@
     ]
   ],
   "text_variables": {
-    "BOARD_TITLE": "[BOARD TITLE]",
-    "COMMENT1": "[COMMENT]",
-    "COMMENT2": "",
-    "NAMES": "[NAMES]",
-    "REVISION": "[REVISION]"
+    "BOARD_TITLE": "Buck Converter 12V to 5V, 2A",
+    "COMMENT1": "U1: TI TPS54202DDCR, 500kHz synchronous buck",
+    "COMMENT2": "Power Electronics Onboarding 2026-2027",
+    "NAMES": "Connor Hassfeld",
+    "REVISION": "1.0"
   },
   "tuning_profiles": {
     "meta": {
