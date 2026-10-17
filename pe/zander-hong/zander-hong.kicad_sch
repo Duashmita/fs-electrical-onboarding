@@ -1202,6 +1202,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "PE Onboarding DOC"
+		(exclude_from_sim no)
+		(at 128.016 136.398 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "https://docs.google.com/document/d/13sFLwHUCCrR32Jd7PrSwRqvHXB84yX7d5dig93GgXCQ/edit?usp=sharing")
+		)
+		(uuid "3f37e57c-7b1f-45b1-8a80-7038f8c88541")
+	)
 	(text "C1: Input Filtering Cap\nC2 & C2A: Output Filtering Cap in parallel to account for DC Bias Derating\nC3: Bootstrap Cap to power gate for N channel MOSFET"
 		(exclude_from_sim no)
 		(at 134.366 64.77 0)
