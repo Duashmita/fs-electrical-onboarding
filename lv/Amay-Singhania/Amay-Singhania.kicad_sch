@@ -2480,6 +2480,16 @@
 		)
 		(uuid "5733829b-c36c-4deb-a46c-51b2c67e797f")
 	)
+	(text "$7.489/IC"
+		(exclude_from_sim no)
+		(at 227.838 66.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5cd7cee3-7564-4805-81c5-076af500e136")
+	)
 	(text "Tau = 1/f(sample)"
 		(exclude_from_sim no)
 		(at 87.884 192.278 0)
@@ -2489,6 +2499,16 @@
 			)
 		)
 		(uuid "cba66102-f158-49eb-b094-9d3cb8f506a5")
+	)
+	(text "$1.620/IC"
+		(exclude_from_sim no)
+		(at 92.456 166.116 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cc9e2c33-b813-49c6-883d-204d108ecaa0")
 	)
 	(text "Tau = 1/f(sample)"
 		(exclude_from_sim no)
