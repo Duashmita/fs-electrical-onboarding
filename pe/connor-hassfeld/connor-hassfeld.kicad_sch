@@ -576,6 +576,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text ""
+		(exclude_from_sim no)
+		(at 22.86 81.026 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "042963ea-fedd-46ee-91ee-bc6bc9320e7c")
+	)
+	(text "c1 (bulk capacitor)"
+		(exclude_from_sim no)
+		(at 22.606 79.248 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3a1c23d8-7344-4254-96ae-18d57ed4ec35")
+	)
 	(text "GLV: [10, 15]"
 		(exclude_from_sim no)
 		(at 29.21 92.71 0)
@@ -586,6 +606,16 @@
 			(justify left bottom)
 		)
 		(uuid "4c2c9a0c-5603-56dd-a6f5-f3d2d5a31bd5")
+	)
+	(text "c2 = high f capacitor (next to chip)"
+		(exclude_from_sim no)
+		(at 31.242 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e720f1e9-4f0e-47ca-8fdf-327261d9b211")
 	)
 	(junction
 		(at 35.56 99.06)
@@ -719,7 +749,7 @@
 			(uuid "69d9b46b-6168-554d-ba1e-1b99b313a1a8")
 		)
 		(instances
-			(project ""
+			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR03")
 					(unit 1)
@@ -862,7 +892,7 @@
 			(uuid "9c78e1ab-0f20-5a02-a08a-75ec6ae6a8aa")
 		)
 		(instances
-			(project ""
+			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C2")
 					(unit 1)
@@ -940,7 +970,7 @@
 			(uuid "eccbbde9-583f-59fc-a2f5-ec3f625d92b7")
 		)
 		(instances
-			(project ""
+			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR02")
 					(unit 1)
@@ -971,7 +1001,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "Connor_01x02"
 			(at 27.94 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1084,7 +1114,7 @@
 			(uuid "a2923b30-65eb-555d-8b9a-8f7d79f6dbc7")
 		)
 		(instances
-			(project ""
+			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "J1")
 					(unit 1)
@@ -1162,7 +1192,7 @@
 			(uuid "5e2db4e4-f7d9-54b9-829f-6d76bd508bb4")
 		)
 		(instances
-			(project ""
+			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR04")
 					(unit 1)
@@ -1305,7 +1335,7 @@
 			(uuid "cb0ef937-3659-5d58-82b9-c71201bee407")
 		)
 		(instances
-			(project ""
+			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C1")
 					(unit 1)
@@ -1383,7 +1413,7 @@
 			(uuid "ba2fa2d6-079c-5b56-bc1a-e843c574f173")
 		)
 		(instances
-			(project ""
+			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR01")
 					(unit 1)
