@@ -23,23 +23,34 @@ float ETCController::clamp(float value, float min, float max) {
         return value;
     }
 }
+float ETCController::getAPPS1() {
+    return(apps1_voltage);
+}
+float ETCController::getAPPS2() {
+    return(apps2_voltage);
+}
+
+float ETCController::getAvgVolt() {
+    return((apps1_voltage + apps2_voltage)/2);
+}
+
 //if not faulting, clamp values, feed into update state
 //getters
 int16_t ETCController::getCalculatedTorque() {
     return(calculated_torque);
-};
+}
 
 bool ETCController::getGenFaulting() {
-    return(!gen_faulting);
-};
+    return(gen_faulting);
+}
 
 bool ETCController::getImplaus_1() {
     return(implaus_1);
-};
+}
 
 bool ETCController::getImplaus2() {
     return(implaus_2);
-};
+}
 
 /*
     Simple function to write which returns a bool of true or false
@@ -159,7 +170,7 @@ void ETCController::update_implausibilities() {
   //implaus 1
    if (!in_range(apps1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) || !in_range(apps2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE)) {
     if (!implaus_1) {
-            implaus2_timer.start();
+            implaus1_timer.start();
     }
     implaus_1 = true;
     gen_implaus = true;

@@ -23,7 +23,7 @@ int main(void) {
 
     while (true) {
         /*
-            Add lines where you start the ADC, poll from it, then
+            Add lines where you start the ADC, poll from it, then  - adc is analog to digital converter
             convert it to voltage from a 12 bit number.
 
             Next, you should add two TIM_HandleTypeDef objects for
@@ -32,10 +32,12 @@ int main(void) {
             After confirming your approach works, try to research
             a way to get CAN communication going aswell.
         */
+       HAL_DMA_Start() 
+
 
 
         
-
+  
 
     }
 

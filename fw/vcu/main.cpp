@@ -1,6 +1,5 @@
 #include "iostream"
 #include "etc_controller.h"
-#include "etc_controller.cpp"
 #include "mbed.h"
 #include <cstdio>
 
@@ -14,6 +13,11 @@ CAN can{PB_8, PB_9, 500000};
 // Predefined for use in main()
 void send_etc_CAN_messages();
 void send_sme_CAN_messages(); //just makes them exist to compiler
+void smeTrue();
+void etcTrue();
+
+bool sendSMEMessage;
+bool sendETCMessage;
 
 Ticker send_etc_CAN_messages_ticker;
 Ticker send_sme_CAN_messages_ticker;
@@ -24,14 +28,24 @@ int main() {
         Make send_CAN messages loop consistently
         at 20hz (20 messages / second)
     */
-   send_etc_CAN_messages_ticker.attach(&send_etc_CAN_messages, 50ms);
-   send_sme_CAN_messages_ticker.attach(&send_sme_CAN_messages, 50ms);
+   send_etc_CAN_messages_ticker.attach(&etcTrue, 50ms);
+   send_sme_CAN_messages_ticker.attach(&smeTrue, 50ms);
 
 
     // No need to edit this while loop
     while (true) {
         // Must implement in etc/ subfolder
         etc.update_state();
+
+        if (sendETCMessage) {
+            send_etc_CAN_messages();
+            sendETCMessage  = false;
+        }
+        if (sendSMEMessage) {
+            send_sme_CAN_messages();
+            sendSMEMessage  = false;
+        }
+        
     }
 
     return 0;
@@ -43,19 +57,29 @@ int main() {
     set to 1, and VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
+void etcTrue() {
+    sendETCMessage = true;
+}
+void smeTrue() {
+    sendSMEMessage = true;
+}
+
 void send_etc_CAN_messages() {
     uint8_t vcu_tpdo_status_data[8] = {0};
 
     vcu_tpdo_status_data[0] = (
-        (etc.getGenFaulting() << 0) | // ready to drive //should change to be based on implausabilities occuring
-        (etc.getGenFaulting() << 1) | // etc motor enabled
+        (!etc.getGenFaulting() << 0) | // ready to drive //should change to be based on implausabilities occuring
+        (!etc.getGenFaulting() << 1) | // etc motor enabled
         (etc.getImplaus_1() << 4) | // implaus_apps_out_of_range
         (etc.getImplaus2() << 6)
     );
 
     CANMessage vcu_tpdo_status_msg(403, vcu_tpdo_status_data, 8);
     can.write(vcu_tpdo_status_msg);
-    printf("Sending ETC CAN messages\n");
+    //printf("Sending ETC CAN messages\n");
+    //printf("Faulting: %d", etc.getGenFaulting());
+    printf("APPS1: %f   APPS2: %f ", etc.getAPPS1() , etc.getAPPS2());
+    //printf("APPS1_Voltage: %f", etc.apps1_voltage);
 }
 /*
     Must send the SME_RPDO_Throttle_Demand CAN
@@ -73,5 +97,5 @@ void send_sme_CAN_messages() {
     // add data
     CANMessage sme_rpdo_throttle_demand_msg(390, sme_rpdo_throttle_demand_data, 8);
     can.write(sme_rpdo_throttle_demand_msg);
-    printf("Sending SME CAN messages\n");
+   // printf("Sending SME CAN messages\n");
 }

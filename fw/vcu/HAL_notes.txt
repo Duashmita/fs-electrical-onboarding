@@ -1,0 +1,15 @@
+HAL documentation
+    pg 19 ADC initialization
+        HAL_ADC_Start () starts ADC conversion when polling method is used
+        In Polling mode, the HAL functions return the process status when the data processing in blocking mode is
+        complete. The operation is considered complete when the function returns the HAL_OK status, otherwise an
+        error status is returned. The user can get more information through the HAL_PPP_GetState() function. The data
+        processing is handled internally in a loop. A timeout (expressed in ms) is used to prevent process hanging.
+    Polling mode I/O operation - pg 29
+    1. Use HAL_DMA_Start() to start DMA (Data management access) transfer when the source and destination addresses and the
+        Length of data to be transferred have been configured.
+    2. Use HAL_DMA_PollForTransfer() to poll for the end of current transfer. In this case a fixed timeout
+        can be configured depending on the user application.
+
+
+    

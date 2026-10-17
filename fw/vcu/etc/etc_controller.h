@@ -7,8 +7,6 @@
 
 #include "mbed.h"
 
-Timer implaus1_timer;
-Timer implaus2_timer;
 // Timer implaus3_timer;
 // Timer implaus4_timer;
 
@@ -24,17 +22,22 @@ public:
         End of public variables
     */
    //getters
+   float getAPPS1();
+   float getAPPS2();
+
     bool getImplaus_1();
     bool getImplaus2();
 
     bool getGenFaulting();
 
     int16_t getCalculatedTorque();
+    
+    float getAvgVolt();
 
     /*
         Public method definitions, don't edit
     */
-    ETCController(PinName APPS1_pin, PinName APPS2_pin) {}; //constructor
+    ETCController(PinName APPS1_pin, PinName APPS2_pin); //constructor
 
     void update_state();
 
@@ -76,6 +79,8 @@ private:
     bool post_offset_apps_is_matching = false;
     bool implaus_1 = false;
     bool implaus_2 = false;
+    Timer implaus1_timer;
+    Timer implaus2_timer;
     // bool implaus_3 = false;
     // bool implaus_4 = false;
 
@@ -112,10 +117,14 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.396; //constexpr makes evaluate at compile time not run time      
-    static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
+    //static constexpr float APPS1_MIN_VOLTAGE = 0.396; //constexpr makes evaluate at compile time not run time      
+    //static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
+    static constexpr float APPS1_MIN_VOLTAGE = 33; //constexpr makes evaluate at compile time not run time      
+    static constexpr float APPS1_MAX_VOLTAGE = 33; //for some reason reading both min and max voltages as 33 adn 34
 
-    static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
+    //static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
+    //static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
+    static constexpr float APPS2_MIN_VOLTAGE = 34.0f;
     static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
 
     static constexpr float PEDAL_DEADZONE_PERCENTAGE = 3.0f;

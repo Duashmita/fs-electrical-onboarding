@@ -9,8 +9,6 @@ to do:
         probably a  more efficient way to write most code
     find out what static_cast is
 
-
-
 things done today
     used clamp in pedal position calc
     changed in_range implaus logic to or instead of seperate fault
