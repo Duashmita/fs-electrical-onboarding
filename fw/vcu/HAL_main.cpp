@@ -8,6 +8,7 @@
 #include "stm32f4xx_hal_tim.h"
 #include "mbed.h"
 #include "objects.h"
+#include "can_api.h"
 
 /* temp disabled HAL UART debugging as huart2 not initialized or defined in the project */
 // extern UART_HandleTypeDef huart2;
@@ -40,6 +41,61 @@ bool apps_deviation = false;
 
 bool range_fault_persistent = false;
 bool deviation_fault_persistent = false;
+
+constexpr uint32_t STATUS_ID = 403;
+constexpr uint32_t THROTTLE_ID = 390;
+constexpr uint32_t CAN_DLC = 8;
+constexpr uint32_t CAN_TX_TIMEOUT_MS = 5;
+
+struct CANState {
+    int16_t torque_demand;
+    bool apps_out_of_range;
+    bool apps_deviation;
+};
+
+CANState can_state{};
+Mutex can_state_mutex;
+Ticker can_ticker;
+EventFlags can_flags;
+Thread can_thread;
+
+CANState get_state() {
+    ScopedLock<Mutex> lock(can_state_mutex);
+    return can_state;
+}
+
+void send_can_message(uint32_t id, uint8_t first_byte, uint8_t second_byte = 0) {
+    // using legacy STM32 HAL CAN API.
+    CanTxMsgTypeDef message{};
+    message.StdId = id;
+    message.IDE = CAN_ID_STD;
+    message.RTR = CAN_RTR_DATA;
+    message.DLC = CAN_DLC;
+    message.Data[0] = first_byte;
+    message.Data[1] = second_byte;
+    hcan->pTxMsg = &message;
+    HAL_CAN_Transmit(hcan, CAN_TX_TIMEOUT_MS);
+}
+
+void trigger_can() {
+    can_flags.set(1);
+}
+
+void can_worker() {
+    while (true) {
+        can_flags.wait_any(1);
+        const auto state = get_state();
+
+        // Ready to drive: bit 0; motor enabled: bit 1; persistent faults: 4, 6.
+        const uint8_t status = 1U | (1U << 1)
+            | (static_cast<uint8_t>(state.apps_out_of_range) << 4)
+            | (static_cast<uint8_t>(state.apps_deviation) << 6);
+        const uint16_t torque = static_cast<uint16_t>(state.torque_demand);
+        send_can_message(STATUS_ID, status);
+        send_can_message(
+            THROTTLE_ID, torque & 0xFFU, (torque >> 8) & 0xFFU);
+    }
+}
 
 bool timer_start(TIM_HandleTypeDef &timer, TIM_TypeDef *instance) {
     // used pwmout as reference
@@ -149,6 +205,43 @@ void update_implausibilities(float apps1_voltage, float apps2_voltage,
     }
 }
 
+void update_state() {
+    ScopedLock<Mutex> lock(can_state_mutex);
+
+    float apps1_voltage = 0.0f;
+    float apps2_voltage = 0.0f;
+
+    int16_t torque_demand = 0;
+
+    // make sure to check if the ADC read was successful before printing the voltages
+    bool apps1_ok = read_voltage(APPS1_hadc, ADC_CHANNEL_11, apps1_voltage);
+    bool apps2_ok = read_voltage(APPS2_hadc, ADC_CHANNEL_12, apps2_voltage);
+
+    if (apps1_ok && apps2_ok) {
+        float apps1_position = clamp(
+            (apps1_voltage - APPS1_MIN_VOLTAGE) /
+            (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE)
+        );
+        float apps2_position = clamp(
+            (apps2_voltage - APPS2_MIN_VOLTAGE) /
+            (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE)
+        );
+
+        torque_demand = calculate_torque(apps1_position, apps2_position);
+        update_implausibilities(apps1_voltage, apps2_voltage,
+                               apps1_position, apps2_position, torque_demand);
+        printf("APPS1: %.3f V, APPS2: %.3f V, Torque Demand: %d, "
+               "Out of Range: %d, Deviation: %d\n",
+            apps1_voltage, apps2_voltage, torque_demand,
+            range_fault_persistent, deviation_fault_persistent);
+    } else {
+        torque_demand = 0;
+        printf("ADC read failed\n");
+    }
+
+    can_state = {torque_demand, range_fault_persistent, deviation_fault_persistent};
+}
+
 int main(void) {
     analogin_t apps1_hal{};
     analogin_t apps2_hal{};
@@ -156,6 +249,10 @@ int main(void) {
     analogin_init(&apps2_hal, PC_2);
     APPS1_hadc = &apps1_hal.handle;
     APPS2_hadc = &apps2_hal.handle;
+
+    can_t can_hal{};
+    can_init_freq(&can_hal, PB_8, PB_9, 500000);
+    hcan = &can_hal.CanHandle;
 
     __HAL_RCC_TIM2_CLK_ENABLE();
     __HAL_RCC_TIM3_CLK_ENABLE();
@@ -167,6 +264,10 @@ int main(void) {
     }
 
     sleep_manager_lock_deep_sleep();
+
+    update_state();
+    can_thread.start(can_worker);
+    can_ticker.attach(&trigger_can, std::chrono::milliseconds(50));
 
     // char msg[] = "Hello world!\n";
     // HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY); // Sending "Hello world!\n" over Serial
@@ -183,39 +284,7 @@ int main(void) {
             a way to get CAN communication going aswell.
         */
 
-        float apps1_voltage = 0.0f;
-        float apps2_voltage = 0.0f;
-
-        int16_t torque_demand = 0;
-
-        // make sure to check if the ADC read was successful before printing the voltages
-        bool apps1_ok = read_voltage(APPS1_hadc, ADC_CHANNEL_11, apps1_voltage);
-        bool apps2_ok = read_voltage(APPS2_hadc, ADC_CHANNEL_12, apps2_voltage);
-
-        if (apps1_ok && apps2_ok) {
-            float apps1_position = clamp(
-                (apps1_voltage - APPS1_MIN_VOLTAGE) /
-                (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE)
-            );
-            float apps2_position = clamp(
-                (apps2_voltage - APPS2_MIN_VOLTAGE) /
-                (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE)
-            );
-
-            torque_demand = calculate_torque(apps1_position, apps2_position);
-            update_implausibilities(apps1_voltage, apps2_voltage,
-                                   apps1_position, apps2_position, torque_demand);
-            printf("APPS1: %.3f V, APPS2: %.3f V, Torque Demand: %d, "
-                   "Out of Range: %d, Deviation: %d\n",
-                apps1_voltage, apps2_voltage, torque_demand,
-                range_fault_persistent, deviation_fault_persistent);
-        } else {
-            torque_demand = 0;
-            printf("ADC read failed\n");
-        }
-
-        ThisThread::sleep_for(std::chrono::milliseconds(100));
-
+        update_state();
     }
 
     return 0;
