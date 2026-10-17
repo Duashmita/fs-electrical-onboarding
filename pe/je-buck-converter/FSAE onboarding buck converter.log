@@ -1,13 +1,13 @@
 LTspice 26.0.2 for Windows
 Circuit: C:\Users\josep\OneDrive\Documents\GitHub\pe\je-buck-converter\FSAE onboarding buck converter.net
-Start Time: Fri Oct 16 23:42:04 2026
+Start Time: Sat Oct 17 00:22:03 2026
 solver = Normal
 Maximum thread count: 8
 tnom = 27
 temp = 27
 method = trap
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.268 seconds.
+Total elapsed time: 0.346 seconds.
 
 Files loaded:
 C:\Users\josep\OneDrive\Documents\GitHub\pe\je-buck-converter\FSAE onboarding buck converter.net

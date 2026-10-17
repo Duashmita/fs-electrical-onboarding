@@ -14,6 +14,187 @@
 		(comment 3 "${COMMENT2}")
 	)
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -152,172 +333,6 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:D_Schottky"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Schottky"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Schottky diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "D_Schottky_0_1"
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Schottky_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -513,7 +528,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:PMOS"
+		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -525,30 +540,28 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+			(property "Reference" "R"
+				(at 2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "PMOS"
-				(at 5.08 -1.27 0)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 5.08 2.54 0)
+				(at 1.016 -0.254 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -558,18 +571,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -580,40 +582,7 @@
 					)
 				)
 			)
-			(property "Sim.Device" "PMOS"
-				(at 0 -17.145 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET simulation"
+			(property "Description" "Resistor, US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -624,22 +593,32 @@
 					)
 				)
 			)
-			(symbol "PMOS_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_US_0_1"
 				(polyline
 					(pts
-						(xy 0.254 0) (xy -2.54 0)
+						(xy 0 2.286) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -651,19 +630,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -675,88 +642,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
 					)
 					(stroke
 						(width 0)
@@ -768,7 +654,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
 					)
 					(stroke
 						(width 0)
@@ -780,7 +666,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+						(xy 0 -2.286) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -791,11 +677,11 @@
 					)
 				)
 			)
-			(symbol "PMOS_1_1"
+			(symbol "R_US_1_1"
 				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -810,10 +696,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -821,24 +707,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -849,38 +717,706 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:VDC"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "MBRS360T3G:MBRS360T3G"
 			(pin_names
-				(offset 0.0254)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "V"
-				(at 2.54 2.54 0)
+			(property "Reference" "CR"
+				(at -2.54 2.032 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left bottom)
 				)
 			)
-			(property "Value" "1"
-				(at 2.54 0 0)
+			(property "Value" "MBRS360T3G"
+				(at -2.54 -2.032 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "MBRS360T3G:DIODE_SMC_7P15X6P25_ONS-M"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Diode,Schottky Barrier,Vr 60V,If 4A,Pkg SMC,Vf 0.74V,Tj +175degc,Cs 125A,Ir 10mA | ON Semiconductor MBRS360T3G"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/MBRS360T3G/Onsemi/view-part/?ref=eda"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MF" "ON Semiconductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "VENDOR" "ON Semiconductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "COPYRIGHT" "Copyright (C) 2016 Accelerated Designs. All rights reserved"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Package" "SMC-2 ON Semiconductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "BUILT_BY" "EMA_Anthony"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SOURCELIBRARY" "ON_Semiconductor_2018-12-15"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/MBRS360T3G/Onsemi/view-part/?ref=snap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "MBRS360T3G"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER_PART_NUMBER" "MBRS360T3G"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "MBRS360T3G_0_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.778 1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 0.762 -1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 1.27) (xy 1.778 1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 0)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TPS5405DR:TPS5405DR"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -12.7 13.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "TPS5405DR"
+				(at -12.7 -16.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "TPS5405DR:SOIC127P599X175-8N"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "6.5V to 28V Input, 5V Fixed Output at 2A Step-Down Regulator with Intregrated MosFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MF" "Texas Instruments"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Package" "SOIC-8 Texas Instruments"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/TPS5405DR/Texas+Instruments/view-part/?ref=snap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "TPS5405DR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/TPS5405DR/Texas+Instruments/view-part/?ref=eda"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "TPS5405DR_0_0"
+				(rectangle
+					(start -12.7 -12.7)
+					(end 12.7 12.7)
+					(stroke
+						(width 0.41)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "BOOT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 10.16 0)
+					(length 5.08)
+					(name "ROSC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 7.62 0)
+					(length 5.08)
+					(name "SS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 7.62 180)
+					(length 5.08)
+					(name "VSENSE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 10.16 180)
+					(length 5.08)
+					(name "COMP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -10.16 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -5.08 0)
+					(length 5.08)
+					(name "LX"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:Earth"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Earth"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(property "Footprint" ""
@@ -894,7 +1430,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -905,7 +1441,7 @@
 					)
 				)
 			)
-			(property "Description" "Voltage source, DC"
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -916,7 +1452,7 @@
 					)
 				)
 			)
-			(property "Sim.Pins" "1=+ 2=-"
+			(property "ki_keywords" "global ground gnd"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -927,44 +1463,10 @@
 					)
 				)
 			)
-			(property "Sim.Type" "DC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Device" "V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VDC_0_0"
+			(symbol "Earth_0_1"
 				(polyline
 					(pts
-						(xy -1.27 0.254) (xy 1.27 0.254)
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
 					)
 					(stroke
 						(width 0)
@@ -976,7 +1478,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.762 -0.254) (xy -1.27 -0.254)
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -988,7 +1490,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 -0.254) (xy -0.254 -0.254)
+						(xy 0 -1.27) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -1000,7 +1502,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -0.254) (xy 0.762 -0.254)
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -1010,32 +1512,11 @@
 						(type none)
 					)
 				)
-				(text "+"
-					(at 0 1.905 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
 			)
-			(symbol "VDC_0_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "VDC_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
+			(symbol "Earth_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
 					(name ""
 						(effects
 							(font
@@ -1044,24 +1525,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1073,15 +1536,45 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "V_out"
+	(text "V_out ~ 5V"
 		(exclude_from_sim no)
-		(at 157.48 90.424 0)
+		(at 166.624 93.726 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "40a659f5-0500-469e-a1dc-c730aa0155c4")
+	)
+	(text "from what i could tell a mosfet\nis built into the chip which is\nwhy the schematic has none\n"
+		(exclude_from_sim no)
+		(at 134.112 64.262 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "965a9475-7c7d-4472-bbb9-4407b1e32e16")
+	)
+	(text "i couldn't quite figure out all the pins..."
+		(exclude_from_sim no)
+		(at 135.382 45.466 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b849c515-fd89-470c-aadb-f1ec4020b523")
+	)
+	(text "V_in = 12V\n"
+		(exclude_from_sim no)
+		(at 92.456 94.996 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "eb4c701f-2a31-4296-92a4-0c6bde5ff496")
 	)
 	(junction
 		(at 144.78 81.28)
@@ -1090,28 +1583,50 @@
 		(uuid "084d1e86-6ec6-4e3b-b54f-1997941ec8de")
 	)
 	(junction
+		(at 127 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f361c9b-7d19-4c40-b402-4759d4abd467")
+	)
+	(junction
+		(at 109.22 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f51bb51-ef48-45bc-87d0-4314291f1181")
+	)
+	(junction
+		(at 154.94 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48fe76fd-8348-4f0e-9d0c-f78574206b93")
+	)
+	(junction
 		(at 144.78 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4fdde1e5-f4fb-48c1-bbc5-b53558604daa")
 	)
 	(junction
-		(at 127 81.28)
+		(at 123.19 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "624509b5-de56-40b9-8368-663f66fbfb16")
-	)
-	(junction
-		(at 109.22 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b0c98807-a9af-4376-b311-47cda08a9964")
+		(uuid "504a568c-de5d-4c62-9a83-8ecd145365c9")
 	)
 	(junction
 		(at 127 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9fc6afd-d22d-4c70-94b3-8fa68310ebc2")
+	)
+	(wire
+		(pts
+			(xy 123.19 54.61) (xy 154.94 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fb3d526-6abf-4a1f-a458-ae3232cfb651")
 	)
 	(wire
 		(pts
@@ -1125,6 +1640,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 99.06) (xy 144.78 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a4d3068-b0ee-46bf-8468-424887af4c2d")
+	)
+	(wire
+		(pts
 			(xy 144.78 81.28) (xy 154.94 81.28)
 		)
 		(stroke
@@ -1135,13 +1660,23 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 93.98) (xy 109.22 96.52)
+			(xy 109.22 93.98) (xy 109.22 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "263e5ddf-b55e-43a9-8f2a-e6564da9ebf6")
+		(uuid "20256cc0-65e2-4fd9-9b70-f3add5cf64d1")
+	)
+	(wire
+		(pts
+			(xy 81.28 63.5) (xy 81.28 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28c4f721-477c-4b7b-9978-6b651131c35d")
 	)
 	(wire
 		(pts
@@ -1165,7 +1700,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 81.28) (xy 127 86.36)
+			(xy 127 81.28) (xy 127 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1175,53 +1710,123 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 81.28) (xy 154.94 83.82)
+			(xy 109.22 99.06) (xy 109.22 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46b6f344-cb9b-4c1d-9161-f7c65c754467")
+		(uuid "4184a386-ff01-4e62-abb4-668da49fe1de")
 	)
 	(wire
 		(pts
-			(xy 127 99.06) (xy 144.78 99.06)
+			(xy 85.09 57.15) (xy 87.63 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "713f0ca5-5afd-4c1c-9b0a-174bbfb73d88")
+		(uuid "41b7a620-2601-464a-ad6f-0cd4052c9352")
 	)
 	(wire
 		(pts
-			(xy 109.22 81.28) (xy 109.22 86.36)
+			(xy 81.28 52.07) (xy 87.63 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "79a22001-4a77-424d-925d-be877e61926d")
+		(uuid "47cab1bf-6ddf-43dc-847d-694ff6daa924")
 	)
 	(wire
 		(pts
-			(xy 127 93.98) (xy 127 99.06)
+			(xy 81.28 55.88) (xy 81.28 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9984fdbf-5b86-4540-ac34-20fa11a8bd3f")
+		(uuid "581703af-0101-43b1-bd2e-01f641db8ce4")
 	)
 	(wire
 		(pts
-			(xy 123.19 81.28) (xy 127 81.28)
+			(xy 109.22 99.06) (xy 123.19 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a747f402-7108-456a-a681-a16f4f889fcc")
+		(uuid "7136fb5d-3abe-4ed2-a1f0-7961e635ec17")
+	)
+	(wire
+		(pts
+			(xy 109.22 86.36) (xy 85.09 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76dc41e7-8e9d-4399-8cec-2ee8ed232a7b")
+	)
+	(wire
+		(pts
+			(xy 67.31 54.61) (xy 67.31 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78465b37-057b-4824-ae48-5b34922d67e0")
+	)
+	(wire
+		(pts
+			(xy 154.94 54.61) (xy 154.94 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82eb8c3b-d910-4481-9dab-8753ea3f4b40")
+	)
+	(wire
+		(pts
+			(xy 154.94 81.28) (xy 154.94 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f55d52f-e2b6-4e39-9df3-e0541912dc46")
+	)
+	(wire
+		(pts
+			(xy 109.22 86.36) (xy 109.22 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "945fbd43-bdc6-427d-af8a-2af655b18996")
+	)
+	(wire
+		(pts
+			(xy 123.19 72.39) (xy 123.19 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95bcd05d-6903-4692-a188-a2eddb5a1681")
+	)
+	(wire
+		(pts
+			(xy 85.09 86.36) (xy 85.09 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1ae8187-5d41-43c1-85a3-82315e0d8d3f")
 	)
 	(wire
 		(pts
@@ -1235,7 +1840,37 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 96.52) (xy 154.94 99.06)
+			(xy 87.63 67.31) (xy 87.63 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b341e515-d48a-4fd1-9f4e-4e94ed3bcc62")
+	)
+	(wire
+		(pts
+			(xy 123.19 99.06) (xy 127 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b38f4789-234c-434d-a2f9-0d879803c9e8")
+	)
+	(wire
+		(pts
+			(xy 127 92.71) (xy 127 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6186e08-cf76-4527-9ad1-f9f446aad207")
+	)
+	(wire
+		(pts
+			(xy 154.94 91.44) (xy 154.94 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1245,23 +1880,23 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 96.52) (xy 109.22 99.06)
+			(xy 87.63 81.28) (xy 127 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c9e197a7-0ff1-488d-9b19-8d41c437394f")
+		(uuid "b84025c2-2fc9-4b03-968e-20f7d4ee44a8")
 	)
 	(wire
 		(pts
-			(xy 109.22 81.28) (xy 113.03 81.28)
+			(xy 87.63 54.61) (xy 67.31 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d197873e-88bc-4fba-b86f-cc917c62d2aa")
+		(uuid "dca43c23-e1bd-43b9-87ac-a9de3a7a1a48")
 	)
 	(wire
 		(pts
@@ -1275,13 +1910,554 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 99.06) (xy 127 99.06)
+			(xy 67.31 63.5) (xy 67.31 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fc2be83e-0b6e-4a06-8f92-ba03d5f78761")
+		(uuid "f89e1511-2943-47e9-ae0a-c1a1d2e1b7f1")
+	)
+	(symbol
+		(lib_id "MBRS360T3G:MBRS360T3G")
+		(at 127 90.17 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "001899a9-b577-4f29-9792-9bfcda104a6e")
+		(property "Reference" "CR1"
+			(at 129.54 88.8999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MBRS360T3G"
+			(at 129.54 91.4399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MBRS360T3G:DIODE_SMC_7P15X6P25_ONS-M"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode,Schottky Barrier,Vr 60V,If 4A,Pkg SMC,Vf 0.74V,Tj +175degc,Cs 125A,Ir 10mA | ON Semiconductor MBRS360T3G"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/MBRS360T3G/Onsemi/view-part/?ref=eda"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "ON Semiconductor"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "VENDOR" "ON Semiconductor"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "COPYRIGHT" "Copyright (C) 2016 Accelerated Designs. All rights reserved"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMC-2 ON Semiconductor"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "BUILT_BY" "EMA_Anthony"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SOURCELIBRARY" "ON_Semiconductor_2018-12-15"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MBRS360T3G/Onsemi/view-part/?ref=snap"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "MBRS360T3G"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "MBRS360T3G"
+			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "1"
+			(uuid "170329f7-49fb-43fd-b0f9-7aca54e3b079")
+		)
+		(pin "2"
+			(uuid "94e854e4-97fb-4626-9859-df9d68a35f10")
+		)
+		(instances
+			(project "je-buck-converter"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "CR1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 104.14 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "06c6a1c2-1c56-473d-8202-10d34bd13351")
+		(property "Reference" "J1"
+			(at 92.71 89.916 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 92.71 92.456 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 104.14 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 104.14 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6ab189f5-c4b7-4b35-96c2-25407396cd7a")
+		)
+		(pin "2"
+			(uuid "497364b0-660d-48a8-a1d3-b5fc144b33e5")
+		)
+		(instances
+			(project "je-buck-converter"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 109.22 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32430d6d-010f-4835-8f28-353f88a68461")
+		(property "Reference" "#PWR01"
+			(at 109.22 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 109.22 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe2aece3-d92e-449a-b92d-0fbd82d1c755")
+		)
+		(instances
+			(project "je-buck-converter"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 67.31 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "601da10c-e52c-43c5-8974-8f79dd3dda43")
+		(property "Reference" "#PWR03"
+			(at 67.31 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.31 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 67.31 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb6bef6b-c11a-4204-9fba-6b7b92bc5b86")
+		)
+		(instances
+			(project "je-buck-converter"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 81.28 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "750adc75-7547-4819-b17d-e37702c23744")
+		(property "Reference" "#PWR02"
+			(at 81.28 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 81.28 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "436e662a-b057-4345-8dd7-728352eeb917")
+		)
+		(instances
+			(project "je-buck-converter"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1306,7 +2482,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3uF"
+		(property "Value" "2.2uF"
 			(at 148.59 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1317,7 +2493,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 145.7452 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -1366,8 +2542,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 118.11 78.74 270)
+		(lib_id "Device:C")
+		(at 67.31 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1375,126 +2551,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c332dac-a643-425a-9223-cdaa9a58b476")
-		(property "Reference" "Q1"
-			(at 118.11 85.09 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PMOS"
-			(at 118.11 87.63 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 120.65 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 105.41 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 118.11 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 100.965 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 99.06 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 102.87 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d58be3f3-f6c2-45b2-a20e-748eb466a607")
-		)
-		(pin "2"
-			(uuid "b5dc7238-8d1a-4721-8bfd-c44b18445ea1")
-		)
-		(pin "3"
-			(uuid "8525e674-2432-4aa3-916e-e91fe3f34768")
-		)
-		(instances
-			(project "je-buck-converter"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 127 90.17 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99c41415-1486-445e-9b03-0cac322940d3")
-		(property "Reference" "D1"
-			(at 129.54 88.5824 90)
+		(uuid "ae487ce7-d64f-476c-b6c8-67f88eaf5cc7")
+		(property "Reference" "C2"
+			(at 70.612 59.436 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1504,8 +2563,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "D_Schottky"
-			(at 129.54 91.1224 90)
+		(property "Value" "13n"
+			(at 70.612 61.468 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1515,8 +2574,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 127 90.17 0)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 68.2752 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1527,7 +2586,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 90.17 0)
+			(at 67.31 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1537,8 +2596,8 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
-			(at 127 90.17 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 67.31 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1549,15 +2608,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "8e4bbff7-031e-42e0-a239-f898f66874c8")
+			(uuid "95ab2e90-4193-49d8-863b-139b9c85c147")
 		)
 		(pin "2"
-			(uuid "606c8d4d-c53b-4e79-965e-8482c1cd29d5")
+			(uuid "b5d89524-bc68-4bdb-9bf6-6d1400527202")
 		)
 		(instances
 			(project "je-buck-converter"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "D1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -1585,7 +2644,7 @@
 				)
 			)
 		)
-		(property "Value" "10uH"
+		(property "Value" "7uH"
 			(at 135.89 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1595,7 +2654,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Bourns-SRU1028_10.0x10.0mm"
 			(at 135.89 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1628,6 +2687,50 @@
 				)
 			)
 		)
+		(property "Digikey Part Number" ""
+			(at 135.89 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 135.89 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 135.89 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "PF0560.702NL"
+			(at 135.89 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "66e092ac-2803-4381-9950-49c2681e0d90")
 		)
@@ -1644,8 +2747,89 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:VDC")
-		(at 109.22 91.44 0)
+		(lib_id "Device:R_US")
+		(at 81.28 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e4d0f39d-f83c-4bb9-b0f1-bb43c84bbbc8")
+		(property "Reference" "R1"
+			(at 76.454 58.928 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33k"
+			(at 75.692 61.214 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 82.296 59.944 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 81.28 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7c284542-ec6a-40ca-ba6f-eaa1c2d9bd7d")
+		)
+		(pin "1"
+			(uuid "f67b8324-4a6b-4e1e-b8cc-5b8f821e0855")
+		)
+		(instances
+			(project "je-buck-converter"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TPS5405DR:TPS5405DR")
+		(at 105.41 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1654,31 +2838,41 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ea7f9f19-8571-447c-8c9c-e6f7685a64e5")
-		(property "Reference" "V1"
-			(at 113.03 90.0401 0)
+		(uuid "f9c2eeb1-186c-4485-bc39-aee18c68ebd4")
+		(property "Reference" "U1"
+			(at 105.41 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "12V"
-			(at 113.03 92.5801 0)
+		(property "Value" "TPS5405DR"
+			(at 105.41 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 109.22 91.44 0)
+		(property "Footprint" "TPS5405DR:SOIC127P599X175-8N"
+			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1688,8 +2882,171 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 109.22 91.44 0)
+		(property "Description" "6.5V to 28V Input, 5V Fixed Output at 2A Step-Down Regulator with Intregrated MosFET"
+			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SOIC-8 Texas Instruments"
+			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TPS5405DR/Texas+Instruments/view-part/?ref=snap"
+			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "TPS5405DR"
+			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/TPS5405DR/Texas+Instruments/view-part/?ref=eda"
+			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "4"
+			(uuid "1bd1b244-3505-4932-abe1-711454863fc7")
+		)
+		(pin "7"
+			(uuid "2e9dcddd-7bfb-466c-ad4d-d4635763e889")
+		)
+		(pin "8"
+			(uuid "dcdb4b87-90c5-4a05-8811-4600c743109b")
+		)
+		(pin "1"
+			(uuid "e54dbd71-42c3-425b-88e3-708d917fb212")
+		)
+		(pin "3"
+			(uuid "f0e3ac41-b778-4d2b-a414-377111fede5b")
+		)
+		(pin "2"
+			(uuid "e73e927b-5f12-4342-bdf1-580940f170cf")
+		)
+		(pin "5"
+			(uuid "80c362bb-158c-46a0-9ef8-5c92e6eab37a")
+		)
+		(pin "6"
+			(uuid "b91e39ac-fded-41a8-8f53-c3b9329433c8")
+		)
+		(instances
+			(project "je-buck-converter"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 160.02 91.44 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe0492c3-db17-4b1c-be39-b915b9d013bc")
+		(property "Reference" "J2"
+			(at 161.29 88.8999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 161.29 91.4399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 160.02 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1699,8 +3056,8 @@
 				)
 			)
 		)
-		(property "Description" "Voltage source, DC"
-			(at 109.22 91.44 0)
+		(property "Datasheet" ""
+			(at 160.02 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1710,75 +3067,8 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 109.22 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 109.22 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 109.22 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Digikey Part Number" ""
-			(at 109.22 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey URL" ""
-			(at 109.22 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 109.22 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 109.22 91.44 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 160.02 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1789,15 +3079,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "1b4eea9d-4ae9-4e6d-ae94-5056ac633f9f")
+			(uuid "c3c0ac7b-6f83-4929-a43b-86e88bb1cfba")
 		)
 		(pin "2"
-			(uuid "c9a695ea-a2ae-4470-86a2-0a096cfc7fe1")
+			(uuid "4a26a073-74e2-418d-a20f-6a87294cbf02")
 		)
 		(instances
 			(project "je-buck-converter"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "V1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
