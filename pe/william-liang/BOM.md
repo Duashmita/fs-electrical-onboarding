@@ -1,7 +1,5 @@
 # Bill of materials
 
-One prototype, 13 populated components. Prices below were found in US DigiKey indexed listings on October 16, 2026, at the single-piece price break. They are sourced budget prices, not a live checkout quotation; indexed pages can lag current price and stock. Recheck before ordering. No purchase was made. The 10k resistor price is corroborated by DigiKey alternate-packaging listings; current stock reports conflict.
-
 | References | Qty | MPN | Package | Unit USD | Extended USD | Source |
 |---|---:|---|---|---:|---:|---|
 | U1 | 1 | TPS563201DDCR | SOT-23-6 (DDC) | 0.47 | 0.47 | [DigiKey](https://www.digikey.com/en/products/detail/texas-instruments/TPS563201DDCR/5808204) |
