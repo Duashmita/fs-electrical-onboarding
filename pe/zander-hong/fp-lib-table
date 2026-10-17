@@ -1,5 +1,5 @@
 (fp_lib_table
 	(version 7)
 	(lib (name "formula_slug_footprint_library") (type "KiCad") (uri "${KIPRJMOD}/../fs-components/formula_slug_footprint_library.pretty/") (options "") (descr ""))
-	(lib (name "inductor_SRP4020") (type "KiCad") (uri "/Users/zanderhong/Downloads/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "inductor_SRP4020") (type "KiCad") (uri "${KIPRJMOD}/KicadV6/footprints.pretty") (options "") (descr ""))
 )
