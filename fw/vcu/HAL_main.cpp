@@ -20,6 +20,9 @@ int main(void) {
 
     char msg[] = "Hello world!\n";
     HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY); // Sending "Hello world!\n" over Serial
+    
+    bool adc_error_1; //Tells u sif soemthing went wrong with conversion
+    bool adc_error_2;
 
     while (true) {
         /*
@@ -33,11 +36,25 @@ int main(void) {
             After confirming your approach works, try to research
             a way to get CAN communication going aswell.
         */
-
+       
         HAL_ADC_Start(APPS1_hadc); //Enables ADC and starts conversion of the regular channels( Turns on the ADC)
+
+        if( HAL_ADC_PollForConversion(APPS1_hadc, 10) != HAL_OK){ //Check if Converison is complete
+             adc_error_1 = true;//If conversion is not complete, report error
+        }else{
+            uint32_t Adc_value_1 = HAL_ADC_PollForConversion(APPS1_hadc); //If coversion is complete store value
+        }
+        
+
         HAL_ADC_Start(APPS2_adc); 
- 
-    }
+        if( HAL_ADC_PollForConversion(APPS2_hadc, 10) != HAL_OK){ //Check if Converison is complete
+             adc_error_2 = true;//If conversion is not complete, report error
+        }else{
+            uint32_t Adc_value_2 = HAL_ADC_PollForConversion(APPS2_hadc); //If coversion is complete store value
+        }
+
+
+        
 
     return 0;
 }
