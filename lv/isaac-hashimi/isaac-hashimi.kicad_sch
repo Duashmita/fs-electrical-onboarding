@@ -1023,6 +1023,12 @@
 		(color 0 0 0 0)
 		(uuid "d8eae1f3-8b74-4fb8-bd20-b1585f6ea201")
 	)
+	(junction
+		(at 448.31 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb21c5fb-cc26-407a-aaed-1cad9ad5ae27")
+	)
 	(wire
 		(pts
 			(xy 368.3 135.89) (xy 373.38 135.89)
@@ -1055,7 +1061,7 @@
 	)
 	(wire
 		(pts
-			(xy 443.23 281.94) (xy 453.39 281.94)
+			(xy 443.23 281.94) (xy 448.31 281.94)
 		)
 		(stroke
 			(width 0)
@@ -1165,6 +1171,16 @@
 	)
 	(wire
 		(pts
+			(xy 448.31 281.94) (xy 453.39 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "683d52dd-44db-48b6-8cc6-715cbb365fa4")
+	)
+	(wire
+		(pts
 			(xy 402.59 284.48) (xy 427.99 284.48)
 		)
 		(stroke
@@ -1172,6 +1188,16 @@
 			(type default)
 		)
 		(uuid "6e776737-8406-4bf9-af08-8c6db3258fbf")
+	)
+	(wire
+		(pts
+			(xy 448.31 175.26) (xy 448.31 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71185bf9-292a-44ee-ad0f-dfdd2ff2cffb")
 	)
 	(wire
 		(pts
@@ -1205,7 +1231,7 @@
 	)
 	(wire
 		(pts
-			(xy 443.23 175.26) (xy 478.79 175.26)
+			(xy 443.23 175.26) (xy 448.31 175.26)
 		)
 		(stroke
 			(width 0)
@@ -1272,16 +1298,6 @@
 			(type default)
 		)
 		(uuid "ac80c74f-9d47-4641-8135-007903a6abcc")
-	)
-	(wire
-		(pts
-			(xy 478.79 175.26) (xy 478.79 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b53b792e-fd58-40af-8326-b271a8ad1bc9")
 	)
 	(wire
 		(pts
@@ -1363,26 +1379,6 @@
 		)
 		(uuid "dff804cc-b744-4778-ae3f-b84a4cd5ce57")
 	)
-	(wire
-		(pts
-			(xy 478.79 120.65) (xy 478.79 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4291482-6842-4dcb-848a-88643db115d0")
-	)
-	(label "Brake_High"
-		(at 478.79 172.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0f87e889-e4bc-4517-b122-b4ee9c6da0ef")
-	)
 	(label "Brake_Pressure"
 		(at 417.83 191.77 0)
 		(effects
@@ -1403,7 +1399,7 @@
 		)
 		(uuid "4da8df5e-9630-44d2-b1d9-5c762a89f1ef")
 	)
-	(label "Current_High"
+	(label "Plausibility_Fault"
 		(at 453.39 281.94 0)
 		(effects
 			(font
@@ -1412,6 +1408,16 @@
 			(justify left bottom)
 		)
 		(uuid "58396658-2ed8-4721-8438-6906fbeeb88c")
+	)
+	(label "Plausibility_Fault"
+		(at 448.31 185.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8768bb10-f8af-403d-8524-a2896db84275")
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -1587,84 +1593,6 @@
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "U1")
 					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 478.79 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1a71a94d-03dc-41bf-a003-a21199e67487")
-		(property "Reference" "#PWR02"
-			(at 478.79 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 478.79 115.57 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 478.79 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 478.79 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 478.79 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ff8daf8b-1242-4271-80ca-85db55df9855")
-		)
-		(instances
-			(project "isaac-hashimi"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "#PWR02")
-					(unit 1)
 				)
 			)
 		)
@@ -3128,132 +3056,6 @@
 			(project "isaac-hashimi"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 478.79 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3efb1da-cb66-4066-9217-63a246797bcf")
-		(property "Reference" "R3"
-			(at 481.33 138.4299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 481.33 140.9699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
-			(at 477.012 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 478.79 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 478.79 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey Part Number" ""
-			(at 478.79 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey URL" ""
-			(at 478.79 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 478.79 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 478.79 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "09b2a2ca-8aa9-4f07-b7fb-fe4f9597d187")
-		)
-		(pin "1"
-			(uuid "9787ea4e-76e3-46a5-81db-9ecff3c156d8")
-		)
-		(instances
-			(project "isaac-hashimi"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "R3")
 					(unit 1)
 				)
 			)
