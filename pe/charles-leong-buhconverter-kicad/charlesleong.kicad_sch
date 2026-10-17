@@ -5,7 +5,7 @@
 	(uuid "e994741c-7c7d-4124-9d00-43b883baa61d")
 	(paper "A")
 	(title_block
-		(title "BUH_CONVERTER")
+		(title "$[BUH_CONVERTER]")
 		(date "${CURRENT_DATE}")
 		(rev "${REVISION}")
 		(company "Formula Slug")
@@ -1609,7 +1609,7 @@
 			(uuid "399235f9-542a-44c7-9b8b-e6347dd2bccc")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR04")
 					(unit 1)
@@ -1735,7 +1735,7 @@
 			(uuid "9abbbcb3-1381-4095-8e83-1ac63c8d2e57")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C6")
 					(unit 1)
@@ -1861,7 +1861,7 @@
 			(uuid "d7f49b15-9b85-4a02-833a-2d8be74049af")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C5")
 					(unit 1)
@@ -1987,7 +1987,7 @@
 			(uuid "558ee5f6-de6d-4b7e-9e44-6691cee12f97")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C4")
 					(unit 1)
@@ -2113,7 +2113,7 @@
 			(uuid "dc434650-4466-45ac-a181-4ec6627ba16b")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C3")
 					(unit 1)
@@ -2191,7 +2191,7 @@
 			(uuid "feab887f-e0fd-4fb9-9bb1-48929b57d2b0")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR05")
 					(unit 1)
@@ -2269,7 +2269,7 @@
 			(uuid "6c7d164f-58ba-478a-bb56-6ab8a02c2819")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#FLG01")
 					(unit 1)
@@ -2347,7 +2347,7 @@
 			(uuid "bd79ea31-a100-473b-b0fa-b2b1295e6a40")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR01")
 					(unit 1)
@@ -2473,7 +2473,7 @@
 			(uuid "ee6f0ecb-457f-423f-af21-e21e129dd7d6")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C2")
 					(unit 1)
@@ -2551,7 +2551,7 @@
 			(uuid "81346e5a-36b6-437b-8aa6-93fe69a28edf")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#FLG02")
 					(unit 1)
@@ -2628,7 +2628,7 @@
 			(uuid "e6004265-834f-4324-9c64-4961e2a93fae")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#FLG03")
 					(unit 1)
@@ -2754,7 +2754,7 @@
 			(uuid "0793057a-479d-4990-bdd0-017a0518cb2f")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C8")
 					(unit 1)
@@ -2794,7 +2794,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
 			(at 127 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -2891,7 +2891,7 @@
 			(uuid "553a44a9-e8b6-41d1-9b3d-3047c2a2fe0c")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "U1")
 					(unit 1)
@@ -3015,7 +3015,7 @@
 			(uuid "baa0e5c3-9aa6-47b0-82e4-3562bc0e7366")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "L1")
 					(unit 1)
@@ -3141,7 +3141,7 @@
 			(uuid "ec7b8362-cc09-4dd7-9367-36828eb0d32e")
 		)
 		(instances
-			(project "template"
+			(project "charlesleong"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C7")
 					(unit 1)
