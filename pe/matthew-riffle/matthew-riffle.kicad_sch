@@ -2048,7 +2048,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.susumu.co.jp/english/product/rg.html"
+		(property "Datasheet" "https://www.susumu.co.jp/dl/?filename=n_catalog_partition01_en.pdf&type=application%2Fpdf"
 			(at 167.64 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2173,7 +2173,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM188R61E106MA73%23"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106MA73-01A.pdf"
 			(at 83.82 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -2184,7 +2184,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Ceramic capacitor"
 			(at 83.82 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -2433,7 +2433,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 200.66 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2444,7 +2444,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Ceramic capacitor"
 			(at 200.66 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2467,7 +2467,7 @@
 				(justify left)
 			)
 		)
-		(property "Digikey Part Number" "4713-GMC10X5R226M10NTCT-ND"
+		(property "Digikey Part Number" "490-13243-1-ND"
 			(at 200.66 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2478,7 +2478,7 @@
 				)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R226M10NT/22461275"
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM187R61A226ME15D/5877406"
 			(at 200.66 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2489,7 +2489,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GMC10X5R226M10NT"
+		(property "Manufacturer Part Number" "GRM187R61A226ME15D"
 			(at 200.66 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2500,7 +2500,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+		(property "Manufacturer" "Murata Electronics"
 			(at 200.66 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2874,7 +2874,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Ceramic capacitor"
 			(at 100.33 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3199,7 +3199,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=GRM188R61E106MA73%23"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106MA73-01A.pdf"
 			(at 67.31 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3210,7 +3210,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Ceramic capacitor"
 			(at 67.31 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3471,7 +3471,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.susumu.co.jp/english/product/rg.html"
+		(property "Datasheet" "https://www.susumu.co.jp/dl/?filename=n_catalog_partition01_en.pdf&type=application%2Fpdf"
 			(at 167.64 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3674,7 +3674,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://calchip.com/wp-content/uploads/2025/05/GMC-Series-3.pdf"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 184.15 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3685,7 +3685,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Ceramic capacitor"
 			(at 184.15 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3708,7 +3708,7 @@
 				(justify left)
 			)
 		)
-		(property "Digikey Part Number" "4713-GMC10X5R226M10NTCT-ND"
+		(property "Digikey Part Number" "490-13243-1-ND"
 			(at 184.15 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3719,7 +3719,7 @@
 				)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R226M10NT/22461275"
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM187R61A226ME15D/5877406"
 			(at 184.15 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3730,7 +3730,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GMC10X5R226M10NT"
+		(property "Manufacturer Part Number" "GRM187R61A226ME15D"
 			(at 184.15 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3741,7 +3741,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+		(property "Manufacturer" "Murata Electronics"
 			(at 184.15 87.63 0)
 			(hide yes)
 			(show_name no)
