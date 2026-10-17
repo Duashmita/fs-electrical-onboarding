@@ -21,9 +21,9 @@ add_subdirectory(../mbed-os mbed-os)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(${PROJECT_NAME} 
-        HAL_main.cpp
-        # main.cpp
-        # etc/etc_controller.cpp
+        # HAL_main.cpp
+        main.cpp
+        ./etc/etc_controller.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC ./etc)
