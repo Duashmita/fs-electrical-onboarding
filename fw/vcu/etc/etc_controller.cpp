@@ -6,8 +6,8 @@
 
 // Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) :
-    apps1_voltage(APPS1_pin),
-    apps2_voltage(APPS2_pin)
+    apps1_voltage(AnalogIn(APPS1_pin)),
+    apps2_voltage(AnalogIn(APPS2_pin))
   {}
 
 /* 

@@ -117,15 +117,15 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    //static constexpr float APPS1_MIN_VOLTAGE = 0.396; //constexpr makes evaluate at compile time not run time      
-    //static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
-    static constexpr float APPS1_MIN_VOLTAGE = 33; //constexpr makes evaluate at compile time not run time      
-    static constexpr float APPS1_MAX_VOLTAGE = 33; //for some reason reading both min and max voltages as 33 adn 34
+    static constexpr float APPS1_MIN_VOLTAGE = 0.110379f; //constexpr makes evaluate at compile time not run time      
+    static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
+    // static constexpr float APPS1_MIN_VOLTAGE = 33; //constexpr makes evaluate at compile time not run time      
+    // static constexpr float APPS1_MAX_VOLTAGE = 33; //for some reason reading both min and max voltages as 33 adn 34
 
-    //static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
-    //static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
-    static constexpr float APPS2_MIN_VOLTAGE = 34.0f;
+    static constexpr float APPS2_MIN_VOLTAGE = 0.124054f;
     static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
+    // static constexpr float APPS2_MIN_VOLTAGE = 34.0f;
+    // static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
 
     static constexpr float PEDAL_DEADZONE_PERCENTAGE = 3.0f;
 
