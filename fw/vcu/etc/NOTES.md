@@ -48,7 +48,7 @@
 
 ## REFLECTION
     - learning curve was initially high but leveled out as time went on
-    - handwrote quite some brainstorms while trying to make sense of the [given task], [solution], [implementation]
+    - handwrote brainstorms while trying to make sense of the [given task], [solution], [implementation]
     - i focused on connecting what i was doing to what it physically meant -- i feel like the "plain english" is very important while writing code for a car
     - tried to keep my code readable and my process documented via this file
     - went to lab hours as much as i could to get logic reviewed, get feedback, revise, etc.
