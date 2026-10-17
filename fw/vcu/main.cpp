@@ -13,13 +13,19 @@ void send_etc_CAN_messages();
 void send_sme_CAN_messages();
 
 void can_loop() {
-    auto next = Kernel::Clock::now();
     while (true) {
         send_etc_CAN_messages();
         send_sme_CAN_messages();
-        next += 50ms;
-        ThisThread::sleep_until(next);
+
+        ThisThread::sleep_for(50ms);
     }
+}
+
+Ticker print_ticker;
+volatile bool print_flag = false;
+
+void set_print_flag() {
+    print_flag = true;
 }
 
 int main() {
@@ -29,15 +35,22 @@ int main() {
         Make send_CAN messages loop consistently
         at 20hz (20 messages / second)
     */
-   can_thread.start(can_loop);
+   can_thread.start(&can_loop);
+   print_ticker.attach(&set_print_flag, 100ms);
 
 
     // No need to edit this while loop
     while (true) {
-        // Must implement in etc/ subfolder
         etc.update_state();
-    }
 
+        if (print_flag) {
+            print_flag = false;
+            printf("torque=%d  v1=%.3f  v2=%.3f\n",
+                   etc.torque_demand, etc.apps1_voltage, etc.apps2_voltage);
+        }
+
+        // torque=0  v1=0.353  v2=0.395
+    }
     return 0;
 }
 
@@ -51,17 +64,10 @@ void send_etc_CAN_messages() {
     uint8_t data[8] = {0};
     bool any_implausibility = etc.apps_implausibility || etc.out_of_range_implausibility;
 
-    if (!any_implausibility) {
-        data[0] |= (1 << 0);
-        data[0] |= (1 << 1);
-    }
-
-    if (etc.out_of_range_implausibility) {
-        data[0] |= (1 << 4);
-    }
-    if (etc.apps_implausibility) {
-        data[0] |= (1 << 6);
-    }
+    data[0] = (!any_implausibility << 0)
+            | (!any_implausibility << 1)
+            | (etc.out_of_range_implausibility << 4)
+            | (etc.apps_implausibility << 6);
 
     CANMessage msg(403, data, 8);
     can.write(msg);

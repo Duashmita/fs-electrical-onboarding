@@ -16,6 +16,8 @@ public:
     int16_t torque_demand = 0;
     bool apps_implausibility = false;
     bool out_of_range_implausibility = false;
+    float apps1_voltage = 0;
+    float apps2_voltage = 0;
 
 
 
@@ -53,11 +55,11 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.396;
-    static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
+    static constexpr float APPS1_MIN_VOLTAGE = 0.355;
+    static constexpr float APPS1_MAX_VOLTAGE = 0.930f;
 
-    static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
-    static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
+    static constexpr float APPS2_MIN_VOLTAGE = 0.400f;
+    static constexpr float APPS2_MAX_VOLTAGE = 0.980f;
 
     static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03;
 

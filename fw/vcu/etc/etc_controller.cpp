@@ -44,11 +44,16 @@ void ETCController::update_state() {
 
     float v1 = apps1.read() * 3.3f;
     float v2 = apps2.read() * 3.3f;
+    apps1_voltage = v1;
+    apps2_voltage = v2;
 
-    apps1_pos = clamp((v1 - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
-    apps2_pos = clamp((v2 - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
+    apps1_pos = (v1 - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE);
+    apps2_pos = (v2 - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE);
 
-    float avg_pos = (apps1_pos + apps2_pos) / 2.0f;
+    float apps1_adj = clamp(apps1_pos - PEDAL_DEADZONE_PERCENTAGE) / (1 - (2*PEDAL_DEADZONE_PERCENTAGE));
+    float apps2_adj = clamp(apps2_pos - PEDAL_DEADZONE_PERCENTAGE) / (1 - (2*PEDAL_DEADZONE_PERCENTAGE));
+
+    float avg_pos = (apps1_adj + apps2_adj) / 2.0f;
 
     torque_demand = static_cast<int16_t>(avg_pos*MAX_TORQUE);
 
@@ -69,44 +74,42 @@ void ETCController::update_state() {
     include rules T.4.2.4, T.4.2.9 (out of range).
 */
 void ETCController::update_implausibilities() {
-
     float v1 = apps1.read() * 3.3f;
     float v2 = apps2.read() * 3.3f;
 
     bool mismatch = fabsf(apps1_pos - apps2_pos) > 0.10f;
 
-    //constexpr float MARGIN = 0.1f;
+    constexpr float MARGIN = 0.1f;
     bool out_of_range =
-        !in_range(v1, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) ||
-        !in_range(v2, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE);
+        !in_range(v1, APPS1_MIN_VOLTAGE - MARGIN, APPS1_MAX_VOLTAGE + MARGIN) ||
+        !in_range(v2, APPS2_MIN_VOLTAGE - MARGIN, APPS2_MAX_VOLTAGE + MARGIN);
 
     if (mismatch) {
         if (!apps_mismatch_running) {
-            apps_mismatch_timer.reset();
             apps_mismatch_timer.start();
             apps_mismatch_running = true;
         }
     } else {
         apps_mismatch_timer.stop();
+        apps_mismatch_timer.reset();
         apps_mismatch_running = false;
-        apps_implausibility = false;
     }
-    if (apps_mismatch_running && apps_mismatch_timer.elapsed_time() > 100ms) {
+    if (chrono::duration_cast<chrono::milliseconds>(apps_mismatch_timer.elapsed_time()) > 100ms) {
         apps_implausibility = true;
     }
 
     if (out_of_range) {
         if (!apps_range_running) {
-            apps_range_timer.reset();
             apps_range_timer.start();
             apps_range_running = true;
         }
     } else {
         apps_range_timer.stop();
+        apps_range_timer.reset();
         apps_range_running = false;
         out_of_range_implausibility = false;
     }
-    if (apps_range_running && apps_range_timer.elapsed_time() > 100ms) {
+    if (chrono::duration_cast<chrono::milliseconds>(apps_range_timer.elapsed_time()) > 100ms) {
         out_of_range_implausibility = true;
     }
 }
