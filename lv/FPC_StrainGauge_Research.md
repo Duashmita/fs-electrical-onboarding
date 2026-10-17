@@ -25,11 +25,26 @@ The Sensor Voltage $\displaystyle SV$ is recorded through the output of the whea
 
 ## Calculations
 
-Using [this](https://www.omnicalculator.com/other/pcb-trace-resistance) calculator, I found the length at which the resistance is 350 $\Omega$: 19.03 inches. 
+Using [this](https://www.omnicalculator.com/other/pcb-trace-resistance) calculator, I found the length at which the resistance is 350 $\Omega$.
 
-Then, in KiCAD, I created a PCB with that length of wire along with two copper zones for the terminals on each end. I ensured that I used the JLC minimum of 3 mil trace width and 3 mil trace spacing for the 12 micrometer copper thickness, the minimum. I also created a rectangle around this on the edge-cuts layer.
+I modified a script found on [github](https://github.com/vapetrov/PCB_strain_gauge/tree/main) using claude AI (AI was not used in the making of this project outside of this use case). This script uses a width as an input and creates a rectangle with a height that is found based on an inputed resistance of the trace. I created the axial strain gauges this way by splitting the circumference (50mm) in thirds. 
 
+## Final Project
 
-Model strain gauge as a footprint and symbol is a variable resistor
-Research how changing the resistance of the guage will change its impedance and the heating
-Check if JLC can do 4 layer FPC
+Then I created the schematic for the board. I went through many ideas throughout the course of the 3 weeks, from SPI ADCs with 3 In-Amps, to voltage shifting an ADC to allow for the differential input of the gauges to work with the PGA. I tried to focus on decreasing the cost and the BOM below \$10 per suspension member. I finally settled on using an I<sup>2</sup>C capable ADC with a PGA that can go up to 200x gain. To ensure that current of the ADC does not affect the strain gauges, I used Op-Amp buffers in a negative feedback loop.
+
+Overall, the BOM is as follows:
+| Part | Part Number | Cost |
+| ---------- | ------------- | ------------- |
+| ADC | ADS122C14 | $7.489 |
+| Op-Amp | TLV4888DR | $1.620 |
+| Misc. Caps + Resistors | N/A | $0.5 |
+
+Total = $9.61
+
+## KiCAD Project Walkthrough
+The SVGs of the Strain Gauges are in the "StrainGaugeDesign" subfolder along with the footprint making python scripts.
+
+On the first page of the KiCad schematic is the final schematic with all of the final parts that were mentioned above. The second page is a design with 2 In-Amps with a ADC without an PGA. However, this one was scrapped due to the high cost. The last page is an older design without buffers
+
+The PCB design has all 4 of the strain gauges, the 3 axial ones and the reference one as well, but none of the other components have been added yet.
