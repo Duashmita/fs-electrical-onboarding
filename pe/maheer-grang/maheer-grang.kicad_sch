@@ -1014,6 +1014,12 @@
 		(uuid "6d332f2e-0f8a-4461-9aba-a2313591ad20")
 	)
 	(junction
+		(at 57.15 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "794f15ba-c621-4bf1-8d32-7c25a34e4d95")
+	)
+	(junction
 		(at 170.18 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1050,6 +1056,16 @@
 			(type default)
 		)
 		(uuid "13e03957-1851-42e9-88a8-9fe327fc72db")
+	)
+	(wire
+		(pts
+			(xy 57.15 73.66) (xy 69.85 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16939072-3e23-4c03-97d2-744824072274")
 	)
 	(wire
 		(pts
@@ -1253,6 +1269,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 73.66) (xy 57.15 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8420bea3-1bc8-4e40-a722-8c4449173b81")
+	)
+	(wire
+		(pts
 			(xy 170.18 99.06) (xy 170.18 109.22)
 		)
 		(stroke
@@ -1260,6 +1286,16 @@
 			(type default)
 		)
 		(uuid "90888581-c909-4161-8b9e-18cd258a8cb4")
+	)
+	(wire
+		(pts
+			(xy 57.15 83.82) (xy 57.15 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93824ee2-2b71-4cf8-918a-d29eb590e08b")
 	)
 	(wire
 		(pts
@@ -1393,7 +1429,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 73.66) (xy 69.85 73.66)
+			(xy 53.34 73.66) (xy 57.15 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1464,7 +1500,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 69.85 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1486,7 +1522,7 @@
 				)
 			)
 		)
-		(property "Description" "10 µF ±10% 25V Ceramic Capacitor X7R 1206 (3216 Metric)"
+		(property "Description" "10 µF ±20% 25V Ceramic Capacitor X5R 0603 (1608 Metric)"
 			(at 69.85 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1497,7 +1533,7 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" "490-6518-1-ND"
+		(property "Digikey Part Number" "490-12737-1-ND"
 			(at 69.85 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1508,7 +1544,7 @@
 				)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM31CR71E106KA12L/2345330"
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
 			(at 69.85 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1530,7 +1566,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM31CR71E106KA12L"
+		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
 			(at 69.85 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1578,7 +1614,7 @@
 				)
 			)
 		)
-		(property "Value" "B82464P4472M000"
+		(property "Value" "4.7 µH"
 			(at 162.56 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1588,7 +1624,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_10.4x10.4_H4.8"
+		(property "Footprint" "Inductor_SMD:L_Pulse_PA4332"
 			(at 162.56 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1610,7 +1646,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µH, 5.2 A Isat, 15 mΩ max DCR, shielded drum core inductor"
+		(property "Description" "4.7 µH Shielded Wirewound Inductor 7.1 A 31.5mOhm Max 2-SMD Low DCR, Low Loss, Soft Saturation"
 			(at 162.56 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1621,7 +1657,7 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" "495-77086-1-ND"
+		(property "Digikey Part Number" "4044-CSEG0430H-4R7MTR-ND"
 			(at 162.56 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1632,7 +1668,7 @@
 				)
 			)
 		)
-		(property "Digikey URL" ""
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/codaca/CSEG0430H-4R7M/25843508?s=N4IgjCBcpgTGBOKoDGUBmBDANgZwKYA0IA9lANoiwDMiADAKwjE1jUDs7zV1rAbNxqwAHHy4tewuhAnUALGJABdYgAcALlBABldQCcAlgDsA5iAC%2BxOAgjQQaSFjxFSFEMIZyEwripAatXUNTCxY6H2R7DBwCYjJISjkAOnYAAgBWgAllNU1IEABVIwN1AHl0AFl8TFwAVz18C3NzIA"
 			(at 162.56 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1643,7 +1679,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TDK"
+		(property "Manufacturer" "CODACA"
 			(at 162.56 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1654,7 +1690,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "B82464P4472M000"
+		(property "Manufacturer Part Number" "CSEG0430H-4R7M"
 			(at 162.56 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3198,6 +3234,209 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
+		(at 57.15 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce2e9a09-d2aa-419e-9d17-bc8f0b602058")
+		(property "Reference" "#PWR02"
+			(at 57.15 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 57.15 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 57.15 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba6cba5e-6b3c-427c-901d-a83d4043336a")
+		)
+		(instances
+			(project "maheer-grang"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 85.09 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d6cd2b37-f5c1-47f7-a551-a0731a63b5b7")
+		(property "Reference" "C2"
+			(at 87.376 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 µF"
+			(at 87.376 82.296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 µF ±20% 25V Ceramic Capacitor X5R 0603 (1608 Metric)"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "490-12737-1-ND"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1305c49b-68f8-4ac8-9e18-0f8b1ca8f864")
+		)
+		(pin "2"
+			(uuid "0375a348-57c6-4c57-af93-ee22cbe4f92b")
+		)
+		(instances
+			(project "maheer-grang"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
 		(at 100.33 111.76 0)
 		(unit 1)
 		(body_style 1)
@@ -3276,7 +3515,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 85.09 81.28 0)
+		(at 57.15 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3284,9 +3523,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f8946bc1-7a47-49d1-86a8-6de234e5a3da")
-		(property "Reference" "C2"
-			(at 87.63 79.502 0)
+		(uuid "f729c511-ff4a-45f5-9a10-7dc939f42fd5")
+		(property "Reference" "C0"
+			(at 59.436 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3297,7 +3536,7 @@
 			)
 		)
 		(property "Value" "10 µF"
-			(at 87.63 81.534 0)
+			(at 59.436 82.296 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3307,8 +3546,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 85.09 81.28 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 57.15 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3319,7 +3558,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 81.28 0)
+			(at 57.15 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3329,8 +3568,8 @@
 				)
 			)
 		)
-		(property "Description" "10 µF ±10% 25V Ceramic Capacitor X7R 1206 (3216 Metric)"
-			(at 85.09 81.28 0)
+		(property "Description" "10 µF ±20% 25V Ceramic Capacitor X5R 0603 (1608 Metric)"
+			(at 57.15 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3340,8 +3579,8 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" "490-6518-1-ND"
-			(at 85.09 81.28 0)
+		(property "Digikey Part Number" "490-12737-1-ND"
+			(at 57.15 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3351,8 +3590,8 @@
 				)
 			)
 		)
-		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM31CR71E106KA12L/2345330"
-			(at 85.09 81.28 0)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61E106MA73J/4905347"
+			(at 57.15 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3363,7 +3602,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 85.09 81.28 0)
+			(at 57.15 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3373,8 +3612,8 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM31CR71E106KA12L"
-			(at 85.09 81.28 0)
+		(property "Manufacturer Part Number" "GRM188R61E106MA73J"
+			(at 57.15 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3385,15 +3624,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "708721f4-b9c9-4b7f-a930-cfadd03a65b2")
+			(uuid "2c5bd65c-734f-4ac1-9841-3bd609003c54")
 		)
 		(pin "2"
-			(uuid "41fe0b53-10f5-4c36-85db-c3d9aac2fba9")
+			(uuid "a8fa6714-e103-4d41-8640-5c43c7d21f23")
 		)
 		(instances
 			(project "maheer-grang"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "C2")
+					(reference "C0")
 					(unit 1)
 				)
 			)
