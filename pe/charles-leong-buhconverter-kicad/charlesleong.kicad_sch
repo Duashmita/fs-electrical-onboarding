@@ -1651,7 +1651,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 162.2552 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -1777,7 +1777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 140.6652 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -1903,7 +1903,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 105.1052 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -2029,7 +2029,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 93.6752 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -2389,7 +2389,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 82.2452 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -2670,7 +2670,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 187.6552 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2931,7 +2931,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "formula_slug_footprint_library:L_Wurth_WE-PD2SR-7850"
 			(at 154.94 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -3057,7 +3057,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 			(at 174.9552 115.57 0)
 			(hide yes)
 			(show_name no)
