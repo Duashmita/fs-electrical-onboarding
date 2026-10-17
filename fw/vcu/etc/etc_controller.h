@@ -25,7 +25,7 @@ public:
    float getAPPS1();
    float getAPPS2();
 
-    bool getImplaus_1();
+    bool getImplaus1();
     bool getImplaus2();
 
     bool getGenFaulting();
@@ -68,19 +68,19 @@ private:
 
 
    //input variables
-    float apps1_voltage = 0.0f;
-    float apps2_voltage = 0.0f;
+    float apps_1_voltage = 0.0f;
+    float apps_2_voltage = 0.0f;
 
     //implaus variables
         //fault types
-    bool apps1_out_of_range = false;
-    bool apps2_out_of_range = false;
+    bool apps_1_out_of_range = false;
+    bool apps_2_out_of_range = false;
     bool pre_offset_apps_is_matching = false;
     bool post_offset_apps_is_matching = false;
     bool implaus_1 = false;
     bool implaus_2 = false;
-    Timer implaus1_timer;
-    Timer implaus2_timer;
+    Timer implaus_1_timer;
+    Timer implaus_2_timer;
     // bool implaus_3 = false;
     // bool implaus_4 = false;
 
@@ -117,10 +117,8 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.110379f; //constexpr makes evaluate at compile time not run time      
+    static constexpr float APPS1_MIN_VOLTAGE = 0.110379f; //constexpr makes evaluate at compile time not run time and constant too     
     static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
-    // static constexpr float APPS1_MIN_VOLTAGE = 33; //constexpr makes evaluate at compile time not run time      
-    // static constexpr float APPS1_MAX_VOLTAGE = 33; //for some reason reading both min and max voltages as 33 adn 34
 
     static constexpr float APPS2_MIN_VOLTAGE = 0.124054f;
     static constexpr float APPS2_MAX_VOLTAGE = 1.133f;

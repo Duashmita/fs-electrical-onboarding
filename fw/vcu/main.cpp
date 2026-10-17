@@ -13,11 +13,11 @@ CAN can{PB_8, PB_9, 500000};
 // Predefined for use in main()
 void send_etc_CAN_messages();
 void send_sme_CAN_messages(); //just makes them exist to compiler
-void smeTrue();
-void etcTrue();
+void SME_TRUE();
+void ETC_TRUE();
 
-bool sendSMEMessage;
-bool sendETCMessage;
+bool SEND_SME_MESSAGE;
+bool SEND_ETC_MESSAGE;
 
 Ticker send_etc_CAN_messages_ticker;
 Ticker send_sme_CAN_messages_ticker;
@@ -37,13 +37,13 @@ int main() {
         // Must implement in etc/ subfolder
         etc.update_state();
 
-        if (sendETCMessage) {
+        if (SEND_ETC_MESSAGE) {
             send_etc_CAN_messages();
-            sendETCMessage  = false;
+            SEND_ETC_MESSAGE  = false;
         }
-        if (sendSMEMessage) {
+        if (SEND_SME_MESSAGE) {
             send_sme_CAN_messages();
-            sendSMEMessage  = false;
+            SEND_SME_MESSAGE  = false;
         }
         
     }
@@ -51,36 +51,15 @@ int main() {
     return 0;
 }
 
-/* 
-    Must send the VCU_TPDO_STATUS CAN message with
-    VCU_ETC_READY_TO_DRIVE & VCU_ETC_MOTOR_ENABLED
-    set to 1, and VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
-    & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
-*/
-void etcTrue() {
-    sendETCMessage = true;
-}
+
+
 void smeTrue() {
-    sendSMEMessage = true;
+    SEND_SME_MESSAGE = true;
+}
+void etcTrue() {
+    SEND_ETC_MESSAGE = true;
 }
 
-void send_etc_CAN_messages() {
-    uint8_t vcu_tpdo_status_data[8] = {0};
-
-    vcu_tpdo_status_data[0] = (
-        (!etc.getGenFaulting() << 0) | // ready to drive //should change to be based on implausabilities occuring
-        (!etc.getGenFaulting() << 1) | // etc motor enabled
-        (etc.getImplaus_1() << 4) | // implaus_apps_out_of_range
-        (etc.getImplaus2() << 6)
-    );
-
-    CANMessage vcu_tpdo_status_msg(403, vcu_tpdo_status_data, 8);
-    can.write(vcu_tpdo_status_msg);
-    //printf("Sending ETC CAN messages\n");
-    //printf("Faulting: %d", etc.getGenFaulting());
-    //printf("APPS1: %f   APPS2: %f ", etc.getAPPS1() , etc.getAPPS2());
-    printf("Torque: %f", etc.getCalculatedTorque());
-}
 /*
     Must send the SME_RPDO_Throttle_Demand CAN
     message with SME_THROTL_TorqueDemand set to the
@@ -99,3 +78,28 @@ void send_sme_CAN_messages() {
     can.write(sme_rpdo_throttle_demand_msg);
    // printf("Sending SME CAN messages\n");
 }
+
+/* 
+    Must send the VCU_TPDO_STATUS CAN message with
+    VCU_ETC_READY_TO_DRIVE & VCU_ETC_MOTOR_ENABLED
+    set to 1, and VCU_ETC_IMPLAUS_APPS_OUT_OF_RANGE
+    & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
+*/
+void send_etc_CAN_messages() {
+    uint8_t vcu_tpdo_status_data[8] = {0};
+
+    vcu_tpdo_status_data[0] = (
+        (!etc.getGenFaulting() << 0) | // ready to drive //should change to be based on implausabilities occuring
+        (!etc.getGenFaulting() << 1) | // etc motor enabled
+        (etc.getImplaus1() << 4) | // implaus_apps_out_of_range
+        (etc.getImplaus2() << 6)
+    );
+
+    CANMessage vcu_tpdo_status_msg(403, vcu_tpdo_status_data, 8);
+    can.write(vcu_tpdo_status_msg);
+    //printf("Sending ETC CAN messages\n");
+    //printf("Faulting: %d", etc.getGenFaulting());
+    //printf("APPS1: %f   APPS2: %f ", etc.getAPPS1() , etc.getAPPS2());
+    printf("Torque: %f", etc.getCalculatedTorque());
+}
+

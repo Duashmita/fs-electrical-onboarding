@@ -1,4 +1,15 @@
+Questions:
+    STM has their own built in HAL layer, however it is also possible to build our own.
+        should we be trying to design our own or use STM's documentation?
+            I'm pretty sure its supposed to be STM, but just want to check
+
 HAL documentation
+    HOLY GRAIL VIDEO I THINK
+        https://www.youtube.com/watch?v=2zjeDWI9W7M
+        
+    HAL structure
+        https://www.youtube.com/watch?v=ouRj-l1qW5k&t=491s
+        https://electrical.codidact.com/posts/296576/296584
     pg 19 ADC initialization
         HAL_ADC_Start () starts ADC conversion when polling method is used
         In Polling mode, the HAL functions return the process status when the data processing in blocking mode is
@@ -7,7 +18,7 @@ HAL documentation
         processing is handled internally in a loop. A timeout (expressed in ms) is used to prevent process hanging.
     Polling mode I/O operation - pg 29
     1. Use HAL_DMA_Start() to start DMA (Data management access) transfer when the source and destination addresses and the
-        Length of data to be transferred have been configured.
+        Length of data to be transferred have been configured. (polling)
     2. Use HAL_DMA_PollForTransfer() to poll for the end of current transfer. In this case a fixed timeout
         can be configured depending on the user application.
 

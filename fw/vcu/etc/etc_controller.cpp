@@ -5,9 +5,9 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) :
-    apps1_voltage(AnalogIn(APPS1_pin)),
-    apps2_voltage(AnalogIn(APPS2_pin))
+ETCController::ETCController(PinName APPS_1_pin, PinName APPS_2_pin) :
+    apps_1_voltage(AnalogIn(APPS_1_pin)),
+    apps_2_voltage(AnalogIn(APPS_2_pin))
   {}
 
 /* 
@@ -24,14 +24,14 @@ float ETCController::clamp(float value, float min, float max) {
     }
 }
 float ETCController::getAPPS1() {
-    return(apps1_voltage);
+    return(apps_1_voltage);
 }
 float ETCController::getAPPS2() {
-    return(apps2_voltage);
+    return(apps_2_voltage);
 }
 
 float ETCController::getAvgVolt() {
-    return((apps1_voltage + apps2_voltage)/2);
+    return((apps_1_voltage + apps_2_voltage)/2);
 }
 
 //if not faulting, clamp values, feed into update state
@@ -44,7 +44,7 @@ bool ETCController::getGenFaulting() {
     return(gen_faulting);
 }
 
-bool ETCController::getImplaus_1() {
+bool ETCController::getImplaus1() {
     return(implaus_1);
 }
 
@@ -61,9 +61,9 @@ bool ETCController::in_range(float value, float low, float high) {
 }
 //used to feed into implausibility logic, if one value is low, while the other is high, trigger fault
 
-void ETCController::apps_1_pedal_position_calc(int apps1_voltage , int apps_1_volt_increment) {
-    apps1_voltage = ETCController::clamp(apps1_voltage , APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE);
-    apps_1_pedal_position = ((apps1_voltage - APPS1_MIN_VOLTAGE)  * (100 / (100 - 2 * PEDAL_DEADZONE_PERCENTAGE)) )/ (apps_1_volt_increment);
+void ETCController::apps_1_pedal_position_calc(int apps_1_voltage , int apps_1_volt_increment) {
+    apps_1_voltage = ETCController::clamp(apps_1_voltage , APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE);
+    apps_1_pedal_position = ((apps_1_voltage - APPS1_MIN_VOLTAGE)  * (100 / (100 - 2 * PEDAL_DEADZONE_PERCENTAGE)) )/ (apps_1_volt_increment);
     // if (apps_1_pedal_position >= 97) {
     //     apps_1_pedal_position = 100;
     // }
@@ -75,9 +75,9 @@ void ETCController::apps_1_pedal_position_calc(int apps1_voltage , int apps_1_vo
     // }
 }
 //should i use deadzone here or on the avg position that is multiplied by the torque
-void ETCController::apps_2_pedal_position_calc(int apps2_voltage , int apps_2_volt_increment) {
-    apps2_voltage = ETCController::clamp(apps2_voltage , APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE);
-    apps_2_pedal_position = ((apps2_voltage - APPS2_MIN_VOLTAGE) * (100 / (100 - 2 * PEDAL_DEADZONE_PERCENTAGE)))/ (apps_2_volt_increment);
+void ETCController::apps_2_pedal_position_calc(int apps_2_voltage , int apps_2_volt_increment) {
+    apps_2_voltage = ETCController::clamp(apps_2_voltage , APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE);
+    apps_2_pedal_position = ((apps_2_voltage - APPS2_MIN_VOLTAGE) * (100 / (100 - 2 * PEDAL_DEADZONE_PERCENTAGE)))/ (apps_2_volt_increment);
     // if (apps_2_pedal_position >= 97) {
     //     apps_2_pedal_position = 100;
     // }
@@ -127,8 +127,8 @@ void ETCController::update_state() {
 
     //if not faulting, calculate torque and send command
     if (!gen_faulting) {
-        apps_1_pedal_position_calc(apps1_voltage, apps_1_volt_increment);
-        apps_2_pedal_position_calc(apps2_voltage, apps_2_volt_increment);
+        apps_1_pedal_position_calc(apps_1_voltage, apps_1_volt_increment);
+        apps_2_pedal_position_calc(apps_2_voltage, apps_2_volt_increment);
         calc_torque(apps_1_pedal_position, apps_2_pedal_position);
     } else {
         calculated_torque = 0;
@@ -168,16 +168,16 @@ void ETCController::update_implausibilities() {
 //    }  // fault if values are equal
 
   //implaus 1
-   if (!in_range(apps1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) || !in_range(apps2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE)) {
+   if (!in_range(apps_1_voltage, APPS1_MIN_VOLTAGE,    APPS1_MAX_VOLTAGE) || !in_range(apps_2_voltage, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE)) {
     if (!implaus_1) {
-            implaus1_timer.start();
+            implaus_1_timer.start();
     }
     implaus_1 = true;
     gen_implaus = true;
    } else {
     implaus_1 = false;  
-    implaus1_timer.stop();
-    implaus1_timer.reset();
+    implaus_1_timer.stop();
+    implaus_1_timer.reset();
    } 
 
    //implaus 3
@@ -197,26 +197,26 @@ void ETCController::update_implausibilities() {
    //implaus 2
    if (fabs((apps_1_pedal_position - apps_2_pedal_position)) > 10) {
     if (!implaus_2) {
-            implaus2_timer.start();
+            implaus_2_timer.start();
         }
     implaus_2 = true;
     gen_implaus = true;
    } else {
     implaus_2 = false;  
-    implaus2_timer.stop();
-    implaus2_timer.reset();
+    implaus_2_timer.stop();
+    implaus_2_timer.reset();
    } //fault if values are too far apart
 
    if (gen_implaus) {
-    int64_t implaus1_length  = implaus1_timer.elapsed_time().count() / 1000; //what happens if timer hasnt been started? does it return 0 or does it break?
-    int64_t implaus2_length  = implaus2_timer.elapsed_time().count() /1000;
+    int64_t implaus_1_length  = implaus_1_timer.elapsed_time().count() / 1000; //what happens if timer hasnt been started? does it return 0 or does it break?
+    int64_t implaus_2_length  = implaus_2_timer.elapsed_time().count() /1000;
     // int64_t implaus3_length  = implaus3_timer.elapsed_time().count() / 1000;
     // int64_t implaus4_length  = implaus4_timer.elapsed_time().count() / 1000;
 
-    if (implaus1_length >= 100 || implaus2_length >= 100) {
+    if (implaus_1_length >= 100 || implaus_2_length >= 100) {
         gen_faulting = true;
-        printf("Implaus 1 Timer: %lld\n", (long long)implaus1_length);
-        printf("Implaus 2 Timer: %lld\n", (long long)implaus2_length);
+        printf("Implaus 1 Timer: %lld\n", (long long)implaus_1_length);
+        printf("Implaus 2 Timer: %lld\n", (long long)implaus_2_length);
         // printf("Implaus 3 Timer: %lld\n", (long long)implaus3_length);
         // printf("Implaus 4 Timer: %lld\n", (long long)implaus4_length);
     }

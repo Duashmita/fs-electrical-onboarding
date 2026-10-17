@@ -6,6 +6,7 @@
 #include "stm32f4xx_hal_uart.h"
 #include "mbed.h"
 #include "objects.h"
+#include "HAL.h"
 
 extern UART_HandleTypeDef huart2;
 AnalogIn APPS1_adc{PA_1};
