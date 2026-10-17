@@ -277,6 +277,161 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -378,6 +533,160 @@
 				)
 			)
 			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Trim"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.54 -2.54 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Trim"
+				(at -2.54 -0.635 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Trimmable resistor (preset resistor)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor variable potentiometer trimmer"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Trim_0_1"
+				(polyline
+					(pts
+						(xy -1.905 -1.905) (xy 1.905 1.905) (xy 2.54 1.27) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Trim_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -682,9 +991,9 @@
 		)
 		(uuid "3e1d953f-ae81-485c-bbf9-8e53fa5f8ae5")
 	)
-	(text "Vbrk (0.5V - 4.5V)\n"
+	(text "V_filtered (0.5V - 4.5V)\n"
 		(exclude_from_sim no)
-		(at 122.428 72.898 0)
+		(at 122.174 78.232 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -701,6 +1010,12 @@
 			)
 		)
 		(uuid "bf9a3e13-88b5-4864-9d3a-44d47e1f40e2")
+	)
+	(junction
+		(at 55.88 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "097609ea-2fad-484d-8616-2ac1f1adae87")
 	)
 	(junction
 		(at 129.54 96.52)
@@ -720,6 +1035,26 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 92.71) (xy 55.88 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c654771-cc6f-4a02-8c2c-68d22d88e455")
+	)
+	(wire
+		(pts
+			(xy 41.91 102.87) (xy 66.04 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "104032a5-c942-4601-b80c-62135329dc4a")
+	)
+	(wire
+		(pts
 			(xy 129.54 107.95) (xy 129.54 109.22)
 		)
 		(stroke
@@ -730,6 +1065,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 101.6) (xy 55.88 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "539ddbe3-82c5-426e-8706-e208f478c5f6")
+	)
+	(wire
+		(pts
 			(xy 143.51 90.17) (xy 143.51 92.71)
 		)
 		(stroke
@@ -737,6 +1082,26 @@
 			(type default)
 		)
 		(uuid "71e007ba-7dc0-4f2c-840a-16d31f3ffe4b")
+	)
+	(wire
+		(pts
+			(xy 53.34 92.71) (xy 55.88 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78af1cc6-505a-415d-8c8f-64941781a724")
+	)
+	(wire
+		(pts
+			(xy 55.88 92.71) (xy 66.04 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79a51813-835e-4867-b186-b45a2392d4d2")
 	)
 	(wire
 		(pts
@@ -780,6 +1145,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 92.71) (xy 45.72 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b98f2a3f-1cf5-41aa-9f59-ce4f94d09fd0")
+	)
+	(wire
+		(pts
 			(xy 129.54 100.33) (xy 129.54 96.52)
 		)
 		(stroke
@@ -787,6 +1162,16 @@
 			(type default)
 		)
 		(uuid "be21dcea-cc8d-45f2-9b7b-2488f55d9490")
+	)
+	(wire
+		(pts
+			(xy 41.91 92.71) (xy 41.91 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf9e0da4-c139-4fd5-846d-697d946fd30c")
 	)
 	(label "Vref"
 		(at 129.54 96.52 0)
@@ -797,6 +1182,16 @@
 			(justify left bottom)
 		)
 		(uuid "721441fa-3fbb-4d5b-b85e-fcc980194ced")
+	)
+	(label "Brake Signal"
+		(at 29.21 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "85811143-fce9-4e0b-9cc0-bcf85f7ae806")
 	)
 	(label "+5v"
 		(at 143.51 90.17 0)
@@ -817,6 +1212,16 @@
 			(justify left bottom)
 		)
 		(uuid "c856a4b2-b769-4d5f-ab31-66bb9bd9a4c7")
+	)
+	(label "V_filtered"
+		(at 66.04 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d222781c-2670-4a34-949d-e20ffc28ae0f")
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -841,15 +1246,14 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 107.95 96.5199 90)
+		(property "Value" "5V"
+			(at 110.49 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -892,6 +1296,88 @@
 			(project "op-amp-comparator-v1"
 				(path "/a4fab924-cb7c-4f50-aa88-eb4f62b0f479"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Trim")
+		(at 129.54 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13d98de7-b436-42cc-ade5-5d2a6ba25b58")
+		(property "Reference" "R2"
+			(at 133.35 102.8699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 133.35 105.4099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 127.762 104.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Trimmable resistor (preset resistor)"
+			(at 129.54 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "243daf04-b365-4a3f-ae78-7e5273776872")
+		)
+		(pin "2"
+			(uuid "ea5beae4-df7b-4acb-85bd-f4b820c883b4")
+		)
+		(instances
+			(project "op-amp-comparator-v1"
+				(path "/a4fab924-cb7c-4f50-aa88-eb4f62b0f479"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -997,6 +1483,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 55.88 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "607e79c8-075e-4f58-861d-56d83c442a94")
+		(property "Reference" "C1"
+			(at 59.69 96.5199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 59.69 99.0599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 56.8452 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 55.88 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "540dfac4-2c6d-4246-81a2-a83cd415e89e")
+		)
+		(pin "1"
+			(uuid "d1657a6c-d925-47cd-b9f2-4a89f596e9df")
+		)
+		(instances
+			(project "op-amp-comparator-v1"
+				(path "/a4fab924-cb7c-4f50-aa88-eb4f62b0f479"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 121.92 82.55 0)
 		(unit 1)
@@ -1021,6 +1589,7 @@
 		)
 		(property "Value" "+4.5V"
 			(at 121.92 77.47 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1155,6 +1724,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 55.88 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "baa7cb06-01a4-4b42-8b94-012f69f75f4f")
+		(property "Reference" "#PWR05"
+			(at 55.88 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 55.88 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 55.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53bf3ed1-e1e6-421e-b71a-f484cffe77c4")
+		)
+		(instances
+			(project "op-amp-comparator-v1"
+				(path "/a4fab924-cb7c-4f50-aa88-eb4f62b0f479"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 143.51 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -1226,6 +1873,86 @@
 			(project "op-amp-comparator-v1"
 				(path "/a4fab924-cb7c-4f50-aa88-eb4f62b0f479"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 49.53 92.71 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9fae7f0-bd3c-4386-92a1-f5882c0ad072")
+		(property "Reference" "R3"
+			(at 49.53 86.36 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "8.2k"
+			(at 49.53 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 94.488 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 49.53 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ef00101d-3f4d-48b7-8c75-4697fb9df423")
+		)
+		(pin "1"
+			(uuid "f2cb8645-3796-491f-a90f-e7fdd556a4f7")
+		)
+		(instances
+			(project "op-amp-comparator-v1"
+				(path "/a4fab924-cb7c-4f50-aa88-eb4f62b0f479"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -1304,87 +2031,6 @@
 			(project "op-amp-comparator-v1"
 				(path "/a4fab924-cb7c-4f50-aa88-eb4f62b0f479"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 129.54 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "db54e3c6-7a98-45ee-9a06-48ef5eacb98c")
-		(property "Reference" "R2"
-			(at 124.714 104.394 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 131.826 104.394 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 127.762 104.14 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 129.54 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3357c1b0-7033-4c0c-a526-e1fa0ddf3235")
-		)
-		(pin "1"
-			(uuid "df2a382e-63b9-44b9-86fd-ee2b0e6d85bd")
-		)
-		(instances
-			(project "op-amp-comparator-v1"
-				(path "/a4fab924-cb7c-4f50-aa88-eb4f62b0f479"
-					(reference "R2")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,7 @@
+Jack recommended I filter noise from V_brake.
+I decided a low-pass filter would be suitable, and chose to make an RC version for easy part sourcing.
+I’m starting with a 20 Hz filter to make the capacitor value commonplace, and it strikes a balance between 
+filtering electrical noise and responding quickly. 
+Depending on V_ref, which will be determined by a potentiometer calibrated to a driver’s “hard-braking threshold”, this will only add a few milliseconds. Will compensate in delay circuit.
+ f=1/(2piRC)
+solving for R with C=1uF and f=20 Hz, R=7958. Take 8.2kohm, 1uF, f=19.4 Hz
