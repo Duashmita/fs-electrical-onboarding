@@ -1012,6 +1012,12 @@
 		(uuid "d0c89d3b-7fbe-4a3b-813d-3ec1459a7ea0")
 	)
 	(junction
+		(at 402.59 284.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6c01805-3bf7-4383-b35c-b50c366fcf8a")
+	)
+	(junction
 		(at 373.38 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1029,6 +1035,16 @@
 	)
 	(wire
 		(pts
+			(xy 402.59 298.45) (xy 402.59 314.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0592658c-2c34-4eb0-b418-3087b63ca0ed")
+	)
+	(wire
+		(pts
 			(xy 373.38 130.81) (xy 373.38 135.89)
 		)
 		(stroke
@@ -1036,6 +1052,26 @@
 			(type default)
 		)
 		(uuid "06b16ebe-246b-46f8-ac7b-6cf1f193f5d1")
+	)
+	(wire
+		(pts
+			(xy 443.23 281.94) (xy 453.39 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b66ec4f-ed7e-4cdb-8e0c-4c9602c35410")
+	)
+	(wire
+		(pts
+			(xy 421.64 279.4) (xy 421.64 295.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b9edfe1-19d1-43e0-ac80-3ae0f0348a76")
 	)
 	(wire
 		(pts
@@ -1109,6 +1145,16 @@
 	)
 	(wire
 		(pts
+			(xy 402.59 264.16) (xy 402.59 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61f6a1ae-0ff1-42e2-96ec-b441da3df2fd")
+	)
+	(wire
+		(pts
 			(xy 400.05 177.8) (xy 427.99 177.8)
 		)
 		(stroke
@@ -1116,6 +1162,16 @@
 			(type default)
 		)
 		(uuid "66032f18-a804-4c0a-aa92-1143c2b71f3e")
+	)
+	(wire
+		(pts
+			(xy 402.59 284.48) (xy 427.99 284.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e776737-8406-4bf9-af08-8c6db3258fbf")
 	)
 	(wire
 		(pts
@@ -1229,6 +1285,16 @@
 	)
 	(wire
 		(pts
+			(xy 453.39 266.7) (xy 453.39 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc5f7951-055b-48d2-a102-7a00eda7056c")
+	)
+	(wire
+		(pts
 			(xy 417.83 172.72) (xy 417.83 191.77)
 		)
 		(stroke
@@ -1236,6 +1302,16 @@
 			(type default)
 		)
 		(uuid "bc6163c2-0e1d-4bb3-9f46-51d10dc75457")
+	)
+	(wire
+		(pts
+			(xy 453.39 281.94) (xy 453.39 278.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bef883f5-d750-454f-9d9f-118cbc0a236d")
 	)
 	(wire
 		(pts
@@ -1256,6 +1332,26 @@
 			(type default)
 		)
 		(uuid "d2eac8e0-a7e2-452f-b5c5-c29069f9bda2")
+	)
+	(wire
+		(pts
+			(xy 427.99 279.4) (xy 421.64 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d74badc0-0fd2-42d0-a1b0-ec030057c047")
+	)
+	(wire
+		(pts
+			(xy 402.59 278.13) (xy 402.59 290.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de1707d0-650d-417e-a484-a61fc95a3b6e")
 	)
 	(wire
 		(pts
@@ -1296,6 +1392,104 @@
 			(justify left bottom)
 		)
 		(uuid "22402adf-91a4-4957-a38f-4aaf1b3f4d0e")
+	)
+	(label "Current_Sense"
+		(at 421.64 295.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4da8df5e-9630-44d2-b1d9-5c762a89f1ef")
+	)
+	(label "Current_High"
+		(at 453.39 281.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "58396658-2ed8-4721-8438-6906fbeeb88c")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 402.59 264.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fd2716e-96cc-43e2-913e-10b96fc6dea7")
+		(property "Reference" "#PWR04"
+			(at 402.59 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 402.59 259.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 402.59 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 402.59 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 402.59 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5b0cffa-539b-47ca-b920-dec6e70993ad")
+		)
+		(instances
+			(project "isaac-hashimi"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Comparator:LMV393")
@@ -2027,6 +2221,132 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 402.59 294.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53c42f88-52bf-4383-b120-85bdaa1d416f")
+		(property "Reference" "R5"
+			(at 405.13 293.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 405.13 295.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+			(at 400.812 294.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 402.59 294.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 402.59 294.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 402.59 294.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 402.59 294.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 402.59 294.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 402.59 294.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d3b4d1b-ec64-45fc-9fce-ea47ace894ca")
+		)
+		(pin "2"
+			(uuid "32bf025f-c125-4ea6-a086-6caf7def47b9")
+		)
+		(instances
+			(project "isaac-hashimi"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 373.38 140.97 0)
 		(unit 1)
 		(body_style 1)
@@ -2230,6 +2550,308 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 402.59 274.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83a839ac-ed52-4c38-8d7d-c40109eb1c1b")
+		(property "Reference" "R4"
+			(at 405.13 273.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "8.45k"
+			(at 405.13 275.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+			(at 400.812 274.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 402.59 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 402.59 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 402.59 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 402.59 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 402.59 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 402.59 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3f59b536-24a5-49ef-b643-356932146976")
+		)
+		(pin "2"
+			(uuid "918cd3d1-f14a-4348-ae3b-e178feb61557")
+		)
+		(instances
+			(project "isaac-hashimi"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 453.39 266.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9156373e-ca2f-4146-800d-59e30b26fba1")
+		(property "Reference" "#PWR06"
+			(at 453.39 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 453.39 261.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 453.39 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 453.39 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 453.39 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df11b6b4-72d4-4e00-8ce0-13d6ca397e86")
+		)
+		(instances
+			(project "isaac-hashimi"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LMV393")
+		(at 435.61 281.94 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93fe8411-9c79-42b6-8c73-8080f1e6caab")
+		(property "Reference" "U1"
+			(at 435.61 271.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMV393"
+			(at 435.61 274.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 435.61 281.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv331.pdf"
+			(at 435.61 281.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual General-Purpose Low-Voltage Comparator, SOIC-8/TSSOP-8/VSSOP-8"
+			(at 435.61 281.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "8024c980-e1ed-4631-9c71-c625b634a496")
+		)
+		(pin "3"
+			(uuid "6cf80dcf-177d-40e9-9eab-93b316a57a9c")
+		)
+		(pin "6"
+			(uuid "cf14e508-164c-428d-a678-203c2b4e3042")
+		)
+		(pin "5"
+			(uuid "94798bc8-f62b-47ea-b7d8-3cb14c6c6d83")
+		)
+		(pin "8"
+			(uuid "5eb8f2ca-e46b-41db-bcc6-6687ad95da74")
+		)
+		(pin "7"
+			(uuid "37e4866b-eb09-4b73-ac7d-78184f8c77f2")
+		)
+		(pin "2"
+			(uuid "bf6c88b6-e94a-47c1-a243-f407daf07503")
+		)
+		(pin "1"
+			(uuid "4a43be2d-54b6-46cf-8d1a-22f294348e5a")
+		)
+		(instances
+			(project "isaac-hashimi"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "U1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 368.3 135.89 0)
 		(unit 1)
@@ -2302,6 +2924,210 @@
 			(project "isaac-hashimi"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 453.39 274.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b01a10d4-9b03-41d8-a233-65c727a17c53")
+		(property "Reference" "R6"
+			(at 455.93 273.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 455.93 275.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+			(at 451.612 274.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 453.39 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 453.39 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 453.39 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 453.39 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 453.39 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 453.39 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ea815908-98e2-415b-950a-2f5b73d64264")
+		)
+		(pin "1"
+			(uuid "8f2f7aed-6e2b-4b32-baaa-5eb47b1eaed9")
+		)
+		(instances
+			(project "isaac-hashimi"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 402.59 314.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc462afb-a0e8-4f39-9178-c17de81047c2")
+		(property "Reference" "#PWR05"
+			(at 402.59 321.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 402.59 320.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 402.59 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 402.59 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 402.59 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f0968579-727e-49ae-beaa-20c479196e5e")
+		)
+		(instances
+			(project "isaac-hashimi"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
