@@ -144,11 +144,11 @@
 	(footprint "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "672a1da0-cc92-4739-a641-7e4c9c7bd042")
-		(at 141.3625 79)
+		(at 126 71 90)
 		(descr "Capacitor SMD 2220 (5750 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C6"
-			(at 0 -3.65 0)
+			(at 0 -3.65 90)
 			(layer "F.SilkS")
 			(uuid "faab6cf9-3b6e-4751-91d7-a1faf7080ea6")
 			(effects
@@ -159,7 +159,7 @@
 			)
 		)
 		(property "Value" "10μf"
-			(at 0 3.65 0)
+			(at 0 3.65 90)
 			(layer "F.Fab")
 			(uuid "5a8fe25c-33fb-48c4-bf6b-b4668150ca95")
 			(effects
@@ -170,7 +170,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/X7RDielectric.pdf"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a3f7d8f8-09b8-494c-84ae-06d5ce3c7cd2")
@@ -181,7 +181,7 @@
 			)
 		)
 		(property "Description" "10 µF ±20% 100V Ceramic Capacitor X7R 2220 (5750 Metric)"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "45ab4879-0514-4434-b018-c63b3d1d85b0")
@@ -192,7 +192,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "373d35b3-c700-4104-ad44-b0dc931863fc")
@@ -204,7 +204,7 @@
 			)
 		)
 		(property "Digikey Part Number" "478-KGM55DR72A106MVDKR-ND"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -217,7 +217,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -230,7 +230,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -243,7 +243,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "22201C106MAT2A"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -310,7 +310,7 @@
 			(uuid "b7399e90-007f-4fb1-abcd-e32f53e771dd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "2784e362-f41a-431d-8e4c-6c6b38a29ae7")
 			(effects
@@ -321,7 +321,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -2.6375 0)
+			(at -2.6375 0 90)
 			(size 1.975 5.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.126582)
@@ -330,7 +330,7 @@
 			(uuid "bf76efbe-e848-4a9d-b191-cc572f2bbd72")
 		)
 		(pad "2" smd roundrect
-			(at 2.6375 0)
+			(at 2.6375 0 90)
 			(size 1.975 5.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.126582)
@@ -354,7 +354,7 @@
 	(footprint "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "6b573cbe-481a-468c-b098-6bd6127de836")
-		(at 141 70.5)
+		(at 120 82)
 		(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C7"
@@ -570,7 +570,7 @@
 		(property "Reference" "U1"
 			(at 0 -2.4 0)
 			(layer "F.SilkS")
-			(uuid "5c952b40-81e3-495f-bc16-4bea491e1455")
+			(uuid "d3b965e0-ee1d-4aa9-ac55-8d2c795d835f")
 			(effects
 				(font
 					(size 1 1)
@@ -579,9 +579,9 @@
 			)
 		)
 		(property "Value" "TPS542025DDCR"
-			(at 0 2.4 0)
+			(at 4 -6.6 0)
 			(layer "F.Fab")
-			(uuid "47aadd4c-cad9-4231-8ca6-4946f1fb9242")
+			(uuid "d867eea3-acaa-4138-9104-54c9005a9113")
 			(effects
 				(font
 					(size 1 1)
@@ -593,7 +593,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9cc757f8-71ea-4614-bcf0-b6065ea3260b")
+			(uuid "384d2ce7-5573-4fd5-a97c-bb2822a7d142")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -604,7 +604,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0231dabd-7e83-463b-8eb3-d2c3709a77b1")
+			(uuid "8d5cc308-3bc9-4a66-bcaa-b18097a9b4fb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -978,7 +978,7 @@
 	(footprint "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "7b33fbdc-672a-459b-9725-8fc4e2699059")
-		(at 123.0625 66.5)
+		(at 119.5 77.5)
 		(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C4"
@@ -1188,11 +1188,11 @@
 	(footprint "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "87148012-bdc3-4d57-a6b1-bba957186537")
-		(at 131.8625 79)
+		(at 126 79.5 -90)
 		(descr "Capacitor SMD 2220 (5750 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C5"
-			(at 0 -3.65 0)
+			(at 0 -3.65 90)
 			(layer "F.SilkS")
 			(uuid "e6b85782-8f5b-46fb-9f8e-c93cd1713d7b")
 			(effects
@@ -1203,7 +1203,7 @@
 			)
 		)
 		(property "Value" "10μf"
-			(at 0 3.65 0)
+			(at 0 3.65 90)
 			(layer "F.Fab")
 			(uuid "bea86654-11e4-4d0b-8064-44258ab40b1b")
 			(effects
@@ -1214,7 +1214,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/X7RDielectric.pdf"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "93495ed0-9aa7-4831-b958-a962d587236a")
@@ -1225,7 +1225,7 @@
 			)
 		)
 		(property "Description" "10 µF ±20% 100V Ceramic Capacitor X7R 2220 (5750 Metric)"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6d82d9fc-a675-44e3-9f73-49cb2aa4280f")
@@ -1236,7 +1236,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "33ecc6a4-0d50-4953-89ee-b984cf89b60c")
@@ -1248,7 +1248,7 @@
 			)
 		)
 		(property "Digikey Part Number" "478-KGM55DR72A106MVDKR-ND"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1261,7 +1261,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1274,7 +1274,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1287,7 +1287,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "22201C106MAT2A"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1312,16 +1312,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.415748 -2.61)
-			(end 1.415748 -2.61)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "bb942de0-253f-44cb-9c51-f138730ad07b")
-		)
-		(fp_line
 			(start -1.415748 2.61)
 			(end 1.415748 2.61)
 			(stroke
@@ -1330,6 +1320,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "2d427f42-5761-4472-aba9-71b5f5a3fc00")
+		)
+		(fp_line
+			(start -1.415748 -2.61)
+			(end 1.415748 -2.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "bb942de0-253f-44cb-9c51-f138730ad07b")
 		)
 		(fp_rect
 			(start -3.88 -2.95)
@@ -1354,7 +1354,7 @@
 			(uuid "9dbb9661-ce02-418d-bad5-02db3e34aecc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "8ea691dc-0b8f-47d0-b6a9-f8fc2e262e1c")
 			(effects
@@ -1365,7 +1365,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -2.6375 0)
+			(at -2.6375 0 270)
 			(size 1.975 5.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.126582)
@@ -1374,7 +1374,7 @@
 			(uuid "a4d08596-19f4-4c13-800f-fb3eb410a16a")
 		)
 		(pad "2" smd roundrect
-			(at 2.6375 0)
+			(at 2.6375 0 270)
 			(size 1.975 5.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.126582)
@@ -1398,14 +1398,14 @@
 	(footprint "formula_slug_footprint_library:L_Wurth_WE-PD2SR-7850"
 		(layer "F.Cu")
 		(uuid "9fdf830a-991e-45af-98bb-2109c0c6022a")
-		(at 131.5 69)
+		(at 112.5 79.5 90)
 		(descr "Shielded Power Inductor, body 7.8x7x5mm, https://www.we-online.com/en/components/products/WE-PD2SR#/articles/WE-PD2SR-7850")
 		(tags "SMT")
 		(property "Reference" "L1"
-			(at 0 -5 0)
+			(at 0 -5 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "6fc0cfdf-4ced-481c-8aac-2fc15020a0be")
+			(uuid "ae1d4951-31d5-40e5-9532-4c695d4b9037")
 			(effects
 				(font
 					(size 1 1)
@@ -1414,11 +1414,11 @@
 			)
 		)
 		(property "Value" "12 µH"
-			(at 0 5 0)
+			(at 0 5 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ddb68289-7c8c-452b-9ce1-14118f235f3d")
+			(uuid "96589600-bfab-4218-b09c-f84996b4bb2b")
 			(effects
 				(font
 					(size 1 1)
@@ -1427,10 +1427,10 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/744787120.pdf"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "aef67dc7-ba19-4a15-a93d-b7de882b2be9")
+			(uuid "b70027c6-f373-49da-b2da-6fceeb1069ae")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1438,10 +1438,10 @@
 			)
 		)
 		(property "Description" "12 µH Shielded Drum Core, Wirewound Inductor 2.45 A 52mOhm Max 2-SMD"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8db5a4dc-b632-4f0b-b94f-25074944353f")
+			(uuid "0720e8f1-ffde-4592-b182-96509c993159")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1449,7 +1449,7 @@
 			)
 		)
 		(property "Digikey Part Number" "732-4529-6-ND"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1462,7 +1462,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/744787120/4155880"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1475,7 +1475,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1488,7 +1488,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "744787120"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1513,16 +1513,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -3.9 4.01)
-			(end 3.9 4.01)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "dae55272-8258-4338-8e59-8a2d99c4ea37")
-		)
-		(fp_line
 			(start 0 -4.01)
 			(end 3.9 -4.01)
 			(stroke
@@ -1531,6 +1521,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "78c89f0d-28d8-4663-b534-837a4a811ace")
+		)
+		(fp_line
+			(start -3.9 4.01)
+			(end 3.9 4.01)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dae55272-8258-4338-8e59-8a2d99c4ea37")
 		)
 		(fp_rect
 			(start -4.25 -4)
@@ -1564,17 +1564,6 @@
 			(uuid "0b6eaea1-2d10-401c-a980-995bbbee3989")
 		)
 		(fp_arc
-			(start -1.95 3.5)
-			(mid -3.9 0)
-			(end -1.95 -3.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "8c5ebb1d-786d-4d13-ba76-3045ea5b572c")
-		)
-		(fp_arc
 			(start 1.95 -3.5)
 			(mid 3.9 0)
 			(end 1.95 3.5)
@@ -1585,8 +1574,19 @@
 			(layer "F.Fab")
 			(uuid "701f0da1-fedc-404c-b662-ee867e8e3428")
 		)
+		(fp_arc
+			(start -1.95 3.5)
+			(mid -3.9 0)
+			(end -1.95 -3.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8c5ebb1d-786d-4d13-ba76-3045ea5b572c")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "b4862c18-29d9-4330-be96-6e326d252caf")
@@ -1598,7 +1598,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -2.5 0)
+			(at -2.5 0 90)
 			(size 3 7.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-SW)")
@@ -1607,7 +1607,7 @@
 			(uuid "c0b4a41a-37aa-45e2-a35e-d21087f06c40")
 		)
 		(pad "2" smd rect
-			(at 2.5 0)
+			(at 2.5 0 90)
 			(size 3 7.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "+5V")
@@ -1631,11 +1631,11 @@
 	(footprint "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "b6f6dd86-c510-41ef-bc39-09b924ddf06f")
-		(at 109.1375 71.5)
+		(at 119.5 66.5 90)
 		(descr "Capacitor SMD 2220 (5750 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C2"
-			(at 0 -3.65 0)
+			(at 0 -3.65 90)
 			(layer "F.SilkS")
 			(uuid "a946566c-c252-4ddc-ae62-41cde9a308ff")
 			(effects
@@ -1646,7 +1646,7 @@
 			)
 		)
 		(property "Value" "10μf"
-			(at 0 3.65 0)
+			(at 0 3.65 90)
 			(layer "F.Fab")
 			(uuid "ed729aa1-5e2e-4f87-b867-3685f7d63cbb")
 			(effects
@@ -1657,7 +1657,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.kyocera-avx.com/X7RDielectric.pdf"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "278c74cd-4b73-4cbe-9c79-fe8ed91b4942")
@@ -1668,7 +1668,7 @@
 			)
 		)
 		(property "Description" "10 µF ±20% 100V Ceramic Capacitor X7R 2220 (5750 Metric)"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4cae3621-110a-431d-ac7d-0998b03c00d2")
@@ -1679,7 +1679,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ed631ae7-d04a-487c-afd5-ebce6a1a2c57")
@@ -1691,7 +1691,7 @@
 			)
 		)
 		(property "Digikey Part Number" "478-KGM55DR72A106MVDKR-ND"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1704,7 +1704,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/kyocera-avx/22201C106MAT2A/5431507"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1717,7 +1717,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1730,7 +1730,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "22201C106MAT2A"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1797,7 +1797,7 @@
 			(uuid "3908f9c3-4564-4d90-a0e4-3f4bd5f5351a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "9291ddbc-71d7-41d3-800a-6ab87d4f8dcc")
 			(effects
@@ -1808,7 +1808,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -2.6375 0)
+			(at -2.6375 0 90)
 			(size 1.975 5.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.126582)
@@ -1817,7 +1817,7 @@
 			(uuid "532dc677-c0ea-40a3-baa5-db7ef3478e21")
 		)
 		(pad "2" smd roundrect
-			(at 2.6375 0)
+			(at 2.6375 0 90)
 			(size 1.975 5.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.126582)
@@ -1841,13 +1841,13 @@
 	(footprint "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "e980fe42-75be-4abd-9234-67a7925624be")
-		(at 100.1375 71.5)
+		(at 112 72)
 		(descr "Capacitor SMD 2220 (5750 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C1"
 			(at 0 -3.65 0)
 			(layer "F.SilkS")
-			(uuid "a10028b1-f841-4e49-ac68-e57084dd4612")
+			(uuid "a56ee98f-1e70-4b14-bd7b-64d7b908cf2c")
 			(effects
 				(font
 					(size 1 1)
@@ -1858,7 +1858,7 @@
 		(property "Value" "10μf"
 			(at 0 3.65 0)
 			(layer "F.Fab")
-			(uuid "b9fce5b4-9234-431b-a0d6-8834508021cd")
+			(uuid "799068e3-de81-42fe-bb30-18b32095bc93")
 			(effects
 				(font
 					(size 1 1)
@@ -1870,7 +1870,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "08376759-292e-4a4f-acbb-ee02bfe53e3a")
+			(uuid "91127585-4bde-4343-a320-c05f290b1ddd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1881,7 +1881,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0540d778-a692-4061-9b3f-254c0385b09a")
+			(uuid "d06b2c55-b375-4ab7-8992-fea107bbdf76")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2051,7 +2051,7 @@
 	(footprint "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "e995f9a4-dc72-4d47-b629-dc5d24d1e126")
-		(at 114 65)
+		(at 113 66)
 		(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C3"
