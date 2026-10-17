@@ -1863,6 +1863,16 @@
 		)
 		(uuid "fed8dd11-9f5c-4419-acd9-fd932e72f9e9")
 	)
+	(label "out"
+		(at 255.27 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c52631f-1ac4-44fd-9628-afa895897b20")
+	)
 	(label "EN"
 		(at 64.77 87.63 0)
 		(effects
@@ -1872,6 +1882,26 @@
 			(justify left bottom)
 		)
 		(uuid "17c981a5-4b93-4ef9-9e7e-2ad88720c636")
+	)
+	(label ""
+		(at 25.4 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23c99684-44d6-4925-be12-d57011307ea9")
+	)
+	(label "IN"
+		(at 25.4 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3cb36dc6-3911-4b17-8b4b-01849ba2d03b")
 	)
 	(label ""
 		(at 416.56 218.44 0)
@@ -1893,15 +1923,15 @@
 		)
 		(uuid "9a44ae1f-6bb3-41d9-8a29-b915733a4182")
 	)
-	(label ""
-		(at 130.81 90.17 0)
+	(label "VIN"
+		(at 64.77 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "d302a42e-2a2c-4a52-b02b-412147e7f7ef")
+		(uuid "fd51a43d-e0d5-41f5-9226-af551d407c52")
 	)
 	(label "SW"
 		(at 101.6 87.63 0)
@@ -4249,7 +4279,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "168kΩ"
+		(property "Value" "158kΩ"
 			(at 163.83 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
