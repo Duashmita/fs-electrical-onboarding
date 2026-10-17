@@ -49,23 +49,25 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
-    APPS1_pos = (APPS1_percent * 3.3 - APPS1_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE) / 
-                (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE);
-    APPS2_pos = (APPS2_percent * 3.3 - APPS2_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE) / 
-                (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE);
+    APPS1_pos = clamp((APPS1_percent * 3.3 - APPS1_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE) / 
+                (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE));
+    APPS2_pos = clamp((APPS2_percent * 3.3 - APPS2_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE) / 
+                (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE - 2 * PEDAL_DEADZONE_PERCENTAGE));
 
     apps_avg_position = (APPS1_pos + APPS2_pos) / 2;
 
     if (!(implaus_deviation || implaus_out_of_range)){
         motor_torque_demand = apps_avg_position * MAX_TORQUE;
     }
-
     /*
         Finish the step listed above.
     */
 
     // Here to simplify this function and readability.
     update_implausibilities();
+    // printf("APPS 1 Voltage: %f; APPS 2 Voltage: %f\n", (APPS1_percent * 3.3), (APPS2_percent * 3.3));
+    printf("APPS 1 Pos: %f; APPS 2 Pos: %f; Implaus OOR: %d; Implaus Deviation: %d; Torque Demand: %i\n", 
+        APPS1_pos, APPS2_pos, implaus_out_of_range, implaus_deviation, motor_torque_demand);
 }
 
 /*
@@ -79,8 +81,8 @@ void ETCController::update_implausibilities() {
 
     // Check out of range logic
     implaus_range_duration_ms = implaus_range_timer.elapsed_time().count() / 1000;
-    if (!(in_range(APPS1_percent * 3.3, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && 
-            in_range(APPS2_percent * 3.3, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE))) {
+    if (!(in_range(APPS1_percent * 3.3, APPS1_MIN_VOLTAGE - 0.03f, APPS1_MAX_VOLTAGE + 0.03f) && 
+            in_range(APPS2_percent * 3.3, APPS2_MIN_VOLTAGE - 0.03f, APPS2_MAX_VOLTAGE + 0.03f))) {
         if (implaus_range_duration_ms == 0) {
             implaus_range_timer.start();
         } else if (implaus_range_duration_ms > 100) {

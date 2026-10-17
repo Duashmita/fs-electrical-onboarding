@@ -39,7 +39,7 @@ private:
 
     Timer implaus_deviation_timer;
     Timer implaus_range_timer;
-    
+
     int64_t implaus_deviation_duration_ms = 0;
     int64_t implaus_range_duration_ms = 0;
 
@@ -59,11 +59,11 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.396;
-    static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
+    static constexpr float APPS1_MIN_VOLTAGE = 0.36f;
+    static constexpr float APPS1_MAX_VOLTAGE = 0.94f;
 
-    static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
-    static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
+    static constexpr float APPS2_MIN_VOLTAGE = 0.40f;
+    static constexpr float APPS2_MAX_VOLTAGE = 0.97f;
 
     static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03;
 

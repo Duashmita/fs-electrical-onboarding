@@ -13,6 +13,9 @@ Ticker send_sme_CAN_messages_ticker;
 void send_etc_CAN_messages();
 void send_sme_CAN_messages();
 
+bool send_etc = false;
+bool send_sme = false;
+
 int main() {
     printf("Hello World!!\n");
 
@@ -20,13 +23,24 @@ int main() {
         Make send_CAN messages loop consistently
         at 20hz (20 messages / second)
     */
-    send_etc_CAN_messages_ticker.attach(&send_etc_CAN_messages, 50ms);
-    send_sme_CAN_messages_ticker.attach(&send_sme_CAN_messages, 50ms);
+    send_etc_CAN_messages_ticker.attach([]{send_etc = true;}, 50ms);
+    send_sme_CAN_messages_ticker.attach([]{send_sme = true;}, 50ms);
+    printf("APPS 1 Voltage: %f; APPS 2 Voltage: %f; \n");
 
     // No need to edit this while loop
     while (true) {
         // Must implement in etc/ subfolder
         etc.update_state();
+
+        if (send_etc) {
+            send_etc_CAN_messages();
+            send_etc = false;
+        }
+
+        if (send_sme) {
+            send_sme_CAN_messages();
+            send_sme = false;
+        }
     }
 
     return 0;
@@ -45,8 +59,8 @@ void send_etc_CAN_messages() {
     // 6 = VCU_ETC_IMPLAUS_APPS_DEVIATION
     uint8_t message[8] = {0};
 
-    message[0] = !(etc.implaus_deviation || etc.implaus_out_of_range)
-                | !(etc.implaus_deviation || etc.implaus_out_of_range) << 1
+    message[0] = (!(etc.implaus_deviation || etc.implaus_out_of_range))
+                | (!(etc.implaus_deviation || etc.implaus_out_of_range)) << 1
                 | etc.implaus_deviation << 4
                 | etc.implaus_out_of_range << 6;
 
