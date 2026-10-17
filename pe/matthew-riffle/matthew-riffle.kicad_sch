@@ -1204,7 +1204,166 @@
 			)
 			(embedded_fonts no)
 		)
+
+(symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
 	)
+)
 	(text "VOUT = 0.6 V x (1 + 22k/3k) = 5.0 V nominal"
 		(exclude_from_sim no)
 		(at 213.106 118.618 0)
@@ -3838,4 +3997,23 @@
 			(checksum "FF61DEED44DD0F8D2CC22D2144FA15DC")
 		)
 	)
+
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 76.2 144.78 0) (unit 1)
+      (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "63924beb-2e86-4f2d-b5cc-1cfefb9eed8e")
+      (property "Reference" "J1" (at 76.2 139.7 0)  (effects (font (size 1.27 1.27)))) (property "Value" "INPUT" (at 76.2 152.4 0)  (effects (font (size 1.27 1.27)))) (property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x02_P4.8mm_D1.25mm_OD2.3mm" (at 76.2 144.78 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 76.2 144.78 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "PCB solder wire pads: pin 1 +12V, pin 2 GND; no separate connector component" (at 76.2 144.78 0) (hide yes) (effects (font (size 1.27 1.27))))
+      (pin "1" (uuid "ad1a6d35-84b5-4fe1-aac4-c8345988a801")) (pin "2" (uuid "e004fc28-3f01-4040-a0ef-f2953054a8fa"))
+      (instances (project "matthew-riffle" (path "/cf8f5d00-2a5e-5240-b793-3a4da5fda1d7" (reference "J1") (unit 1)))))
+(wire (pts (xy 63.5 144.78) (xy 71.12 144.78)) (stroke (width 0) (type default)) (uuid "450d18f8-4f9a-4dad-a655-414cacb83c9b"))
+(label "+12V" (at 63.5 144.78 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1e1f9780-71bf-47bb-a907-d501c1ca2618"))
+(wire (pts (xy 63.5 147.32) (xy 71.12 147.32)) (stroke (width 0) (type default)) (uuid "fb63f3f8-6f43-42e8-9259-3f4d8e2786df"))
+(label "GND" (at 63.5 147.32 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ed78ab33-c3c1-4c39-a7b6-b6773db4abd0"))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 182.88 144.78 0) (unit 1)
+      (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "1b0b23f5-d452-45fd-8ef1-8589a6a60589")
+      (property "Reference" "J2" (at 182.88 139.7 0)  (effects (font (size 1.27 1.27)))) (property "Value" "OUTPUT" (at 182.88 152.4 0)  (effects (font (size 1.27 1.27)))) (property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x02_P4.8mm_D1.25mm_OD2.3mm" (at 182.88 144.78 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 182.88 144.78 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "PCB solder wire pads: pin 1 +5V, pin 2 GND; no separate connector component" (at 182.88 144.78 0) (hide yes) (effects (font (size 1.27 1.27))))
+      (pin "1" (uuid "d3c84daf-5b1f-42b6-b524-9737eb38484e")) (pin "2" (uuid "1f3d9a2d-678c-477c-b97e-b5e776e455ea"))
+      (instances (project "matthew-riffle" (path "/cf8f5d00-2a5e-5240-b793-3a4da5fda1d7" (reference "J2") (unit 1)))))
+(wire (pts (xy 170.18 144.78) (xy 177.8 144.78)) (stroke (width 0) (type default)) (uuid "a6a833f5-f275-4921-afba-c20e40fe85b0"))
+(label "+5V" (at 170.18 144.78 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "578e0f9a-d65d-41a3-89cc-97d73fdc7f16"))
+(wire (pts (xy 170.18 147.32) (xy 177.8 147.32)) (stroke (width 0) (type default)) (uuid "5da9a226-ca51-46ee-a0be-a4fcfb322d06"))
+(label "GND" (at 170.18 147.32 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8dc6c1f8-bec1-4a78-abcf-fa399c2a2e31"))
 )
