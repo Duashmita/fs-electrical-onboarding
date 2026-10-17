@@ -76,11 +76,11 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.396;
-    static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
+    static constexpr float APPS1_MIN_VOLTAGE = 0.352f;
+    static constexpr float APPS1_MAX_VOLTAGE = 0.977f;
 
-    static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
-    static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
+    static constexpr float APPS2_MIN_VOLTAGE = 0.390f;
+    static constexpr float APPS2_MAX_VOLTAGE = 1.010f;
 
     static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03;
 

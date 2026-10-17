@@ -19,11 +19,11 @@ ADC_HandleTypeDef *APPS1_hadc = &(((analogin_t*)&APPS1_adc)->handle);
 ADC_HandleTypeDef *APPS2_hadc = &(((analogin_t*)&APPS2_adc)->handle);
 CAN_HandleTypeDef *hcan = &(((can_t*)&can)->CanHandle);
 
-constexpr float APPS1_MIN_VOLTAGE = 0.396;
-constexpr float APPS1_MAX_VOLTAGE = 1.086f;
+constexpr float APPS1_MIN_VOLTAGE = 0.352f;
+constexpr float APPS1_MAX_VOLTAGE = 0.977f;
 
-constexpr float APPS2_MIN_VOLTAGE = 0.439f;
-constexpr float APPS2_MAX_VOLTAGE = 1.133f;
+constexpr float APPS2_MIN_VOLTAGE = 0.390f;
+constexpr float APPS2_MAX_VOLTAGE = 1.010f;
 
 constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03;
 constexpr uint32_t TIMER_FREQUENCY_HZ = 10000;
@@ -73,7 +73,15 @@ float clamp(float value) {
     return value;
 }
 
-bool read_voltage(ADC_HandleTypeDef *hadc, float &voltage) {
+bool read_voltage(ADC_HandleTypeDef *hadc, uint32_t channel, float &voltage) {
+    ADC_ChannelConfTypeDef config{};
+    config.Channel = channel;
+    config.Rank = 1;
+    config.SamplingTime = ADC_SAMPLETIME_15CYCLES;
+    if (HAL_ADC_ConfigChannel(hadc, &config) != HAL_OK) {
+        return false;
+    }
+
     // start the adc
     if (HAL_ADC_Start(hadc) != HAL_OK) {
         return false;
@@ -87,7 +95,9 @@ bool read_voltage(ADC_HandleTypeDef *hadc, float &voltage) {
 
     //retrieve value
     float adc_value = static_cast<float>(HAL_ADC_GetValue(hadc));
-    HAL_ADC_Stop(hadc);
+    if (HAL_ADC_Stop(hadc) != HAL_OK) {
+        return false;
+    }
 
     voltage = adc_value / 4095.0f * 3.3f; //12 bit adc, 3.3v reference
 
@@ -140,6 +150,12 @@ void update_implausibilities(float apps1_voltage, float apps2_voltage,
 }
 
 int main(void) {
+    analogin_t apps1_hal{};
+    analogin_t apps2_hal{};
+    analogin_init(&apps1_hal, PC_1);
+    analogin_init(&apps2_hal, PC_2);
+    APPS1_hadc = &apps1_hal.handle;
+    APPS2_hadc = &apps2_hal.handle;
 
     __HAL_RCC_TIM2_CLK_ENABLE();
     __HAL_RCC_TIM3_CLK_ENABLE();
@@ -173,8 +189,8 @@ int main(void) {
         int16_t torque_demand = 0;
 
         // make sure to check if the ADC read was successful before printing the voltages
-        bool apps1_ok = read_voltage(APPS1_hadc, apps1_voltage);
-        bool apps2_ok = read_voltage(APPS2_hadc, apps2_voltage);
+        bool apps1_ok = read_voltage(APPS1_hadc, ADC_CHANNEL_11, apps1_voltage);
+        bool apps2_ok = read_voltage(APPS2_hadc, ADC_CHANNEL_12, apps2_voltage);
 
         if (apps1_ok && apps2_ok) {
             float apps1_position = clamp(
