@@ -78,8 +78,8 @@ void send_etc_CAN_messages() {
     can.write(vcu_tpdo_status_msg);
     //printf("Sending ETC CAN messages\n");
     //printf("Faulting: %d", etc.getGenFaulting());
-    printf("APPS1: %f   APPS2: %f ", etc.getAPPS1() , etc.getAPPS2());
-    //printf("APPS1_Voltage: %f", etc.apps1_voltage);
+    //printf("APPS1: %f   APPS2: %f ", etc.getAPPS1() , etc.getAPPS2());
+    printf("Torque: %f", etc.getCalculatedTorque());
 }
 /*
     Must send the SME_RPDO_Throttle_Demand CAN
