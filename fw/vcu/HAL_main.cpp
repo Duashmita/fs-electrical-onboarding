@@ -21,10 +21,11 @@ int main(void) {
     char msg[] = "Hello world!\n";
     HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY); // Sending "Hello world!\n" over Serial
     
-    bool adc_error_1; //Tells u sif soemthing went wrong with conversion
+    bool adc_error_1; //Tells us if soemthing went wrong with conversion
     bool adc_error_2;
-    uint16_t ADC_Value_1;
-    uint16_t ADC_Value_2;
+
+    uint32_t  ADC_Value_1;
+    uint32_t  ADC_Value_2;
     while (true) {
         /*
             Add lines where you start the ADC, poll from it, then
@@ -43,7 +44,7 @@ int main(void) {
         if( HAL_ADC_PollForConversion(APPS1_hadc, 10) != HAL_OK){ //Check if Converison is complete
              adc_error_1 = true;//If conversion is not complete, report error
         }else{
-            ADC_Value_1 = HAL_ADC_PollForConversion(APPS1_hadc); //If coversion is complete store value
+            ADC_Value_1 =  HAL_ADC_GetValue(APPS1_hadc); //If coversion is complete store value
         }
         
 
@@ -51,7 +52,7 @@ int main(void) {
         if( HAL_ADC_PollForConversion(APPS2_hadc, 10) != HAL_OK){ //Check if Converison is complete
              adc_error_2 = true;//If conversion is not complete, report error
         }else{
-            ADC_Value_2 = HAL_ADC_PollForConversion(APPS2_hadc); //If coversion is complete store value
+            ADC_Value_2 =  HAL_ADC_GetValue(APPS2_hadc); //If coversion is complete store value
         }
 
 
@@ -60,6 +61,7 @@ int main(void) {
         float Voltage_1 = (ADC_Value_1 / 4096.0) * 3.3f; //Calculate Voltages
         float Voltage_2 = (ADC_Value_2 / 4096.0) * 3.3f;
         
-
+        
     return 0;
+}
 }
