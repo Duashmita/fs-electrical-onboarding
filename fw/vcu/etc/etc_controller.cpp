@@ -45,7 +45,7 @@ void ETCController::update_state() {
     if (raw_pos1 < PEDAL_DEADZONE_PERCENTAGE) {
         apps1_pos = 0.0f;
     } else {
-        apps1_pos = clamp((raw_pos1 - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - PEDAL_DEADZONE_PERCENTAGE));
+        apps1_pos = clamp((raw_pos1 - PEDAL_DEADZONE_PERCENTAGE) / (1.0f - 2*PEDAL_DEADZONE_PERCENTAGE));
     }
 
     if (raw_pos2 < PEDAL_DEADZONE_PERCENTAGE) {
@@ -60,8 +60,8 @@ void ETCController::update_state() {
         torque_demand = 0;
     } else {
         float avg_pos = (apps1_pos + apps2_pos) / 2.0f;
-        float mapped_pos = avg_pos * avg_pos;
-        torque_demand = (int16_t)(mapped_pos * MAX_TORQUE);
+        // float mapped_pos = avg_pos * avg_pos;
+        torque_demand = (int16_t)(avg_pos * MAX_TORQUE);
     }
 }
 
@@ -81,7 +81,6 @@ void ETCController::update_implausibilities() {
     } else {
         timer_range.stop();
         timer_range.reset();
-        implause_apps_out_of_range = false;
     }
 
     bool deviating = (std::fabs(apps1_pos - apps2_pos) > 0.10f);

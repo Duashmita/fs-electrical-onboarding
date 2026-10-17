@@ -53,8 +53,12 @@ int main() {
 void send_etc_CAN_messages() {
     uint8_t data[8] = {0};
 
-    data[0] |= (1 << 0);
-    data[0] |= (1 << 1);
+    bool has_implaus = etc.implause_apps_out_of_range || etc.implaus_apps_deviation;
+
+    if (!has_implaus) {
+        data[0] |= (1 << 0);
+        data[0] |= (1 << 1);
+    }
 
     if (etc.implause_apps_out_of_range) {
         data[0] |= (1 << 4);
@@ -63,7 +67,8 @@ void send_etc_CAN_messages() {
         data[0] |= (1 << 6);
     }
 
-    can.write(CANMessage(403, data, 8));
+    CANMessage msg(403, data, 8);
+    can.write(msg);
 }
 
 /*
@@ -78,5 +83,6 @@ void send_sme_CAN_messages() {
     data[0] = torque & 0xFF;
     data[1] = (torque >> 8) & 0xFF;
 
-    can.write(CANMessage(390, data, 8));
+    CANMessage msg(390, data, 8);
+    can.write(msg);
 }
