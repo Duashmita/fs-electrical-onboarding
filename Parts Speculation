@@ -1,7 +1,13 @@
 Pretty simple, just recording the parts that I'm considering.
 Change of plans because the previous buck ic was not very good. 
 
-Total cost: $2.17
+IF you are reading this to decide formula slug members...
+Hello!
+This is an outdated file and does not feature the inductor I used. However, if you want to know why I chose it,
+it's because it had a high enough self resonant frequency rating to hopefully not have to worry about it. 
+Thanks for reading!
+
+Total cost: $2.27
 - MAY be more because of tariffs, unsure
 
 Buck IC:
