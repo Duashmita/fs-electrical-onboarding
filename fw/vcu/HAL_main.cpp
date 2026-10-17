@@ -23,6 +23,12 @@ int main(void) {
     
     bool adc_error_1; //Tells us if soemthing went wrong with conversion
     bool adc_error_2;
+    float Voltage_1;
+    float Voltage_2;
+    
+
+    bool Voltage_Calculation_Ready;
+
 
     uint32_t  ADC_Value_1;
     uint32_t  ADC_Value_2;
@@ -55,13 +61,14 @@ int main(void) {
             ADC_Value_2 =  HAL_ADC_GetValue(APPS2_hadc); //If coversion is complete store value
         }
 
+        if( adc_error_1 && adc_error_2){
+            //Now need to conver to a voltage
+            //Voltage = (ADC VALUE/ 4096) * 3.3
+            Voltage_1 = (ADC_Value_1 / 4096.0) * 3.3f; //Calculate Voltages
+            Voltage_2 = (ADC_Value_2 / 4096.0) * 3.3f;
+        }
 
-        //Now need to conver to a voltage
-        //Voltage = (ADC VALUE/ 4096) * 3.3
-        float Voltage_1 = (ADC_Value_1 / 4096.0) * 3.3f; //Calculate Voltages
-        float Voltage_2 = (ADC_Value_2 / 4096.0) * 3.3f;
-        
-        
+
     return 0;
 }
 }
