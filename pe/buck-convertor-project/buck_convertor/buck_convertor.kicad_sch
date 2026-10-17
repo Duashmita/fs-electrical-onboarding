@@ -970,6 +970,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "ENABLE DIVIDER\n"
+		(exclude_from_sim no)
+		(at 108.966 124.714 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3f56f131-f387-41cc-9ddc-fe56cf48c351")
+	)
+	(text "FEEDBACK DIVIDER\n"
+		(exclude_from_sim no)
+		(at 164.846 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e10f478d-1b9c-4320-b5c1-3ccb4d23d0a1")
+	)
 	(junction
 		(at 156.21 130.81)
 		(diameter 0)
@@ -1029,6 +1049,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0a24f23-a1b6-4775-b79a-1e4b373e4b21")
+	)
+	(junction
+		(at 196.85 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f433395a-c322-451d-80b7-53a567bdde85")
 	)
 	(junction
 		(at 118.11 139.7)
@@ -1248,6 +1274,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 101.6) (xy 196.85 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84c21743-e0c7-42e6-b839-674b7dcb139c")
+	)
+	(wire
+		(pts
 			(xy 92.71 95.25) (xy 88.9 95.25)
 		)
 		(stroke
@@ -1265,16 +1301,6 @@
 			(type default)
 		)
 		(uuid "9003a0c6-f79c-471b-a155-986506aa0f1b")
-	)
-	(wire
-		(pts
-			(xy 194.31 105.41) (xy 203.2 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9cdce30e-4f67-4948-8b2c-85144eb4c3a6")
 	)
 	(wire
 		(pts
@@ -1488,7 +1514,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 105.41) (xy 194.31 105.41)
+			(xy 182.88 105.41) (xy 203.2 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1517,7 +1543,7 @@
 		(uuid "f9cdb9b3-77e3-47f2-8fcc-deffbfa8a7be")
 	)
 	(label "VOUT"
-		(at 157.48 129.54 0)
+		(at 156.21 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1527,7 +1553,7 @@
 		(uuid "0b123d89-b318-46ec-8602-9b499fe8466d")
 	)
 	(label "EN"
-		(at 125.73 139.7 0)
+		(at 127 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1547,7 +1573,7 @@
 		(uuid "4c9c14a2-b202-4cb4-a614-2b7b00be3302")
 	)
 	(label "FB"
-		(at 162.56 143.51 0)
+		(at 167.64 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1557,7 +1583,7 @@
 		(uuid "83b95d0d-a95e-44ab-a8f8-c65d7af8b0f0")
 	)
 	(label "VIN"
-		(at 119.38 128.27 0)
+		(at 118.11 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1566,18 +1592,8 @@
 		)
 		(uuid "8d051b2f-6b49-47d6-8b88-dd30d46e3d06")
 	)
-	(label "FEEDBACK DIVIDER"
-		(at 142.24 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8dd81632-b4ef-4bb3-8356-d73f5be5ef1a")
-	)
 	(label "VIN"
-		(at 106.68 91.44 0)
+		(at 106.68 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1587,7 +1603,7 @@
 		(uuid "a0c9f17f-d063-4615-9f35-458bfc327546")
 	)
 	(label "VOUT"
-		(at 190.5 104.14 0)
+		(at 205.74 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1596,18 +1612,8 @@
 		)
 		(uuid "c01e0697-3bd3-4214-a9f9-4495d2acce11")
 	)
-	(label "ENABLE DIVIDER"
-		(at 102.87 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8491e21-c07e-455b-a753-d0c69235b672")
-	)
 	(label "EN"
-		(at 125.73 104.14 0)
+		(at 127 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
