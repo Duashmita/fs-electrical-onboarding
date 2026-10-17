@@ -27,6 +27,8 @@ Temperature: -40°C to 85°C
 -> calculate changes in velocity for GPS tracking
 
 3. 	DHT20 - AHT20 PIN MODULE - I2C T
+
+Source: DigiKey
 Protocols: I2C
 Humidity: 0 to 100% Realitive Humidity
 Accuracy: +3% or - 3% Realitve Humidity
