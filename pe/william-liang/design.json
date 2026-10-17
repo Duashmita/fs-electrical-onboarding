@@ -1,0 +1,139 @@
+{
+  "sheet_uuid": "ad598ab0-196e-5d3c-80e8-a73b83033ee4",
+  "parts": {
+    "U1": {
+      "uuid": "e608b7d7-bf0c-527f-88f0-e3e84d3547ae",
+      "value": "TPS563201DDCR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "mpn": "TPS563201DDCR",
+      "nets": {
+        "1": "GND",
+        "2": "SW",
+        "3": "VIN",
+        "4": "FB",
+        "5": "EN",
+        "6": "BST"
+      }
+    },
+    "J1": {
+      "uuid": "564537dc-bd03-5367-83b7-b732c7713554",
+      "value": "INPUT 10-15V",
+      "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+      "mpn": "1715721",
+      "nets": {
+        "1": "VIN",
+        "2": "GND"
+      }
+    },
+    "C1": {
+      "uuid": "9da424fe-9e34-5597-b437-a8281d8ad72c",
+      "value": "22uF / 25V",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "mpn": "C3225X7R1E226M250AB",
+      "nets": {
+        "1": "VIN",
+        "2": "GND"
+      }
+    },
+    "C2": {
+      "uuid": "f0ec6d83-eead-5e57-8624-5303b8cad07b",
+      "value": "22uF / 25V",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "mpn": "C3225X7R1E226M250AB",
+      "nets": {
+        "1": "VIN",
+        "2": "GND"
+      }
+    },
+    "C3": {
+      "uuid": "bcb66ed7-e359-59cc-bd5b-b00c0a754807",
+      "value": "100nF / 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "C1608X7R1H104K080AA",
+      "nets": {
+        "1": "VIN",
+        "2": "GND"
+      }
+    },
+    "R3": {
+      "uuid": "80b1a61f-135a-574d-8085-69499a589e7b",
+      "value": "10k / 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0710KL",
+      "nets": {
+        "1": "VIN",
+        "2": "EN"
+      }
+    },
+    "C4": {
+      "uuid": "46c08a55-c963-5789-8213-94c42245cc6f",
+      "value": "100nF / 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "C1608X7R1H104K080AA",
+      "nets": {
+        "1": "BST",
+        "2": "SW"
+      }
+    },
+    "L1": {
+      "uuid": "e4a9b3a7-16f3-57ca-8f0b-39982a07eaa6",
+      "value": "4.7uH / 6A Isat",
+      "footprint": "Inductor_SMD:L_Bourns_SRP5030T",
+      "mpn": "SRP5030TA-4R7M",
+      "nets": {
+        "1": "SW",
+        "2": "VOUT"
+      }
+    },
+    "C5": {
+      "uuid": "ad200ab5-cc2f-50e3-9c22-b98131c3b87c",
+      "value": "22uF / 25V",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "mpn": "C3225X7R1E226M250AB",
+      "nets": {
+        "1": "VOUT",
+        "2": "GND"
+      }
+    },
+    "C6": {
+      "uuid": "cec5cd99-f66f-51d0-bdad-c22a6598ba4f",
+      "value": "22uF / 25V",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "mpn": "C3225X7R1E226M250AB",
+      "nets": {
+        "1": "VOUT",
+        "2": "GND"
+      }
+    },
+    "R1": {
+      "uuid": "02102c89-d8ce-551d-8ac6-3d46b80dde61",
+      "value": "54.9k / 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0754K9L",
+      "nets": {
+        "1": "VOUT",
+        "2": "FB"
+      }
+    },
+    "R2": {
+      "uuid": "4fd2daa0-e089-502d-beab-4af5886dae06",
+      "value": "10k / 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0710KL",
+      "nets": {
+        "1": "FB",
+        "2": "GND"
+      }
+    },
+    "J2": {
+      "uuid": "af149712-57cf-5836-a309-109b99066c90",
+      "value": "OUTPUT 5V / 2A",
+      "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+      "mpn": "1715721",
+      "nets": {
+        "1": "VOUT",
+        "2": "GND"
+      }
+    }
+  }
+}
