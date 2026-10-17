@@ -43,4 +43,13 @@
     - wrote update_implausibilities()
     - added member variables (booleans) for both types of implausibilities
 
-        
+## 10/16/2026
+    - tried compiling main; took many tries and struggles with #include issues, but ultimately (at jackson's recommendation) was resolved with a git pull :D
+
+## REFLECTION
+    - learning curve was initially high but leveled out as time went on
+    - handwrote quite some brainstorms while trying to make sense of the [given task], [solution], [implementation]
+    - i focused on connecting what i was doing to what it physically meant -- i feel like the "plain english" is very important while writing code for a car
+    - tried to keep my code readable and my process documented via this file
+    - went to lab hours as much as i could to get logic reviewed, get feedback, revise, etc.
+    - yay!

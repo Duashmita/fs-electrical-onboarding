@@ -10,6 +10,10 @@ CAN can{PB_8, PB_9, 500000};
 void send_etc_CAN_messages();
 void send_sme_CAN_messages();
 
+// ticker
+Ticker my_ticker;
+
+
 int main() {
     etc.my_timer.start(); // start the controller's timer
 
@@ -18,7 +22,7 @@ int main() {
         at 20hz (20 messages / second)
     */
 
-    
+
 
     // No need to edit this while loop
     while (true) {
