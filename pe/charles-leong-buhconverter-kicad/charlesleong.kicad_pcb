@@ -98,6 +98,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -143,10 +144,10 @@
 	(footprint "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "672a1da0-cc92-4739-a641-7e4c9c7bd042")
-		(at 105.905 82.825)
+		(at 141.3625 79)
 		(descr "Capacitor SMD 2220 (5750 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf)")
 		(tags "capacitor handsolder")
-		(property "Reference" "C7"
+		(property "Reference" "C6"
 			(at 0 -3.65 0)
 			(layer "F.SilkS")
 			(uuid "faab6cf9-3b6e-4751-91d7-a1faf7080ea6")
@@ -353,13 +354,13 @@
 	(footprint "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "6b573cbe-481a-468c-b098-6bd6127de836")
-		(at 113.315 69.125)
+		(at 141 70.5)
 		(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor handsolder")
-		(property "Reference" "C8"
+		(property "Reference" "C7"
 			(at 0 -2.3 0)
 			(layer "F.SilkS")
-			(uuid "9d0439aa-fd99-4e87-8dcf-895b002a658e")
+			(uuid "998e05e0-e06e-48cb-8078-7135033b2446")
 			(effects
 				(font
 					(size 1 1)
@@ -370,7 +371,7 @@
 		(property "Value" "100nF"
 			(at 0 2.3 0)
 			(layer "F.Fab")
-			(uuid "26278912-c0f9-4196-897a-05a0e30d3cd7")
+			(uuid "3199d609-8a60-484d-b0d8-474761513dde")
 			(effects
 				(font
 					(size 1 1)
@@ -382,7 +383,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a0e5b370-f3e1-4b84-9285-b973473ba9f0")
+			(uuid "e601d82e-58cd-4781-87cc-df08d514528d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -393,7 +394,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c3e40880-70f0-4a30-9fd5-1ff7f26efa53")
+			(uuid "001216c5-948e-43cb-8a04-8116c4534417")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -563,13 +564,13 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "6c8e0da9-5791-4f02-8922-0f49e8a14bf6")
-		(at 119.575 75.9)
+		(at 119 73)
 		(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178)")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U1"
 			(at 0 -2.4 0)
 			(layer "F.SilkS")
-			(uuid "3b12f477-9b11-4b58-be76-3199c0f5f797")
+			(uuid "5c952b40-81e3-495f-bc16-4bea491e1455")
 			(effects
 				(font
 					(size 1 1)
@@ -580,7 +581,7 @@
 		(property "Value" "TPS542025DDCR"
 			(at 0 2.4 0)
 			(layer "F.Fab")
-			(uuid "416bfc11-004e-4942-9502-de495b95bf95")
+			(uuid "47aadd4c-cad9-4231-8ca6-4946f1fb9242")
 			(effects
 				(font
 					(size 1 1)
@@ -592,7 +593,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d8872a13-c229-47d7-aea7-cdda6b464f4e")
+			(uuid "9cc757f8-71ea-4614-bcf0-b6065ea3260b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -603,7 +604,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fd6e5115-b5b4-4f8d-8a56-3e0158a1c298")
+			(uuid "0231dabd-7e83-463b-8eb3-d2c3709a77b1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,13 +978,13 @@
 	(footprint "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "7b33fbdc-672a-459b-9725-8fc4e2699059")
-		(at 113.315 64.875)
+		(at 123.0625 66.5)
 		(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor handsolder")
-		(property "Reference" "C5"
+		(property "Reference" "C4"
 			(at 0 -2.3 0)
 			(layer "F.SilkS")
-			(uuid "bd91f716-deb5-4a60-bab5-5696e3dcafd2")
+			(uuid "154eb5fc-8c01-4f78-a739-975d201b7b0b")
 			(effects
 				(font
 					(size 1 1)
@@ -994,7 +995,7 @@
 		(property "Value" "100nF"
 			(at 0 2.3 0)
 			(layer "F.Fab")
-			(uuid "133a0959-1c0e-4365-9486-c3635c967533")
+			(uuid "e4f39040-d48a-4ec7-90c2-f9ab2251d502")
 			(effects
 				(font
 					(size 1 1)
@@ -1006,7 +1007,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "91ea294c-8cfd-40a8-bb1b-aeb6fde384c1")
+			(uuid "115754e9-da5a-4291-bcf8-7e110c2ee190")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1017,7 +1018,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d9245136-8343-40ae-901e-1a55f3fd42f5")
+			(uuid "147dd00b-5df6-4950-a499-6ac35bd943d7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1187,10 +1188,10 @@
 	(footprint "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "87148012-bdc3-4d57-a6b1-bba957186537")
-		(at 105.905 75.875)
+		(at 131.8625 79)
 		(descr "Capacitor SMD 2220 (5750 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf)")
 		(tags "capacitor handsolder")
-		(property "Reference" "C6"
+		(property "Reference" "C5"
 			(at 0 -3.65 0)
 			(layer "F.SilkS")
 			(uuid "e6b85782-8f5b-46fb-9f8e-c93cd1713d7b")
@@ -1397,14 +1398,14 @@
 	(footprint "formula_slug_footprint_library:L_Wurth_WE-PD2SR-7850"
 		(layer "F.Cu")
 		(uuid "9fdf830a-991e-45af-98bb-2109c0c6022a")
-		(at 132.775 74.07)
+		(at 131.5 69)
 		(descr "Shielded Power Inductor, body 7.8x7x5mm, https://www.we-online.com/en/components/products/WE-PD2SR#/articles/WE-PD2SR-7850")
 		(tags "SMT")
 		(property "Reference" "L1"
 			(at 0 -5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "7fae5c54-75cb-4d43-a77a-9db728bac75c")
+			(uuid "6fc0cfdf-4ced-481c-8aac-2fc15020a0be")
 			(effects
 				(font
 					(size 1 1)
@@ -1417,7 +1418,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3eed6caa-67ea-4f6f-82b7-1dddf64cb720")
+			(uuid "ddb68289-7c8c-452b-9ce1-14118f235f3d")
 			(effects
 				(font
 					(size 1 1)
@@ -1429,7 +1430,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6534deba-c26d-4b85-801d-89722a861df5")
+			(uuid "aef67dc7-ba19-4a15-a93d-b7de882b2be9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1440,7 +1441,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6f94195c-94cb-4414-9fa1-898dfd2d278d")
+			(uuid "8db5a4dc-b632-4f0b-b94f-25074944353f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1630,13 +1631,13 @@
 	(footprint "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "b6f6dd86-c510-41ef-bc39-09b924ddf06f")
-		(at 105.905 68.925)
+		(at 109.1375 71.5)
 		(descr "Capacitor SMD 2220 (5750 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf)")
 		(tags "capacitor handsolder")
-		(property "Reference" "C3"
+		(property "Reference" "C2"
 			(at 0 -3.65 0)
 			(layer "F.SilkS")
-			(uuid "07f72395-9c14-4806-93aa-6c5ed45afdd2")
+			(uuid "a946566c-c252-4ddc-ae62-41cde9a308ff")
 			(effects
 				(font
 					(size 1 1)
@@ -1647,7 +1648,7 @@
 		(property "Value" "10μf"
 			(at 0 3.65 0)
 			(layer "F.Fab")
-			(uuid "41c3e7cc-dedf-4923-831e-0e73dcb77d90")
+			(uuid "ed729aa1-5e2e-4f87-b867-3685f7d63cbb")
 			(effects
 				(font
 					(size 1 1)
@@ -1659,7 +1660,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6f227956-2a4a-4064-b51c-fcfc7e87473f")
+			(uuid "278c74cd-4b73-4cbe-9c79-fe8ed91b4942")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1670,7 +1671,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a0a089c9-cb9b-418c-93c6-c62181962305")
+			(uuid "4cae3621-110a-431d-ac7d-0998b03c00d2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1840,13 +1841,13 @@
 	(footprint "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "e980fe42-75be-4abd-9234-67a7925624be")
-		(at 105.905 61.975)
+		(at 100.1375 71.5)
 		(descr "Capacitor SMD 2220 (5750 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf)")
 		(tags "capacitor handsolder")
-		(property "Reference" "C2"
+		(property "Reference" "C1"
 			(at 0 -3.65 0)
 			(layer "F.SilkS")
-			(uuid "a2c5c6ad-7e90-4bb4-aedd-ec62eb4dd7e0")
+			(uuid "a10028b1-f841-4e49-ac68-e57084dd4612")
 			(effects
 				(font
 					(size 1 1)
@@ -1857,7 +1858,7 @@
 		(property "Value" "10μf"
 			(at 0 3.65 0)
 			(layer "F.Fab")
-			(uuid "0477a266-4212-4e17-a2a7-c42a8a1de4d2")
+			(uuid "b9fce5b4-9234-431b-a0d6-8834508021cd")
 			(effects
 				(font
 					(size 1 1)
@@ -1869,7 +1870,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cac32926-a9e5-4b69-9730-26157d9ba862")
+			(uuid "08376759-292e-4a4f-acbb-ee02bfe53e3a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1880,7 +1881,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "05b0c93d-c7ca-4d4e-b2e3-e3c98eebf490")
+			(uuid "0540d778-a692-4061-9b3f-254c0385b09a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2050,10 +2051,10 @@
 	(footprint "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "e995f9a4-dc72-4d47-b629-dc5d24d1e126")
-		(at 113.315 60.625)
+		(at 114 65)
 		(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor handsolder")
-		(property "Reference" "C4"
+		(property "Reference" "C3"
 			(at 0 -2.3 0)
 			(layer "F.SilkS")
 			(uuid "a9923fd0-21fa-4fb7-9413-843a156c274c")
