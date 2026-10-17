@@ -505,6 +505,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Regulator_Switching:TPS54202DDC"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1161,6 +1301,26 @@
 		)
 		(uuid "70b05a4d-6be0-58ba-a880-e31892b15f72")
 	)
+	(text "Feed forward capacitor across R1"
+		(exclude_from_sim no)
+		(at 134.62 128.524 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a6a20ab4-2b53-4c3f-ac1a-42af2226da9e")
+	)
+	(text "Voltage divider from output to FB pin (voltage transition)"
+		(exclude_from_sim no)
+		(at 167.132 134.366 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+		)
+		(uuid "cb5623dd-4fe4-4e65-bff0-42bc0f712523")
+	)
 	(text "c2 = high f capacitor (next to chip)"
 		(exclude_from_sim no)
 		(at 31.242 82.55 0)
@@ -1190,10 +1350,22 @@
 		(uuid "2b18f245-de10-5eae-a168-e125947755e4")
 	)
 	(junction
+		(at 144.78 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56aae625-231c-50ea-b6fc-24bcf4f206fc")
+	)
+	(junction
 		(at 137.16 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e496353-b796-5f7d-a0ad-d1adf63a23e7")
+	)
+	(junction
+		(at 160.02 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b23f645-33ea-5d40-8be1-d2b5e9b0a0ee")
 	)
 	(junction
 		(at 198.12 101.6)
@@ -1212,6 +1384,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a95c62d1-f004-59a7-9308-f7f9487b228b")
+	)
+	(junction
+		(at 160.02 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad2347c6-3d6f-5b86-b54e-3adf638fc314")
+	)
+	(junction
+		(at 144.78 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4b64f88-2cb8-52f6-8d5f-aaa9007edf63")
 	)
 	(junction
 		(at 50.8 99.06)
@@ -1238,6 +1422,26 @@
 			(type default)
 		)
 		(uuid "00c344b4-a42e-56c1-b5ba-728b6b7bda6e")
+	)
+	(wire
+		(pts
+			(xy 144.78 109.22) (xy 160.02 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07701a2b-e354-5873-baad-07b60c1c110c")
+	)
+	(wire
+		(pts
+			(xy 106.68 109.22) (xy 144.78 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a18061c-7c9d-5574-a493-8c076183a8a8")
 	)
 	(wire
 		(pts
@@ -1369,6 +1573,16 @@
 		)
 		(uuid "7c4ba19b-0cf5-5f27-912a-be37561e3626")
 	)
+	(polyline
+		(pts
+			(xy 139.7 111.76) (xy 144.78 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f961ad6-a85a-4bb4-ad24-2f908e367b03")
+	)
 	(wire
 		(pts
 			(xy 172.72 101.6) (xy 185.42 101.6)
@@ -1378,6 +1592,16 @@
 			(type default)
 		)
 		(uuid "842a3ce6-6904-581d-b88a-099b967261e1")
+	)
+	(polyline
+		(pts
+			(xy 139.7 111.76) (xy 139.7 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "843413dc-53ab-4d41-b904-b9f5717dd37c")
 	)
 	(polyline
 		(pts
@@ -1451,6 +1675,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 104.14) (xy 106.68 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1541278-ea42-5441-a9d5-09402c92264e")
+	)
+	(wire
+		(pts
 			(xy 210.82 101.6) (xy 231.14 101.6)
 		)
 		(stroke
@@ -1471,6 +1705,16 @@
 	)
 	(polyline
 		(pts
+			(xy 166.37 111.76) (xy 167.64 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb749023-cbb5-45b1-a0e0-6b2ee9e994d3")
+	)
+	(polyline
+		(pts
 			(xy 210.82 95.25) (xy 210.82 97.79)
 		)
 		(stroke
@@ -1478,6 +1722,16 @@
 			(type default)
 		)
 		(uuid "d6ff5534-cfdd-4c35-9629-4a079d5cb22e")
+	)
+	(polyline
+		(pts
+			(xy 167.64 105.41) (xy 167.64 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e41ca70b-16f8-4e03-a13b-5cdc20966742")
 	)
 	(wire
 		(pts
@@ -1488,6 +1742,16 @@
 			(type default)
 		)
 		(uuid "e42dd192-dc27-5fd9-b378-ac12b8d27167")
+	)
+	(wire
+		(pts
+			(xy 101.6 104.14) (xy 106.68 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec5cfefa-a3da-56ad-b038-be2c77e09b27")
 	)
 	(polyline
 		(pts
@@ -1528,6 +1792,16 @@
 			(justify left bottom)
 		)
 		(uuid "7a907047-04c6-57ba-878f-55322a106642")
+	)
+	(label "FB"
+		(at 109.22 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb9b5961-8c90-5201-b96d-0f709d95ebd2")
 	)
 	(label "Conn for bootcaps"
 		(at 105.41 93.98 0)
@@ -1989,6 +2263,84 @@
 			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1ec213a6-1044-5009-8d3e-3d9069f4caf9")
+		(property "Reference" "#PWR11"
+			(at 160.02 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54f93182-f6d5-57d7-864f-423630d3aa20")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR11")
 					(unit 1)
 				)
 			)
@@ -2789,6 +3141,292 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 144.78 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "52d2e57b-ec48-5aaa-8caf-754f9a564121")
+		(property "Reference" "C8"
+			(at 147.32 103 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "68pF"
+			(at 147.32 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 144.78 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "CAP CER 68pF 50V C0G 0603 (feed-forward)"
+			(at 144.78 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi PN" ""
+			(at 144.78 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/result?keywords=GRM1885C1H680JA01D"
+			(at 144.78 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG PN" "GRM1885C1H680JA01D"
+			(at 144.78 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG" "Murata Electronics"
+			(at 144.78 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "50V C0G"
+			(at 147.32 107.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "9e195d66-9ce7-51d6-b20e-1a91791fa91b")
+		)
+		(pin "2"
+			(uuid "a5f28af0-30a9-53af-8253-698915bd1547")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 160.02 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "56e8dbe5-f2ad-5b7e-8d8b-4501c48d67dd")
+		(property "Reference" "R2"
+			(at 162.56 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "13.3k"
+			(at 162.56 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 160.02 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "RES 13.3k 1% 1/10W 0603 (FB bottom)"
+			(at 160.02 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi PN" ""
+			(at 160.02 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0713K3L/726931"
+			(at 160.02 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG PN" "RC0603FR-0713K3L"
+			(at 160.02 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 160.02 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "1%"
+			(at 162.56 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "2a676442-839a-57f1-972e-5bdb53856f4f")
+		)
+		(pin "2"
+			(uuid "c24af2f0-238f-506f-92a3-8f80229e36be")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 111.76 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -3290,6 +3928,149 @@
 			(project "connor-hassfeld"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 160.02 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "93c1f8af-8546-5618-b375-3c6510823297")
+		(property "Reference" "R1"
+			(at 162.56 103 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 162.56 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 160.02 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "RES 100k 1% 1/10W 0603 (FB top)"
+			(at 160.02 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi PN" ""
+			(at 160.02 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/result?keywords=RC0603FR-07100KL"
+			(at 160.02 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG PN" "RC0603FR-07100KL"
+			(at 160.02 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MFG" "YAGEO"
+			(at 160.02 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Rating" "1%"
+			(at 162.56 107.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "6c54d222-5903-55eb-9ae9-8b6829a6f671")
+		)
+		(pin "2"
+			(uuid "aa16b19e-fadb-5389-b3d9-ca1665d69f1d")
+		)
+		(instances
+			(project "connor-hassfeld"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R1")
 					(unit 1)
 				)
 			)
