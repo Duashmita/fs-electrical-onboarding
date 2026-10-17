@@ -16,18 +16,33 @@ public:
     */
 
     
-    bool get_range_implaus(){
+    bool get_range_implaus() const {
         return APPS_Range_Implausibility_Confirmed;
     }
 
-    bool get_percent_implaus(){
+    bool get_percent_implaus() const {
         return APPS_Percent_Implausibility_Confirmed;
     }
 
-    int16_t get_Motor_Torque_Demand(){
+    int16_t get_Motor_Torque_Demand() const {
         return Motor_Torque_Demand;
     }
 
+    float get_Clamped_Pedal_Postion_1() const {
+        return Clamped_APPS1_Pedal_Position;
+    }
+
+    float get_Clamped_Pedal_Postion_2() const {
+        return Clamped_APPS2_Pedal_Position;
+    }
+
+    float get_Voltage_1() const {
+        return APPS1_Voltage;
+    }
+
+    float get_Voltage_2() const {
+        return APPS2_Voltage;
+    }
 
 
     
@@ -86,13 +101,13 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.396; //Min percentage Voltage kind of
-    static constexpr float APPS1_MAX_VOLTAGE = 1.086f; //Max percentage voltage kind of
+    static constexpr float APPS1_MIN_VOLTAGE = 0.358; //Min percentage Voltage kind of
+    static constexpr float APPS1_MAX_VOLTAGE = 0.926f; //Max percentage voltage kind of
 
-    static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
-    static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
+    static constexpr float APPS2_MIN_VOLTAGE = 0.401f;
+    static constexpr float APPS2_MAX_VOLTAGE = 0.976f;
 
-    static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03;
+    static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.05;
 
     static constexpr int16_t MAX_TORQUE = 32767 * 0.1; // Multiplied by 0.1 for controlled 
                                                        // motor torque during onboarding.
