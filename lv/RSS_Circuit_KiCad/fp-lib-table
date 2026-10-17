@@ -1,0 +1,6 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "formula_slug_footprint_library") (type "KiCad") (uri "${KIPRJMOD}/../fs-components/formula_slug_footprint_library.pretty/") (options "") (descr ""))
+	(lib (name "RSS") (type "KiCad") (uri "${KIPRJMOD}/RSS.pretty") (options "") (descr "RSS project parts"))
+	(lib (name "FS_4_Global_Footprint_Library") (type "KiCad") (uri "${KIPRJMOD}/../fs-components/formula_slug_footprint_library.pretty") (options "") (descr "FS-4 team footprints, for parts copied from FS-4 boards"))
+)
